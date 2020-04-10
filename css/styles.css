@@ -1,5 +1,6 @@
 body {
   color: #222222;
+  background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   display: block;
@@ -74,12 +75,3 @@ a.social-media:hover {
   color: #666666;
   background-color: transparent;
 }
-
-/*
-.project-container {
-  background-color: #E1E1E1;
-  height: 240px;
-  border-radius: 8px;
-  margin-top: 32px;
-}
-*/
