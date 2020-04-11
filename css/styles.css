@@ -68,16 +68,7 @@ footer {
   margin-bottom: 100px;
 }
 
-a.social-media {
-  color: #222222;
-  font-size: 2em;
-  line-height: 1;
-  font-weight: 400;
-  border: none;
-  transition: color 160ms ease-in-out;
-}
-
-a.social-media:hover {
-  color: #666666;
-  background-color: transparent;
+p.social-media {
+  display: inline;
+  margin-right: 16px;
 }
