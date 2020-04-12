@@ -11,6 +11,7 @@
 body {
   color: #222222;
   background-color: #ffffff;
+  font-family: "SF Pro Text", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   display: block;
@@ -38,7 +39,7 @@ h2.section-title {
 }
 
 h3.project-title {
-  font-family: "SF Pro Display", 'Inter', sans-serif;
+  font-family: "SF Pro Display", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.24em;
   line-height: 1.6;
   margin-top: 36px;
@@ -53,7 +54,6 @@ h3 span {
 }
 
 p {
-  font-family: "SF Pro Text", 'Inter', sans-serif;
   font-size: 1em;
   line-height: 1.6;
   font-weight: 400;
