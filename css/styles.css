@@ -18,6 +18,11 @@ body {
   padding: 0px 16px;
 }
 
+.header {
+  margin-top: 160px;
+  margin-bottom: 96px;
+}
+
 h1, h2, h3, p, .back-button, footer {
   max-width: 640px;
   margin: auto;
@@ -38,7 +43,7 @@ h1, h2 {
 h1.main-title {
   font-size: 3em;
   margin-top: 80px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 h1.main-title_project_page {
@@ -56,7 +61,7 @@ h2.section-title {
 h3.project-title {
   font-family: "SF Pro Display", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.24em;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-top: 36px;
   margin-bottom: 0;
 }
@@ -113,4 +118,13 @@ footer {
 p.social-media {
   display: inline;
   margin-right: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    margin: 0;
+  }
+  h1.main-title {
+    margin-bottom: 20px;
+  }
 }
