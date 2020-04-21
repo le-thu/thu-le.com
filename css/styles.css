@@ -23,15 +23,9 @@ body {
   margin-bottom: 96px;
 }
 
-h1, h2, h3, p, .back-button, footer {
+h1, h2, h3, p, footer {
   max-width: 640px;
   margin: auto;
-}
-
-div.project-img {
-  display: block;
-  max-width: 960px;
-  margin: 40px auto;
 }
 
 h1, h2 {
@@ -44,12 +38,6 @@ h1.main-title {
   font-size: 3em;
   margin-top: 80px;
   margin-bottom: 32px;
-}
-
-h1.main-title_project_page {
-  font-size: 3em;
-  margin-top: 80px;
-  margin-bottom: 20px;
 }
 
 h2.section-title {
@@ -100,12 +88,18 @@ a.back-icon:hover {
   border: none;
 }
 
+div.project-img {
+  display: block;
+  max-width: 960px;
+  margin: 40px auto;
+}
+
 .image {
   max-width: 100%;
   -webkit-touch-callout: none;
 }
 
-.back-button {
+.back-button-container {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -124,7 +118,12 @@ p.social-media {
   .header {
     margin: 0;
   }
+
   h1.main-title {
     margin-bottom: 20px;
+  }
+
+  p {
+    line-height: 1.5;
   }
 }
