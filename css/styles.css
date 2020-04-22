@@ -15,17 +15,15 @@ body {
   font-family: "SF Pro Text", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  padding: 0px 16px;
+  padding: 0px 24px;
 }
 
 .header {
-  margin-top: 160px;
-  margin-bottom: 96px;
+  margin: 160px auto 96px;
 }
 
-h1, h2, h3, p, footer {
+h1, h2, h3, p, ul, footer {
   max-width: 640px;
-  margin: auto;
 }
 
 h1, h2 {
@@ -36,30 +34,46 @@ h1, h2 {
 
 h1.main-title {
   font-size: 3em;
-  margin-top: 80px;
-  margin-bottom: 32px;
+  margin: 80px auto 32px;
 }
 
 h2.section-title {
-  font-size: 2.4em;
-  margin-top: 64px;
-  margin-bottom: 20px;
+  font-size: 2.25em;
+  margin: 64px auto 20px;
+}
+
+h2.section-title_project {
+  font-family: "SF Pro Display", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
+  font-size: 1.5em;
+  margin: 40px auto 20px;
 }
 
 h3.project-title {
   font-family: "SF Pro Display", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 1.24em;
+  font-size: 1.25em;
   line-height: 1.5;
-  margin-top: 36px;
-  margin-bottom: 0;
+  margin: 36px auto 0px;
 }
 
-p {
+p, ul, li {
   font-size: 1em;
   line-height: 1.6;
   font-weight: 400;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin: 16px auto;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+li span {
+  position: relative;
+  margin-left: -8px;
+}
+
+li {
+  padding-left: 0.5em;
 }
 
 a {
@@ -77,7 +91,7 @@ a:hover {
 }
 
 a.back-icon {
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: 400;
   border: none;
 }
@@ -88,7 +102,7 @@ a.back-icon:hover {
   border: none;
 }
 
-div.project-img {
+div.project-img, .back-button-container {
   display: block;
   max-width: 960px;
   margin: 40px auto;
@@ -96,34 +110,40 @@ div.project-img {
 
 .image {
   max-width: 100%;
-  -webkit-touch-callout: none;
 }
 
-.back-button-container {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-footer {
-  margin-top: 40px;
-  margin-bottom: 100px;
-}
-
-p.social-media {
-  display: inline;
+a.social-media {
+  display: inline-block;
+  line-height: 1.6;
   margin-right: 16px;
 }
 
-@media screen and (max-width: 600px) {
+footer {
+  margin: 40px auto 100px;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    padding: 0;
+  }
+
+  h1, h2, h3, p, ul, footer, .back-button-container {
+    padding: 0 24px;
+  }
+
   .header {
-    margin: 0;
+    margin: 64px auto 0px;
+  }
+
+  .back-button-container {
+    margin: 20px auto;
   }
 
   h1.main-title {
-    margin-bottom: 20px;
+    margin: 40px auto 20px;
   }
 
-  p {
+  p, ul, li, a.social-media {
     line-height: 1.5;
   }
 }
