@@ -5,13 +5,13 @@
 }
 
 ::selection {
-  background-color: #E8E8E8;
+  background-color: #6B48FF;
 }
 
 body {
   display: block;
-  color: #222222;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #161616;
   font-family: "SF Pro Text", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -19,7 +19,7 @@ body {
 }
 
 .header {
-  margin: 160px auto 96px;
+  margin: 160px auto 80px;
 }
 
 h1, h2, h3, p, ul, footer {
@@ -53,7 +53,7 @@ h3.project-title {
   font-family: "SF Pro Display", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.25em;
   line-height: 1.5;
-  margin: 36px auto 0px;
+  margin: 32px auto 0px;
 }
 
 p, ul, li {
@@ -77,17 +77,17 @@ li {
 }
 
 a {
-  color: #222222;
+  color: #ffffff;
   font-weight: 700;
   text-decoration: none;
-  border-bottom: solid 1px #A0A0A0;
+  border-bottom: solid 2px rgba(255,255,255,0.2);
   display: inline-block;
 }
 
 a:hover {
-  color: #ffffff;
-  background-color: #222222;
-  border-bottom: solid 1px #ffffff;
+  color: #161616;
+  background-color: #ffffff;
+  border-bottom: solid 2px #161616;
 }
 
 a.back-icon {
@@ -97,7 +97,7 @@ a.back-icon {
 }
 
 a.back-icon:hover {
-  color: #666666;
+  color: #888888;
   background-color: inherit;
   border: none;
 }
@@ -132,7 +132,7 @@ footer {
   }
 
   .header {
-    margin: 64px auto 0px;
+    margin: 64px auto;
   }
 
   .back-button-container {
@@ -146,5 +146,9 @@ footer {
   p, li, a.social-media {
     font-size: 0.875em;
     line-height: 1.5;
+  }
+
+  footer {
+    margin: 40px auto 64px;
   }
 }
