@@ -5,14 +5,14 @@
 }
 
 ::selection {
-  background-color: #6B48FF;
+  background-color: #FFA14F;
 }
 
 body {
   display: block;
-  color: #ffffff;
-  background-color: #161616;
-  font-family: "SF Pro Text", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #161616;
+  background-color: #ffffff;
+  font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   padding: 0px 24px;
@@ -26,37 +26,37 @@ h1, h2, h3, p, ul, footer {
   max-width: 640px;
 }
 
-h1, h2 {
-  font-family: 'DM Serif Display', serif;
-  font-weight: 400;
+h1, h2, h3 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
   line-height: 1.2;
 }
 
 h1.main-title {
   font-size: 3em;
+  letter-spacing: -0.03125em;
   margin: 80px auto 32px;
 }
 
 h2.section-title {
-  font-size: 2.25em;
+  font-size: 2em;
+  letter-spacing: -0.03125em;
   margin: 64px auto 20px;
 }
 
 h2.section-title_project {
-  font-family: "SF Pro Display", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 700;
   font-size: 1.5em;
   margin: 40px auto 20px;
 }
 
 h3.project-title {
-  font-family: "SF Pro Display", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.25em;
   line-height: 1.5;
   margin: 32px auto 0px;
 }
 
 p, ul, li {
+  font-family: 'PT Serif', serif;
   font-size: 1em;
   line-height: 1.6;
   font-weight: 400;
@@ -69,36 +69,37 @@ ul {
 
 li span {
   position: relative;
-  margin-left: -8px;
+  margin-left: -0.5em;
 }
 
 li {
-  padding-left: 0.5em;
+  padding-left: 1em;
 }
 
 a {
-  color: #ffffff;
-  font-weight: 700;
+  color: #161616;
+  font-weight: 800;
   text-decoration: none;
-  border-bottom: solid 2px rgba(255,255,255,0.2);
+  border-bottom: solid 2px rgba(255,142,0,0.4);
   display: inline-block;
 }
 
 a:hover {
-  color: #161616;
-  background-color: #ffffff;
-  border-bottom: solid 2px #161616;
+  border-bottom: solid 2px rgba(255,142,0,1);
+}
+
+a.external-link {
+  font-family: 'Manrope', sans-serif;
+}
+
+a.social-media {
+  display: inline-block;
+  line-height: 1.6;
+  margin-right: 16px;
 }
 
 a.back-icon {
   font-size: 1.5em;
-  font-weight: 400;
-  border: none;
-}
-
-a.back-icon:hover {
-  color: #888888;
-  background-color: inherit;
   border: none;
 }
 
@@ -110,12 +111,6 @@ div.project-img, .back-button-container {
 
 .image {
   max-width: 100%;
-}
-
-a.social-media {
-  display: inline-block;
-  line-height: 1.6;
-  margin-right: 16px;
 }
 
 footer {
@@ -144,7 +139,6 @@ footer {
   }
 
   p, li, a.social-media {
-    font-size: 0.875em;
     line-height: 1.5;
   }
 
