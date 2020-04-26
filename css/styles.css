@@ -98,8 +98,8 @@ a.social-media {
 
 a.back-icon {
   box-shadow: none;
-  font-size: 1.5em;
-  line-height: 1.5;
+  font-size: 1em;
+  line-height: 2;
   transition: color 160ms ease-in-out;
 }
 
@@ -108,6 +108,7 @@ a.back-icon:hover {
 }
 
 .icons {
+  height: 0.75em;
   opacity: 0.4;
 }
 
