@@ -16,6 +16,18 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   padding: 0px 24px;
+  animation: fadeInAnimation ease 2s
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 .header {
@@ -32,30 +44,30 @@ h1, h2, h3 {
 }
 
 h1.main-title {
-  font-size: 3em;
-  letter-spacing: -0.03125em;
+  font-size: 3rem;
+  letter-spacing: -0.03125rem;
   margin: 80px auto 32px;
 }
 
 h2.section-title {
-  font-size: 2em;
-  letter-spacing: -0.03125em;
+  font-size: 2rem;
+  letter-spacing: -0.03125rem;
   margin: 64px auto 20px;
 }
 
 h2.section-title_project {
-  font-size: 1.5em;
-  margin: 40px auto 20px;
+  font-size: 1.5rem;
+  margin: 40px auto 16px;
 }
 
 h3.project-title {
-  font-size: 1.25em;
-  margin: 40px auto 0px;
+  font-size: 1.25rem;
+  margin: 48px auto 16px;
 }
 
-p, ul, li {
+p, ul, li, figcaption {
   font-family: 'PT Serif', serif;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.6;
   font-weight: 400;
   margin: 16px auto;
@@ -67,11 +79,17 @@ ul {
 
 li span {
   position: relative;
-  margin-left: -0.5em;
+  margin-left: -0.5rem;
 }
 
 li {
-  padding-left: 1em;
+  padding-left: 1rem;
+}
+
+figcaption {
+  color: rgba(22, 22, 22, 0.7);
+  font-size: 0.875rem;
+  text-align: center;
 }
 
 a {
@@ -96,26 +114,31 @@ a.social-media {
   margin-right: 16px;
 }
 
-a.back-icon {
+a.back-button {
   box-shadow: none;
-  font-size: 1em;
-  line-height: 2;
+  font-size: 1rem;
+  line-height: 1;
   transition: color 160ms ease-in-out;
 }
 
-a.back-icon:hover {
+a.back-button:hover {
   color: rgba(22, 22, 22, 0.6);
 }
 
 .icons {
-  height: 0.75em;
+  height: 0.75rem;
   opacity: 0.4;
 }
 
-div.project-img, .back-button-container {
+.back-button-container {
+  display: inline-block;
+  margin: 24px auto;
+}
+
+figure, div.project-img {
   display: block;
   max-width: 960px;
-  margin: 40px auto;
+  margin: 56px auto;
 }
 
 .image {
@@ -131,7 +154,7 @@ footer {
     padding: 0;
   }
 
-  h1, h2, h3, p, ul, footer, .back-button-container {
+  h1, h2, h3, p, ul, figcaption, footer, .back-button-container {
     padding: 0 24px;
   }
 
