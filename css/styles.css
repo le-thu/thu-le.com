@@ -16,18 +16,8 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   padding: 0px 24px;
-  animation: fadeInAnimation ease 2s
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
+  opacity: 0;
+  transition: opacity 2s;
 }
 
 .header {
