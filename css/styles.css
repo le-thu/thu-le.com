@@ -17,7 +17,7 @@ body {
   text-rendering: optimizeLegibility;
   padding: 0px 24px;
   opacity: 0;
-  transition: opacity 2s;
+  transition: opacity 1s;
 }
 
 .header {
