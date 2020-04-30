@@ -63,6 +63,12 @@ p, ul, li, figcaption {
   margin: 16px auto;
 }
 
+p.project-metadata {
+  color: rgba(22, 22, 22, 0.5);
+  font-family: inherit;
+  font-size: 0.875rem;
+}
+
 ul {
   list-style-position: inside;
 }
