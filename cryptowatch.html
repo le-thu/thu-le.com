@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163787921-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163787921-1');
+    </script>
+
+    <script>
+      (function(h, o, t, j, a, r) {
+        h.hj = h.hj || function() {
+          (h.hj.q = h.hj.q || []).push(arguments)
+        };
+        h._hjSettings = {
+          hjid: 1525073,
+          hjsv: 6
+        };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Cryptowatch Redesign by Thu Le</title>
+    <meta name="author" content="Thu Le">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Cryptowatch Redesign by Thu Le">
+    <meta name="description" content="A design suggestion for the trade ticket of a crypto market aggregator and trading platform.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cryptowatch Redesign by Thu Le">
+    <meta property="og:description" content="A design suggestion for the trade ticket of a crypto market aggregator and trading platform.">
+    <meta property="og:image" content="images/cryptowatch-cover.png">
+
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-icon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body onload="document.body.style.opacity='1'">
+    <header>
+      <div class="back-button-container">
+        <a class="back-button" href="index.html">&#8249; Home</a>
+      </div>
+      <h1 class="main-title">Cryptowatch</h1>
+      <p class="project-metadata">
+        February 2020&ensp;&middot;&ensp;Research &amp; User Interface Design
+      </p>
+      <p>
+        If you're new to crypto and trading platforms, Cryptowatch is a charting and trading terminal for cryptocurrency markets, providing an interface to scan prices, analyze market movements, and make trades on most major exchanges. Instead of trading on five separate exchanges because of liquidity or trading pairs unavailable on certain exchanges, you can connect all your exchanges via API and have a one-stop shop for everything.
+      </p>
+      <p>
+        This case study is a personal project of mine to explore and visualize a new trade interface for Cryptowatch that mainly follows the usability heuristic <a class="external-link" href="https://www.nngroup.com/articles/recognition-and-recall/" target="_blank" rel="noopener">recognition over recall</a>.
+      </p>
+      <div class="project-img">
+        <img class="image" src="images/cryptowatch-cover.png" alt="Liquid website redesign">
+      </div>
+    </header>
+    <section>
+      <h2 class="section-title_project">
+        Current design with room for opportunity
+      </h2>
+      <p>
+        If I can provide a little background: Working in the crypto industry for the past couple of years has taught me a lot about design, albeit it might make things a little more intimidating for new designers because of the nature of its complexity as an emerging sector. Money is a commodity, in one form or another. As someone who has lived in a first-world country and a developing one, being able to send and receive payments cross-border seamlessly has been one of the things that I like most about crypto.
+      </p>
+      <p>
+        With Cryptowatch, traders can track market movements and directly make trades on all exchanges they've connected to the platform, saving more time and money. Now I'm more of a crypto investor than a regular trader, and having used a few exchanges to buy and sell crypto myself makes me curious about how Cryptowatch trade ticket interface design is rather unrecognizable compared to most of the exchanges I've used, and perhaps it can use a few improvements to promote initializing and completing a trade.
+      </p>
+      <figure>
+        <div class="project-img">
+          <img class="image" src="images/cryptowatch-current-design.png" alt="Cryptowatch current trade ticket design">
+          <figcaption>Cryptowatch's current trade ticket design on desktop.</figcaption>
+        </div>
+      </figure>
+    </section>
+    <section>
+      <h2 class="section-title_project">
+        Label over fields
+      </h2>
+      <p>
+        <a class="external-link" href="https://www.uxmatters.com/mt/archives/2006/07/label-placement-in-forms.php" target="_blank" rel="noopener">Research about label placement</a>
+        using eyetracking shows that placing label over inout field allows users to capture both elements within a single eye movement because of the proximity, while left-aligned labels actually force users to unnecessarily take more time to interact visually with the form.
+      </p>
+      <ul>
+        <li><span>Helps maintain a close and distinct visual relationship between the label and the form control.</span></li>
+        <li><span>Makes the form easier to scan, because users can see the text field in the same fixation as the label.</span></li>
+        <li><span>Establishes a mental model that the user is familiar with using the trade ticket on other exchanges.</span></li>
+      </ul>
+      <figure>
+        <div class="project-img">
+          <img class="image" src="images/cryptowatch-new-labels.png" alt="Label text over fields">
+        </div>
+      </figure>
+    </section>
+    <section>
+      <h2 class="section-title_project">
+        Important fields as main focus
+      </h2>
+      <p>
+        Order type, leverage, and expiry are settings that the user is likely to look at and set once and then move on, so these could use a hollow style dropdown so that there is less visual prominence and the user can focus on the most important fields.
+      </p>
+      </ul>
+      <figure>
+        <div class="project-img">
+          <img class="image" src="images/cryptowatch-new-important-fields.png" alt="Important fields visually as main focus">
+        </div>
+      </figure>
+    </section>
+    <section>
+      <h2 class="section-title_project">
+        Choose maximum amount with one click
+      </h2>
+      <ul>
+        <li><span>Choose the maximum amount of crypto the user can trade based on available funds on the connected exchange.</span></li>
+        <li><span>This replaces the % capital options and the "Funds" field which isn't editable.</span></li>
+        <li><span>This would reduce clutter while still giving the user an option to see how much they can trade.</span></li>
+      </ul>
+      <figure>
+        <div class="project-img">
+          <img class="image" src="images/cryptowatch-new-max-amount.png" alt="Choose maximum amount with one click">
+        </div>
+      </figure>
+    </section>
+    <section>
+      <h2 class="section-title_project">
+        Editable "Total" amount
+      </h2>
+      <ul>
+        <li><span>Allows more control for the user to enter their own number, “Quantity” will be automatically calculated.</span></li>
+        <li><span>User won’t need to guess or delay trade to calculate the math.</span></li>
+        <li><span>Two users (<a class="external-link" href="https://www.reddit.com/r/cryptowatch/comments/a9myjf/limit_order_by_bitcoin_amount/" target="_blank" rel="noopener">a while ago</a> and <a class="external-link" href="https://www.reddit.com/r/cryptowatch/comments/f2qny4/can_you_please_allow_the_total_field_to_be_edited/" target="_blank" rel="noopener">recently</a>) on Reddit commented they would love being able to use this feature.</span></li>
+      </ul>
+      <figure>
+        <div class="project-img">
+          <img class="image" src="images/cryptowatch-new-total.png" alt="Editable Total amount field">
+        </div>
+      </figure>
+    </section>
+    <section>
+      <h2 class="section-title_project">
+        Current versus improved order confirmation
+      </h2>
+      <p></p>
+      <ul>
+        <li><span>Labels and values are displayed inline with line separators making it easier to scan the content.</span></li>
+        <li><span>"Back" button replaces "Cancel" and is position on the top left to avoid accidental clicks.</span></li>
+        <li><span>Current behavior on Cryptowatch is pressing "Cancel" doesn't erase anything and just directs the users back to the order form, labeling the button "Back" makes more sense in this context because the intent is to allow the user to edit the order.</span></li>
+      </ul>
+      <figure>
+        <div class="project-img">
+          <img class="image" src="images/cryptowatch-new-confirm.png" alt="Current versus improved order confirmation">
+        </div>
+      </figure>
+    </section>
+    <section>
+      <h2 class="section-title_project">
+        Expanded trade ticket with advanced options
+      </h2>
+      <p>
+        The ticket gradually gets increased in size as advanced options are toggled, which is a downside of having labels above fields.
+      </p>
+      <figure>
+        <div class="project-img">
+          <img class="image" src="images/cryptowatch-new-expanded.png" alt="Expanded trade ticket with advanced options">
+        </div>
+      </figure>
+    </section>
+    <section>
+      <h2 class="section-title_project">
+        Trade-offs and next steps
+      </h2>
+      <p>
+        <strong>Removed "Reset" button:</strong> the goal is to encourage trading activities, and having two buttons at the bottom of a form clutters up the interface.
+      </p>
+      <ul>
+        <li><span>The extra choice also can slow the user down because it requires extra thinking, and the user can always erase or edit the fields.</span></li>
+        <li><span>"Reset" would be useful if the data to be entered differs significantly from what was entered before.</span></li>
+        <li><span>Run a test or refer to user testing to see what is the chance of user filling out everything and A to Z and then decide to start everything over, versus editing one or two fields.</span></li>
+      </ul>
+      <figure>
+        <div class="project-img">
+          <img class="image" src="images/cryptowatch-new-reset.png" alt="Reset button removed in new ticket design">
+        </div>
+      </figure>
+      <p>
+        <strong>Left label text for input fields on mobile</strong> to allow more space for trade call to action as mobile screen size is arbitrary. On mobile, we are losing even more space due to order book and orders/trades/positions panel which are non-negotiable components. Doing this, however, creates inconsistency between web on mobile.
+      </p>
+      <figure>
+        <div class="project-img">
+          <img class="image" src="images/cryptowatch-new-mobile.png" alt="Mobile layout modification">
+        </div>
+      </figure>
+      <p>
+        These designs suggestions again are merely from my own observations and knowledge as a designer and a user. Actual Cryptowatch users might make a lot of complex trades and there are things behind the scene that I wouldn’t know unless I'm within the Cryptowatch team to have access to unique user insights and behaviors, and I'm sure there are.
+      </p>
+      <p>
+        A couple of data points from analytics to determine this design's performance &#8212; to see if it works as intended &#8212; could be the time spent on the ticket to finish a trade, and the amount of users doing more trades on the new ticket versus the old ticket via A/B testing.
+      </p>
+    </section>
+    <footer></footer>
+  </body>
+</html>
