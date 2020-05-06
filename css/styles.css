@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
@@ -19,7 +19,7 @@ body {
   margin: 160px auto 80px;
 }
 
-h1, h2, h3, p, ul, footer {
+h1, h2, h3, p, ul, .social-media-container {
   max-width: 640px;
 }
 
@@ -122,11 +122,6 @@ a.back-button:hover {
   color: rgba(22, 22, 22, 0.6);
 }
 
-.icons {
-  height: 0.75rem;
-  opacity: 0.4;
-}
-
 .back-button-container {
   display: inline-block;
   margin: 24px auto;
@@ -144,7 +139,6 @@ a.back-button:hover {
 }
 
 figure, div.project-img {
-  display: block;
   max-width: 960px;
   margin: 56px auto;
 }
@@ -157,6 +151,31 @@ footer {
   margin: 40px auto 100px;
 }
 
+footer.footer-project {
+  margin: 0 24px;
+}
+
+div.footer-container {
+  max-width: 960px;
+  border-top: 1px solid rgba(22, 22, 22, 0.2);
+  margin: 56px auto;
+}
+
+p.footer-caption {
+  color: rgba(22, 22, 22, 0.5);
+  font-family: inherit;
+  text-align: center;
+  margin: 32px auto 8px;
+}
+
+p.footer-project-title {
+  font-family: inherit;
+  font-size: 1.5em;
+  line-height: 1;
+  text-align: center;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 640px) {
   body {
     padding: 0;
@@ -164,6 +183,10 @@ footer {
 
   h1, h2, h3, p, ul, figcaption, footer {
     padding: 0 24px;
+  }
+
+  footer.footer-project {
+    margin: 0;
   }
 
   .header {
