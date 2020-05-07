@@ -73,6 +73,7 @@ p.project-metadata {
 }
 
 p.hello-bar-text {
+  color: #161616;
   font-family: inherit;
   font-size: 0.875rem;
   text-align: center;
@@ -99,19 +100,25 @@ figcaption {
 }
 
 a {
-  color: #161616;
+  color: #FF8E00;
+  font-family: 'Manrope', sans-serif;
   text-decoration: none;
-  box-shadow: inset 0 -8px 0 rgba(255, 142, 0, 0.32);
   display: inline;
-  transition: box-shadow 160ms ease-in-out;
+  transition: color 160ms ease-in-out;
 }
 
 a:hover {
-  box-shadow: inset 0 -8px 0 rgba(255, 142, 0, 1);
+  color: #DE6800;
 }
 
 a.external-link {
-  font-family: 'Manrope', sans-serif;
+  color: #161616;
+  box-shadow: inset 0 -8px 0 rgba(255, 142, 0, 0.32);
+  transition: box-shadow 160ms ease-in-out;
+}
+
+a.external-link:hover {
+  box-shadow: inset 0 -8px 0 rgba(255, 142, 0, 1);
 }
 
 a.social-media {
@@ -120,7 +127,7 @@ a.social-media {
 }
 
 a.back-button {
-  box-shadow: none;
+  color: rgba(22, 22, 22, 1);
   font-size: 1rem;
   line-height: 1;
   transition: color 160ms ease-in-out;
@@ -170,7 +177,6 @@ div.footer-container {
 }
 
 p.footer-caption {
-  color: rgba(22, 22, 22, 0.5);
   font-family: inherit;
   text-align: center;
   margin: 32px auto 8px;
@@ -190,7 +196,7 @@ p.footer-project-title {
     padding: 0;
   }
 
-  h1, h2, h3, p, ul, figcaption, footer {
+  h1, h2, h3, p, ul, figcaption, footer, .social-media-container {
     padding: 0 24px;
   }
 
