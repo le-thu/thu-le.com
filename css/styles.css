@@ -8,7 +8,7 @@ body {
   display: block;
   color: #161616;
   background-color: #ffffff;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   opacity: 0;
@@ -55,7 +55,7 @@ h3.project-title {
 }
 
 p, ul, li, figcaption {
-  font-family: 'Overpass', serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   font-weight: 400;
@@ -100,7 +100,7 @@ figcaption {
 
 a {
   color: #FF5400;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 800;
   text-decoration: none;
   display: inline;
@@ -127,7 +127,7 @@ a.social-media {
 }
 
 a.back-button {
-  color: rgba(22, 22, 22, 1);
+  color: rgba(22, 22, 22, 0.7);
   font-size: 1rem;
   line-height: 1;
   transition: color 160ms ease-in-out;
@@ -172,7 +172,7 @@ footer.footer-project {
 
 div.footer-container {
   max-width: 960px;
-  border-top: 1px solid rgba(22, 22, 22, 0.2);
+  border-top: 1px solid rgba(22, 22, 22, 0.1);
   margin: 56px auto;
 }
 
@@ -196,7 +196,7 @@ p.footer-project-title {
     padding: 0;
   }
 
-  h1, h2, h3, p, ul, figcaption, footer, .social-media-container {
+  h1, h2, h3, p, ul, figcaption, footer {
     padding: 0 24px;
   }
 
