@@ -8,7 +8,7 @@ body {
   display: block;
   color: #222;
   background-color: #ffffff;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   opacity: 0;
@@ -55,10 +55,10 @@ h3.project-title {
 }
 
 p, ul, li, figcaption {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1.125rem;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.063rem;
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 500;
   margin: 16px auto;
 }
 
@@ -100,7 +100,7 @@ figcaption {
 
 a {
   color: #FF5400;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 800;
   text-decoration: none;
   display: inline;
