@@ -7,8 +7,8 @@
 body {
   display: block;
   color: #222;
-  background-color: #ffffff;
-  font-family: 'Manrope', sans-serif;
+  background-color: #fffdf8;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   opacity: 0;
@@ -25,11 +25,11 @@ h1, h2, h3, p, ul, .social-media-container {
 
 h1 {
   line-height: 1.2;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.063rem;
 }
 
 h2, h3 {
-  line-height: 1.1;
+  line-height: 1;
   letter-spacing: -0.03125rem;
 }
 
@@ -40,7 +40,7 @@ h1.main-title {
 
 h2.section-title {
   font-size: 2rem;
-  margin: 96px auto 16px;
+  margin: 88px auto 24px;
 }
 
 h2.section-title_project {
@@ -55,20 +55,20 @@ h3.project-title {
 }
 
 p, ul, li, figcaption {
-  font-family: 'Manrope', sans-serif;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.063rem;
   line-height: 1.6;
-  font-weight: 500;
+  font-weight: 400;
   margin: 16px auto;
 }
 
 p.project-description {
-  margin: 16px auto;
+  margin: 8px auto;
 }
 
 p.project-metadata {
   color: rgba(22, 22, 22, 0.5);
-  font-family: inherit;
+  font-family: monospace;
   font-size: 1rem;
 }
 
@@ -100,8 +100,8 @@ figcaption {
 
 a {
   color: #FF5400;
-  font-family: 'Manrope', sans-serif;
-  font-weight: 800;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
   text-decoration: none;
   display: inline;
   transition: color 160ms ease-in-out;
