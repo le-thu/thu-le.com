@@ -159,6 +159,7 @@ figure, div.project-img {
 }
 
 .image {
+  border-radius: 12px;
   max-width: 100%;
 }
 
@@ -191,12 +192,18 @@ p.footer-project-title {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 984px) {
+  h1, h2, h3, p, ul, figcaption, figure, div.project-img, footer {
+    padding: 0 24px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   body {
     padding: 0;
   }
 
-  h1, h2, h3, p, ul, figcaption, footer {
+  h1, h2, h3, p, ul, figcaption, figure, div.project-img, footer {
     padding: 0 24px;
   }
 
