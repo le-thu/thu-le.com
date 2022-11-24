@@ -51,6 +51,7 @@ h2.section-title_project {
 
 h3.project-title {
   font-size: 1.5rem;
+  line-height: 1.2;
   margin: 48px auto 16px;
 }
 
@@ -192,18 +193,12 @@ p.footer-project-title {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 984px) {
-  h1, h2, h3, p, ul, figcaption, figure, div.project-img, footer {
-    padding: 0 24px;
-  }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 960px) {
   body {
     padding: 0;
   }
 
-  h1, h2, h3, p, ul, figcaption, figure, div.project-img, footer {
+  h1, h2, h3, p, ul, div.project-img, figcaption, footer {
     padding: 0 24px;
   }
 
