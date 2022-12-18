@@ -96,7 +96,7 @@ div.section-block:hover {
 }
 
 h3.section-block-title {
-    color: #1A1A1A;
+    color: #7743DB;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
@@ -106,13 +106,7 @@ h3.section-block-title {
 p.section-block-description {
     color: #656565;
     font-size: 14px;
-    margin: 12px auto;
-}
-
-p.section-block-CTA {
-    color: #7743DB;
-    font-weight: 600;
-    margin: 8px auto 0px;
+    margin: 12px auto 0px;
 }
 
 p,
@@ -246,6 +240,15 @@ p.footer-caption {
     margin: 32px auto 16px;
 }
 
+p.footer-caption-light {
+    color: #989898;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    margin: 32px auto 8px;
+}
+
 p.footer-project-title {
     font-family: inherit;
     font-size: 32px;
@@ -305,6 +308,6 @@ p.footer-project-title {
     }
 
     footer {
-        margin: 40px auto 64px;
+        margin: 40px auto;
     }
 }
