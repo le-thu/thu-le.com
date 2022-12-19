@@ -90,7 +90,7 @@ div.section-block:hover {
 
 h3.section-block-title {
     color: #7743DB;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: -0.01875rem;
@@ -149,14 +149,14 @@ a {
 }
 
 a.external-link {
-    color: inherit;
+    color: #7F7F7F;
     font-weight: 600;
     text-decoration-line: underline;
     -webkit-text-decoration-line: underline;
     text-decoration-thickness: 2px;
     -webkit-text-decoration-thickness: 2px;
-    text-decoration-color: #DADADA;
-    -webkit-text-decoration-color: #DADADA;
+    text-decoration-color: #E0E0E0;
+    -webkit-text-decoration-color: #E0E0E0;
     text-underline-offset: 4px;
     -webkit-text-underline-offset: 4px;
     transition: color 180ms ease-in-out;
@@ -167,15 +167,15 @@ a.external-link:hover {
 }
 
 a.social-media {
-    color: #989898;
+    color: #7F7F7F;
     font-weight: 600;
     line-height: 1.6;
     text-decoration-line: underline;
     -webkit-text-decoration-line: underline;
     text-decoration-thickness: 2px;
     -webkit-text-decoration-thickness: 2px;
-    text-decoration-color: #DADADA;
-    -webkit-text-decoration-color: #DADADA;
+    text-decoration-color: #E0E0E0;
+    -webkit-text-decoration-color: #E0E0E0;
     text-underline-offset: 4px;
     -webkit-text-underline-offset: 4px;
     transition: all 180ms ease-in-out;
@@ -187,8 +187,8 @@ a.social-media:hover {
     -webkit-text-decoration-line: underline;
     text-decoration-thickness: 2px;
     -webkit-text-decoration-thickness: 2px;
-    text-decoration-color: #DADADA;
-    -webkit-text-decoration-color: #DADADA;
+    text-decoration-color: #E0E0E0;
+    -webkit-text-decoration-color: #E0E0E0;
     text-underline-offset: 4px;
     -webkit-text-underline-offset: 4px;
 }
@@ -207,7 +207,7 @@ a.back-button:hover {
 
 a.footer-CTA {
     font-weight: 700;
-    color: #989898;
+    color: #7F7F7F;
 }
 
 a.footer-CTA:hover {
@@ -252,7 +252,7 @@ p.footer-caption {
 }
 
 p.footer-caption-light {
-    color: #989898;
+    color: #7F7F7F;
     font-family: inherit;
     font-size: 12px;
     font-weight: 500;
@@ -318,5 +318,20 @@ p.footer-project-title {
 
     footer {
         margin: 40px auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1.main-title {
+        font-size: 40px;
+    }
+
+    h2.section-title {
+        font-size: 28px;
+    }
+
+    h2.section-title_project {
+        font-size: 24px;
+        line-height: 1.2;
     }
 }
