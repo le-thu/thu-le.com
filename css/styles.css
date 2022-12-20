@@ -67,39 +67,22 @@ h2.section-title_project {
     margin: 64px auto 24px;
 }
 
-div.section-block {
-    background-color: #FFF;
-    border-radius: 16px;
-    border: 2px solid #EFEFEF;
-    padding: 24px 32px;
-    margin: 24px auto;
-    transition: all 180ms ease-in-out;
-}
-
-div.section-block:hover {
-    background-color: #FFF;
-    border: 2px solid #F2F2F2;
-    box-shadow:
-        0px 1.7px 3.3px -20px rgba(0, 0, 0, 0.014),
-        0px 4px 8px -20px rgba(0, 0, 0, 0.02),
-        0px 7.5px 15px -20px rgba(0, 0, 0, 0.025),
-        0px 13.4px 26.8px -20px rgba(0, 0, 0, 0.03),
-        0px 25.1px 50.1px -20px rgba(0, 0, 0, 0.036),
-        0px 60px 120px -20px rgba(0, 0, 0, 0.05);
+div.case-study-block {
+    margin: 40px auto;
 }
 
 h3.section-block-title {
     color: #7743DB;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 32px;
     line-height: 1.2;
-    letter-spacing: -0.01875rem;
+    letter-spacing: -0.03125rem;
 }
 
 p.section-block-description {
     color: #656565;
     font-size: 14px;
-    margin: 12px auto 0px;
+    margin: 8px auto 32px;
 }
 
 p,
@@ -223,7 +206,7 @@ a.footer-CTA:hover {
 figure,
 div.project-img {
     max-width: 800px;
-    margin: 56px auto;
+    margin: 32px auto 64px;
 }
 
 .image {
@@ -276,17 +259,12 @@ p.footer-project-title {
     h1,
     h2,
     h3,
-    div.case-study-block,
     p,
     ul,
     div.project-img,
     figcaption,
     footer {
         padding: 0 24px;
-    }
-
-    div.section-block {
-        padding: 24px 8px;
     }
 
     footer.footer-project {
@@ -332,6 +310,11 @@ p.footer-project-title {
 
     h2.section-title_project {
         font-size: 24px;
+        margin: 56px auto 16px;
         line-height: 1.2;
+    }
+
+    h3.section-block-title {
+        font-size: 28px;
     }
 }
