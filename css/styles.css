@@ -72,16 +72,13 @@ div.case-study-block {
 }
 
 h3.section-block-title {
-    color: #7743DB;
-    font-weight: 700;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.2;
-    letter-spacing: -0.03125rem;
 }
 
 p.section-block-description {
     color: #656565;
-    font-size: 14px;
+    font-size: 16px;
     margin: 8px auto 32px;
 }
 
@@ -131,9 +128,17 @@ a {
     transition: color 180ms ease-in-out;
 }
 
+a.section-block-title {
+    color: #7743DB;
+    transition: color 180ms ease-in-out;
+}
+
+a.section-block-title:hover {
+    color: #5724BB;
+}
+
 a.external-link {
     color: #7F7F7F;
-    font-weight: 600;
     text-decoration-line: underline;
     -webkit-text-decoration-line: underline;
     text-decoration-thickness: 2px;
@@ -151,7 +156,6 @@ a.external-link:hover {
 
 a.social-media {
     color: #7F7F7F;
-    font-weight: 600;
     line-height: 1.6;
     text-decoration-line: underline;
     -webkit-text-decoration-line: underline;
@@ -312,9 +316,5 @@ p.footer-project-title {
         font-size: 24px;
         margin: 56px auto 16px;
         line-height: 1.2;
-    }
-
-    h3.section-block-title {
-        font-size: 28px;
     }
 }
