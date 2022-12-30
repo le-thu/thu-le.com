@@ -64,7 +64,7 @@ h2.section-title {
 h2.section-title_project {
     font-size: 32px;
     line-height: 1.2;
-    margin: 64px auto 24px;
+    margin: 72px auto 24px;
 }
 
 div.case-study-block {
@@ -76,7 +76,7 @@ h3.section-block-title {
     line-height: 1.2;
 }
 
-p.section-block-description {
+.section-block-description {
     color: #656565;
     font-size: 16px;
     margin: 8px auto 32px;
@@ -88,7 +88,7 @@ li,
 figcaption {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.5;
     font-weight: 400;
     margin: 16px auto;
 }
@@ -97,7 +97,7 @@ strong {
     font-weight: 600;
 }
 
-p.project-metadata {
+.project-metadata {
     color: #7F7F7F;
     font-family: inherit;
     font-size: 14px;
@@ -105,7 +105,7 @@ p.project-metadata {
 }
 
 ul li {
-    margin: 8px 0px 8px 24px;
+    margin: 8px 0 8px 24px;
 }
 
 li {
@@ -208,9 +208,9 @@ a.footer-CTA:hover {
 }
 
 figure,
-div.project-img {
+figure.project-img {
     max-width: 800px;
-    margin: 32px auto 64px;
+    margin: 40px auto 72px;
 }
 
 .image {
@@ -226,33 +226,33 @@ footer.footer-project {
     margin: 0 24px;
 }
 
-div.footer-container {
+.footer-container {
     max-width: 560px;
     border-top: 1px solid #DADADA;
     margin: 56px auto 40px;
 }
 
-p.footer-caption {
+.footer-caption {
     font-family: inherit;
     font-weight: 500;
     margin: 32px auto 8px;
 }
 
-p.footer-caption-light {
+.footer-caption-light {
     color: #7F7F7F;
     font-family: inherit;
     font-size: 12px;
     font-weight: 500;
     text-align: center;
-    margin: 32px auto 0px;
+    margin: 32px auto 0;
 }
 
-p.footer-project-title {
+.footer-project-title {
     font-family: inherit;
     font-size: 24px;
     line-height: 1.2;
     letter-spacing: -0.01875rem;
-    margin: 0px auto 32px;
+    margin: 0 auto 32px;
 }
 
 @media screen and (max-width: 800px) {
@@ -265,10 +265,10 @@ p.footer-project-title {
     h3,
     p,
     ul,
-    div.project-img,
+    figure,
     figcaption,
     footer {
-        padding: 0 24px;
+        padding: 0 20px;
     }
 
     footer.footer-project {
@@ -281,7 +281,7 @@ p.footer-project-title {
 
     .back-button-container {
         margin: 20px auto;
-        padding: 0 24px;
+        padding: 0 20px;
     }
 
     h1.main-title {
@@ -290,12 +290,6 @@ p.footer-project-title {
 
     h2.section-title {
         margin: 72px auto 16px;
-    }
-
-    p,
-    li,
-    a.social-media {
-        line-height: 1.5;
     }
 
     footer {
