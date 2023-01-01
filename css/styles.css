@@ -7,7 +7,7 @@
 body {
     display: block;
     color: #1A1A1A;
-    background-color: #FAFAFA;
+    background-color: #F8F8F8;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -72,13 +72,11 @@ div.case-study-block {
 }
 
 h3.section-block-title {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.2;
 }
 
 .section-block-description {
-    color: #656565;
-    font-size: 16px;
     margin: 8px auto 32px;
 }
 
@@ -86,22 +84,22 @@ p,
 ul,
 li,
 figcaption {
+    color: #4D4D4D;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 16px;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
     margin: 16px auto;
 }
 
 strong {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .project-metadata {
-    color: #7F7F7F;
+    color: #8A8A8A;
     font-family: inherit;
     font-size: 14px;
-    font-weight: 500;
 }
 
 ul li {
@@ -115,7 +113,6 @@ li {
 figcaption {
     color: #7F7F7F;
     font-size: 14px;
-    font-weight: 500;
     line-height: 1.4;
 }
 
@@ -138,7 +135,7 @@ a.section-block-title:hover {
 }
 
 a.external-link {
-    color: #7F7F7F;
+    color: #4D4D4D;
     text-decoration-line: underline;
     -webkit-text-decoration-line: underline;
     text-decoration-thickness: 2px;
@@ -155,7 +152,7 @@ a.external-link:hover {
 }
 
 a.social-media {
-    color: #7F7F7F;
+    color: #4D4D4D;
     line-height: 1.6;
     text-decoration-line: underline;
     -webkit-text-decoration-line: underline;
@@ -189,12 +186,12 @@ a.back-button {
 }
 
 a.back-button:hover {
-    color: #4C4C4C;
+    color: #4D4D4D;
 }
 
 a.footer-CTA {
     font-weight: 700;
-    color: #7F7F7F;
+    color: #4D4D4D;
 }
 
 a.footer-CTA:hover {
@@ -234,15 +231,13 @@ footer.footer-project {
 
 .footer-caption {
     font-family: inherit;
-    font-weight: 500;
     margin: 32px auto 8px;
 }
 
 .footer-caption-light {
-    color: #7F7F7F;
+    color: #4D4D4D;
     font-family: inherit;
     font-size: 12px;
-    font-weight: 500;
     text-align: center;
     margin: 32px auto 0;
 }
