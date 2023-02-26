@@ -34,8 +34,10 @@ div.case-study-block,
 figcaption,
 p,
 ul,
+.divider,
 .back-button-container,
-.social-media-container {
+.social-media-container,
+footer {
     max-width: 560px;
 }
 
@@ -119,7 +121,7 @@ li {
 }
 
 li::marker {
-    color: #7743DB;
+    color: #8A8A8A;
 }
 
 figcaption {
@@ -225,18 +227,18 @@ figure.project-img {
     max-width: 100%;
 }
 
-footer {
-    margin: 40px auto 100px;
+.divider-line {
+    border-bottom: 1px dashed #DADADA;
+    margin: 40px auto;
 }
 
-footer.footer-project {
-    margin: 0 24px;
+footer {
+    margin: 60px auto 40px;
 }
 
 .footer-container {
-    max-width: 560px;
-    border-top: 1px solid #DADADA;
-    margin: 56px auto 40px;
+    border-top: 1px dashed #DADADA;
+    margin: 60px auto 40px;
 }
 
 .footer-caption {
@@ -247,9 +249,9 @@ footer.footer-project {
 .footer-caption-light {
     color: #4D4D4D;
     font-family: inherit;
-    font-size: 0.75rem;
-    text-align: center;
-    margin: 32px auto 0;
+    font-size: 0.875rem;
+    line-height: 1;
+    margin: 40px auto 0;
 }
 
 .footer-project-title {
@@ -260,7 +262,7 @@ footer.footer-project {
     margin: 0 auto 32px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     body {
         padding: 0;
     }
@@ -272,13 +274,10 @@ footer.footer-project {
     ul,
     figure,
     figcaption,
-    footer,
-    .back-button-container {
+    .divider,
+    .back-button-container,
+    footer {
         padding: 0 20px;
-    }
-
-    footer.footer-project {
-        margin: 0;
     }
 
     .header {
@@ -300,13 +299,19 @@ footer.footer-project {
     footer {
         margin: 40px auto;
     }
+
+    .footer-caption,
+    .footer-project-title,
+    .footer-caption-light {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 440px) {
     .header {
         margin: 40px auto;
     }
-    
+
     h1.intro-title {
         font-size: 2.5rem;
     }
@@ -324,4 +329,8 @@ footer.footer-project {
         margin: 56px auto 16px;
         line-height: 1.2;
     }
-}
+
+    figure,
+    figure.project-img {
+        margin: 40px auto;
+    }
