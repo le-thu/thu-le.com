@@ -34,6 +34,7 @@ div.case-study-block,
 figcaption,
 p,
 ul,
+.back-button-container,
 .social-media-container {
     max-width: 560px;
 }
@@ -206,9 +207,7 @@ a.footer-CTA:hover {
 }
 
 .back-button-container {
-    display: inline-block;
-    margin: 24px auto;
-    padding: 0 24px;
+    margin: 32px auto;
 }
 
 figure,
@@ -283,7 +282,6 @@ footer.footer-project {
 
     .back-button-container {
         margin: 20px auto;
-        padding: 0 20px;
     }
 
     h1.main-title {
