@@ -118,6 +118,10 @@ li {
     padding-left: 8px;
 }
 
+li::marker {
+    color: #7743DB;
+}
+
 figcaption {
     color: #7F7F7F;
     font-size: 0.875rem;
@@ -268,7 +272,8 @@ footer.footer-project {
     ul,
     figure,
     figcaption,
-    footer {
+    footer,
+    .back-button-container {
         padding: 0 20px;
     }
 
@@ -297,7 +302,11 @@ footer.footer-project {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
+    .header {
+        margin: 40px auto;
+    }
+    
     h1.intro-title {
         font-size: 2.5rem;
     }
