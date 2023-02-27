@@ -76,6 +76,12 @@ h2.section-title_project {
     margin: 72px auto 24px;
 }
 
+h2.section-title_process {
+    font-size: 2rem;
+    line-height: 1;
+    margin: 56px auto 16px;
+}
+
 div.case-study-block {
     margin: 28px auto;
 }
@@ -122,6 +128,19 @@ li {
 
 li::marker {
     color: #8A8A8A;
+}
+
+.stylized-number {
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+    font-family: 'Homemade Apple', cursive;
+    color: #8A8A8A;
+    margin-right: 20px;
+}
+
+.stylized-paragraph {
+    padding-left: 70px;
 }
 
 figcaption {
@@ -300,6 +319,10 @@ footer {
         margin: 72px auto 16px;
     }
 
+    .stylized-paragraph {
+        padding-left: 90px;
+    }
+
     footer {
         margin: 40px auto;
     }
@@ -333,6 +356,21 @@ footer {
         font-size: 1.5rem;
         margin: 56px auto 16px;
         line-height: 1.2;
+    }
+
+    h2.section-title_process {
+        font-size: 1.5rem;
+        line-height: 1;
+        margin: 40px auto 16px;
+    }
+
+    .stylized-number {
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    .stylized-paragraph {
+        padding-left: 70px;
     }
 
     figure,
