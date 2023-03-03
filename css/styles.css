@@ -260,16 +260,16 @@ footer {
     margin: 60px auto 40px;
 }
 
-.footer-caption {
+.footer-text {
     font-family: inherit;
     margin: 32px auto 8px;
 }
 
-.footer-caption-light {
+.footer-text-light {
     color: #4D4D4D;
     font-family: inherit;
     font-size: 0.875rem;
-    line-height: 1;
+    line-height: 1.2;
     margin: 40px auto 0;
 }
 
@@ -279,10 +279,6 @@ footer {
     line-height: 1.2;
     letter-spacing: -0.03125rem;
     margin: 0 auto 32px;
-}
-
-.footer-text {
-    margin: 60px auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -327,10 +323,9 @@ footer {
         margin: 40px auto;
     }
 
-    .footer-caption,
+    .footer-text,
     .footer-project-title,
-    .footer-caption-light,
-    .footer-text {
+    .footer-text-light {
         padding: 0;
     }
 }
@@ -375,10 +370,6 @@ footer {
 
     figure,
     figure.project-img {
-        margin: 40px auto;
-    }
-
-    .footer-text {
         margin: 40px auto;
     }
 }
