@@ -184,6 +184,12 @@ a.link:hover {
     color: #7743DB;
 }
 
+.link-label {
+    display: inline-block;
+    width: 120px;
+    color: #8A8A8A;
+}
+
 a.social-media {
     color: #4D4D4D;
     line-height: 1.6;
@@ -292,7 +298,6 @@ footer {
     p,
     ul,
     figure,
-    figcaption,
     .divider,
     .back-button-container,
     footer {
