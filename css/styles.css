@@ -43,41 +43,33 @@ footer {
 
 h1 {
     font-weight: 700;
-    line-height: 1.2;
     letter-spacing: -0.078125rem;
 }
 
 h2,
 h3 {
+    font-size: 2rem;
+    line-height: 1.2;
     font-weight: 700;
-    line-height: 1;
     letter-spacing: -0.0390625rem;
-}
-
-h1.intro-title {
-    font-size: 3.25rem;
-    line-height: 1.05;
-    margin: 80px auto 24px;
 }
 
 h1.main-title {
     font-size: 3rem;
+    line-height: 1.05;
     margin: 80px auto 24px;
 }
 
 h2.section-title {
-    font-size: 2.25rem;
+    line-height: 1;
     margin: 72px auto 24px;
 }
 
 h2.section-title_project {
-    font-size: 2rem;
-    line-height: 1.2;
     margin: 72px auto 24px;
 }
 
 h2.section-title_process {
-    font-size: 2rem;
     line-height: 1;
     margin: 56px auto 16px;
 }
@@ -87,9 +79,9 @@ div.case-study-block {
 }
 
 h3.section-block-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 1.2;
-    letter-spacing: -0.03125rem;
+    letter-spacing: -0.015625rem;
 }
 
 .section-block-description {
@@ -101,7 +93,6 @@ ul,
 li,
 figcaption {
     color: #4D4D4D;
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 500;
@@ -150,7 +141,6 @@ figcaption {
 }
 
 a {
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 600;
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
@@ -159,12 +149,12 @@ a {
 }
 
 a.section-block-title {
-    color: #7743DB;
+    color: #4D4D4D;
     transition: color 180ms ease-in-out;
 }
 
 a.section-block-title:hover {
-    color: #5724BB;
+    color: #7743DB;
 }
 
 a.link {
@@ -267,23 +257,21 @@ footer {
 }
 
 .footer-text {
-    font-family: inherit;
+    color: #8A8A8A;
     margin: 32px auto 8px;
 }
 
 .footer-text-light {
     color: #4D4D4D;
-    font-family: inherit;
     font-size: 0.875rem;
     line-height: 1.2;
     margin: 40px auto 0;
 }
 
 .footer-project-title {
-    font-family: inherit;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 1.2;
-    letter-spacing: -0.03125rem;
+    letter-spacing: -0.015625rem;
     margin: 0 auto 32px;
 }
 
@@ -338,10 +326,6 @@ footer {
 @media screen and (max-width: 440px) {
     .header {
         margin: 40px auto;
-    }
-
-    h1.intro-title {
-        font-size: 2.5rem;
     }
 
     h1.main-title {
