@@ -40,12 +40,21 @@
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/apple-icon.png">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
 </head>
 
 <body onload="document.body.style.opacity='1'">
     <header>
-        <div class="back-button-container">
-            <a class="back-button" href="/">&#8592; Home</a>
+        <div class="menu">
+            <div class="menu-container">
+                <div class="back-button-container">
+                    <a class="back-button" href="/">&#8592; Home</a>
+                </div>
+                <div class="theme-switcher-container">
+                    <a class="theme-switcher" href="#" onclick="toggleTheme()">
+                    </a>
+                </div>
+            </div>
         </div>
         <h1 class="main-title">Redesigning Liquid</h1>
         <p class="project-metadata">
@@ -196,6 +205,12 @@
             <p class="footer-project-title"><a class="footer-CTA" href="/cryptowatch">Cryptowatch trade ticket redesign &#8594;</a></p>
         </div>
     </footer>
+    <script>
+        function toggleTheme() {
+            var body = document.body;
+            body.classList.toggle("dark");
+        }
+    </script>
 </body>
 
 </html>
