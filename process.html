@@ -44,7 +44,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
 </head>
 
 <body onload="document.body.style.opacity='1'">
@@ -55,8 +54,7 @@
                     <a class="back-button" href="/">&#8592; Home</a>
                 </div>
                 <div class="theme-switcher-container">
-                    <a class="theme-switcher" href="#" onclick="toggleTheme()">
-                    </a>
+                    <button id="theme-switcher">&#x263E;</button>
                 </div>
             </div>
         </div>
@@ -127,12 +125,7 @@
             </p>
         </div>
     </footer>
-    <script>
-        function toggleTheme() {
-            var body = document.body;
-            body.classList.toggle("dark");
-        }
-    </script>
+    <script src="theme-switcher.js"></script>
 </body>
 
 </html>

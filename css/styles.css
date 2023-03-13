@@ -39,6 +39,27 @@ body {
     transition: opacity 180ms;
 }
 
+button {
+    display: inline-block;
+    width: 36px;
+    background-color: transparent;
+    color: var(--default);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 8px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 180ms ease-in-out;
+}
+
+button:hover {
+  background-color: var(--default);
+  color: var(--background);
+}
+
 ::-moz-selection {
     background-color: var(--selection);
 }
@@ -55,7 +76,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
+    padding: 16px 0;
     max-width: 560px;
     margin: 0 auto;
 }
@@ -80,20 +101,8 @@ body {
     margin-right: 0;
 }
 
-.theme-switcher {
-    display: inline;
-    font-size: 1.75rem;
-    background-color: var(--background);
-    color: var(--default);
-    text-decoration: none;
-}
-
-.theme-switcher:hover {
-    color: var(--accent);
-}
-
 .header {
-    margin: 144px auto 80px;
+    margin: 96px auto 80px;
 }
 
 .menu,
