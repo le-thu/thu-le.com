@@ -1,6 +1,7 @@
 * {
     margin: 0 auto;
     padding: 0;
+    text-rendering: optimizeLegibility;
     box-sizing: border-box;
 }
 
@@ -14,6 +15,11 @@
     --divider: #DADADA;
     --link-underline: #E0E0E0;
     --selection: rgba(119, 67, 219, 0.2);
+    --font-x-large: 3rem;
+    --font-large: 2rem;
+    --font-medium: 1.25rem;
+    --font-paragraph: 1rem;
+    --font-small: 0.875rem;
 }
 
 .dark {
@@ -34,7 +40,6 @@ body {
     background-color: var(--background);
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
     opacity: 0;
     transition: opacity 180ms;
 }
@@ -56,8 +61,8 @@ button {
 }
 
 button:hover {
-  background-color: var(--default);
-  color: var(--background);
+    background-color: var(--default);
+    color: var(--background);
 }
 
 ::-moz-selection {
@@ -383,7 +388,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 480px) {
     .header {
         margin: 40px auto;
     }
@@ -409,12 +414,12 @@ footer {
     }
 
     .stylized-number {
-        width: 40px;
-        margin-right: 10px;
+        width: 32px;
+        margin-right: 16px;
     }
 
     .stylized-paragraph {
-        padding-left: 70px;
+        padding-left: 68px;
     }
 
     figure,
