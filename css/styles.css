@@ -229,7 +229,7 @@ a {
     -webkit-text-decoration-color: var(--link-underline);
     text-underline-offset: 4px;
     -webkit-text-underline-offset: 4px;
-    transition: color 180ms ease-in-out;
+    transition: all 180ms ease-in-out;
 }
 
 a:hover {
