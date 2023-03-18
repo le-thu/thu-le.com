@@ -39,27 +39,6 @@ body {
     transition: opacity 180ms;
 }
 
-button {
-    display: inline-block;
-    width: 36px;
-    background-color: transparent;
-    color: var(--default);
-    border: none;
-    border-radius: 8px;
-    padding: 8px 8px;
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1;
-    cursor: pointer;
-    transition: all 180ms ease-in-out;
-}
-
-button:hover {
-    background-color: var(--default);
-    color: var(--background);
-}
-
 ::-moz-selection {
     background-color: var(--selection);
 }
@@ -101,6 +80,27 @@ button:hover {
 
 .theme-switcher-container {
     margin-right: 0;
+}
+
+button {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    color: var(--default);
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 180ms ease-in-out;
+}
+
+button:hover {
+    background-color: var(--metadata);
+    color: var(--background);
 }
 
 .header {

@@ -4,20 +4,20 @@ const body = document.body;
 // Check if there is a saved theme preference in local storage
 const theme = localStorage.getItem('theme');
 if (theme) {
-  body.classList.add(theme);
-  if (theme === 'dark') {
-    switcher.innerHTML = '&#x263C;';
-  }
+    body.classList.add(theme);
+    if (theme === 'dark') {
+        switcher.innerHTML = '&#9898;'; // sun symbol in hex
+    }
 }
 
 switcher.addEventListener('click', () => {
-  // Toggle the 'dark' class on the body element
-  body.classList.toggle('dark');
+    // Toggle the 'dark' class on the body element
+    body.classList.toggle('dark');
 
-  // Save the theme preference to local storage
-  const theme = body.classList.contains('dark') ? 'dark' : '';
-  localStorage.setItem('theme', theme);
+    // Save the theme preference to local storage
+    const theme = body.classList.contains('dark') ? 'dark' : '';
+    localStorage.setItem('theme', theme);
 
-  // Update the button text
-  switcher.innerHTML = body.classList.contains('dark') ? '&#x263C;' : '&#x263E;';
+    // Update the button text
+    switcher.innerHTML = body.classList.contains('dark') ? '&#9898;' : '&#9899;'; // sun and moon symbols in hex
 });
