@@ -6,7 +6,7 @@ const theme = localStorage.getItem('theme');
 if (theme) {
     body.classList.add(theme);
     if (theme === 'dark') {
-        switcher.innerHTML = '&#9898;'; // sun symbol in hex
+        switcher.innerHTML = '☼'; // sun symbol in hex
     }
 }
 
@@ -19,5 +19,5 @@ switcher.addEventListener('click', () => {
     localStorage.setItem('theme', theme);
 
     // Update the button text
-    switcher.innerHTML = body.classList.contains('dark') ? '&#9898;' : '&#9899;'; // sun and moon symbols in hex
+    switcher.innerHTML = body.classList.contains('dark') ? '☼' : '☾'; // sun and moon symbols in hex
 });

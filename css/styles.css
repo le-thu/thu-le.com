@@ -99,7 +99,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--metadata);
+    background-color: var(--default);
     color: var(--background);
 }
 
@@ -255,6 +255,11 @@ a:hover {
 figure,
 figure.project-img {
     max-width: 800px;
+    margin: 40px auto 72px;
+}
+
+figure.project-img-small {
+    max-width: 560px;
     margin: 40px auto 72px;
 }
 
