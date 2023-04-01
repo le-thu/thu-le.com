@@ -61,24 +61,252 @@
             2021
         </p>
         <p>
-            Anduin Fund Subscription streamlines the fund subscription process for fund managers and their investors. With our platform, fund managers can easily invite investors to fill out required documents, upload AML/KYC documents, and sign their subscription documents using our built-in e-signature tool or by uploading signature pages, all in one convenient location. Our dashboard provides a birds-eye view of where investors are in the process, allowing fund managers to monitor fundraising performance and assist investors with any questions or tasks related to the subscription. Meanwhile, investors have their own user interface to track their subscription progress, view remaining form fields, upload additional documents, and sign side letters.
-        </p>
-        <p>
-            One of my favorite projects I've worked on is conceptualizing and designing a revamped data table for fund managers, empowering them to effortlessly track and oversee their investors' progress. To provide a more tailored and personalized experience, my team and I integrated the option to configure the data table with custom columns, offering greater flexibility and versatility to fund operation teams as they manage investor data.
+            One of my favorite projects working on Fund Subscription is conceptualizing and designing a revamped data table for fund managers. This table empowers them to effortlessly track and oversee their investors' progress. To provide a more tailored and personalized experience, my team and I integrated the option to configure the data table with custom columns. This offers greater flexibility and versatility to fund operation teams as they manage investor data.
         </p>
         <figure class="project-img">
-            <img class="image" src="images/advanced-dashboard-cover.png" alt="Fund Subscription dashboard data table">
+            <img class="image" src="images/advanced-dashboard-cover.png" alt="Fund Subscription advanced dashboard data table">
         </figure>
     </header>
     <section>
         <h2 class="section-title_project">
-            Introduction
+            About the product
         </h2>
+        <p>
+            Anduin Fund Subscription streamlines the fund subscription process for fund managers and their investors. With our platform, fund managers can easily invite investors to fill out required documents, upload AML/KYC documents, and sign their subscription documents using our built-in e-signature tool or by uploading signature pages, all in one convenient location. Our dashboard provides a birds-eye view of where investors are in the process, allowing fund managers to monitor fundraising performance and assist investors with any questions or tasks related to the subscription. Meanwhile, investors have their own user interface to track their subscription progress, view remaining form fields, upload additional documents, and sign side letters.
+        </p>
+        <p>
+            This case study focuses on the experience of a fund manager. Stay tuned for another case study on the onboarding experience for investors!
+        </p>
     </section>
-      
+    <section>
+        <h2 class="section-title_project">
+            What got us started on this project
+        </h2>
+        <figure class="project-img-small">
+            <img class="image" src="images/advanced-dashboard-context.png" alt="All hands meeting slide showing customer pipeline in Q3 and Q4 2021">
+            <figcaption>A few logos from our Q3 and Q4 customer pipeline in 2021 shown in our company all-hands &#8212; our most exciting one yet.</figcaption>
+        </figure>
+        <p>
+            In the summer of 2021, we entered a partnership with a reputable New York law firm that specializes in private equity funds among other matters. They were interested in adopting Fund Subscription for their fundraising needs and to use our solution for all their customers as well.
+        </p>
+        <p>
+            During initial discovery calls with the law firm and also ongoing discussions with other firms and existing customers, we realized that:
+        </p>
+        <ul>
+            <li>
+                Our old dashboard at the time was sufficient for our primary customer base of small and emerging funds in the past. However, as we wanted to expand our offerings to larger private equity and hedge funds, we encountered clients with dedicated operations teams for fundraising and post-close operations.
+            </li>
+            <li>
+                Each firm has its own specific internal practices that they want to replicate in the system they use, in this case, Fund Subscription. Some firms may prioritize certain data points that others do not, which highlights the need for a more tailored approach to better cater to the specific needs of our customers.
+            </li>
+        </ul>
+        <figure class="project-img-small">
+            <img class="image" src="images/advanced-dashboard-old-dashboard.png" alt="Old dashboard table">
+            <figcaption>Limitations of our old standard dashboard.</figcaption>
+        </figure>
+        <p>
+            Applying a one-size-fits-all approach was impossible, and our simple dashboard couldn't scale to serve more customers and use cases. As a result, we needed to introduce flexibility and configuration options.
+        </p>
+    </section>
+    <section>
+        <h2 class="section-title_project">
+            How might we build a modular and scalable dashboard table to track various data points with customizable configuration?
+        </h2>
+        <p>
+            As we collected information and established our execution strategy, our CTO, <a href="https://twitter.com/ngbinh" target="_blank" rel="noopener">Binh</a>, proposed implementing a more efficient backend for data storage and management system. To achieve this, Binh and <a href="https://github.com/tuananhtd" target="_blank" rel="noopener">Tuan-Anh</a>, the lead engineer on this project, devised a plan to create a new infrastructure called the "data lake," which would supersede the outdated method used for storing data in the old dashboard.
+        </p>
+        <figure class="project-img-small">
+            <img class="image" src="images/advanced-dashboard-prep-doc.png" alt="Product requirement document">
+        </figure>
+        <p>
+            Additionally, I partnered with product to identify and categorize various column types that would be accessible to our users. We defined how these columns behave and what the user experience looks like. Finally, we would utilize the <a href="https://tabulator.info/" target="_blank" rel="noopener">Tabulator</a> library as the foundation for building the frontend, with lots of customization needed for our own components. Our lead engineer, <a href="https://twitter.com/nghuuphuoc" target="_blank" rel="noopener">Phuoc</a>, is a wizard when it comes to frontend and never shies away from any challenges.
+        </p>
+        <figure class="project-img-small">
+            <img class="image" src="images/advanced-dashboard-prep-technical.png" alt="Product requirement document">
+        </figure>
+        <p>
+            As the product designer on this initiative, I owned the design execution of the entire project, including:
+        </p>
+        <ul>
+            <li>
+                Planning and conducting user research, competitor analysis, and broader problem space research for additional user insights
+            </li>
+            <li>
+                Reviewing and validating solutions with stakeholders and users
+            </li>
+            <li>
+                Translating concepts into prototypes and mockups ready for development
+            </li>
+            <li>
+                Defining and detailing user interactions and design logic
+            </li>
+            <li>
+                Collaborating closely with our engineers and QA during development and testing stages
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2 class="section-title_project">
+            CRMs as the mental model of fund managers and lawyers
+        </h2>
+        <p>
+            Our customers, who are fund managers and lawyers, recognize the significance of managing and nurturing investor relationships, using CRMs like Salesforce, Affinity, and DealCloud to track interactions, notes, and other relevant information. By doing so, they can deliver better client service and drive business success. This aligns with our vision for Fund Subscription as a centralized system that fosters communication and collaboration, streamlines workflows, and offers insights into customer behavior. To provide a smooth user experience, I wanted to leverage the familiarity our customers have with these platforms.
+        </p>
+        <figure class="project-img">
+            <img class="image" src="images/advanced-dashboard-crms.png" alt="Screenshots of Salesforce, Affinity, and DealCloud dashboards">
+        </figure>
+    </section>
+    <section>
+        <h2 class="section-title_project">
+            Keeping tabs on competitors
+        </h2>
+        <p>
+            To stay competitive, it's important to conduct competitor research to gain valuable insights into what works well and what can be improved upon, as well as identify gaps in the market and opportunities for innovation. Competitors like InvestNext, Allvue, and FIS Sungard offer similar capabilities to Fund Subscription but may have clunky and difficult-to-navigate product designs. At Anduin, my team and I strive to provide technological advancements while also ensuring a pleasant and smooth user experience for fund managers, differentiating ourselves in the private market space.
+        </p>
+        <figure class="project-img">
+            <img class="image" src="images/advanced-dashboard-competitors.png" alt="Screenshots of competitor products">
+        </figure>
+    </section>
+    <section>
+        <h2 class="section-title_project">
+            Understanding examples from other verticals and parallels
+        </h2>
+        <p>
+            I've found that considering parallels and verticals is a valuable approach when conceptualizing new capabilities in B2B SaaS. It offers cross-industry insights to identify unique solutions, inspires innovation by examining how other industries tackle similar issues and allows for a better understanding of user needs and expectations resulting in the creation of more user-centered design solutions that meet the needs of the target audience.
+        </p>
+        <p>
+            My past experience working in product marketing allowed me to get a chance to use tools such as Facebook Ads Manager, Google Ad Manager, and HubSpot, so I looked at them to identify commonalities in managing campaigns that could relate to how fund managers and law firms use software to manage their funds and investor data.
+        </p>
+        <ul>
+            <li>
+                One commonality is the ability to easily organize and manage campaigns or funds based on various attributes or performance metrics. They also offer tailored views and reports for specific user needs.
+            </li>
+            <li>
+                Another commonality is the use of intuitive interfaces with clear navigation and visualizations that allow users to quickly gain insights into campaign or fund performance.
+            </li>
+        </ul>
+        <figure class="project-img">
+            <img class="image" src="images/advanced-dashboard-parallels.png" alt="Screenshots of Facebook Ads Manager, Google Ad Manager, and HubSpot tables">
+        </figure>
+    </section>
+    <section>
+        <h2 class="section-title_project">
+            Introducing the advanced dashboard table with flexible configuration
+        </h2>
+        <p>
+            Within a couple of months, we completed research, design, and development and launched the MVP 🚀
+        </p>
+        <p>
+            Customers were able to experience and compare the advanced dashboard with the old dashboard. Immediately, we started making continuous improvements based on user feedback and insights. More and more customers began requesting this feature as soon as they heard about the new capability from our GTM team.
+        </p>
+        <h3 class="section-title_project-sub">
+            Design explorations
+        </h3>
+        <p>
+            A few snippets of what my Figma file contains during design exploration and how I typically structure user flows.
+        </p>
+        <figure class="project-img">
+            <img class="image" src="images/advanced-dashboard-exploration-1.png" alt="Initial explorations on the table design">
+        </figure>
+        <figure class="project-img">
+            <img class="image" src="images/advanced-dashboard-exploration-2.png" alt="Initial explorations on table toolbar and sticky columns">
+        </figure>
+        <figure class="project-img">
+            <img class="image" src="images/advanced-dashboard-flows.png" alt="Figma design file organization">
+        </figure>
+        <h3 class="section-title_project-sub">
+            Dashboard table settings
+        </h3>
+        <figure class="project-img">
+            <img class="image" src="images/advanced-dashboard-dashboard-settings.png" alt="Dashboard settings modal">
+        </figure>
+        <h3 class="section-title_project-sub">
+            Adding multiple custom columns
+        </h3>
+        <figure class="project-img">
+            <img class="image" src="images/advanced-dashboard-add-columns.png" alt="Modal to select different custom column types">
+        </figure>
+        <figure class="project-img">
+            <img class="image" src="images/advanced-dashboard-custom-columns.png" alt="Custom columns on the dashboard table">
+        </figure>
+        <h3 class="section-title_project-sub">
+            Quickly view an investor’s subscription information and take actions
+        </h3>
+        <figure class="project-img">
+            <img class="image" src="images/advanced-dashboard-subscription-detail-before.png" alt="Subscription detail accordion on the old dashboard table">
+        </figure>
+        <figure class="project-img">
+            <img class="image" src="images/advanced-dashboard-subscription-detail-after.png" alt="Subscription detail side drawer on the advanced dashboard table">
+        </figure>
+        <h3 class="section-title_project-sub">
+            Surfacing investor subscription form data directly on the table
+        </h3>
+        <p>
+            We've also introduced the capability that allows fund managers to select which subscription form data they want to see directly on the dashboard table via a form data column. Instead of having to navigate to each investor's form, this provides a more efficient way to access and compare important information. The column setup process for this feature would have to be done through our internal admin portal per the customer's request as it requires additional egineering effort.
+        </p>
+        <figure class="project-img">
+            <img class="image" src="images/advanced-dashboard-admin-portal.png" alt="Setting up form data columns in internal admin portal">
+        </figure>
+        <figure class="project-img">
+            <img class="image" src="images/advanced-dashboard-form-data.png" alt="Viewing investor form data in columns on the advanced dashboard table">
+        </figure>
+    </section>
+    <section>
+        <h2 class="section-title_project">
+            Results and impact
+        </h2>
+        <p>
+            At the end of 2022, 66% of both long-standing and new customers were using both the old and advanced dashboard tables following the feature release. After implementing further enhancements to the advanced dashboard table, all our new customers requested to use this option exclusively for managing their funds.
+        </p>
+        <p>
+            Most importantly, this marked a major milestone for our partnership with the law firm and expands our footprint in the private market space. We are now their go-to partner for fundraising and other private equity transactions, as well as a solution for their customers.
+        </p>
+    </section>
+    <section>
+        <h2 class="section-title_project">
+            What I've learned
+        </h2>
+        <p>
+            Good data tables enable users to scan, analyze, compare, filter, sort, and manipulate information in order to derive insights and take action.
+        </p>
+        <p>
+            Good user interface design is rooted in human goals and behavior. The user interface, in turn, affects behavior, which drives further design decisions. User experience subtly and unconsciously alters how humans make decisions. The location and presentation of information, as well as how interactions are facilitated, all influence actions.
+        </p>
+        <p>
+            I've also gotten more comfortable working with complex objects. Complexity doesn't always mean something bad and it isn’t always equivalent to something that is complicated and confusing.
+        </p>
+    </section>
+    <section>
+        <h2 class="section-title_project">
+            Special shoutouts to my team
+        </h2>
+        <figure class="project-img-small">
+            <img class="image" src="images/advanced-dashboard-team.png" alt="Online Fibbage game session">
+            <figcaption>🎮 One of our Friday Fibbage sessions during the three-month long shelter-in-place lockdown in Saigon 2021.</figcaption>
+        </figure>
+        <p>
+            I want to express my gratitude to my teammates, who did some of their best work and helped keep each other sane as we all built this project from our homes during the three-month pandemic lockdown in Saigon 🙏
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/julienhoubin/" target="_blank" rel="noopener">Julien</a>, Product Director
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/truongvobichphuong/" target="_blank" rel="noopener">Phuong</a>, Product Owner
+        </p>
+        <p>
+            <a href="https://github.com/tuananhtd" target="_blank" rel="noopener">Tuan-Anh</a>, Senior Engineer
+        </p>
+        <p>
+            <a href="https://twitter.com/nghuuphuoc" target="_blank" rel="noopener">Phuoc</a>, Lead Frontend Engineer
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/triet-pham-6631a7b0/" target="_blank" rel="noopener">Triet</a>, Senior QA Engineer
+        </p>
+    </section>
     <footer class="footer-project">
         <div class="footer-container">
-            
+            <p class="footer-text">Next</p>
+            <p class="footer-project-title"><a class="link-footer-CTA" href="/liquid.html">Redesigning Liquid &#8594;</a></p>
         </div>
     </footer>
     <script src="theme-switcher.js"></script>
