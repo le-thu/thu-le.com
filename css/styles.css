@@ -115,6 +115,7 @@ div.case-study-block,
 figcaption,
 p,
 ul,
+ol,
 .divider,
 .social-media-container,
 footer {
@@ -155,10 +156,16 @@ div.case-study-block {
 }
 
 h3.section-block-title,
+.section-title_project-sub,
 .footer-project-title {
     font-size: 1.25rem;
     line-height: 1.2;
     letter-spacing: -0.015625rem;
+}
+
+h3.section-title_project-sub {
+    font-size: 1.5rem;
+    margin: 40px auto 24px;
 }
 
 .section-block-description {
@@ -167,6 +174,7 @@ h3.section-block-title,
 
 p,
 ul,
+ol,
 li,
 figcaption {
     color: var(--paragraph);
@@ -186,7 +194,8 @@ strong {
     font-size: 0.875rem;
 }
 
-ul li {
+ul li,
+ol li {
     margin: 8px 0 8px 24px;
 }
 
@@ -255,12 +264,12 @@ a:hover {
 figure,
 figure.project-img {
     max-width: 800px;
-    margin: 40px auto 72px;
+    margin: 40px auto 64px;
 }
 
 figure.project-img-small {
     max-width: 560px;
-    margin: 40px auto 72px;
+    margin: 40px auto 56px;
 }
 
 .image {
@@ -372,7 +381,12 @@ footer {
         line-height: 1;
         margin: 40px auto 16px;
     }
-
+    
+    h3.section-title_project-sub {
+        font-size: 1.25rem;
+        margin: 40px auto 16px;
+    }
+    
     .stylized-number {
         width: 32px;
         margin-right: 16px;
@@ -383,7 +397,8 @@ footer {
     }
 
     figure,
-    figure.project-img {
+    figure.project-img,
+    figure.project-img-small {
         margin: 40px auto;
     }
 }
