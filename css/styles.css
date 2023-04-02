@@ -12,6 +12,7 @@
     --paragraph: #4D4D4D;
     --caption: #7F7F7F;
     --metadata: #8A8A8A;
+    --arrows: #CCCCCC;
     --divider: #DADADA;
     --link-underline: #E0E0E0;
     --selection: rgba(119, 67, 219, 0.2);
@@ -24,6 +25,7 @@
     --paragraph: #CDCDCD;
     --caption: #7F7F7F;
     --metadata: #8A8A8A;
+    --arrows: #606060;
     --divider: #666666;
     --link-underline: #4D4D4D;
     --selection: rgba(132, 86, 223, 0.4);
@@ -36,7 +38,7 @@ body {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     -webkit-font-smoothing: antialiased;
     opacity: 0;
-    transition: opacity 180ms;
+    transition: opacity 200ms;
 }
 
 ::-moz-selection {
@@ -71,7 +73,7 @@ body {
     line-height: 1;
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
-    transition: color 180ms ease-in-out;
+    transition: color 200ms ease-in-out;
 }
 
 .back-button:hover {
@@ -95,7 +97,7 @@ button {
     font-size: 1.25rem;
     line-height: 1;
     cursor: pointer;
-    transition: all 180ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 button:hover {
@@ -189,7 +191,7 @@ strong {
 }
 
 .project-metadata {
-    color: var(--metadata);
+    color: #666666;
     font-family: inherit;
     font-size: 0.875rem;
 }
@@ -207,12 +209,17 @@ li::marker {
     color: var(--metadata);
 }
 
+.arrows {
+    color: var(--arrows);
+    font-weight: 500;
+}
+
 .stylized-number {
     display: inline-block;
+    color: var(--metadata);
     width: 50px;
     text-align: right;
     font-family: 'Homemade Apple', cursive;
-    color: var(--metadata);
     margin-right: 20px;
 }
 
@@ -222,6 +229,7 @@ li::marker {
 
 figcaption {
     color: var(--caption);
+    text-align: center;
     font-size: 0.875rem;
     line-height: 1.4;
 }
@@ -238,27 +246,22 @@ a {
     -webkit-text-decoration-color: var(--link-underline);
     text-underline-offset: 4px;
     -webkit-text-underline-offset: 4px;
-    transition: all 180ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 a:hover {
-    color: var(--accent);
+    text-decoration-color: var(--accent);
+    -webkit-text-decoration-color: var(--accent);
 }
 
 .link-section-block-title {
     font-weight: 700;
-    text-underline-offset: 5px;
-    -webkit-text-underline-offset: 5px;
+    text-underline-offset: 6px;
+    -webkit-text-underline-offset: 6px;
 }
 
 .link-social-media {
     line-height: 1.6;
-}
-
-.link-footer-CTA {
-    font-weight: 700;
-    text-decoration-line: none;
-    -webkit-text-decoration-line: none;
 }
 
 figure,
@@ -310,7 +313,9 @@ footer {
 }
 
 .footer-project-title {
-    margin: 0 auto 32px;
+    color: var(--default);
+    font-weight: 700;
+    margin: 0 auto 40px;
 }
 
 @media screen and (max-width: 768px) {
@@ -381,12 +386,12 @@ footer {
         line-height: 1;
         margin: 40px auto 16px;
     }
-    
+
     h3.section-title_project-sub {
         font-size: 1.25rem;
         margin: 40px auto 16px;
     }
-    
+
     .stylized-number {
         width: 32px;
         margin-right: 16px;
