@@ -256,6 +256,7 @@ a:hover {
 
 .link-section-block-title {
     font-weight: 700;
+    line-height: 1.5;
     text-underline-offset: 6px;
     -webkit-text-underline-offset: 6px;
 }
