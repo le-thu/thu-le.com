@@ -11,7 +11,7 @@
     --accent: #7743DB;
     --paragraph: #4D4D4D;
     --caption: #7F7F7F;
-    --metadata: #8A8A8A;
+    --metadata: #7F7F7F;
     --arrows: #CCCCCC;
     --divider: #DADADA;
     --link-underline: #E0E0E0;
@@ -24,7 +24,7 @@
     --accent: #8456DF;
     --paragraph: #CDCDCD;
     --caption: #7F7F7F;
-    --metadata: #8A8A8A;
+    --metadata: #7F7F7F;
     --arrows: #606060;
     --divider: #666666;
     --link-underline: #4D4D4D;
@@ -191,8 +191,8 @@ strong {
 }
 
 .project-metadata {
-    color: #666666;
-    font-family: inherit;
+    color: var(--metadata);
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 0.875rem;
 }
 
@@ -219,7 +219,8 @@ li::marker {
     color: var(--metadata);
     width: 50px;
     text-align: right;
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
     margin-right: 20px;
 }
 
