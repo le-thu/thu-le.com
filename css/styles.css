@@ -280,7 +280,80 @@ figure.project-img-small {
 .image {
     border-radius: 12px;
     max-width: 100%;
+    cursor: pointer;
 }
+
+/* Styles for the full screen modal */
+body.modal-open {
+  overflow: hidden;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998; /* set the z-index lower than the modal */
+  pointer-events: auto;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.background.active {
+  opacity: 1;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 26, 26, 0.7); /* set the background color to 70% opacity of #1A1A1A */
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: auto;
+    transition: opacity 200ms ease-in-out;
+}
+
+.modal img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 12px;
+    transform: translate(-50%, -50%);
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.modal button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+button.close {
+    background-color: var(--background);
+    color: var(--paragraph);
+    font-size: 1rem;
+    height: 36px;
+    width: auto;
+    padding: 0 12px;
+    transition: all 200ms ease-in-out;
+}
+
+button.close:hover {
+    background-color: var(--default);
+    color: var(--background);
+}
+
+.modal.active {
+    opacity: 1;
+    z-index: 10000; /* set the z-index higher than the background */
+}
+/* The end */
 
 .divider-line {
     border-bottom: 1px dashed var(--divider);

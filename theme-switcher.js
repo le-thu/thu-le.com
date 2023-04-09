@@ -8,7 +8,17 @@ if (theme) {
   switcher.innerHTML = theme === 'dark' ? '☼' : '☾';
 }
 
-switcher.addEventListener('click', () => {
+// Check if the device supports touch events
+const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+
+// Add event listeners based on whether the device supports touch events or not
+if (isTouchDevice) {
+  switcher.addEventListener('touchstart', toggleTheme);
+} else {
+  switcher.addEventListener('click', toggleTheme);
+}
+
+function toggleTheme() {
   // Toggle the 'dark' class on the body element
   body.classList.toggle('dark');
 
@@ -17,4 +27,4 @@ switcher.addEventListener('click', () => {
 
   // Update the button text
   switcher.innerHTML = body.classList.contains('dark') ? '☼' : '☾';
-});
+}
