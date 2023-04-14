@@ -15,7 +15,6 @@
     --arrows: #CCCCCC;
     --divider: #DADADA;
     --link-underline: #E0E0E0;
-    --selection: rgba(119, 67, 219, 0.2);
 }
 
 .dark {
@@ -28,7 +27,6 @@
     --arrows: #606060;
     --divider: #666666;
     --link-underline: #4D4D4D;
-    --selection: rgba(132, 86, 223, 0.4);
 }
 
 body {
@@ -42,11 +40,13 @@ body {
 }
 
 ::-moz-selection {
-    background-color: var(--selection);
+    color: var(--background);
+    background-color: var(--default);
 }
 
 ::selection {
-    background-color: var(--selection);
+    color: var(--background);
+    background-color: var(--default);
 }
 
 .menu {
@@ -94,15 +94,10 @@ button {
     border-radius: 8px;
     font-family: inherit;
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 1;
     cursor: pointer;
     transition: all 200ms ease-in-out;
-}
-
-button:hover {
-    background-color: var(--default);
-    color: var(--background);
 }
 
 .header {
@@ -206,7 +201,7 @@ li {
 }
 
 li::marker {
-    color: var(--metadata);
+    color: var(--arrows);
 }
 
 .arrows {
@@ -251,8 +246,8 @@ a {
 }
 
 a:hover {
-    text-decoration-color: var(--accent);
-    -webkit-text-decoration-color: var(--accent);
+    text-decoration-color: var(--paragraph);
+    -webkit-text-decoration-color: var(--paragraph);
 }
 
 .link-section-block-title {
@@ -336,7 +331,7 @@ body.modal-open {
 
 button.close {
     background-color: var(--background);
-    color: var(--paragraph);
+    color: var(--default);
     font-size: 1rem;
     height: 36px;
     width: auto;
