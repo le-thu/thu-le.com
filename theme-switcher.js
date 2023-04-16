@@ -5,7 +5,7 @@ const body = document.body;
 const theme = localStorage.getItem('theme');
 if (theme) {
   body.classList.add(theme);
-  switcher.innerHTML = theme === 'dark' ? '☼' : '☾';
+  switcher.innerHTML = theme === 'dark' ? '<ion-icon name="sunny"></ion-icon>' : '<ion-icon name="moon"></ion-icon>';
 }
 
 // Check if the device supports touch events
@@ -26,5 +26,5 @@ function toggleTheme() {
   localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : '');
 
   // Update the button text
-  switcher.innerHTML = body.classList.contains('dark') ? '☼' : '☾';
+  switcher.innerHTML = body.classList.contains('dark') ? '<ion-icon name="sunny"></ion-icon>' : '<ion-icon name="moon"></ion-icon>';
 }
