@@ -15,6 +15,7 @@
     --arrows: #CCCCCC;
     --divider: #DADADA;
     --link-underline: #E0E0E0;
+    --overlay: #1A1A1A;
 }
 
 .dark {
@@ -27,6 +28,7 @@
     --arrows: #474747;
     --divider: #525252;
     --link-underline: #404040;
+    --overlay: #141414;
 }
 
 body {
@@ -85,26 +87,97 @@ body {
 }
 
 button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 36px;
-  height: 36px;
-  background-color: transparent;
-  color: var(--default);
-  border: none;
-  border-radius: 8px;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 1;
-  cursor: pointer;
-  transition: all 200ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    color: var(--paragraph);
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
 }
 
 button:hover {
     background-color: var(--link-underline);
 }
+
+/* Styles for the full screen modal */
+body.modal-open {
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    /* set the z-index lower than the modal */
+    pointer-events: auto;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.background.active {
+    opacity: 1;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 26, 26, 0.7);
+    /* set the background color to 70% opacity of #1A1A1A */
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: auto;
+    transition: opacity 200ms ease-in-out;
+}
+
+.modal img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 12px;
+    transform: translate(-50%, -50%);
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.modal button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+button.close {
+    background-color: var(--background);
+    color: var(--default);    
+    transition: all 200ms ease-in-out;
+}
+
+button.close:hover {
+    background-color: var(--default);
+    color: var(--background);
+}
+
+.modal.active {
+    opacity: 1;
+    z-index: 10000;
+    /* set the z-index higher than the background */
+}
+/* The end */
 
 .header {
     margin: 80px auto;
@@ -252,8 +325,8 @@ a {
 }
 
 a:hover {
-    text-decoration-color: var(--paragraph);
-    -webkit-text-decoration-color: var(--paragraph);
+    text-decoration-color: var(--default);
+    -webkit-text-decoration-color: var(--default);
 }
 
 .link-section-block-title {
@@ -283,77 +356,6 @@ figure.project-img-small {
     max-width: 100%;
     cursor: pointer;
 }
-
-/* Styles for the full screen modal */
-body.modal-open {
-  overflow: hidden;
-}
-
-.background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9998; /* set the z-index lower than the modal */
-  pointer-events: auto;
-  opacity: 0;
-  transition: opacity 200ms ease-in-out;
-}
-
-.background.active {
-  opacity: 1;
-}
-
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(26, 26, 26, 0.7); /* set the background color to 70% opacity of #1A1A1A */
-    z-index: 9999;
-    opacity: 0;
-    pointer-events: auto;
-    transition: opacity 200ms ease-in-out;
-}
-
-.modal img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 12px;
-    transform: translate(-50%, -50%);
-    max-width: 95%;
-    max-height: 95%;
-}
-
-.modal button {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-}
-
-button.close {
-    background-color: var(--background);
-    color: var(--default);
-    font-size: 1rem;
-    width: auto;
-    padding: 0 12px;
-    transition: all 200ms ease-in-out;
-}
-
-button.close:hover {
-    background-color: var(--default);
-    color: var(--background);
-}
-
-.modal.active {
-    opacity: 1;
-    z-index: 10000; /* set the z-index higher than the background */
-}
-/* The end */
 
 .divider-line {
     border-bottom: 1px dashed var(--divider);
