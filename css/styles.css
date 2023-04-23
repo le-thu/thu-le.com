@@ -163,7 +163,7 @@ body.modal-open {
 
 button.close {
     background-color: var(--background);
-    color: var(--default);    
+    color: var(--default);
     transition: all 200ms ease-in-out;
 }
 
@@ -177,6 +177,7 @@ button.close:hover {
     z-index: 10000;
     /* set the z-index higher than the background */
 }
+
 /* The end */
 
 .header {
