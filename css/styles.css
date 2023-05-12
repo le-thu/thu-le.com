@@ -109,6 +109,7 @@ button:hover {
 }
 
 /* Styles for the full screen modal */
+
 body.modal-open {
     overflow: hidden;
 }
@@ -138,7 +139,6 @@ body.modal-open {
     width: 100%;
     height: 100%;
     background-color: rgba(26, 26, 26, 0.7);
-    /* set the background color to 70% opacity of #1A1A1A */
     z-index: 9999;
     opacity: 0;
     pointer-events: auto;
@@ -341,7 +341,6 @@ a:hover {
     line-height: 1.6;
 }
 
-figure,
 figure.project-img {
     max-width: 800px;
     margin: 40px auto 64px;
@@ -479,7 +478,6 @@ footer {
         padding-left: 68px;
     }
 
-    figure,
     figure.project-img,
     figure.project-img-small {
         margin: 40px auto;
