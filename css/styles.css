@@ -189,19 +189,22 @@ h1,
 h2,
 h3,
 div.case-study-block,
-figcaption,
-p,
-ul,
-ol,
 .divider,
 .social-media-container,
 footer {
     max-width: 560px;
 }
 
+h1, h2, h3 {
+    text-wrap: balance;
+}
+
 h1 {
     font-weight: 700;
     letter-spacing: -0.078125rem;
+    font-size: 3rem;
+    line-height: 1.05;
+    margin: 80px auto 24px;
 }
 
 h2,
@@ -210,12 +213,6 @@ h3 {
     line-height: 1.2;
     font-weight: 700;
     letter-spacing: -0.0390625rem;
-}
-
-h1.main-title {
-    font-size: 3rem;
-    line-height: 1.05;
-    margin: 80px auto 24px;
 }
 
 h2.section-title,
@@ -254,6 +251,7 @@ ul,
 ol,
 li,
 figcaption {
+    max-width: 560px;
     color: var(--paragraph);
     font-size: 1rem;
     line-height: 1.5;
