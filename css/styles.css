@@ -314,8 +314,8 @@ a {
     color: var(--default);
     text-decoration-line: underline;
     -webkit-text-decoration-line: underline;
-    text-decoration-thickness: 2px;
-    -webkit-text-decoration-thickness: 2px;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-thickness: 1px;
     text-decoration-color: var(--link-underline);
     -webkit-text-decoration-color: var(--link-underline);
     text-underline-offset: 4px;
