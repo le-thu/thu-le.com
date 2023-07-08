@@ -181,7 +181,14 @@ button.close:hover {
 /* The end */
 
 .header {
-    margin: 80px auto;
+    margin: 64px auto;
+    max-width: 560px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .menu,
@@ -196,54 +203,46 @@ footer {
 }
 
 h1, h2, h3 {
-    text-wrap: balance;
+    font-weight: 700;
 }
 
 h1 {
-    font-weight: 700;
-    letter-spacing: -0.078125rem;
-    font-size: 3rem;
-    line-height: 1.05;
-    margin: 80px auto 24px;
+    font-size: 2rem;
+    line-height: 1.25;
+    margin: 24px auto;
+    letter-spacing: -0.0625rem;
+}
+
+h1.main-title {
+    text-wrap: balance;
+    margin: 64px auto 24px;
 }
 
 h2,
 h3 {
-    font-size: 2rem;
-    line-height: 1.2;
-    font-weight: 700;
-    letter-spacing: -0.0390625rem;
+    text-wrap: balance;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    letter-spacing: -0.03125rem;
+
 }
 
 h2.section-title,
 h2.section-title_project {
-    margin: 72px auto 24px;
+    margin: 64px auto 16px;
 }
 
 h2.section-title_process {
     line-height: 1;
-    margin: 56px auto 16px;
+    margin: 48px auto 16px;
 }
 
 div.case-study-block {
-    margin: 28px auto;
+    margin: 24px auto;
 }
 
-h3.section-block-title,
-.section-title_project-sub,
-.footer-project-title {
-    font-size: 1.25rem;
-    line-height: 1.2;
-    letter-spacing: -0.015625rem;
-}
-
-h3.section-title_project-sub {
-    font-size: 1.5rem;
-    margin: 40px auto 24px;
-}
-
-.section-block-description {
-    margin: 8px auto 28px;
+.section-block-title {
+    margin: 4px auto;
 }
 
 p,
@@ -261,6 +260,10 @@ figcaption {
 
 strong {
     font-weight: 700;
+}
+
+.section-block-description {
+    margin: 0 auto 24px;
 }
 
 .project-metadata {
@@ -318,8 +321,8 @@ a {
     -webkit-text-decoration-thickness: 1px;
     text-decoration-color: var(--link-underline);
     -webkit-text-decoration-color: var(--link-underline);
-    text-underline-offset: 4px;
-    -webkit-text-underline-offset: 4px;
+    text-underline-offset: 5px;
+    -webkit-text-underline-offset: 5px;
     transition: all 200ms ease-in-out;
 }
 
@@ -329,7 +332,7 @@ a:hover {
 }
 
 .link-section-block-title {
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.5;
     text-underline-offset: 6px;
     -webkit-text-underline-offset: 6px;
@@ -367,17 +370,18 @@ figure.project-img-small {
 }
 
 footer {
-    margin: 60px auto 40px;
+    margin: 56px auto 40px;
+    text-align: center;
 }
 
 .footer-container {
     border-top: 1px dashed var(--divider);
-    margin: 60px auto 40px;
+    margin: 56px auto 40px;
 }
 
 .footer-text {
     color: var(--paragraph);
-    margin: 32px auto 8px;
+    margin: 32px auto 4px;
 }
 
 .footer-text-light {
@@ -389,7 +393,6 @@ footer {
 
 .footer-project-title {
     color: var(--default);
-    font-weight: 700;
     margin: 0 auto 40px;
 }
 
@@ -442,28 +445,13 @@ footer {
         margin: 40px auto;
     }
 
-    h1.main-title {
-        font-size: 2.5rem;
-    }
-
-    h2.section-title {
-        font-size: 1.75rem;
-    }
-
     h2.section-title_project {
-        font-size: 1.5rem;
         line-height: 1.2;
         margin: 56px auto 16px;
     }
 
     h2.section-title_process {
-        font-size: 1.5rem;
         line-height: 1;
-        margin: 40px auto 16px;
-    }
-
-    h3.section-title_project-sub {
-        font-size: 1.25rem;
         margin: 40px auto 16px;
     }
 
