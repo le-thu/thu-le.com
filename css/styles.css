@@ -400,7 +400,7 @@ footer {
     body {
         padding: 0;
     }
-
+    
     .menu,
     h1,
     h2,
@@ -411,6 +411,10 @@ footer {
     .divider,
     footer {
         padding: 0 20px;
+    }
+    
+    img.avatar {
+        margin-left: 20px;
     }
 
     .header {
