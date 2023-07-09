@@ -35,7 +35,7 @@ body {
     display: block;
     color: var(--default);
     background-color: var(--background);
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     opacity: 0;
     transition: opacity 200ms;
@@ -218,7 +218,7 @@ h1 {
     font-size: 2rem;
     line-height: 1.25;
     margin: 24px auto;
-    letter-spacing: -0.0625rem;
+    letter-spacing: -0.09375rem;
 }
 
 h1.main-title {
@@ -231,7 +231,7 @@ h3 {
     text-wrap: balance;
     font-size: 1.5rem;
     line-height: 1.25;
-    letter-spacing: -0.03125rem;
+    letter-spacing: -0.046875rem;
 
 }
 
