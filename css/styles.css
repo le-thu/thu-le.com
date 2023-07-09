@@ -186,9 +186,15 @@ button.close:hover {
 }
 
 .avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow:
+        0px 0.7px 1.9px -24px rgba(0, 0, 0, 0.124),
+        0px 1.7px 4.9px -24px rgba(0, 0, 0, 0.177),
+        0px 3.5px 9.9px -24px rgba(0, 0, 0, 0.223),
+        0px 7.3px 20.4px -24px rgba(0, 0, 0, 0.276),
+        0px 20px 56px -24px rgba(0, 0, 0, 0.4);
 }
 
 .menu,
@@ -202,7 +208,9 @@ footer {
     max-width: 560px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 700;
 }
 
@@ -215,7 +223,7 @@ h1 {
 
 h1.main-title {
     text-wrap: balance;
-    margin: 64px auto 24px;
+    margin: 56px auto 24px;
 }
 
 h2,
@@ -385,6 +393,7 @@ footer {
 }
 
 .footer-text-light {
+    text-align: left;
     color: var(--metadata);
     font-size: 0.875rem;
     line-height: 1.2;
@@ -400,7 +409,7 @@ footer {
     body {
         padding: 0;
     }
-    
+
     .menu,
     h1,
     h2,
@@ -410,11 +419,11 @@ footer {
     figure,
     .divider,
     footer {
-        padding: 0 20px;
+        padding: 0 24px;
     }
-    
+
     img.avatar {
-        margin-left: 20px;
+        margin-left: 24px;
     }
 
     .header {
@@ -430,7 +439,7 @@ footer {
     }
 
     .stylized-paragraph {
-        padding-left: 90px;
+        padding-left: 94px;
     }
 
     footer {
@@ -465,7 +474,7 @@ footer {
     }
 
     .stylized-paragraph {
-        padding-left: 68px;
+        padding-left: 72px;
     }
 
     figure.project-img,
