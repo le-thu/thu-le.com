@@ -22,11 +22,11 @@
     --background: #141414;
     --default: #F0F0F0;
     --accent: #8456DF;
-    --paragraph: #CDCDCD;
+    --paragraph: #BFBFBF;
     --caption: #8A8A8A;
     --metadata: #7F7F7F;
     --arrows: #474747;
-    --divider: #525252;
+    --divider: #383838;
     --link-underline: #404040;
     --overlay: #141414;
 }
@@ -73,6 +73,7 @@ body {
     font-size: 1rem;
     font-weight: 600;
     line-height: 1;
+    letter-spacing: -0.015625rem;
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
     transition: color 200ms ease-in-out;
@@ -211,7 +212,7 @@ footer {
 h1,
 h2,
 h3 {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 h1 {
@@ -263,11 +264,12 @@ figcaption {
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 500;
+    letter-spacing: -0.015625rem;
     margin: 16px auto;
 }
 
 strong {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .section-block-description {
@@ -278,6 +280,7 @@ strong {
     color: var(--metadata);
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.875rem;
+    letter-spacing: normal;
 }
 
 ul li,
