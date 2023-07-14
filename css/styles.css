@@ -6,7 +6,7 @@
 }
 
 :root {
-    --background: #F8F8F8;
+    --background: #F6F5F1;
     --default: #1A1A1A;
     --accent: #8456DF;
     --paragraph: #4D4D4D;
@@ -269,7 +269,7 @@ figcaption {
 }
 
 strong {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .section-block-description {
@@ -340,13 +340,6 @@ a {
 a:hover {
     text-decoration-color: var(--default);
     -webkit-text-decoration-color: var(--default);
-}
-
-.link-section-block-title {
-    font-weight: 600;
-    line-height: 1.5;
-    text-underline-offset: 6px;
-    -webkit-text-underline-offset: 6px;
 }
 
 .link-social-media {
