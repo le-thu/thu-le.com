@@ -390,7 +390,6 @@ footer {
 }
 
 .footer-text-light {
-    text-align: left;
     color: var(--metadata);
     font-size: 0.875rem;
     line-height: 1.2;
