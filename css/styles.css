@@ -187,9 +187,10 @@ button.close:hover {
 }
 
 .avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    border-radius: 24px;
+    transform: rotate(-4deg);
     box-shadow:
         0px 0.7px 1.9px -24px rgba(0, 0, 0, 0.124),
         0px 1.7px 4.9px -24px rgba(0, 0, 0, 0.177),
