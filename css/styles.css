@@ -186,6 +186,11 @@ button.close:hover {
     max-width: 560px;
 }
 
+.avatar-container {
+    position: relative;
+    display: inline-block;
+}
+
 .avatar {
     width: 88px;
     height: 88px;
@@ -376,12 +381,6 @@ figure.project-img-small {
 .divider-line {
     border-bottom: 1px dashed var(--divider);
     margin: 40px auto;
-}
-
-.link-label {
-    display: inline-block;
-    width: 120px;
-    color: var(--metadata);
 }
 
 footer {
