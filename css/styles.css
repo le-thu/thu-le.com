@@ -312,11 +312,6 @@ li::marker {
     color: var(--arrows);
 }
 
-.arrows {
-    color: var(--arrows);
-    font-weight: 500;
-}
-
 .stylized-number {
     display: inline-block;
     color: var(--metadata);
