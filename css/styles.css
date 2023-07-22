@@ -71,9 +71,9 @@ body {
 .back-button {
     color: var(--metadata);
     font-size: 0.875rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.5;
-    letter-spacing: -0.0078125rem;
+    letter-spacing: -0.015625rem;
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
     transition: color 200ms ease-in-out;
@@ -280,7 +280,7 @@ figcaption {
     font-size: 0.875rem;
     line-height: 1.5;
     font-weight: 500;
-    letter-spacing: -0.0078125rem;
+    letter-spacing: -0.015625rem;
     margin: 16px auto;
 }
 
