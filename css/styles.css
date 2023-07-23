@@ -70,7 +70,7 @@ body {
 
 .back-button {
     color: var(--metadata);
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: -0.015625rem;
@@ -236,7 +236,7 @@ h1 {
     font-size: 2rem;
     line-height: 1.25;
     margin: 24px auto;
-    letter-spacing: -0.09375rem;
+    letter-spacing: -0.078125rem;
 }
 
 h1.main-title {
@@ -277,7 +277,7 @@ li,
 figcaption {
     max-width: 560px;
     color: var(--paragraph);
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     line-height: 1.5;
     font-weight: 500;
     letter-spacing: -0.015625rem;
@@ -329,7 +329,7 @@ li::marker {
 figcaption {
     color: var(--caption);
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     line-height: 1.5;
 }
 
@@ -343,18 +343,14 @@ a {
     -webkit-text-decoration-thickness: 1px;
     text-decoration-color: var(--link-underline);
     -webkit-text-decoration-color: var(--link-underline);
-    text-underline-offset: 4px;
-    -webkit-text-underline-offset: 4px;
+    text-underline-offset: 5px;
+    -webkit-text-underline-offset: 5px;
     transition: all 200ms ease-in-out;
 }
 
 a:hover {
     text-decoration-color: var(--default);
     -webkit-text-decoration-color: var(--default);
-}
-
-.link-social-media {
-    line-height: 1.6;
 }
 
 figure.project-img {
@@ -395,7 +391,7 @@ footer {
 
 .footer-text-light {
     color: var(--metadata);
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     line-height: 1;
     margin: 40px auto 0;
 }
