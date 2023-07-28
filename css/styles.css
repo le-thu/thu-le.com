@@ -97,7 +97,6 @@ button {
     color: var(--paragraph);
     border: none;
     border-radius: 8px;
-    font-family: inherit;
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 1;
