@@ -261,14 +261,6 @@ h2.section-title_process {
     margin: 48px auto 16px;
 }
 
-div.case-study-block {
-    margin: 24px auto;
-}
-
-.section-block-title {
-    margin: 4px auto;
-}
-
 p,
 ul,
 ol,
@@ -287,8 +279,17 @@ strong {
     font-weight: 700;
 }
 
+.case-study-block {
+    margin: 24px auto;
+}
+
+.case-study-item {
+    margin: 0 auto 28px;
+}
+
+.section-block-title,
 .section-block-description {
-    margin: 0 auto 24px;
+    margin: 4px auto;
 }
 
 .project-metadata {
