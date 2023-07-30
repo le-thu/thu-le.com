@@ -81,7 +81,7 @@
     </header>
     <section>
         <h2 class="section-title_project">
-            What got us started on this project
+            Why we got started on this project
         </h2>
         <p>
             In the summer of 2021, we entered a partnership with a reputable New York law firm that specializes in private equity funds among other matters. They were interested in adopting Fund Subscription for their fundraising needs and to use our solution for all their customers as well.
@@ -91,19 +91,22 @@
         </p>
         <ul>
             <li>
-                Our old dashboard at the time was sufficient for our primary customer base of small and emerging funds in the past. However, as we wanted to expand our offerings to larger private equity and hedge funds, we encountered clients with dedicated operations teams for fundraising and post-close operations.
+                Each firm has their specific internal practices that they’d like to be able to reproduce on different systems they’re using; some firms ignore certain data points that other firms value above everything else.
             </li>
             <li>
-                Each firm has its own specific internal practices that they want to replicate in the system they use, in this case, Fund Subscription. Some firms may prioritize certain data points that others do not, which highlights the need for a more tailored approach to better cater to the specific needs of our customers.
+                We could keep adding more columns on the dashboard to meet these customers’ need, but that isn’t scalable for our platform and might confuse other customers who don’t have the need for more columns or additional information.
             </li>
         </ul>
         <p>
             Applying a one-size-fits-all approach was impossible, and our simple dashboard couldn't scale to serve more customers and use cases. As a result, we needed to introduce flexibility and configuration options.
         </p>
-    </section>
+        <figure class="project-img-small">
+            <img class="image" src="images/advanced-dashboard-old.png" alt="Screenshot of the old standard dashboard table">
+            <figcaption>The old standard dashboard table.</figcaption>
+        </figure>
     <section>
         <h2 class="section-title_project">
-            Building a modular and scalable dashboard table to track various data points with customizable configuration
+            Building a modular and scalable dashboard where users can track various data points, from workflow data to custom data and subscription form data, and hide default data that aren't relevant
         </h2>
         <p>
             As we collected information and established our execution strategy, our CTO, <a href="https://twitter.com/ngbinh" target="_blank" rel="noopener">Binh</a>, proposed implementing a more efficient backend for data storage and management system. To achieve this, Binh and <a href="https://github.com/tuananhtd" target="_blank" rel="noopener">Tuan-Anh</a>, the lead engineer on this project, devised a plan to create a new infrastructure called the "data lake," which would supersede the outdated method used for storing data in the old dashboard.
