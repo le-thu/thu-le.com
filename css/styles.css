@@ -261,6 +261,12 @@ h2.section-title_process {
     margin: 48px auto 16px;
 }
 
+h3.section-title_project {
+    font-size: 1.25rem;
+    margin: 32px auto 16px;
+    letter-spacing: -0.03125rem;
+}
+
 p,
 ul,
 ol,
