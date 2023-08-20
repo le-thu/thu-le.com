@@ -12,7 +12,7 @@
     --caption: #7F7F7F;
     --metadata: #7F7F7F;
     --arrows: #999999;
-    --divider: #DADADA;
+    --divider: #D9D9D9;
     --link-underline: #D9D9D9;
     --overlay: #1A1A1A;
 }
@@ -24,7 +24,7 @@
     --caption: #8A8A8A;
     --metadata: #8A8A8A;
     --arrows: #666666;
-    --divider: #383838;
+    --divider: #4D4C4C;
     --link-underline: #4D4C4C;
     --overlay: #141414;
 }
@@ -88,14 +88,14 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     background-color: transparent;
     color: var(--paragraph);
     border: none;
     border-radius: 8px;
     font-weight: 600;
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1;
     cursor: pointer;
     transition: all 120ms ease-in-out;
@@ -265,7 +265,7 @@ h3.section-block-title {
 
 h3.section-title_project {
     font-size: 1.25rem;
-    margin: 32px auto 16px;
+    margin: 40px auto 8px;
 }
 
 p,
@@ -299,6 +299,7 @@ p ion-icon {
 }
 
 strong {
+    color: var(--default);
     font-weight: 600;
 }
 
@@ -334,11 +335,11 @@ ol li {
 }
 
 li {
-    padding-left: 8px;
+    padding-left: 12px;
 }
 
 li::marker {
-    color: var(--arrows);
+    color: var(--link-underline);
 }
 
 .stylized-number {
