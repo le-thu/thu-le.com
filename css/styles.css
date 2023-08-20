@@ -8,26 +8,24 @@
 :root {
     --background: #FBF9FB;
     --default: #1A1A1A;
-    --accent: #8456DF;
-    --paragraph: #4D4D4D;
+    --paragraph: #404040;
     --caption: #7F7F7F;
     --metadata: #7F7F7F;
-    --arrows: #CCCCCC;
+    --arrows: #999999;
     --divider: #DADADA;
-    --link-underline: #E0E0E0;
+    --link-underline: #D9D9D9;
     --overlay: #1A1A1A;
 }
 
 .dark {
     --background: #141414;
-    --default: #F0F0F0;
-    --accent: #8456DF;
-    --paragraph: #BFBFBF;
+    --default: #F2F2F2;
+    --paragraph: #C7C7C7;
     --caption: #8A8A8A;
-    --metadata: #7F7F7F;
-    --arrows: #474747;
+    --metadata: #8A8A8A;
+    --arrows: #666666;
     --divider: #383838;
-    --link-underline: #404040;
+    --link-underline: #4D4C4C;
     --overlay: #141414;
 }
 
@@ -38,7 +36,7 @@ body {
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     opacity: 0;
-    transition: opacity 200ms;
+    transition: opacity 160ms;
 }
 
 ::-moz-selection {
@@ -73,10 +71,9 @@ body {
     font-size: 0.9375rem;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: -0.015625rem;
+    letter-spacing: -0.0125rem;
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
-    transition: color 200ms ease-in-out;
 }
 
 .back-button:hover {
@@ -101,7 +98,7 @@ button {
     font-size: 1.125rem;
     line-height: 1;
     cursor: pointer;
-    transition: all 200ms ease-in-out;
+    transition: all 120ms ease-in-out;
 }
 
 button:hover {
@@ -125,7 +122,7 @@ body.modal-open {
     /* set the z-index lower than the modal */
     pointer-events: auto;
     opacity: 0;
-    transition: opacity 200ms ease-in-out;
+    transition: opacity 120ms ease-in-out;
 }
 
 .background.active {
@@ -142,7 +139,7 @@ body.modal-open {
     z-index: 9999;
     opacity: 0;
     pointer-events: auto;
-    transition: opacity 200ms ease-in-out;
+    transition: opacity 120ms ease-in-out;
 }
 
 .modal img {
@@ -164,7 +161,7 @@ body.modal-open {
 button.close {
     background-color: var(--background);
     color: var(--default);
-    transition: all 200ms ease-in-out;
+    transition: all 120ms ease-in-out;
 }
 
 button.close:hover {
@@ -181,7 +178,7 @@ button.close:hover {
 /* The end */
 
 .header {
-    margin: 56px auto;
+    margin: 48px auto;
     max-width: 560px;
 }
 
@@ -228,6 +225,7 @@ footer {
 h1,
 h2,
 h3 {
+    font-family: 'Inter Tight', sans-serif;
     font-weight: 600;
 }
 
@@ -235,24 +233,22 @@ h1 {
     font-size: 2rem;
     line-height: 1.25;
     margin: 24px auto;
-    letter-spacing: -0.078125rem;
 }
 
 h1.main-title {
     text-wrap: balance;
-    margin: 56px auto 24px;
+    margin: 48px auto 16px;
 }
 
 h2,
 h3 {
-    text-wrap: balance;
     font-size: 1.5rem;
     line-height: 1.25;
-    letter-spacing: -0.046875rem;
 }
 
 h2.section-title,
 h2.section-title_project {
+    text-wrap: balance;
     margin: 64px auto 16px;
 }
 
@@ -261,10 +257,15 @@ h2.section-title_process {
     margin: 48px auto 16px;
 }
 
+h3.section-block-title {
+    font-size: 1.0625rem;
+    display: flex;
+    align-items: center;
+}
+
 h3.section-title_project {
     font-size: 1.25rem;
     margin: 32px auto 16px;
-    letter-spacing: -0.03125rem;
 }
 
 p,
@@ -277,12 +278,35 @@ figcaption {
     font-size: 0.9375rem;
     line-height: 1.5;
     font-weight: 500;
-    letter-spacing: -0.015625rem;
+    letter-spacing: -0.0125rem;
     margin: 16px auto;
+
+}
+
+a.article {
+    display: inline-flex;
+    align-items: center;
+}
+
+h3 ion-icon {
+    color: var(--arrows);
+    margin-left: 4px;
+}
+
+p ion-icon {
+    color: var(--arrows);
+    margin-left: 8px;
 }
 
 strong {
-    font-weight: 700;
+    font-weight: 600;
+}
+
+em {
+    font-family: 'Newsreader', serif;
+    font-size: 1.125rem;
+    letter-spacing: normal;
+    line-height: normal;
 }
 
 .case-study-block {
@@ -290,11 +314,10 @@ strong {
 }
 
 .case-study-item {
-    margin: 0 auto 28px;
+    margin: 0 auto 32px;
 }
 
-.section-block-title,
-.section-block-description {
+p.section-block-description {
     margin: 4px auto;
 }
 
@@ -337,11 +360,12 @@ figcaption {
     text-align: center;
     font-size: 0.8125rem;
     line-height: 1.5;
+    letter-spacing: -0.009375rem;
 }
 
 a {
     display: inline;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--default);
     text-decoration-line: underline;
     -webkit-text-decoration-line: underline;
@@ -349,14 +373,37 @@ a {
     -webkit-text-decoration-thickness: 1px;
     text-decoration-color: var(--link-underline);
     -webkit-text-decoration-color: var(--link-underline);
-    text-underline-offset: 5px;
-    -webkit-text-underline-offset: 5px;
-    transition: all 200ms ease-in-out;
+    text-underline-offset: 4px;
+    -webkit-text-underline-offset: 4px;
+    transition: all 120ms ease-in-out;
 }
 
 a:hover {
     text-decoration-color: var(--default);
     -webkit-text-decoration-color: var(--default);
+}
+
+a ion-icon {
+    transition: color 120ms ease-in-out;
+}
+
+a:hover ion-icon {
+    color: var(--default);
+}
+
+a.case-study-item {
+    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+}
+
+a.case-study-item:hover ion-icon {
+    transform: translate(4px, 0);
+    transition: all 120ms ease-in-out;
+}
+
+a.case-study-item:not(:hover) ion-icon {
+    transform: translate(0, 0);
+    transition: all 120ms ease-in-out, transition-delay 120ms;
 }
 
 figure.project-img {
