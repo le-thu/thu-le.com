@@ -23,7 +23,7 @@ function showModal(image) {
     // Create a close button
     const closeButton = document.createElement('button');
     closeButton.classList.add('close');
-    closeButton.innerHTML = '<ion-icon name="close-outline"></ion-icon>';
+    closeButton.innerHTML = '<ion-icon name="close"></ion-icon>';
     closeButton.addEventListener('click', () => {
         // Remove the modal from the DOM
         modal.remove();
