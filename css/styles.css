@@ -254,7 +254,7 @@ h2.section-title_project {
 
 h2.section-title_process {
     line-height: 1;
-    margin: 48px auto 16px;
+    margin: 48px auto 12px;
 }
 
 h3.section-block-title {
@@ -345,15 +345,17 @@ li::marker {
 .stylized-number {
     display: inline-block;
     color: var(--metadata);
-    width: 50px;
-    text-align: right;
+    width: 32px;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 500;
-    margin-right: 20px;
+    text-align: right;
+    margin-right: 16px;
+    line-height: normal;
 }
 
 .stylized-paragraph {
-    padding-left: 70px;
+    padding-left: 48px;
+    margin: 12px auto;
 }
 
 figcaption {
@@ -489,7 +491,7 @@ footer {
     }
 
     .stylized-paragraph {
-        padding-left: 94px;
+        padding-left: 72px;
     }
 
     footer {
@@ -510,21 +512,12 @@ footer {
 
     h2.section-title_project {
         line-height: 1.2;
-        margin: 56px auto 16px;
+        margin: 56px auto 12px;
     }
 
     h2.section-title_process {
         line-height: 1;
-        margin: 40px auto 16px;
-    }
-
-    .stylized-number {
-        width: 32px;
-        margin-right: 16px;
-    }
-
-    .stylized-paragraph {
-        padding-left: 72px;
+        margin: 40px auto 12px;
     }
 
     figure.project-img,
