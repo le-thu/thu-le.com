@@ -211,6 +211,31 @@ button.close:hover {
     transition: transform 200ms ease-in-out, transition-delay 200ms;
 }
 
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: var(--default);
+    color: var(--background);
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    visibility: hidden;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: calc(100% + 4px);
+    transition: visibility 120ms ease-in-out;
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+}
+
 .menu,
 h1,
 h2,
@@ -232,7 +257,7 @@ h3 {
 h1 {
     font-size: 2rem;
     line-height: 1.25;
-    margin: 24px auto;
+    margin: 24px auto 16px;
 }
 
 h1.main-title {
