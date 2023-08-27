@@ -13,11 +13,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    tooltipContainer.addEventListener('mouseenter', () => {
+    tooltipContainer.addEventListener('touchstart', (event) => {
+        event.preventDefault(); // Prevents the click event from firing immediately
         tooltip.style.visibility = 'visible';
     });
 
-    tooltipContainer.addEventListener('mouseleave', () => {
-        tooltip.style.visibility = 'hidden';
+    tooltipContainer.addEventListener('touchend', () => {
+        const email = emailAnchor.textContent.trim();
+        navigator.clipboard.writeText(email).then(() => {
+            tooltip.textContent = 'Copied';
+            setTimeout(() => {
+                tooltip.textContent = 'Copy my email address';
+            }, 1200);
+        });
     });
 });
