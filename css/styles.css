@@ -308,7 +308,7 @@ figcaption {
 
 }
 
-a.article {
+.article {
     display: inline-flex;
     align-items: center;
 }
