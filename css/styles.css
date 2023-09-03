@@ -69,7 +69,7 @@ body {
     font-size: 0.875rem;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: -0.0125rem;
+    letter-spacing: -0.01125rem;
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
 }
@@ -301,7 +301,7 @@ figcaption {
     font-size: 0.875rem;
     line-height: 1.5;
     font-weight: 500;
-    letter-spacing: -0.0125rem;
+    letter-spacing: -0.01125rem;
     margin: 16px auto;
 
 }
