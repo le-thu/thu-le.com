@@ -35,8 +35,6 @@ body {
     background-color: var(--background);
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
-    opacity: 0;
-    transition: opacity 160ms;
 }
 
 ::-moz-selection {
