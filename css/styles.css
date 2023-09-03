@@ -64,9 +64,9 @@ body {
 }
 
 .back-button {
-    color: var(--metadata);
+    color: var(--default);
     font-size: 0.9375rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: -0.01125rem;
     text-decoration-line: none;
@@ -74,7 +74,7 @@ body {
 }
 
 .back-button:hover {
-    color: var(--default);
+    color: var(--metadata);
 }
 
 .theme-switcher-container {
@@ -91,7 +91,7 @@ button {
     color: var(--paragraph);
     border: none;
     border-radius: 8px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1rem;
     line-height: 1;
     cursor: pointer;
@@ -246,16 +246,18 @@ h1,
 h2,
 h3 {
     font-family: 'Inter Tight', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
     line-height: 1.25;
     margin: 24px auto 16px;
 }
 
 h1.main-title {
+    font-weight: 500;
     text-wrap: balance;
     margin: 48px auto 16px;
 }
@@ -329,6 +331,10 @@ em {
     line-height: normal;
 }
 
+em.subtitle {
+    font-size: 1.75rem;
+}
+
 .case-study-block {
     margin: 24px auto;
 }
@@ -363,10 +369,10 @@ li::marker {
 
 .stylized-number {
     display: inline-block;
-    color: var(--metadata);
+    color: var(--arrows);
     width: 32px;
     font-family: 'IBM Plex Mono', monospace;
-    font-weight: 500;
+    font-weight: 400;
     text-align: right;
     margin-right: 16px;
     line-height: normal;
