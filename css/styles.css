@@ -14,7 +14,6 @@
     --arrows: #999999;
     --divider: #D9D9D9;
     --link-underline: #D9D9D9;
-    --overlay: #1A1A1A;
 }
 
 .dark {
@@ -26,7 +25,6 @@
     --arrows: #666666;
     --divider: #4D4C4C;
     --link-underline: #4D4C4C;
-    --overlay: #141414;
 }
 
 body {
@@ -397,8 +395,8 @@ a {
     -webkit-text-decoration-thickness: 1px;
     text-decoration-color: var(--link-underline);
     -webkit-text-decoration-color: var(--link-underline);
-    text-underline-offset: 4px;
-    -webkit-text-underline-offset: 4px;
+    text-underline-offset: 3px;
+    -webkit-text-underline-offset: 3px;
     transition: all 120ms ease-in-out;
 }
 
