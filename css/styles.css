@@ -117,7 +117,6 @@ body.modal-open {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9998;
-    /* set the z-index lower than the modal */
     pointer-events: auto;
     opacity: 0;
     transition: opacity 120ms ease-in-out;
@@ -170,7 +169,6 @@ button.close:hover {
 .modal.active {
     opacity: 1;
     z-index: 10000;
-    /* set the z-index higher than the background */
 }
 
 /* The end */
@@ -186,8 +184,8 @@ button.close:hover {
 }
 
 .avatar {
-    width: 88px;
-    height: 88px;
+    width: 80px;
+    height: 80px;
     border-radius: 24px;
     transform: rotate(-5deg);
     box-shadow:
@@ -303,7 +301,6 @@ figcaption {
     font-weight: 500;
     letter-spacing: -0.01125rem;
     margin: 16px auto;
-
 }
 
 .article {
@@ -469,7 +466,7 @@ footer {
 }
 
 .footer-text-light {
-    color: var(--metadata);
+    color: var(--paragraph);
     font-size: 0.8125rem;
     line-height: 1;
     margin: 40px auto 0;
