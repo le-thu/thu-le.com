@@ -220,6 +220,7 @@ button.close:hover {
     padding: 4px 8px;
     border-radius: 8px;
     font-size: 0.75rem;
+    font-weight: 500;
     visibility: hidden;
     transform: translateX(-50%);
     left: 50%;
@@ -274,20 +275,17 @@ h2.section-title_project {
     margin: 64px auto 16px;
 }
 
-h2.section-title_process {
+h2.section-title_process,
+h3.section-title_project {
+    font-size: 1.25rem;
     line-height: 1;
-    margin: 48px auto 12px;
+    margin: 40px auto 8px;
 }
 
 h3.section-block-title {
     font-size: 1.0625rem;
     display: flex;
     align-items: center;
-}
-
-h3.section-title_project {
-    font-size: 1.25rem;
-    margin: 40px auto 8px;
 }
 
 p,
@@ -468,6 +466,7 @@ footer {
 .footer-text {
     color: var(--paragraph);
     margin: 32px auto 4px;
+    text-align: center;
 }
 
 .footer-text-light {
@@ -475,11 +474,13 @@ footer {
     font-size: 0.875rem;
     line-height: 1;
     margin: 40px auto 0;
+    text-align: center;
 }
 
 .footer-project-title {
     color: var(--default);
     margin: 0 auto 40px;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
