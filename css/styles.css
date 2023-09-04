@@ -275,8 +275,7 @@ h2.section-title_project {
     margin: 64px auto 16px;
 }
 
-h2.section-title_process,
-h3.section-title_project {
+h2.section-title_process {
     font-size: 1.25rem;
     line-height: 1;
     margin: 40px auto 8px;
@@ -347,7 +346,8 @@ p.section-block-description {
 
 .project-metadata {
     color: var(--metadata);
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
     font-size: 0.875rem;
     letter-spacing: normal;
 }
@@ -369,7 +369,7 @@ li::marker {
     display: inline-block;
     color: var(--arrows);
     width: 32px;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Space Mono', monospace;
     font-weight: 400;
     text-align: right;
     margin-right: 16px;
