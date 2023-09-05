@@ -8,23 +8,25 @@
 :root {
     --background: #F7F7F7;
     --default: #1A1A1A;
-    --paragraph: #4D4C4C;
+    --paragraph: #616161;
     --caption: #4D4C4C;
     --metadata: #4D4C4C;
     --arrows: #999999;
     --divider: #D9D9D9;
     --link-underline: #D9D9D9;
+    --box-hover: #EBEBEB;
 }
 
 .dark {
     --background: #141414;
     --default: #F2F2F2;
-    --paragraph: #C7C7C7;
+    --paragraph: #9A9898;
     --caption: #C7C7C7;
     --metadata: #C7C7C7;
     --arrows: #666666;
     --divider: #4D4C4C;
     --link-underline: #4D4C4C;
+    --box-hover: #1F1F1F;
 }
 
 body {
@@ -99,7 +101,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--link-underline);
+    background-color: var(--box-hover);
 }
 
 /* Styles for the full screen modal */
@@ -236,11 +238,15 @@ button.close:hover {
 h1,
 h2,
 h3,
-div.case-study-block,
+h4,
 .divider,
-.social-media-container,
 footer {
     max-width: 560px;
+}
+
+div.project-block {
+    max-width: 592px;
+    margin: 8px auto;
 }
 
 h1,
@@ -287,13 +293,21 @@ h3.section-block-title {
     align-items: center;
 }
 
+h4.project-title {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.01125rem;
+    display: flex;
+    align-items: center;
+}
+
 p,
 ul,
 ol,
 li,
 figcaption {
     max-width: 560px;
-    color: var(--default);
     font-size: 0.9375rem;
     line-height: 1.5;
     font-weight: 400;
@@ -306,7 +320,7 @@ figcaption {
     align-items: center;
 }
 
-h3 ion-icon {
+h4 ion-icon {
     color: var(--arrows);
     margin-left: 4px;
 }
@@ -332,16 +346,16 @@ em.subtitle {
     font-size: 1.75rem;
 }
 
-.case-study-block {
-    margin: 24px auto;
+div.project-item-box {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    transition: background-color 120ms ease-in-out;
 }
 
-.case-study-item {
-    margin: 0 auto 32px;
-}
-
-p.section-block-description {
-    margin: 8px auto;
+p.project-description {
+    color: var(--paragraph);
+    margin: 2px auto 0;
 }
 
 .project-metadata {
@@ -417,17 +431,21 @@ a:hover ion-icon {
     color: var(--default);
 }
 
-a.case-study-item {
+a.project-item {
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
 }
 
-a.case-study-item:hover ion-icon {
-    transform: translate(4px, 0);
+a.project-item:hover div.project-item-box {
+    background-color: var(--box-hover);
+}
+
+a.project-item:hover ion-icon {
+    transform: translate(2px, 0);
     transition: all 120ms ease-in-out;
 }
 
-a.case-study-item:not(:hover) ion-icon {
+a.project-item:not(:hover) ion-icon {
     transform: translate(0, 0);
     transition: all 120ms ease-in-out, transition-delay 120ms;
 }
@@ -492,6 +510,7 @@ footer {
     h1,
     h2,
     h3,
+    h4,
     p,
     ul,
     figure,
@@ -528,6 +547,12 @@ footer {
     .footer-project-title,
     .footer-text-light {
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    div.project-item-box {
+        padding: 12px 0;
     }
 }
 
