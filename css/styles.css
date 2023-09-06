@@ -34,6 +34,8 @@ body {
     color: var(--default);
     background-color: var(--background);
     font-family: 'Inter', sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.5;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
 }
@@ -66,10 +68,7 @@ body {
 }
 
 .back-button {
-    color: var(--default);
-    font-size: 0.9375rem;
     font-weight: 500;
-    line-height: 1.5;
     letter-spacing: -0.01125rem;
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
@@ -93,7 +92,6 @@ button {
     color: var(--paragraph);
     border: none;
     border-radius: 8px;
-    font-weight: 500;
     font-size: 1rem;
     line-height: 1;
     cursor: pointer;
@@ -308,9 +306,6 @@ ol,
 li,
 figcaption {
     max-width: 560px;
-    font-size: 0.9375rem;
-    line-height: 1.5;
-    font-weight: 400;
     letter-spacing: -0.01125rem;
     margin: 16px auto;
 }
@@ -361,7 +356,6 @@ p.project-description {
 .project-metadata {
     color: var(--metadata);
     font-family: 'Space Mono', monospace;
-    font-weight: 400;
     font-size: 0.875rem;
     letter-spacing: normal;
 }
@@ -384,7 +378,6 @@ li::marker {
     color: var(--arrows);
     width: 32px;
     font-family: 'Space Mono', monospace;
-    font-weight: 400;
     text-align: right;
     margin-right: 16px;
     line-height: normal;
@@ -399,13 +392,11 @@ figcaption {
     color: var(--caption);
     text-align: center;
     font-size: 0.875rem;
-    line-height: 1.5;
     letter-spacing: -0.009375rem;
 }
 
 a {
     display: inline;
-    font-weight: 400;
     color: var(--default);
     text-decoration-line: underline;
     -webkit-text-decoration-line: underline;
@@ -472,33 +463,29 @@ figure.project-img-small {
 }
 
 footer {
-    margin: 56px auto 40px;
+    margin: 56px auto 32px;
     text-align: center;
+    color: var(--paragraph);
 }
 
 .footer-container {
     border-top: 1px dashed var(--divider);
-    margin: 56px auto 40px;
+    margin: 56px auto 32px;
 }
 
 .footer-text {
-    color: var(--paragraph);
     margin: 32px auto 4px;
-    text-align: center;
 }
 
 .footer-text-light {
-    color: var(--paragraph);
     font-size: 0.875rem;
     line-height: 1;
-    margin: 40px auto 0;
+    margin: 32px auto 0;
     text-align: center;
 }
 
 .footer-project-title {
-    color: var(--default);
-    margin: 0 auto 40px;
-    text-align: center;
+    margin: 0 auto 32px;
 }
 
 @media screen and (max-width: 768px) {
@@ -523,16 +510,8 @@ footer {
         margin-left: 24px;
     }
 
-    .header {
-        margin: 64px auto;
-    }
-
     h1.main-title {
-        margin: 40px auto 20px;
-    }
-
-    h2.section-title {
-        margin: 72px auto 16px;
+        margin: 40px auto 16px;
     }
 
     .stylized-paragraph {
@@ -540,7 +519,7 @@ footer {
     }
 
     footer {
-        margin: 40px auto;
+        margin: 32px auto;
     }
 
     .footer-text,
@@ -564,11 +543,6 @@ footer {
     h2.section-title_project {
         line-height: 1.2;
         margin: 56px auto 12px;
-    }
-
-    h2.section-title_process {
-        line-height: 1;
-        margin: 40px auto 12px;
     }
 
     figure.project-img,
