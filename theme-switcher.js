@@ -13,7 +13,7 @@ const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0 |
 
 // Add event listeners based on whether the device supports touch events or not
 if (isTouchDevice) {
-  switcher.addEventListener('touchstart', toggleTheme);
+  switcher.addEventListener('touchstart', toggleTheme, { passive: true });
 } else {
   switcher.addEventListener('click', toggleTheme);
 }

@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     tooltipContainer.addEventListener('touchstart', (event) => {
         event.preventDefault(); // Prevents the click event from firing immediately
         tooltip.style.visibility = 'visible';
+    }, {
+        passive: true
     });
 
     tooltipContainer.addEventListener('touchend', () => {
@@ -26,5 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 tooltip.textContent = 'Copy my email address';
             }, 1200);
         });
+    }, {
+        passive: true
     });
 });
