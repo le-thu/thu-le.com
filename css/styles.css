@@ -8,6 +8,7 @@
 :root {
     --background: #F7F7F7;
     --default: #1A1A1A;
+    --accent: #2675D9;
     --paragraph: #616161;
     --caption: #4D4C4C;
     --metadata: #4D4C4C;
@@ -20,6 +21,7 @@
 .dark {
     --background: #141414;
     --default: #F2F2F2;
+    --accent: #9A9898;
     --paragraph: #9A9898;
     --caption: #C7C7C7;
     --metadata: #C7C7C7;
@@ -33,8 +35,9 @@ body {
     display: block;
     color: var(--default);
     background-color: var(--background);
-    font-family: 'Inter', sans-serif;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 0.9375rem;
+    letter-spacing: -0.00625rem;
     line-height: 1.5;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
@@ -68,14 +71,14 @@ body {
 }
 
 .back-button {
+    color: var(--default);
     font-weight: 500;
-    letter-spacing: -0.01125rem;
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
 }
 
 .back-button:hover {
-    color: var(--metadata);
+    color: var(--accent);
 }
 
 .theme-switcher-container {
@@ -249,8 +252,8 @@ div.project-block {
 
 h1,
 h2,
-h3 {
-    font-family: 'Inter Tight', sans-serif;
+h3,
+h4 {
     font-weight: 500;
 }
 
@@ -293,9 +296,7 @@ h3.section-block-title {
 
 h4.project-title {
     font-size: 0.9375rem;
-    font-weight: 500;
     line-height: 1.5;
-    letter-spacing: -0.01125rem;
     display: flex;
     align-items: center;
 }
@@ -306,23 +307,17 @@ ol,
 li,
 figcaption {
     max-width: 560px;
-    letter-spacing: -0.01125rem;
     margin: 16px auto;
 }
 
-.article {
-    display: inline-flex;
-    align-items: center;
-}
-
 h4 ion-icon {
-    color: var(--arrows);
+    color: var(--accent);
     margin-left: 4px;
 }
 
 p ion-icon {
     color: var(--arrows);
-    margin-left: 8px;
+    margin-left: 6px;
 }
 
 strong {
@@ -354,9 +349,10 @@ p.project-description {
 }
 
 .project-metadata {
-    color: var(--metadata);
-    font-family: 'Space Mono', monospace;
+    color: var(--paragraph);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 0.875rem;
+    font-weight: 500;
     letter-spacing: normal;
 }
 
@@ -377,9 +373,10 @@ li::marker {
     display: inline-block;
     color: var(--arrows);
     width: 32px;
-    font-family: 'Space Mono', monospace;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     text-align: right;
     margin-right: 16px;
+    letter-spacing: normal;
     line-height: normal;
 }
 
@@ -392,20 +389,13 @@ figcaption {
     color: var(--caption);
     text-align: center;
     font-size: 0.875rem;
-    letter-spacing: -0.009375rem;
 }
 
 a {
     display: inline;
-    color: var(--default);
-    text-decoration-line: underline;
-    -webkit-text-decoration-line: underline;
-    text-decoration-thickness: 1px;
-    -webkit-text-decoration-thickness: 1px;
-    text-decoration-color: var(--link-underline);
-    -webkit-text-decoration-color: var(--link-underline);
-    text-underline-offset: 3px;
-    -webkit-text-underline-offset: 3px;
+    color: var(--accent);
+    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
     transition: all 120ms ease-in-out;
 }
 
@@ -414,17 +404,18 @@ a:hover {
     -webkit-text-decoration-color: var(--default);
 }
 
-a ion-icon {
-    transition: color 120ms ease-in-out;
-}
-
-a:hover ion-icon {
+a h4 {
     color: var(--default);
 }
 
-a.project-item {
-    text-decoration-line: none;
-    -webkit-text-decoration-line: none;
+a.article {
+    color: var(--default);
+    display: inline-flex;
+    align-items: center;
+}
+
+a.article:hover {
+    color: var(--accent);
 }
 
 a.project-item:hover div.project-item-box {
