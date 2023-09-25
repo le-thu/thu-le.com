@@ -8,7 +8,7 @@
 :root {
     --background: #F7F7F7;
     --default: #1A1A1A;
-    --accent: #2675D9;
+    --accent: #757171;
     --paragraph: #616161;
     --caption: #4D4C4C;
     --metadata: #4D4C4C;
@@ -311,7 +311,7 @@ figcaption {
 }
 
 h4 ion-icon {
-    color: var(--accent);
+    color: var(--arrows);
     margin-left: 4px;
 }
 
@@ -409,13 +409,24 @@ a h4 {
 }
 
 a.article {
-    color: var(--default);
+    color: var(--accent);
     display: inline-flex;
     align-items: center;
 }
 
 a.article:hover {
-    color: var(--accent);
+    color: var(--default);
+}
+
+a.article:hover ion-icon {
+    color: var(--default);
+    transform: translate(0, -2px);
+    transition: all 120ms ease-in-out;
+}
+
+a.article:not(:hover) ion-icon {
+    transform: translate(0, 0);
+    transition: all 120ms ease-in-out, transition-delay 120ms;
 }
 
 a.project-item:hover div.project-item-box {
@@ -423,6 +434,7 @@ a.project-item:hover div.project-item-box {
 }
 
 a.project-item:hover ion-icon {
+    color: var(--default);
     transform: translate(2px, 0);
     transition: all 120ms ease-in-out;
 }
@@ -465,6 +477,7 @@ footer {
 }
 
 .footer-text {
+    color: var(--default);
     margin: 32px auto 4px;
 }
 
