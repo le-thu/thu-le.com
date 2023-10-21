@@ -255,6 +255,7 @@ h2,
 h3,
 h4 {
     font-weight: 500;
+    font-variant-numeric: tabular-nums;
 }
 
 h1 {
@@ -308,6 +309,7 @@ li,
 figcaption {
     max-width: 560px;
     margin: 16px auto;
+    font-variant-numeric: tabular-nums;
 }
 
 h4 ion-icon {
