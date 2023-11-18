@@ -6,29 +6,29 @@
 }
 
 :root {
-    --background: #F7F7F7;
-    --default: #1A1A1A;
-    --accent: #757171;
+    --background: #F7F7F7; /* L 97 */
+    --box-hover: #E6E5E5; /* L 90 */
+    --default: #0D0D0D; /* L 5 */
+    --accent: #616161; /* L 38 */
     --paragraph: #616161;
-    --caption: #4D4C4C;
+    --caption: #4D4C4C; /* L 30 */
     --metadata: #4D4C4C;
-    --arrows: #999999;
-    --divider: #D9D9D9;
-    --link-underline: #D9D9D9;
-    --box-hover: #EBEBEB;
+    --arrows: #999999; /* L 60 */
+    --divider: #D9D9D9; /* L 85 */
+    --link-underline: #BFBFBF; /* L 75 */
 }
 
 .dark {
-    --background: #141414;
-    --default: #F2F2F2;
-    --accent: #9A9898;
-    --paragraph: #9A9898;
-    --caption: #C7C7C7;
+    --background: #141414; /* L 8 */
+    --box-hover: #262626; /* L 15 */
+    --default: #F2F2F2; /* L 95 */
+    --accent: #999999; /* L 60 */
+    --paragraph: #999999;
+    --caption: #C7C7C7; /* L 78 */
     --metadata: #C7C7C7;
-    --arrows: #666666;
-    --divider: #4D4C4C;
-    --link-underline: #4D4C4C;
-    --box-hover: #1F1F1F;
+    --arrows: #666666; /* L 40 */
+    --divider: #4D4C4C; /* L 30 */
+    --link-underline: #666666; /* L 40 */
 }
 
 body {
