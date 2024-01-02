@@ -336,6 +336,7 @@ em {
 
 em.subtitle {
     font-size: 1.75rem;
+    color: var(--caption);
 }
 
 div.project-item-box {
