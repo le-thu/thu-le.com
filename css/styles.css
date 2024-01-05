@@ -41,6 +41,7 @@ body {
     line-height: 1.5;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
+    hanging-punctuation: first;
 }
 
 ::-moz-selection {
@@ -310,6 +311,7 @@ figcaption {
     max-width: 560px;
     margin: 16px auto;
     font-variant-numeric: tabular-nums;
+    text-wrap: pretty;
 }
 
 h4 ion-icon {
@@ -399,12 +401,17 @@ a {
     color: var(--accent);
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
-    transition: all 120ms ease-in-out;
 }
 
 a:hover {
-    text-decoration-color: var(--default);
-    -webkit-text-decoration-color: var(--default);
+    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+    text-decoration-color: var(--accent);
+    -webkit-text-decoration-color: var(--accent);
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    -webkit-text-underline-offset: 4px;
 }
 
 a h4 {
@@ -417,19 +424,19 @@ a.article {
     align-items: center;
 }
 
-a.article:hover {
-    color: var(--default);
-}
-
 a.article:hover ion-icon {
-    color: var(--default);
     transform: translate(0, -2px);
     transition: all 120ms ease-in-out;
 }
 
 a.article:not(:hover) ion-icon {
     transform: translate(0, 0);
-    transition: all 120ms ease-in-out, transition-delay 120ms;
+    transition: all 120ms ease-in-out; transition-delay 120ms;
+}
+
+a.project-item {
+    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
 }
 
 a.project-item:hover div.project-item-box {
@@ -438,7 +445,7 @@ a.project-item:hover div.project-item-box {
 
 a.project-item:hover ion-icon {
     color: var(--default);
-    transform: translate(2px, 0);
+    transform: translate(3px, 0);
     transition: all 120ms ease-in-out;
 }
 
