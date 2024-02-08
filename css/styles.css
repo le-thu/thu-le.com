@@ -71,15 +71,15 @@ body {
     margin: 0;
 }
 
-.back-button {
+a.back-button {
     color: var(--default);
     font-weight: 500;
-    text-decoration-line: none;
-    -webkit-text-decoration-line: none;
 }
 
-.back-button:hover {
+a.back-button:hover {
     color: var(--accent);
+    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
 }
 
 .theme-switcher-container {
