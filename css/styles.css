@@ -307,7 +307,7 @@ h3.section-block-title { /* dunno what this is */
     align-items: center;
 }
 
-h4.project-title {
+.project-title {
     font-size: 0.9375rem;
     line-height: 1.5;
     display: flex;
@@ -374,6 +374,12 @@ p.project-description {
     font-size: 0.875rem;
     font-weight: 500;
     letter-spacing: normal;
+}
+
+.project-item-box .project-metadata {
+    color: var(--arrows);
+    font-size: 0.8125rem;
+    margin: 2px auto 0;
 }
 
 ul li,
