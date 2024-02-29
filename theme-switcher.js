@@ -1,5 +1,6 @@
 const switcher = document.getElementById('theme-switcher');
 const body = document.body;
+const themeSwitcherClickSound = document.getElementById('themeSwitcherClickSound');
 
 // Check if there is a saved theme preference in local storage
 const theme = localStorage.getItem('theme');
@@ -17,6 +18,11 @@ if (isTouchDevice) {
 } else {
   switcher.addEventListener('click', toggleTheme);
 }
+
+// Add event listener to play sound when the theme switcher is clicked
+switcher.addEventListener('click', function() {
+  themeSwitcherClickSound.play();
+});
 
 function toggleTheme() {
   // Toggle the 'dark' class on the body element
