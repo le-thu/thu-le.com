@@ -16,6 +16,7 @@
     --arrows: #999999; /* L 60 */
     --divider: #D9D9D9; /* L 85 */
     --link-underline: #BFBFBF; /* L 75 */
+    --highlight: rgba(255, 255, 0, 0.4);
 }
 
 .dark {
@@ -29,6 +30,7 @@
     --arrows: #666666; /* L 40 */
     --divider: #4D4C4C; /* L 30 */
     --link-underline: #666666; /* L 40 */
+    --highlight: rgba(255, 255, 0, 0.4);
 }
 
 body {
@@ -45,13 +47,11 @@ body {
 }
 
 ::-moz-selection {
-    color: var(--background);
-    background-color: var(--default);
+    background-color: var(--highlight);
 }
 
 ::selection {
-    color: var(--background);
-    background-color: var(--default);
+    background-color: var(--highlight);
 }
 
 .menu {
@@ -421,8 +421,8 @@ a {
 a:hover {
     text-decoration-line: underline;
     -webkit-text-decoration-line: underline;
-    text-decoration-color: var(--accent);
-    -webkit-text-decoration-color: var(--accent);
+    text-decoration-color: var(--link-underline);
+    -webkit-text-decoration-color: var(--link-underline);
     text-decoration-thickness: 1px;
     -webkit-text-decoration-thickness: 1px;
     text-underline-offset: 4px;
