@@ -1,6 +1,7 @@
 const switcher = document.getElementById('theme-switcher');
 const body = document.body;
 const themeSwitcherClickSound = document.getElementById('themeSwitcherClickSound');
+themeSwitcherClickSound.volume = 0.4;
 
 // Check if there is a saved theme preference in local storage
 const theme = localStorage.getItem('theme');
