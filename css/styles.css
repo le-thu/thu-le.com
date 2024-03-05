@@ -15,8 +15,8 @@
     --accent: #666; /* L 40 */
     --paragraph: #1F1E1E; /* L 12 */
     --caption-metadata: #4D4C4C; /* L 30 */
-    --arrows: #999999; /* L 60 */
-    --divider: #D9D9D9; /* L 85 */
+    --arrows: #999; /* L 60 */
+    --divider: #E0E0E0; /* L 88 */
     --link-underline: #BFBFBF; /* L 75 */
     --highlight: rgba(255, 255, 0, 0.4);
 }
@@ -25,12 +25,12 @@
     --background: #141414; /* L 8 */
     --box-hover: #262626; /* L 15 */
     --default: #F2F2F2; /* L 95 */
-    --accent: #999999; /* L 60 */
+    --accent: #999; /* L 60 */
     --paragraph: #E6E5E5; /* L 90 */
     --caption-metadata: #C7C7C7; /* L 78 */
-    --arrows: #666666; /* L 40 */
-    --divider: #4D4C4C; /* L 30 */
-    --link-underline: #666666; /* L 40 */
+    --arrows: #666; /* L 40 */
+    --divider: #383838; /* L 22 */
+    --link-underline: #666; /* L 40 */
     --highlight: rgba(255, 255, 0, 0.4);
 }
 
@@ -327,6 +327,10 @@ figcaption {
     text-wrap: pretty;
 }
 
+#articles p, #about p {
+    margin: 0.75rem auto;
+}
+
 .back-button ion-icon {
     margin-right: 0.25rem;
 }
@@ -516,7 +520,7 @@ footer {
 }
 
 .footer-container {
-    border-top: 1px dashed var(--divider);
+    border-top: 1px solid var(--divider);
     padding: 2rem 0;
 }
 
