@@ -387,7 +387,7 @@ p.project-description {
     margin: 0.125rem auto 0;
 }
 
-.uses {
+.compact {
     margin: 0.5rem auto;
 }
 
@@ -395,7 +395,7 @@ ul {
     margin: 0.5rem auto 1.25rem;
 }
 
-ul.uses {
+ul.compact {
     margin: 0.5rem auto 1.25rem;
     line-height: 1.2;
 }
