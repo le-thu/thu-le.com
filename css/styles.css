@@ -458,7 +458,6 @@ a h4 {
 }
 
 a.article {
-    color: var(--accent);
     display: inline-flex;
     align-items: center;
 }
