@@ -248,7 +248,6 @@ h1,
 h2,
 h3,
 h4,
-.divider,
 footer {
     max-width: 560px;
 }
@@ -292,12 +291,11 @@ h2.section-title,
 h2.section-title_project {
     text-wrap: balance;
     font-family: 'Newsreader', serif;
-    margin: 4rem auto 1rem;
+    margin: 3.5rem auto 1rem;
 }
 
 h2.section-title_process {
     font-size: 1.25rem;
-    
     line-height: 1;
     margin: 2.5rem auto 0.5rem;
 }
@@ -508,9 +506,10 @@ figure.project-img-small {
     cursor: pointer;
 }
 
-.divider-line {
-    border-bottom: 1px dashed var(--divider);
-    margin: 2.5rem auto;
+.divider {
+    max-width: 220px;
+    border-bottom: 1px solid var(--divider);
+    margin: 3.5rem auto;
 }
 
 footer {
@@ -523,19 +522,11 @@ footer {
     padding: 2rem 0;
 }
 
-.footer-text {
-    margin: 0 auto;
-}
-
 .footer-text-light {
     font-size: 0.875rem;
     color: var(--accent);
     line-height: 1;
     margin: 0.75rem auto;
-}
-
-.footer-project-title {
-    margin: 0.25rem auto 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -551,7 +542,6 @@ footer {
     p,
     ul,
     figure,
-    .divider,
     footer {
         padding: 0 1.5rem;
     }
@@ -571,12 +561,6 @@ footer {
     footer {
         margin: 2.5rem auto 0;
     }
-
-    .footer-text,
-    .footer-project-title,
-    .footer-text-light {
-        padding: 0;
-    }
 }
 
 @media screen and (max-width: 592px) {
@@ -592,7 +576,6 @@ footer {
 
     h2.section-title_project {
         line-height: 1.2;
-        margin: 3.5rem auto 0.75rem;
     }
 
     figure.project-img,
