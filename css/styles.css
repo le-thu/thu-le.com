@@ -9,25 +9,16 @@
 }
 
 :root {
-    --background: #F7F7F7;
-    /* L 97 */
+    --background: #F7F7F7; /* L 97 */
     --navbar-bg: rgba(247, 247, 247, 0.5);
-    --box-hover: #E6E5E5;
-    /* L 90 */
-    --default: #0D0D0D;
-    /* L 5 */
-    --accent: #666;
-    /* L 40 */
-    --paragraph: #1F1E1E;
-    /* L 12 */
-    --caption-metadata: #4D4C4C;
-    /* L 30 */
-    --arrows: #999;
-    /* L 60 */
-    --divider: #E0E0E0;
-    /* L 88 */
-    --link-underline: #BFBFBF;
-    /* L 75 */
+    --box-hover: #E6E5E5; /* L 90 */
+    --default: #0D0D0D; /* L 5 */
+    --accent: #666; /* L 40 */
+    --paragraph: #1F1E1E; /* L 12 */
+    --caption-metadata: #4D4C4C; /* L 30 */
+    --arrows: #999;/* L 60 */
+    --divider: #E0E0E0; /* L 88 */
+    --link-underline: #BFBFBF; /* L 75 */
     --highlight: rgba(255, 255, 0, 0.4);
 }
 
@@ -80,6 +71,7 @@ body {
     top: 0;
     background-color: var(--navbar-bg);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--navbar-bg);
     z-index: 9999;
 }
