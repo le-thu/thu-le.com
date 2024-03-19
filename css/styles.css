@@ -556,9 +556,9 @@ figure.project-img-small {
     cursor: pointer;
 }
 
-.divider {
-    max-width: 220px;
-    border-bottom: 1px solid var(--divider);
+hr.divider {
+    max-width: 240px;
+    border: 0.5px solid var(--divider);
     margin: 3.5rem auto;
 }
 
