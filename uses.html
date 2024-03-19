@@ -34,13 +34,15 @@
 </head>
 
 <body>
-    <header>
-        <div class="menu">
-            <div class="menu-container">
-                <div class="back-button-container">
-                    <a class="back-button" href="/">
-                        <ion-icon alt="Arrow icon" name="arrow-back-outline"></ion-icon>Home
-                    </a>
+    <nav class="sticky-nav">
+        <div class="menu-container">
+            <div class="nav-left">
+                <a class="home-button" href="/">Thu Le</a>
+            </div>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="/now">Now</a>
+                    <a href="/uses">Uses</a>
                 </div>
                 <div class="theme-switcher-container">
                     <button title="Toggle theme" id="theme-switcher">
@@ -49,6 +51,8 @@
                 </div>
             </div>
         </div>
+    </nav>
+    <header>
         <h1 class="main-title">
             My setup and toolkit
         </h1>
@@ -60,11 +64,11 @@
         </figure>
     </header>
     <main>
-       <section>
-           <p>
-               These are the tools I'm using every day that help me do what I do best. Inspired by <a rel="noopener" href="https://wesbos.com//" target="_blank">Wes Bos</a>, check out <a rel="noopener" href="https://uses.tech/" target="_blank">/uses</a> to see more toolkits.
-           </p>
-       </section>
+        <section>
+            <p>
+                These are the tools I'm using every day that help me do what I do best. Inspired by <a rel="noopener" href="https://wesbos.com//" target="_blank">Wes Bos</a>, check out <a rel="noopener" href="https://uses.tech/" target="_blank">/uses</a> to see more toolkits.
+            </p>
+        </section>
         <section>
             <h2 class="section-title_project">
                 Hardware
@@ -257,18 +261,13 @@
                     <a rel="noopener" href="https://apps.apple.com/gb/app/iqair-airvisual-air-quality/id1048912974" target="_blank">AirVisual</a>
                 </li>
                 <li>
-                   <a rel="noopener" href="https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean" target="_blank">Bypass Paywalls Clean</a>
+                    <a rel="noopener" href="https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean" target="_blank">Bypass Paywalls Clean</a>
                 </li>
             </ul>
         </section>
     </main>
     <footer>
         <div class="footer-container">
-            <p class="footer-text-light">
-                <a href="/">Home</a> &#8901;
-                <a title="What I'm doing now" href="/now">Now</a> &#8901;
-                <a title="My setup and toolkit" href="/uses">Uses</a>
-            </p>
             <p class="footer-text-light">
                 Thu Le &#169; 2020&ndash;2024
             </p>

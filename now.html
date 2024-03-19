@@ -34,13 +34,15 @@
 </head>
 
 <body>
-    <header>
-        <div class="menu">
-            <div class="menu-container">
-                <div class="back-button-container">
-                    <a class="back-button" href="/">
-                        <ion-icon alt="Arrow icon" name="arrow-back-outline"></ion-icon>Home
-                    </a>
+    <nav class="sticky-nav">
+        <div class="menu-container">
+            <div class="nav-left">
+                <a class="home-button" href="/">Thu Le</a>
+            </div>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="/now">Now</a>
+                    <a href="/uses">Uses</a>
                 </div>
                 <div class="theme-switcher-container">
                     <button title="Toggle theme" id="theme-switcher">
@@ -49,6 +51,8 @@
                 </div>
             </div>
         </div>
+    </nav>
+    <header>
         <h1 class="main-title">
             What I'm doing now
         </h1>
@@ -96,11 +100,6 @@
     </main>
     <footer>
         <div class="footer-container">
-            <p class="footer-text-light">
-                <a href="/">Home</a> &#8901;
-                <a title="What I'm doing now" href="/now">Now</a> &#8901;
-                <a title="My setup and toolkit" href="/uses">Uses</a>
-            </p>
             <p class="footer-text-light">
                 Thu Le &#169; 2020&ndash;2024
             </p>
