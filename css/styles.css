@@ -58,20 +58,12 @@ body {
     hanging-punctuation: first;
 }
 
-::-moz-selection {
-    background-color: var(--highlight);
-}
-
-::selection {
-    background-color: var(--highlight);
-}
-
 .sticky-nav {
     position: sticky;
     top: 0;
     background-color: var(--navbar-bg);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--navbar-bg);
     z-index: 9999;
 }
@@ -117,7 +109,7 @@ body {
 }
 
 .nav-links a {
-    color: var(--accent);
+    color: var(--default);
     font-weight: 500;
     text-decoration: none;
     padding: 0 0.75rem;
@@ -125,7 +117,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: var(--default);
+    color: var(--accent);
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
 }
@@ -141,7 +133,7 @@ button {
     width: 32px;
     height: 32px;
     background-color: transparent;
-    color: var(--accent);
+    color: var(--default);
     border: none;
     border-radius: 8px;
     font-size: 1rem;
@@ -319,7 +311,7 @@ h1.main-title {
     font-family: 'Newsreader', serif;
     line-height: 1.125;
     text-wrap: balance;
-    margin: 3rem auto 1rem;
+    margin: 6rem auto 1rem;
 }
 
 .homepage {
@@ -564,7 +556,7 @@ hr.divider {
 
 footer {
     margin: 3.5rem auto 0;
-    text-align: center;
+    text-align: left;
 }
 
 .footer-container {
@@ -573,10 +565,14 @@ footer {
 }
 
 .footer-text-light {
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     color: var(--accent);
     line-height: 1;
-    margin: 0.75rem auto;
+    margin: 0 auto;
+}
+
+.mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;;
 }
 
 @media screen and (max-width: 768px) {
@@ -605,7 +601,7 @@ footer {
     }
 
     h1.main-title {
-        margin: 2.5rem auto 1rem;
+        margin: 4rem auto 1rem;
     }
 
     .stylized-paragraph {
