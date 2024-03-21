@@ -9,16 +9,25 @@
 }
 
 :root {
-    --background: #F7F7F7; /* L 97 */
+    --background: #F7F7F7;
+    /* L 97 */
     --navbar-bg: rgba(247, 247, 247, 0.5);
-    --box-hover: #E6E5E5; /* L 90 */
-    --default: #0D0D0D; /* L 5 */
-    --accent: #666; /* L 40 */
-    --paragraph: #1F1E1E; /* L 12 */
-    --caption-metadata: #4D4C4C; /* L 30 */
-    --arrows: #999;/* L 60 */
-    --divider: #E0E0E0; /* L 88 */
-    --link-underline: #BFBFBF; /* L 75 */
+    --box-hover: #E6E5E5;
+    /* L 90 */
+    --default: #0D0D0D;
+    /* L 5 */
+    --accent: #666;
+    /* L 40 */
+    --paragraph: #1F1E1E;
+    /* L 12 */
+    --caption-metadata: #4D4C4C;
+    /* L 30 */
+    --arrows: #999;
+    /* L 60 */
+    --divider: #E0E0E0;
+    /* L 88 */
+    --link-underline: #BFBFBF;
+    /* L 75 */
     --highlight: rgba(255, 255, 0, 0.4);
 }
 
@@ -567,12 +576,12 @@ footer {
 .footer-text-light {
     font-size: 0.8125rem;
     color: var(--accent);
-    line-height: 1;
+    line-height: 1.2;
     margin: 0 auto;
 }
 
 .mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 @media screen and (max-width: 768px) {
@@ -581,8 +590,8 @@ footer {
     }
 
     .menu-container {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
     }
 
     h1,
@@ -593,11 +602,11 @@ footer {
     ul,
     figure,
     footer {
-        padding: 0 1.5rem;
+        padding: 0 1.25rem;
     }
 
     img.avatar {
-        margin-left: 1.5rem;
+        margin-left: 1.25rem;
     }
 
     h1.main-title {
@@ -605,11 +614,15 @@ footer {
     }
 
     .stylized-paragraph {
-        padding-left: 4.5rem;
+        padding-left: 4.25rem;
     }
 
     footer {
         margin: 2.5rem auto 0;
+    }
+
+    p.footer-text-light {
+        padding: 0;
     }
 }
 
