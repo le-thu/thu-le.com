@@ -34,7 +34,7 @@
 .dark {
     --background: #141414;
     /* L 8 */
-    --navbar-bg: rgba(20, 20, 20, 0.55);
+    --navbar-bg: rgba(20, 20, 20, 0.5);
     --box-hover: #262626;
     /* L 15 */
     --default: #F2F2F2;
@@ -425,7 +425,7 @@ p.project-description {
 .project-metadata {
     color: var(--accent);
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     font-weight: 500;
     letter-spacing: normal;
 }
@@ -480,7 +480,7 @@ li::marker {
 figcaption {
     color: var(--caption-metadata);
     text-align: center;
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
 }
 
 a {
@@ -574,6 +574,7 @@ footer {
 }
 
 .footer-text-light {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 0.8125rem;
     color: var(--accent);
     line-height: 1.2;
