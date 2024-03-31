@@ -3,11 +3,18 @@ const images = document.querySelectorAll('.image');
 
 // Loop through each image and add an event listener for both click and touchstart
 images.forEach(image => {
-    image.addEventListener('click', () => showModal(image));
-    image.addEventListener('touchstart', () => showModal(image));
+    image.addEventListener('click', showModal.bind(null, image));
+    image.addEventListener('touchstart', showModal.bind(null, image), {
+        passive: true
+    });
 });
 
-function showModal(image) {
+function showModal(image, event) {
+    // Prevent default behavior for touch events
+    if (event && event.type === 'touchstart') {
+        event.preventDefault();
+    }
+
     // Create a new modal element
     const modal = document.createElement('div');
     modal.classList.add('modal');
@@ -24,14 +31,7 @@ function showModal(image) {
     const closeButton = document.createElement('button');
     closeButton.classList.add('close');
     closeButton.innerHTML = '<ion-icon name="close"></ion-icon>';
-    closeButton.addEventListener('click', () => {
-        // Remove the modal from the DOM
-        modal.remove();
-
-        // Remove the 'modal-open' class from the body to allow scrolling again
-        document.body.classList.remove('modal-open');
-    });
-
+    closeButton.addEventListener('click', () => closeModal(modal));
 
     // Add the close button to the modal
     modal.appendChild(closeButton);
@@ -48,35 +48,44 @@ function showModal(image) {
     document.body.classList.add('modal-open');
 
     // Add event listener for pressing the escape key
-    document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') {
-            // Remove the modal from the DOM
-            modal.remove();
-
-            // Remove the 'modal-open' class from the body to allow scrolling again
-            document.body.classList.remove('modal-open');
-        }
-    });
+    document.addEventListener('keydown', handleKeydown.bind(null, modal));
 
     // Add event listener for clicking outside of the modal
-    modal.addEventListener('click', (event) => {
-        if (event.target === modal) {
-            // Remove the modal from the DOM
-            modal.remove();
-
-            // Remove the 'modal-open' class from the body to allow scrolling again
-            document.body.classList.remove('modal-open');
-        }
-    });
+    modal.addEventListener('click', handleOutsideClick.bind(null, modal));
 
     // Add event listener for tapping outside of the modal on mobile devices
-    document.addEventListener('touchstart', (event) => {
-        if (!modal.contains(event.target)) {
-            // Remove the modal from the DOM
-            modal.remove();
-
-            // Remove the 'modal-open' class from the body to allow scrolling again
-            document.body.classList.remove('modal-open');
-        }
+    document.addEventListener('touchstart', handleOutsideTap.bind(null, modal), {
+        passive: true
     });
+}
+
+function closeModal(modal) {
+    // Remove the modal from the DOM
+    modal.remove();
+
+    // Remove the 'modal-open' class from the body to allow scrolling again
+    document.body.classList.remove('modal-open');
+
+    // Remove event listeners
+    document.removeEventListener('keydown', handleKeydown);
+    modal.removeEventListener('click', handleOutsideClick);
+    document.removeEventListener('touchstart', handleOutsideTap);
+}
+
+function handleKeydown(modal, event) {
+    if (event.key === 'Escape') {
+        closeModal(modal);
+    }
+}
+
+function handleOutsideClick(modal, event) {
+    if (event.target === modal) {
+        closeModal(modal);
+    }
+}
+
+function handleOutsideTap(modal, event) {
+    if (!modal.contains(event.target)) {
+        closeModal(modal);
+    }
 }

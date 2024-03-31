@@ -3,32 +3,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const emailAnchor = tooltipContainer.querySelector('.email');
     const tooltip = tooltipContainer.querySelector('.tooltip');
 
-    tooltipContainer.addEventListener('click', () => {
-        const email = emailAnchor.textContent.trim();
-        navigator.clipboard.writeText(email).then(() => {
-            tooltip.textContent = 'Copied';
-            setTimeout(() => {
-                tooltip.textContent = 'Copy my email address';
-            }, 1200);
-        });
-    });
+    const handleInteraction = (event) => {
+        if (event.type === 'touchstart') {
+            event.preventDefault(); // Prevents the click event from firing immediately
+            tooltip.style.visibility = 'visible';
+        } else {
+            const email = emailAnchor.textContent.trim();
+            navigator.clipboard.writeText(email).then(() => {
+                tooltip.textContent = 'Copied';
+                setTimeout(() => {
+                    tooltip.textContent = 'Copy my email address';
+                }, 1200);
+            });
+        }
+    };
 
-    tooltipContainer.addEventListener('touchstart', (event) => {
-        event.preventDefault(); // Prevents the click event from firing immediately
-        tooltip.style.visibility = 'visible';
-    }, {
-        passive: true
+    tooltipContainer.addEventListener('click', handleInteraction, {
+        passive: true,
     });
-
-    tooltipContainer.addEventListener('touchend', () => {
-        const email = emailAnchor.textContent.trim();
-        navigator.clipboard.writeText(email).then(() => {
-            tooltip.textContent = 'Copied';
-            setTimeout(() => {
-                tooltip.textContent = 'Copy my email address';
-            }, 1200);
-        });
-    }, {
-        passive: true
+    tooltipContainer.addEventListener('touchstart', handleInteraction, {
+        passive: true,
+    });
+    tooltipContainer.addEventListener('touchend', handleInteraction, {
+        passive: true,
     });
 });
