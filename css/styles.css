@@ -112,7 +112,6 @@ body {
     margin-right: 0;
 }
 
-/* Navigation Links Styling */
 .nav-links {
     display: flex;
 }
@@ -154,8 +153,6 @@ button {
 button:hover {
     background-color: var(--box-hover);
 }
-
-/* Styles for the full screen modal */
 
 body.modal-open {
     overflow: hidden;
@@ -222,8 +219,6 @@ button.close:hover {
     opacity: 1;
     z-index: 10000;
 }
-
-/* The end */
 
 .header {
     margin: 3rem auto;
@@ -345,13 +340,6 @@ h2.section-title_process {
     font-size: 1.25rem;
     line-height: 1;
     margin: 2.5rem auto 0.5rem;
-}
-
-h3.section-block-title {
-    /* dunno what this is */
-    font-size: 1.0625rem;
-    display: flex;
-    align-items: center;
 }
 
 .project-title {
