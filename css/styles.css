@@ -192,7 +192,7 @@ body.modal-open {
     position: absolute;
     top: 50%;
     left: 50%;
-    border-radius: 2px;
+    border-radius: 3px;
     transform: translate(-50%, -50%);
     max-width: 95%;
     max-height: 95%;
@@ -311,8 +311,8 @@ h1 {
 
 h1.main-title {
     font-size: 1.75rem;
-    font-weight: 500;
     font-family: 'Newsreader', serif;
+    text-align: center;
     line-height: 1.125;
     text-wrap: balance;
     margin: 6rem auto 1rem;
@@ -411,16 +411,17 @@ p.project-description {
 }
 
 .project-metadata {
-    color: var(--accent);
+    color: var(--caption-metadata);
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 0.8125rem;
-    font-weight: 500;
+    text-align: center;
     letter-spacing: normal;
+    margin: 1rem auto 1.5rem;
 }
 
 .project-item-box .project-metadata {
-    font-size: 0.8125rem;
     margin: 0.125rem auto 0;
+    text-align: left;
 }
 
 .compact {
@@ -540,7 +541,7 @@ figure.project-img-small {
 }
 
 .image {
-    border-radius: 2px;
+    border-radius: 3px;
     max-width: 100%;
     cursor: pointer;
 }
@@ -553,7 +554,7 @@ hr.divider {
 
 footer {
     margin: 3.5rem auto 0;
-    text-align: left;
+    text-align: center;
 }
 
 .footer-container {
@@ -565,7 +566,7 @@ footer {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 0.8125rem;
     color: var(--accent);
-    line-height: 1.2;
+    line-height: 1.5;
     margin: 0 auto;
 }
 
