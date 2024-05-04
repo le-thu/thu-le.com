@@ -362,7 +362,8 @@ figcaption {
 }
 
 #articles p,
-#about p {
+#about p,
+#connect p {
     margin: 0.75rem auto;
 }
 
@@ -629,6 +630,10 @@ footer {
 
     h2.section-title_project {
         line-height: 1.2;
+    }
+
+    p ion-icon {
+        display: none;
     }
 
     figure.project-img,
