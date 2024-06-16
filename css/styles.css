@@ -553,13 +553,64 @@ figure.project-img {
 
 figure.project-img-small {
     max-width: 600px;
-    margin: 2.5rem auto 50px;
+    margin: 2.5rem auto 3rem;
 }
 
 .image {
     border-radius: 3px;
     max-width: 100%;
     cursor: pointer;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    /* Allow horizontal scrolling */
+    scroll-snap-type: x mandatory;
+    /* Snap scrolling behavior */
+    scroll-behavior: smooth;
+    /* Smooth scrolling */
+    padding: 0 2rem;
+    /* Padding for visual spacing */
+    -webkit-overflow-scrolling: touch;
+    /* Enable smooth scrolling on iOS */
+    -ms-overflow-style: none;
+    /* Hide scrollbar in IE/Edge */
+    scrollbar-width: none;
+    /* Hide scrollbar in Firefox */
+}
+
+.carousel .project-img-small {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin: 1rem auto 0;
+    padding-left: 2rem;
+}
+
+.carousel .project-img-small img {
+    width: 400px;
+    max-height: 100%;
+    display: block;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Additional CSS for desktop mouse dragging */
+.carousel {
+    -webkit-overflow-scrolling: auto;
+    /* Reset for desktop */
+    cursor: grab;
+    /* Change cursor to grab for desktop dragging */
+}
+
+.carousel:active {
+    cursor: grabbing;
+    /* Change cursor to grabbing when actively dragging */
 }
 
 hr.divider {
