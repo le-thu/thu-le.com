@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navigator.clipboard.writeText(email).then(() => {
                 tooltip.textContent = 'Copied';
                 setTimeout(() => {
-                    tooltip.textContent = 'Copy my email address';
+                    tooltip.textContent = 'Copy thu@thu-le.com';
                 }, 1200);
             });
         }
