@@ -221,7 +221,7 @@ button.close:hover {
 }
 
 .header {
-    margin: 3rem auto;
+    margin: 3rem auto 2rem;
     max-width: 600px;
 }
 
@@ -314,7 +314,7 @@ h1.main-title {
 }
 
 .homepage {
-    max-width: 35ch;
+    max-width: 28ch;
     margin-left: 0;
 }
 
@@ -360,7 +360,7 @@ figcaption {
 }
 
 #about p {
-    max-width: 60ch;
+    max-width: 55ch;
     margin-left: 0;
 }
 
@@ -622,7 +622,7 @@ hr.divider {
 
 footer {
     margin: 3.5rem auto 0;
-    text-align: center;
+    text-align: left;
 }
 
 .footer-container {
