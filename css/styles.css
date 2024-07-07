@@ -45,7 +45,7 @@ body {
     letter-spacing: -0.00625rem;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    hanging-punctuation: first;
+    hanging-punctuation: first allow-end last;
 }
 
 .sticky-nav {
@@ -101,7 +101,7 @@ body {
     color: var(--default);
     font-weight: 500;
     text-decoration: none;
-    padding: 0 0.75rem;
+    margin-right: 1rem;
     transition: all 120ms ease-in-out;
 }
 
@@ -109,10 +109,6 @@ body {
     color: var(--accent);
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
-}
-
-.theme-switcher-container {
-    margin-left: 0.25rem;
 }
 
 button {
@@ -343,6 +339,10 @@ p.links {
     color: var(--accent);
 }
 
+p.links a {
+    margin-right: 1.25rem;
+}
+
 h4 ion-icon {
     color: var(--arrows);
     margin-left: 0.25rem;
@@ -387,7 +387,7 @@ div.project-block {
 div.project-item-box {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 0.25rem;
     border: none;
     border-radius: 12px;
     padding: 0.75rem 1rem;
@@ -482,17 +482,17 @@ a h4 {
     color: var(--default);
 }
 
-a.open-new-window {
+a.inline-icon {
     display: inline-flex;
     align-items: center;
 }
 
-a.open-new-window:hover ion-icon {
+a.inline-icon:hover ion-icon {
     transform: translate(0, -2px);
     transition: all 120ms ease-in-out;
 }
 
-a.open-new-window:not(:hover) ion-icon {
+a.inline-icon:not(:hover) ion-icon {
     transform: translate(0, 0);
     transition: all 120ms ease-in-out;
     transition-delay 120ms;
@@ -663,7 +663,7 @@ footer {
         line-height: 1.2;
     }
 
-    p ion-icon {
+    #blog ion-icon {
         display: none;
     }
 
