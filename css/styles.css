@@ -197,11 +197,6 @@ button.close:hover {
     z-index: 10000;
 }
 
-.header {
-    margin: 3rem auto 2rem;
-    max-width: 600px;
-}
-
 .avatar-container {
     position: relative;
     display: inline-block;
@@ -271,6 +266,7 @@ h2,
 h3,
 h4 {
     font-weight: 500;
+    text-wrap: balance;
 }
 
 h1.homepage {
@@ -278,24 +274,36 @@ h1.homepage {
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.0125rem;
+    text-wrap: pretty;
     max-width: 28ch;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     margin-left: 0;
 }
 
-h1.main-title {
+.homepage-header {
+    margin: 4rem auto 2rem;
+    max-width: 600px;
+}
+
+h1.main-title,
+h1.main-title_reading {
     font-size: 1.75rem;
     font-family: 'Newsreader', serif;
     text-align: center;
     line-height: 1.125;
-    text-wrap: balance;
+}
+
+h1.main-title_reading {
+    margin: 2.5rem auto;
+    text-align: left;
+}
+
+.subpage-header {
     margin: 6rem auto 1rem;
 }
 
-h2.section-title,
-h2.section-title_project {
-    text-wrap: balance;
+h2.section-title {
     font-size: 1.75rem;
     font-family: 'Newsreader', serif;
     line-height: 1.125;
@@ -304,6 +312,13 @@ h2.section-title_project {
 
 h2.section-title_process {
     font-size: 1.25rem;
+    line-height: 1;
+    margin: 2.5rem auto 0.5rem;
+}
+
+h2.section-title_reading {
+    font-family: 'Newsreader', serif;
+    font-size: 1.5rem;
     line-height: 1;
     margin: 2.5rem auto 0.5rem;
 }
@@ -655,12 +670,8 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-    .header {
+    .homepage-header {
         margin: 2.5rem auto;
-    }
-
-    h2.section-title_project {
-        line-height: 1.2;
     }
 
     #blog ion-icon {
