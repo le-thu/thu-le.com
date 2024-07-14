@@ -300,7 +300,7 @@ h1.main-title_reading {
 }
 
 .subpage-header {
-    margin: 6rem auto 1rem;
+    margin: 6rem auto 2rem;
 }
 
 h2.section-title {
@@ -418,11 +418,11 @@ p.project-description {
 
 .project-metadata {
     color: var(--accent);
+    font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
     font-size: 0.8125rem;
-    line-height: 1.25;
-    text-align: center;
-    font-variant-numeric: tabular-nums;
+    line-height: 1;
     letter-spacing: normal;
+    text-align: center;
     margin: 1rem auto 1.5rem;
 }
 
@@ -609,16 +609,33 @@ footer {
 }
 
 .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-top: 1px solid var(--divider);
     padding: 2rem 0;
 }
 
-.footer-text {
+.footer-text-left {
     color: var(--accent);
     font-size: 0.8125rem;
-    letter-spacing: normal;
     line-height: 1.5;
-    margin: 0 auto;
+    margin-left: 0;
+}
+
+.footer-text-right {
+    color: var(--accent);
+    font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: normal;
+    margin-right: 0;
+}
+
+.mono {
+    font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
+    font-size: 0.75rem;
+    letter-spacing: normal;
 }
 
 @media screen and (max-width: 768px) {
@@ -654,7 +671,8 @@ footer {
         padding-left: 4.25rem;
     }
 
-    p.footer-text {
+    .footer-text-left,
+    .footer-text-right {
         padding: 0;
     }
 }
@@ -664,8 +682,25 @@ footer {
         padding: 0.75rem 0;
     }
 
-    .footer-text {
-        text-align: left;
+    .carousel .project-img-small img {
+        width: 300px;
+        max-height: 100%;
+        display: block;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        border-top: 1px solid var(--divider);
+        padding: 2rem 0;
+    }
+
+    .footer-text-left,
+    .footer-text-right {
+        text-align: center;
+        margin: 0;
     }
 }
 
