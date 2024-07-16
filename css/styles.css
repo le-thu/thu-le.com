@@ -46,6 +46,7 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     hanging-punctuation: first allow-end last;
+    transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
 }
 
 .sticky-nav {
@@ -56,6 +57,7 @@ body {
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 0.5px solid var(--navbar-bg);
     z-index: 9999;
+    transition: background-color 400ms ease-in-out, border-bottom 400ms ease-in-out;
 }
 
 .menu-container {
@@ -333,6 +335,7 @@ figcaption {
     max-width: 600px;
     margin: 1rem auto;
     text-wrap: pretty;
+    transition: color 400ms ease-in-out;
 }
 
 #blog,
@@ -371,6 +374,7 @@ p ion-icon {
 strong {
     color: var(--default);
     font-weight: 600;
+    transition: color 400ms ease-in-out;
 }
 
 em {
@@ -384,6 +388,7 @@ em.header-em {
     color: var(--caption-metadata);
     font-size: 1.75rem;
     letter-spacing: -0.00625rem;
+    transition: color 400ms ease-in-out;
 }
 
 div.project-block {
@@ -407,12 +412,13 @@ div.project-item-box {
     border-radius: 12px;
     padding: 0.75rem 1rem;
     margin-bottom: 0.5rem;
-    transition: background-color 100ms ease-in-out;
+    transition: background-color 120ms ease-in-out;
 }
 
 p.project-description {
     color: var(--accent);
     line-height: 1.4;
+    max-width: 56ch;
     margin: 0;
 }
 
@@ -450,6 +456,7 @@ li {
 
 li::marker {
     color: var(--link-underline);
+    transition: color 400ms ease-in-out;
 }
 
 .stylized-number {
@@ -480,6 +487,7 @@ a {
     color: var(--accent);
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
+    transition: color 400ms ease-in-out;
 }
 
 a:hover {
@@ -495,6 +503,7 @@ a:hover {
 
 a h4 {
     color: var(--default);
+    transition: color 400ms ease-in-out;
 }
 
 a.inline-icon {
@@ -516,10 +525,6 @@ a.inline-icon:not(:hover) ion-icon {
 a.project-item {
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
-}
-
-a.project-item:hover div.project-item-box {
-    background-color: var(--box-hover);
 }
 
 a.project-item:hover ion-icon {
@@ -601,6 +606,7 @@ hr.divider {
     max-width: 240px;
     border: 0.5px solid var(--divider);
     margin: 3.5rem auto;
+    transition: border-color 400ms ease-in-out;
 }
 
 footer {
@@ -614,6 +620,7 @@ footer {
     align-items: center;
     border-top: 1px solid var(--divider);
     padding: 2rem 0;
+    transition: border-color 400ms ease-in-out;
 }
 
 .footer-text-left {
