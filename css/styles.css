@@ -19,7 +19,6 @@
     --arrows: #999;
     --divider: #E0E0E0;
     --link-underline: #BFBFBF;
-    --highlight: rgba(255, 255, 0, 0.4);
 }
 
 .dark {
@@ -31,9 +30,8 @@
     --paragraph: #E6E5E5;
     --caption-metadata: #C7C7C7;
     --arrows: #666;
-    --divider: #383838;
+    --divider: #292929;
     --link-underline: #666;
-    --highlight: rgba(255, 255, 0, 0.4);
 }
 
 body {
@@ -61,9 +59,8 @@ body {
     background-color: var(--navbar-bg);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border-bottom: 0.5px solid var(--navbar-bg);
     z-index: 9999;
-    transition: background-color 400ms ease-in-out, border-bottom 400ms ease-in-out;
+    transition: background-color 400ms ease-in-out;
 }
 
 .menu-container {
@@ -609,7 +606,7 @@ figure.project-img-small {
 }
 
 hr.divider {
-    max-width: 240px;
+    max-width: 264px;
     border: 0.5px solid var(--divider);
     margin: 3.5rem auto;
     transition: border-color 400ms ease-in-out;
@@ -625,7 +622,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid var(--divider);
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     transition: border-color 400ms ease-in-out;
 }
 
@@ -633,22 +630,16 @@ footer {
     color: var(--accent);
     font-size: 0.8125rem;
     line-height: 1.5;
-    margin-left: 0;
+    margin: 0;
 }
 
 .footer-text-right {
     color: var(--accent);
     font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
     line-height: 1.5;
     letter-spacing: normal;
-    margin-right: 0;
-}
-
-.mono {
-    font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
-    font-size: 0.75rem;
-    letter-spacing: normal;
+    margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -705,9 +696,6 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        align-items: center;
-        border-top: 1px solid var(--divider);
-        padding: 2rem 0;
     }
 
     .footer-text-left,
