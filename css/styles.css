@@ -49,6 +49,12 @@ body {
     transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
 }
 
+.theme-transition {
+    transition: background-color 400ms ease-in-out,
+        color 400ms ease-in-out,
+        border-color 400ms ease-in-out;
+}
+
 .sticky-nav {
     position: sticky;
     top: 0;
