@@ -4,6 +4,16 @@
 <head>
     <script async data-id="101421242" src="//static.getclicky.com/js"></script>
 
+    <script>
+        (function() {
+            const storedTheme = localStorage.getItem('theme');
+            if (storedTheme === 'dark') {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+
+    </script>
+
     <meta charset="UTF-8">
     <title>Hmm, that page doesn't exist... 👀</title>
     <meta name="author" content="Thu Le">
