@@ -514,17 +514,6 @@ a.inline-icon {
     align-items: center;
 }
 
-a.inline-icon:hover ion-icon {
-    transform: translate(0, -2px);
-    transition: all 120ms ease-in-out;
-}
-
-a.inline-icon:not(:hover) ion-icon {
-    transform: translate(0, 0);
-    transition: all 120ms ease-in-out;
-    transition-delay 120ms;
-}
-
 a.project-item {
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
