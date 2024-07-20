@@ -42,7 +42,6 @@
             <div class="nav-right">
                 <div class="nav-links"></div>
                 <div class="theme-switcher-container">
-                    <button title="Toggle theme" id="theme-switcher"></button>
                 </div>
             </div>
         </div>
@@ -53,12 +52,16 @@
                 Hmm, that page doesn't exist... 👀
             </p>
             <p>
-                <a href="/">Back to Home</a>
+                <a class="inline-icon" href="/">
+                    Back to home
+                </a>
             </p>
         </div>
     </main>
-    <audio id="themeSwitcherClickSound" src="audio/click.wav"></audio>
+    <audio id="themeSwitcherClickSound" src="audio/switch.wav"></audio>
     <script src="js/theme-switcher.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

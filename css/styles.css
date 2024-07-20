@@ -29,7 +29,7 @@
     --accent: #999;
     --paragraph: #E6E5E5;
     --caption-metadata: #C7C7C7;
-    --arrows: #666;
+    --arrows: #737373;
     --divider: #292929;
     --link-underline: #666;
 }
@@ -106,14 +106,13 @@ body {
     color: var(--default);
     font-weight: 500;
     text-decoration: none;
+    -webkit-text-decoration: none;
     margin-right: 1rem;
     transition: all 120ms ease-in-out;
 }
 
 .nav-links a:hover {
     color: var(--accent);
-    text-decoration-line: none;
-    -webkit-text-decoration-line: none;
 }
 
 button {
@@ -488,20 +487,17 @@ figcaption {
 a {
     display: inline;
     color: var(--accent);
-    text-decoration-line: none;
-    -webkit-text-decoration-line: none;
-    transition: color 400ms ease-in-out;
-}
-
-a:hover {
-    text-decoration-line: underline;
-    -webkit-text-decoration-line: underline;
+    text-decoration: underline;
+    -webkit-text-decoration: underline;
+    text-decoration-style: wavy;
+    -webkit-text-decoration-style: wavy;
     text-decoration-color: var(--link-underline);
     -webkit-text-decoration-color: var(--link-underline);
-    text-decoration-thickness: 1px;
-    -webkit-text-decoration-thickness: 1px;
-    text-underline-offset: 4px;
-    -webkit-text-underline-offset: 4px;
+    text-decoration-thickness: 0.09375rem;
+    -webkit-text-decoration-thickness: 0.09375rem;
+    text-underline-offset: 3px;
+    -webkit-text-underline-offset: 3px;
+    transition: all 400ms ease-in-out;
 }
 
 a h4 {
@@ -512,16 +508,28 @@ a h4 {
 a.inline-icon {
     display: inline-flex;
     align-items: center;
+    text-decoration: none;
+    -webkit-text-decoration: none;
+}
+
+a.inline-icon:hover ion-icon {
+    color: var(--accent);
+    transition: color 120ms ease-in-out;
+}
+
+a.inline-icon:not(:hover) ion-icon {
+    transition: color 120ms ease-in-out, transition-delay 120ms;
 }
 
 a.email:hover {
-    text-decoration-line: none;
-    -webkit-text-decoration-line: none;
+    text-decoration: none;
+    -webkit-text-decoration: none;
+    cursor: pointer;
 }
 
 a.project-item {
-    text-decoration-line: none;
-    -webkit-text-decoration-line: none;
+    text-decoration: none;
+    -webkit-text-decoration: none;
 }
 
 a.project-item:hover ion-icon {

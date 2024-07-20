@@ -5,22 +5,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const tooltip = tooltipContainer.querySelector('.tooltip');
     const icon = emailAnchor.querySelector('ion-icon');
 
+    const emailToCopy = 'thu@thu-le.com';
+
     const handleInteraction = (event) => {
         if (event.type === 'touchstart') {
             event.preventDefault();
             tooltip.style.visibility = 'visible';
         } else {
-            const email = emailAnchor.textContent.trim();
-            navigator.clipboard.writeText(email).then(() => {
+            navigator.clipboard.writeText(emailToCopy).then(() => {
                 tooltip.textContent = 'Copied';
                 icon.setAttribute('name', 'checkmark-circle');
                 setTimeout(() => {
-                    tooltip.textContent = 'Copy thu@thu-le.com';
+                    tooltip.textContent = `Copy ${emailToCopy}`;
                     icon.setAttribute('name', 'copy-outline');
                 }, 1000);
 
                 if (window.clicky) {
-                    clicky.event('Email Copy', 'User copied email address', email);
+                    clicky.event('Email Copy', 'User copied email address', emailToCopy);
                 }
             });
         }
