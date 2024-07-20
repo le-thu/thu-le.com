@@ -704,6 +704,11 @@ footer {
         margin: 2.5rem auto;
     }
 
+    p.links a {
+        margin-right: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+
     #blog ion-icon {
         display: none;
     }
