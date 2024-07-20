@@ -250,7 +250,7 @@ button.close:hover {
     transform: translateX(-50%);
     left: 50%;
     bottom: calc(100% + 4px);
-    transition: visibility 120ms ease-in-out;
+    transition: visibility 80ms ease-in-out;
 }
 
 .tooltip-container:hover .tooltip {
@@ -372,6 +372,7 @@ h4 ion-icon {
 p ion-icon {
     color: var(--arrows);
     margin-left: 0.375rem;
+    margin-right: 0.375rem;
 }
 
 strong {
@@ -512,6 +513,11 @@ a h4 {
 a.inline-icon {
     display: inline-flex;
     align-items: center;
+}
+
+a.email:hover {
+    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
 }
 
 a.project-item {
