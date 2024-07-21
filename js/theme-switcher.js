@@ -24,14 +24,14 @@ const toggleTheme = () => {
     localStorage.setItem('theme', isDark ? 'dark' : '');
     themeSwitcherClickSound.play();
 
-    // Log the theme switch event to Clicky
     const currentTheme = isDark ? 'dark' : 'light';
-    clicky.log('#theme-switcher', `Theme switched to ${currentTheme}`);
 
-    // Add transition class to body
+    if (window.clicky) {
+        clicky.log('#theme-switcher', `Theme switched to ${currentTheme}`, 'click');
+    }
+
     document.body.classList.add('theme-transition');
 
-    // Remove transition class after transition completes
     setTimeout(() => {
         document.body.classList.remove('theme-transition');
     }, 400);
@@ -47,4 +47,4 @@ if (isTouchDevice) {
     switcher.addEventListener('click', toggleTheme, {
         passive: true
     });
-}
+};

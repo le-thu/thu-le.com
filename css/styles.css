@@ -44,11 +44,14 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     hanging-punctuation: first allow-end last;
-    transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+    transition:
+        background-color 400ms ease-in-out,
+        color 400ms ease-in-out;
 }
 
 .theme-transition {
-    transition: background-color 400ms ease-in-out,
+    transition:
+        background-color 400ms ease-in-out,
         color 400ms ease-in-out,
         border-color 400ms ease-in-out;
 }
@@ -227,7 +230,9 @@ button.close:hover {
 
 .avatar:not(:hover) {
     transform: translate(0, 0) rotate(-6deg);
-    transition: transform 200ms ease-in-out, transition-delay 200ms;
+    transition:
+        transform 200ms ease-in-out,
+        transition-delay 200ms;
 }
 
 .tooltip-container {
@@ -518,7 +523,9 @@ a.inline-icon:hover ion-icon {
 }
 
 a.inline-icon:not(:hover) ion-icon {
-    transition: color 120ms ease-in-out, transition-delay 120ms;
+    transition:
+        color 120ms ease-in-out,
+        transition-delay 120ms;
 }
 
 a.email:hover {
@@ -540,7 +547,9 @@ a.project-item:hover ion-icon {
 
 a.project-item:not(:hover) ion-icon {
     transform: translate(0, 0);
-    transition: all 120ms ease-in-out, transition-delay 120ms;
+    transition:
+        all 120ms ease-in-out,
+        transition-delay 120ms;
 }
 
 figure.project-img {

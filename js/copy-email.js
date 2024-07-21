@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 tooltip.textContent = 'Copied';
                 icon.setAttribute('name', 'checkmark-circle');
                 setTimeout(() => {
-                    tooltip.textContent = `Copy ${emailToCopy}`;
+                    tooltip.textContent = 'Copy thu@thu-le.com';
                     icon.setAttribute('name', 'copy-outline');
                 }, 1000);
 
                 if (window.clicky) {
-                    clicky.event('Email Copy', 'User copied email address', emailToCopy);
+                    clicky.log('#email-copy', 'User copied email address', 'click');
                 }
             });
         }
