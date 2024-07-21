@@ -4,27 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const emailText = emailAnchor.querySelector('.email-text');
     const tooltip = tooltipContainer.querySelector('.tooltip');
     const icon = emailAnchor.querySelector('ion-icon');
-
     const emailToCopy = 'thu@thu-le.com';
 
-    const handleInteraction = (event) => {
-        if (event.type === 'touchstart') {
+    const handleCopyEmail = (event) => {
+        if (event && event.type === 'touchstart') {
             event.preventDefault();
             tooltip.style.visibility = 'visible';
-        } else {
-            navigator.clipboard.writeText(emailToCopy).then(() => {
-                tooltip.textContent = 'Copied';
-                icon.setAttribute('name', 'checkmark-circle');
-                setTimeout(() => {
-                    tooltip.textContent = 'Copy thu@thu-le.com';
-                    icon.setAttribute('name', 'copy-outline');
-                }, 1000);
-
-                if (window.clicky) {
-                    clicky.log('#email-copy', 'User copied email address', 'click');
-                }
-            });
         }
+
+        navigator.clipboard.writeText(emailToCopy).then(() => {
+            tooltip.textContent = 'Copied';
+            icon.setAttribute('name', 'checkmark-circle');
+            setTimeout(() => {
+                tooltip.textContent = 'Copy thu@thu-le.com';
+                icon.setAttribute('name', 'copy-outline');
+            }, 1000);
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
+        });
     };
 
     const adjustTooltipPosition = () => {
@@ -32,17 +29,28 @@ document.addEventListener('DOMContentLoaded', () => {
         tooltip.style.left = `calc(50% - ${emailTextWidth / 2}px)`;
     };
 
+    // Initial position adjustment
     adjustTooltipPosition();
 
-    tooltipContainer.addEventListener('click', handleInteraction, {
-        passive: true,
+    // Attach event listeners
+    tooltipContainer.addEventListener('click', handleCopyEmail, {
+        passive: true
     });
-    tooltipContainer.addEventListener('touchstart', handleInteraction, {
-        passive: true,
+    tooltipContainer.addEventListener('touchstart', handleCopyEmail, {
+        passive: true
     });
-    tooltipContainer.addEventListener('touchend', handleInteraction, {
-        passive: true,
+    tooltipContainer.addEventListener('touchend', handleCopyEmail, {
+        passive: true
     });
 
-    window.addEventListener('resize', adjustTooltipPosition);
+    // Handle window resize
+    const debounce = (func, delay) => {
+        let timer;
+        return (...args) => {
+            clearTimeout(timer);
+            timer = setTimeout(() => func.apply(this, args), delay);
+        };
+    };
+
+    window.addEventListener('resize', debounce(adjustTooltipPosition, 200));
 });

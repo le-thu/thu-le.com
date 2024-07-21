@@ -1,6 +1,4 @@
-// Wait for the DOM content to fully load
 document.addEventListener('DOMContentLoaded', function () {
-    // Select the carousel element
     const carousel = document.querySelector('.carousel');
 
     if (carousel) {
@@ -33,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
             carousel.scrollLeft = scrollLeft - walk;
         });
 
-        // Prevent text selection while dragging
         carousel.addEventListener('selectstart', (e) => {
             e.preventDefault();
         });

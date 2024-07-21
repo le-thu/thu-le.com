@@ -502,7 +502,13 @@ a {
     -webkit-text-decoration-thickness: 0.09375rem;
     text-underline-offset: 3px;
     -webkit-text-underline-offset: 3px;
-    transition: all 400ms ease-in-out;
+    transition: all 120ms ease-in-out;
+}
+
+a:hover {
+    color: var(--paragraph);
+    text-decoration-color: var(--accent);
+    -webkit-text-decoration-color: var(--accent);
 }
 
 a h4 {
