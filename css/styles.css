@@ -71,7 +71,7 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 600px;
-    padding: 0.5rem 0;
+    padding: 0.75rem 0;
 }
 
 .nav-left {
@@ -638,6 +638,7 @@ footer {
     color: var(--accent);
     font-size: 0.8125rem;
     line-height: 1.5;
+    letter-spacing: normal;
     margin: 0;
 }
 
@@ -696,7 +697,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 632px) {
+@media screen and (max-width: 640px) {
     .carousel .project-img-small img {
         width: 300px;
         max-height: 100%;
@@ -717,10 +718,6 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-    .homepage-header {
-        margin: 2.5rem auto;
-    }
-
     p.links a {
         margin-right: 0.75rem;
         margin-bottom: 0.5rem;
