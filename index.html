@@ -56,7 +56,7 @@
                     <a href="/uses">Uses</a>
                 </div>
                 <div class="theme-switcher-container">
-                    <button title="Toggle theme" id="theme-switcher">
+                    <button title="Toggle theme" id="theme-switcher" onclick="toggleTheme(); clicky.log('#theme-switcher', 'Theme switched', 'click');">
                         <ion-icon alt="Theme switcher icon" name="moon"></ion-icon>
                     </button>
                 </div>
@@ -82,7 +82,7 @@
                 With experience across diverse industries and startups in fintech, crypto, e-commerce, SaaS, and private markets, I specialize in designing user-centric products. My approach is driven by first principles, systems thinking, and bias for action, aiming to strike the right balance between user needs and business goals. I thrive in ambiguous situations and take pride in delivering solutions that harmonize aesthetics and functionality.
             </p>
             <p class="links">
-                <span class="tooltip-container">
+                <span class="tooltip-container" onclick="handleCopyEmail(); clicky.log('#email-copy', 'User copied email address', 'click');">
                     <a class="email inline-icon" href="javascript:void(0);">
                         <span class="email-text">Email</span>
                         <ion-icon alt="Copy icon" name="copy-outline"></ion-icon>
