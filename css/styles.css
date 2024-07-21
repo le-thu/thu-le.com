@@ -71,7 +71,7 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 600px;
-    padding: 0.75rem 0;
+    padding: 0.5rem 0;
 }
 
 .nav-left {
@@ -107,7 +107,6 @@ body {
 
 .nav-links a {
     color: var(--default);
-    font-weight: 500;
     text-decoration: none;
     -webkit-text-decoration: none;
     margin-right: 1rem;
@@ -176,10 +175,10 @@ body.modal-open {
     position: absolute;
     top: 50%;
     left: 50%;
-    border-radius: 3px;
+    border-radius: 4px;
     transform: translate(-50%, -50%);
-    max-width: 95%;
-    max-height: 95%;
+    max-width: 88%;
+    max-height: 88%;
 }
 
 .modal button {
@@ -415,7 +414,6 @@ div.project-item-box {
     flex-direction: column;
     gap: 0.25rem;
     border: none;
-    border-radius: 12px;
     padding: 0.75rem 0;
     margin-bottom: 0.5rem;
     transition: background-color 120ms ease-in-out;
@@ -428,13 +426,13 @@ p.project-description {
     margin: 0;
 }
 
-.project-metadata {
+p.project-metadata {
     color: var(--accent);
     font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
-    font-size: 0.8125rem;
-    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-variant-caps: all-small-caps;
     line-height: 1;
-    letter-spacing: normal;
+    letter-spacing: -0.0125rem;
     text-align: center;
     margin: 1rem auto 1.5rem;
 }
@@ -569,7 +567,7 @@ figure.project-img-small {
 }
 
 .image {
-    border-radius: 3px;
+    border-radius: 4px;
     max-width: 100%;
     cursor: pointer;
 }
@@ -645,10 +643,10 @@ footer {
 .footer-text-right {
     color: var(--accent);
     font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
-    font-size: 0.6875rem;
-    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-variant-caps: all-small-caps;
     line-height: 1.5;
-    letter-spacing: 0.00625rem;
+    letter-spacing: -0.0125rem;
     margin: 0;
 }
 
@@ -675,6 +673,12 @@ footer {
 
     img.avatar {
         margin-left: 1.25rem;
+    }
+
+    .modal img {
+        border-radius: 0;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     h1.main-title {
