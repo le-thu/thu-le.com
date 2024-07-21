@@ -459,7 +459,8 @@ li {
     padding-left: 0.5rem;
 }
 
-li::marker {
+li::marker,
+.subtle {
     color: var(--link-underline);
     transition: color 400ms ease-in-out;
 }
