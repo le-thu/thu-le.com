@@ -210,10 +210,9 @@ button.close:hover {
 }
 
 .avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 22px;
-    transform: rotate(-6deg);
+    width: 88px;
+    height: 88px;
+    border-radius: 33% 67% 40% 60% / 66% 39% 61% 34%;
     box-shadow:
         0px 0.7px 1.9px -24px rgba(0, 0, 0, 0.124),
         0px 1.7px 4.9px -24px rgba(0, 0, 0, 0.177),
@@ -224,12 +223,12 @@ button.close:hover {
 }
 
 .avatar:hover {
-    transform: translate(0, -4px) rotate(-6deg);
+    transform: translate(0, -4px);
     transition: transform 200ms ease-in-out;
 }
 
 .avatar:not(:hover) {
-    transform: translate(0, 0) rotate(-6deg);
+    transform: translate(0, 0);
     transition:
         transform 200ms ease-in-out,
         transition-delay 200ms;
