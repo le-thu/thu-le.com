@@ -399,7 +399,7 @@ em.header-em {
 }
 
 div.project-block {
-    max-width: 632px;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -417,7 +417,7 @@ div.project-item-box {
     gap: 0.25rem;
     border: none;
     border-radius: 12px;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 0;
     margin-bottom: 0.5rem;
     transition: background-color 120ms ease-in-out;
 }
@@ -433,6 +433,7 @@ p.project-description {
     color: var(--accent);
     font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
     font-size: 0.8125rem;
+    text-transform: uppercase;
     line-height: 1;
     letter-spacing: normal;
     text-align: center;
@@ -577,19 +578,12 @@ figure.project-img-small {
 .carousel {
     display: flex;
     overflow-x: auto;
-    /* Allow horizontal scrolling */
     scroll-snap-type: x mandatory;
-    /* Snap scrolling behavior */
     scroll-behavior: smooth;
-    /* Smooth scrolling */
     padding: 0 2rem;
-    /* Padding for visual spacing */
     -webkit-overflow-scrolling: touch;
-    /* Enable smooth scrolling on iOS */
     -ms-overflow-style: none;
-    /* Hide scrollbar in IE/Edge */
     scrollbar-width: none;
-    /* Hide scrollbar in Firefox */
 }
 
 .carousel .project-img-small {
@@ -612,7 +606,6 @@ figure.project-img-small {
     display: none;
 }
 
-/* Additional CSS for desktop mouse dragging */
 .carousel {
     -webkit-overflow-scrolling: auto;
     cursor: grab;
@@ -654,8 +647,9 @@ footer {
     color: var(--accent);
     font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
     font-size: 0.6875rem;
+    text-transform: uppercase;
     line-height: 1.5;
-    letter-spacing: normal;
+    letter-spacing: 0.00625rem;
     margin: 0;
 }
 
@@ -699,10 +693,6 @@ footer {
 }
 
 @media screen and (max-width: 632px) {
-    div.project-item-box {
-        padding: 0.75rem 0;
-    }
-
     .carousel .project-img-small img {
         width: 300px;
         max-height: 100%;

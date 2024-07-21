@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const tooltip = tooltipContainer.querySelector('.tooltip');
     const icon = emailAnchor.querySelector('ion-icon');
     const emailToCopy = 'thu@thu-le.com';
+    const copyEmailSound = document.getElementById('copyEmailSound');
+
+    if (copyEmailSound) {
+        copyEmailSound.volume = 0.25;
+    }
 
     const handleCopyEmail = (event) => {
         if (event && event.type === 'touchstart') {
@@ -15,6 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
         navigator.clipboard.writeText(emailToCopy).then(() => {
             tooltip.textContent = 'Copied';
             icon.setAttribute('name', 'checkmark-circle');
+            if (copyEmailSound) {
+                copyEmailSound.play();
+            }
             setTimeout(() => {
                 tooltip.textContent = 'Copy thu@thu-le.com';
                 icon.setAttribute('name', 'copy-outline');
@@ -29,10 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
         tooltip.style.left = `calc(50% - ${emailTextWidth / 2}px)`;
     };
 
-    // Initial position adjustment
     adjustTooltipPosition();
 
-    // Attach event listeners
     tooltipContainer.addEventListener('click', handleCopyEmail, {
         passive: true
     });
@@ -43,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
         passive: true
     });
 
-    // Handle window resize
     const debounce = (func, delay) => {
         let timer;
         return (...args) => {
