@@ -9,12 +9,12 @@
 }
 
 :root {
-    --background: #F7F7F7;
-    --navbar-bg: rgba(247, 247, 247, 0.6);
+    --background: #F6F4F4;
+    --navbar-bg: rgba(246, 244, 244, 0.6);
     --box-hover: #E6E5E5;
     --default: #0D0D0D;
     --accent: #666;
-    --paragraph: #1F1E1E;
+    --paragraph: #242424;
     --caption-metadata: #4D4C4C;
     --arrows: #999;
     --divider: #E0E0E0;
