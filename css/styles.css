@@ -578,7 +578,7 @@ figure.project-img-small {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    padding: 0 2rem;
+    padding: 0 1.25rem;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -590,8 +590,9 @@ figure.project-img-small {
     display: flex;
     align-items: baseline;
     justify-content: center;
-    margin: 1rem auto 0;
-    padding-left: 2rem;
+    margin: 1rem auto;
+    padding-left: 1.25rem;
+    padding-right: 0;
 }
 
 .carousel .project-img-small img {
@@ -700,8 +701,6 @@ footer {
 @media screen and (max-width: 640px) {
     .carousel .project-img-small img {
         width: 300px;
-        max-height: 100%;
-        display: block;
     }
 
     .footer-container {
@@ -730,9 +729,5 @@ footer {
     figure.project-img,
     figure.project-img-small {
         margin: 2.5rem auto;
-    }
-
-    .carousel .project-img-small {
-        padding-left: 1.25rem;
     }
 }
