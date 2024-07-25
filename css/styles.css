@@ -13,23 +13,23 @@
     --navbar-bg: rgba(246, 244, 244, 0.6);
     --box-hover: #E6E5E5;
     --default: #0D0D0D;
-    --accent: #666;
-    --paragraph: #242424;
+    --accent: #D1442E;
+    --body: #292929;
+    --secondary: #707070;
     --caption-metadata: #4D4C4C;
-    --arrows: #999;
     --divider: #E0E0E0;
     --link-underline: #BFBFBF;
 }
 
 .dark {
-    --background: #141414;
-    --navbar-bg: rgba(20, 20, 20, 0.6);
+    --background: #0F0F0F;
+    --navbar-bg: rgba(15, 15, 15, 0.6);
     --box-hover: #262626;
     --default: #F2F2F2;
-    --accent: #999;
-    --paragraph: #E6E5E5;
+    --accent: #ffb865;
+    --body: #E0E0E0;
+    --secondary: #8A8A8A;
     --caption-metadata: #C7C7C7;
-    --arrows: #737373;
     --divider: #292929;
     --link-underline: #666;
 }
@@ -90,7 +90,7 @@ body {
 }
 
 .nav-left .home-button:hover {
-    color: var(--accent);
+    color: var(--secondary);
     text-decoration-line: none;
     -webkit-text-decoration-line: none;
 }
@@ -114,7 +114,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: var(--accent);
+    color: var(--secondary);
 }
 
 button {
@@ -335,7 +335,7 @@ ul,
 ol,
 li,
 figcaption {
-    color: var(--paragraph);
+    color: var(--body);
     font-weight: 400;
     max-width: 600px;
     margin: 1rem auto;
@@ -358,21 +358,17 @@ figcaption {
     margin-left: 0;
 }
 
-p.links {
-    color: var(--accent);
-}
-
 p.links a {
     margin-right: 1.25rem;
 }
 
 h4 ion-icon {
-    color: var(--arrows);
+    color: hsl(from var(--default) h s l / 30%);
     margin-left: 0.25rem;
 }
 
 p ion-icon {
-    color: var(--arrows);
+    color: hsl(from var(--body) h s l / 30%);
     margin-left: 0.3125rem;
 }
 
@@ -420,16 +416,16 @@ div.project-item-box {
 }
 
 p.project-description {
-    color: var(--accent);
+    color: var(--secondary);
     line-height: 1.4;
     max-width: 56ch;
     margin: 0;
 }
 
 p.project-metadata {
-    color: var(--accent);
+    color: var(--secondary);
     font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     font-variant-caps: all-small-caps;
     line-height: 1;
     letter-spacing: -0.0125rem;
@@ -467,7 +463,7 @@ li::marker,
 
 .stylized-number {
     display: inline-block;
-    color: var(--arrows);
+    color: hsl(from var(--default) h s l / 40%);
     width: 32px;
     font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
     font-weight: 400;
@@ -475,6 +471,7 @@ li::marker,
     margin-right: 1rem;
     letter-spacing: normal;
     line-height: normal;
+    transition: color 400ms ease-in-out;
 }
 
 .stylized-paragraph {
@@ -490,24 +487,32 @@ figcaption {
 
 a {
     display: inline;
-    color: var(--accent);
+    color: var(--secondary);
     text-decoration: underline;
     -webkit-text-decoration: underline;
-    text-decoration-style: wavy;
-    -webkit-text-decoration-style: wavy;
+    text-decoration-style: dashed;
+    -webkit-text-decoration-style: dashed;
     text-decoration-color: var(--link-underline);
     -webkit-text-decoration-color: var(--link-underline);
-    text-decoration-thickness: 0.09375rem;
-    -webkit-text-decoration-thickness: 0.09375rem;
-    text-underline-offset: 3px;
-    -webkit-text-underline-offset: 3px;
+    text-decoration-thickness: 0.0625rem;
+    -webkit-text-decoration-thickness: 0.0625rem;
+    text-underline-offset: 0.25rem;
+    -webkit-text-underline-offset: 0.25rem;
     transition: all 120ms ease-in-out;
 }
 
 a:hover {
-    color: var(--paragraph);
-    text-decoration-color: var(--accent);
-    -webkit-text-decoration-color: var(--accent);
+    color: var(--body);
+    text-decoration-color: hsl(from var(--body) h s l / 40%);
+    -webkit-text-decoration-color: hsl(from var(--body) h s l / 40%);
+}
+
+p.links a:hover {
+    color: var(--body);
+}
+
+p.links a:hover ion-icon {
+    color: hsl(from var(--body) h s l / 50%);
 }
 
 a h4 {
@@ -523,7 +528,7 @@ a.inline-icon {
 }
 
 a.inline-icon:hover ion-icon {
-    color: var(--accent);
+    color: hsl(from var(--body) h s l / 60%);
     transition: color 120ms ease-in-out;
 }
 
@@ -545,7 +550,7 @@ a.project-item {
 }
 
 a.project-item:hover ion-icon {
-    color: var(--default);
+    color: var(--body);
     transform: translate(3px, 0);
     transition: all 120ms ease-in-out;
 }
@@ -636,7 +641,7 @@ footer {
 }
 
 .footer-text-left {
-    color: var(--accent);
+    color: var(--secondary);
     font-size: 0.8125rem;
     line-height: 1.5;
     letter-spacing: normal;
@@ -644,7 +649,7 @@ footer {
 }
 
 .footer-text-right {
-    color: var(--accent);
+    color: var(--secondary);
     font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
     font-size: 0.75rem;
     font-variant-caps: all-small-caps;
