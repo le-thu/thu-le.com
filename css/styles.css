@@ -301,11 +301,6 @@ h1.main-title_reading {
     line-height: 1.125;
 }
 
-h1.main-title_reading {
-    margin: 2.5rem auto;
-    text-align: left;
-}
-
 .subpage-header {
     margin: 6rem auto 2rem;
 }
@@ -319,13 +314,6 @@ h2.section-title {
 
 h2.section-title_process {
     font-size: 1.25rem;
-    line-height: 1;
-    margin: 2.5rem auto 0.5rem;
-}
-
-h2.section-title_reading {
-    font-family: 'Newsreader', serif;
-    font-size: 1.5rem;
     line-height: 1;
     margin: 2.5rem auto 0.5rem;
 }
@@ -354,7 +342,7 @@ figcaption {
 }
 
 #about p {
-    max-width: 54ch;
+    max-width: 50ch;
     margin-left: 0;
 }
 
@@ -391,6 +379,11 @@ em.header-em {
     font-size: 1.75rem;
     letter-spacing: -0.00625rem;
     transition: color 400ms ease-in-out;
+}
+
+.compact-heading {
+    color: var(--default);
+    margin: 2.5rem auto 1rem;
 }
 
 div.project-block {
@@ -493,7 +486,7 @@ a {
     -webkit-text-decoration: underline;
     text-decoration-style: dashed;
     -webkit-text-decoration-style: dashed;
-    text-decoration-color: var(--link-underline);
+    text-decoration-color: hsl(from var(--body) h s l / 30%);
     -webkit-text-decoration-color: var(--link-underline);
     text-decoration-thickness: 0.0625rem;
     -webkit-text-decoration-thickness: 0.0625rem;
@@ -504,7 +497,7 @@ a {
 
 a:hover {
     color: var(--body);
-    text-decoration-color: hsl(from var(--body) h s l / 40%);
+    text-decoration-color: hsl(from var(--body) h s l / 50%);
     -webkit-text-decoration-color: hsl(from var(--body) h s l / 40%);
 }
 
@@ -529,7 +522,7 @@ a.inline-icon {
 }
 
 a.inline-icon:hover ion-icon {
-    color: hsl(from var(--body) h s l / 60%);
+    color: hsl(from var(--body) h s l / 50%);
     transition: color 120ms ease-in-out;
 }
 
@@ -571,6 +564,11 @@ figure.project-img {
 figure.project-img-small {
     max-width: 600px;
     margin: 2.5rem auto 3rem;
+}
+
+figure.project-img-tiny {
+    max-width: 320px;
+    margin: 2.5rem auto;
 }
 
 .image {
