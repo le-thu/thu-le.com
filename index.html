@@ -48,13 +48,10 @@
         <div class="menu-container">
             <div class="nav-left">
                 <a class="home-button" href="/">Thu Le</a>
+                <div class="nav-links">
+                </div>
             </div>
             <div class="nav-right">
-                <div class="nav-links">
-                    <a href="/about">About</a>
-                    <a href="/now">Now</a>
-                    <a href="/uses">Uses</a>
-                </div>
                 <div class="theme-switcher-container">
                     <button title="Toggle theme" id="theme-switcher" onclick="toggleTheme(); clicky.log('#theme-switcher', 'Theme switched', 'click');">
                         <ion-icon alt="Theme switcher icon" name="moon"></ion-icon>
@@ -69,21 +66,21 @@
                 <img class="avatar" width="80px" src="assets/avatar.png" alt="Avatar" title="That's me">
             </div>
             <h1 class="homepage">
-                Product designer <em class="header-em">obsessed with purposeful details</em> and <em class="header-em">making sense out of complex systems</em>
+                Product designer <span class="header-em italic">obsessed with purposeful details</span> and <span class="header-em italic">making sense out of complex systems</span>
             </h1>
-        </div>
-    </header>
-    <main>
-        <section id="about">
             <p>
                 I currently lead design with the Fund Onboarding team at <a href="https://www.anduintransact.com/" target="_blank">Anduin</a>, focusing on building efficient investor onboarding and data management solutions for fund managers.
             </p>
-            <p>
-                <a class="inline-icon" href="/about">More about me<ion-icon alt="Arrow icon" name="arrow-forward-outline"></ion-icon></a>
+            <p class="links">
+                <a class="inline-icon" href="/about">About</a>
+                <a class="inline-icon" href="/now">Now</a>
+                <a class="inline-icon" href="/uses">Uses</a>
             </p>
-        </section>
+        </div>
+    </header>
+    <main>
         <section id="work">
-            <h2 class="section-title">
+            <h2 class="section-title italic">
                 Work
             </h2>
             <div class="project-block">
@@ -120,7 +117,7 @@
             </div>
         </section>
         <section id="blog">
-            <h2 class="section-title">
+            <h2 class="section-title italic">
                 Blog
             </h2>
             <p>
@@ -149,10 +146,10 @@
         </p>
         <div class="footer-container">
             <p class="footer-text-left">
-                &copy; 2024 Thu Le <span class="subtle">&#183;</span> Designed <span class="subtle">+</span> built in Saigon <span class="subtle">&#183;</span> <a rel="noopener" href="https://www.websitecarbon.com/website/thu-le-com/" target="_blank">Footprint</a>
+                &copy; 2024 Thu Le <span class="subtle">&#183;</span> Designed <span class="subtle">+</span> built in Saigon <span class="subtle">&#183;</span> <a class="inline-icon" rel="noopener" href="https://www.websitecarbon.com/website/thu-le-com/" target="_blank">Footprint</a>
             </p>
             <p class="footer-text-right">
-                Updated July 27, 2024
+                Updated July 28, 2024
             </p>
         </div>
     </footer>
