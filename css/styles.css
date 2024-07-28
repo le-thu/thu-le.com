@@ -9,16 +9,14 @@
 }
 
 :root {
-    --background: #F6F4F4;
-    --navbar-bg: rgba(246, 244, 244, 0.6);
+    --background: #FAF9F9;
+    --navbar-bg: rgba(250, 249, 249, 0.6);
     --box-hover: #E6E5E5;
     --default: #0D0D0D;
     --accent: #D1442E;
     --body: #292929;
     --secondary: #707070;
     --caption-metadata: #4D4C4C;
-    --divider: #E0E0E0;
-    --link-underline: #BFBFBF;
 }
 
 .dark {
@@ -30,8 +28,6 @@
     --body: #E0E0E0;
     --secondary: #8A8A8A;
     --caption-metadata: #C7C7C7;
-    --divider: #292929;
-    --link-underline: #666;
 }
 
 body {
@@ -85,6 +81,7 @@ body {
     align-items: center;
     color: var(--default);
     font-weight: 500;
+    margin-right: 1.5rem;
     transition: all 120ms ease-in-out;
     text-decoration: none;
 }
@@ -107,9 +104,10 @@ body {
 
 .nav-links a {
     color: var(--default);
+    font-weight: 500;
     text-decoration: none;
     -webkit-text-decoration: none;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     transition: all 120ms ease-in-out;
 }
 
@@ -289,7 +287,7 @@ h1.homepage {
 }
 
 .homepage-header {
-    margin: 6rem auto 1.25rem;
+    margin: 6rem auto 4rem;
     max-width: 600px;
 }
 
@@ -331,17 +329,7 @@ figcaption {
     transition: color 400ms ease-in-out;
 }
 
-#blog,
-#about {
-    max-width: 600px;
-}
-
-#blog p,
-#about p {
-    margin: 0.75rem auto;
-}
-
-#about p {
+.homepage-header p {
     max-width: 50ch;
     margin-left: 0;
 }
@@ -374,11 +362,17 @@ em {
     line-height: normal;
 }
 
-em.header-em {
+.header-em {
+    font-family: 'Newsreader', serif;
     color: var(--caption-metadata);
     font-size: 1.75rem;
     letter-spacing: -0.00625rem;
+    line-height: normal;
     transition: color 400ms ease-in-out;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .compact-heading {
@@ -451,7 +445,7 @@ li {
 
 li::marker,
 .subtle {
-    color: var(--link-underline);
+    color: hsl(from var(--body) h s l / 30%);
     transition: color 400ms ease-in-out;
 }
 
@@ -487,7 +481,7 @@ a {
     text-decoration-style: dashed;
     -webkit-text-decoration-style: dashed;
     text-decoration-color: hsl(from var(--body) h s l / 30%);
-    -webkit-text-decoration-color: var(--link-underline);
+    -webkit-text-decoration-color: hsl(from var(--body) h s l / 30%);
     text-decoration-thickness: 0.0625rem;
     -webkit-text-decoration-thickness: 0.0625rem;
     text-underline-offset: 0.25rem;
@@ -620,7 +614,7 @@ figure.project-img-tiny {
 
 hr.divider {
     max-width: 264px;
-    border: 0.5px solid var(--divider);
+    border: 0.5px solid hsl(from var(--default) h s l / 15%);
     margin: 3.5rem auto;
     transition: border-color 400ms ease-in-out;
 }
@@ -633,7 +627,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid var(--divider);
+    border-top: 1px solid hsl(from var(--default) h s l / 15%);
     padding: 1.25rem 0;
     transition: border-color 400ms ease-in-out;
 }
