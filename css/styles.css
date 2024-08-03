@@ -10,7 +10,7 @@
 
 :root {
     --background: #FAF9F9;
-    --navbar-bg: rgba(250, 249, 249, 0.6);
+    --navbar-bg: rgba(250, 249, 249, 0.7);
     --box-hover: #E6E5E5;
     --default: #0D0D0D;
     --accent: #D1442E;
@@ -21,7 +21,7 @@
 
 .dark {
     --background: #0F0F0F;
-    --navbar-bg: rgba(15, 15, 15, 0.6);
+    --navbar-bg: rgba(15, 15, 15, 0.7);
     --box-hover: #262626;
     --default: #F2F2F2;
     --accent: #ffb865;
@@ -291,11 +291,9 @@ h1.homepage {
     max-width: 600px;
 }
 
-h1.main-title,
-h1.main-title_reading {
+h1.main-title {
     font-size: 1.75rem;
     font-family: 'Newsreader', serif;
-    text-align: center;
     line-height: 1.125;
 }
 
