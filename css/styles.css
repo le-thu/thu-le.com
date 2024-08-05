@@ -640,11 +640,9 @@ footer {
 
 .footer-text-right {
     color: var(--secondary);
-    font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
-    font-size: 0.75rem;
-    font-variant-caps: all-small-caps;
+    font-size: 0.8125rem;
     line-height: 1.5;
-    letter-spacing: -0.0125rem;
+    letter-spacing: normal;
     margin: 0;
 }
 
