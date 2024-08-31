@@ -476,10 +476,10 @@ a {
     color: var(--secondary);
     text-decoration: underline;
     -webkit-text-decoration: underline;
-    text-decoration-style: dashed;
-    -webkit-text-decoration-style: dashed;
-    text-decoration-color: hsl(from var(--body) h s l / 30%);
-    -webkit-text-decoration-color: hsl(from var(--body) h s l / 30%);
+    text-decoration-style: solid;
+    -webkit-text-decoration-style: solid;
+    text-decoration-color: hsl(from var(--body) h s l / 20%);
+    -webkit-text-decoration-color: hsl(from var(--body) h s l / 20%);
     text-decoration-thickness: 0.0625rem;
     -webkit-text-decoration-thickness: 0.0625rem;
     text-underline-offset: 0.25rem;
@@ -489,7 +489,7 @@ a {
 
 a:hover {
     color: var(--body);
-    text-decoration-color: hsl(from var(--body) h s l / 50%);
+    text-decoration-color: hsl(from var(--body) h s l / 40%);
     -webkit-text-decoration-color: hsl(from var(--body) h s l / 40%);
 }
 
