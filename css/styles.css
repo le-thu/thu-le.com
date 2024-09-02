@@ -26,7 +26,7 @@
     --default: #F2F2F2;
     --accent: #ffb865;
     --body: #E0E0E0;
-    --secondary: #8A8A8A;
+    --secondary: #949494;
     --caption-metadata: #C7C7C7;
 }
 
@@ -406,17 +406,6 @@ p.project-description {
     line-height: 1.4;
     max-width: 56ch;
     margin: 0;
-}
-
-p.project-metadata {
-    color: var(--secondary);
-    font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
-    font-size: 0.875rem;
-    font-variant-caps: all-small-caps;
-    line-height: 1;
-    letter-spacing: -0.0125rem;
-    text-align: center;
-    margin: 1rem auto 1.25rem;
 }
 
 .compact {
