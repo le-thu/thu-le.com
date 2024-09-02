@@ -81,7 +81,7 @@ body {
     align-items: center;
     color: var(--default);
     font-weight: 500;
-    margin-right: 1.5rem;
+    margin-right: 1.25rem;
     transition: all 120ms ease-in-out;
     text-decoration: none;
 }
@@ -308,10 +308,16 @@ h2.section-title {
     margin: 3.5rem auto 0.75rem;
 }
 
-h2.section-title_process {
+h2.section-title_small {
     font-size: 1.25rem;
     line-height: 1;
     margin: 2.5rem auto 0.5rem;
+}
+
+h2.section-title_smaller {
+    font-size: 1.0625rem;
+    line-height: 1.4;
+    margin: 2.5rem auto 0.125rem;
 }
 
 p,
@@ -401,7 +407,7 @@ div.project-item-box {
     transition: background-color 120ms ease-in-out;
 }
 
-p.project-description {
+.project-description {
     color: var(--secondary);
     line-height: 1.4;
     max-width: 56ch;
@@ -555,6 +561,23 @@ figure.project-img-tiny {
 .image {
     border-radius: 4px;
     max-width: 100%;
+}
+
+div.links-page {
+    margin: 3rem auto;
+}
+
+p.links-page {
+    margin: 0.125rem auto;
+    line-height: 1.4;
+}
+
+.links-page a {
+    color: var(--default);
+}
+
+.secondary {
+    color: var(--secondary);
 }
 
 .carousel {
