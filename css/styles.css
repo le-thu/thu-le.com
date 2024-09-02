@@ -555,7 +555,6 @@ figure.project-img-tiny {
 .image {
     border-radius: 4px;
     max-width: 100%;
-    cursor: pointer;
 }
 
 .carousel {
@@ -592,11 +591,6 @@ figure.project-img-tiny {
 
 .carousel {
     -webkit-overflow-scrolling: auto;
-    cursor: grab;
-}
-
-.carousel:active {
-    cursor: grabbing;
 }
 
 hr.divider {
