@@ -200,32 +200,6 @@ button.close:hover {
     transition: transform 200ms ease-in-out, transition-delay 200ms;
 }
 
-.tooltip-container {
-    position: relative;
-    display: inline-block;
-    white-space: nowrap;
-}
-
-.tooltip {
-    position: absolute;
-    background-color: var(--default);
-    color: var(--background);
-    text-align: center;
-    padding: 0.25rem 0.5rem;
-    border-radius: 8px;
-    font-size: 0.75rem;
-    font-weight: 500;
-    visibility: hidden;
-    transform: translateX(-50%);
-    left: 50%;
-    bottom: calc(100% + 4px);
-    transition: visibility 80ms ease-in-out;
-}
-
-.tooltip-container:hover .tooltip {
-    visibility: visible;
-}
-
 .menu,
 h1,
 h2,
@@ -536,13 +510,13 @@ div.links-page {
     margin: 3rem auto;
 }
 
+a.links-page-header {
+    color: var(--default);
+}
+
 p.links-page {
     margin: 0.125rem auto;
     line-height: 1.4;
-}
-
-.links-page a {
-    color: var(--default);
 }
 
 .secondary {
