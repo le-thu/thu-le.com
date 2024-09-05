@@ -323,13 +323,9 @@ ul.compact {
     line-height: 1.2;
 }
 
-ul li,
-ol li {
-    margin: 0.5rem 0 0.5rem 1.5rem;
-}
-
 li {
     padding-left: 0.5rem;
+    margin: 0.5rem 0 0.5rem 1.5rem;
 }
 
 li::marker,
