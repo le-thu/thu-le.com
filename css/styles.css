@@ -8,6 +8,34 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Newsreader Display';
+    src: url('/fonts/NewsreaderDisplay-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Newsreader Display';
+    src: url('/fonts/NewsreaderDisplay-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Newsreader Text';
+    src: url('/fonts/NewsreaderText-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Newsreader Text';
+    src: url('/fonts/NewsreaderText-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
 :root {
     --background: #FAF9F9;
     --navbar-bg: rgba(250, 249, 249, 0.64);
@@ -166,7 +194,9 @@ h1.homepage {
 h1.main-title,
 h2.section-title {
     font-size: 1.75rem;
-    font-family: 'Newsreader', serif;
+    font-family: 'Newsreader Display', serif;
+    font-weight: normal;
+    letter-spacing: -0.00625rem;
 }
 
 .subpage-header {
@@ -229,17 +259,17 @@ strong {
 }
 
 em {
-    font-family: 'Newsreader', serif;
+    font-family: 'Newsreader Text', serif;
     font-size: 1.125rem;
     letter-spacing: normal;
     line-height: normal;
 }
 
 .header-em {
-    font-family: 'Newsreader', serif;
+    font-family: 'Newsreader Display', serif;
     color: var(--caption-metadata);
-    font-size: 1.75rem;
-    letter-spacing: -0.0075rem;
+    font-size: 1.5625rem;
+    letter-spacing: -0.00625rem;
     line-height: normal;
     transition: color 400ms ease-in-out;
 }
@@ -463,6 +493,42 @@ footer {
     font-size: 0.8125rem;
     letter-spacing: normal;
     margin: 0;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 0 1.25rem;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.carousel .project-img-small {
+    display: flex;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    align-items: baseline;
+    margin: 2rem auto 1rem;
+    padding-left: 1.25rem;
+    padding-right: 0;
+}
+
+.carousel .project-img-small img {
+    display: block;
+    width: 400px;
+    max-height: 100%;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel {
+    -webkit-overflow-scrolling: auto;
 }
 
 @media screen and (max-width: 768px) {
