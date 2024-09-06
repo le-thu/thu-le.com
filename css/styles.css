@@ -480,7 +480,7 @@ details > summary {
     font-size: 1.125rem;
     letter-spacing: normal;
     line-height: normal;
-    margin: 2.5rem auto 1rem;
+    margin: 2.5rem auto 0;
 }
 
 summary::marker {
@@ -558,6 +558,7 @@ footer {
     p,
     ul,
     figure,
+    details,
     footer {
         padding: 0 1.25rem;
     }
