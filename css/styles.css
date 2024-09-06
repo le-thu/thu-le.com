@@ -163,6 +163,7 @@ h1,
 h2,
 h3,
 .links-page,
+details,
 footer {
     max-width: 600px;
 }
@@ -470,6 +471,20 @@ hr.divider {
     border: 0.5px solid hsl(from var(--default) h s l / 15%);
     margin: 3.5rem auto;
     transition: border-color 400ms ease-in-out;
+}
+
+details > summary {
+    cursor: pointer;
+    font-family: 'Newsreader Text', serif;
+    font-style: italic;
+    font-size: 1.125rem;
+    letter-spacing: normal;
+    line-height: normal;
+    margin: 2.5rem auto 1rem;
+}
+
+summary::marker {
+    color: hsl(from var(--body) h s l / 30%);
 }
 
 footer {
