@@ -77,6 +77,7 @@ body {
     background-color: var(--navbar-bg);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+    padding: 0.75rem 0;
     z-index: 9999;
     transition: background-color 400ms ease-in-out;
 }
@@ -86,7 +87,6 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 600px;
-    padding: 0.75rem 0;
 }
 
 .nav-left {
@@ -331,7 +331,7 @@ li {
 
 li::marker,
 .subtle {
-    color: hsl(from var(--body) h s l / 30%);
+    color: hsl(from var(--body) h s l / 40%);
     transition: color 400ms ease-in-out;
 }
 
