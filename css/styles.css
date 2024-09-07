@@ -513,7 +513,6 @@ footer {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     padding: 0 1.25rem;
-    -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -536,10 +535,6 @@ footer {
 
 .carousel::-webkit-scrollbar {
     display: none;
-}
-
-.carousel {
-    -webkit-overflow-scrolling: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -605,5 +600,9 @@ footer {
     figure.project-img,
     figure.project-img-small {
         margin: 2.5rem auto;
+    }
+
+    .carousel .project-img-small img {
+        width: 300px;
     }
 }
