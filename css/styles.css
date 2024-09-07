@@ -215,9 +215,10 @@ h2.section-title_small {
 }
 
 h2.section-title_smaller {
-    font-size: 1.0625rem;
+    font-family: 'Newsreader Display', serif;
+    font-size: 1.125rem;
     line-height: 1.4;
-    margin: 0.125rem auto;
+    text-wrap: pretty;
 }
 
 p,
@@ -483,7 +484,8 @@ details > summary {
     margin: 2.5rem auto 0;
 }
 
-summary::marker {
+summary::marker,
+summary::-webkit-details-marker {
     color: hsl(from var(--body) h s l / 30%);
 }
 
