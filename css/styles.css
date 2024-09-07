@@ -595,9 +595,6 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-    #blog ion-icon {
-        display: none;
-    }
 
     figure.project-img,
     figure.project-img-small {
