@@ -39,7 +39,7 @@
 :root {
     --background: #FAF9F9;
     --navbar-bg: rgba(250, 249, 249, 0.64);
-    --default: #0D0D0D;
+    --default: #0F0F0F;
     --body: #292929;
     --secondary: #707070;
     --caption-metadata: #4D4C4C;
@@ -199,7 +199,6 @@ h2.section-title {
     font-size: 1.75rem;
     font-weight: 400;
     font-family: 'Newsreader Display', serif;
-    font-weight: normal;
     letter-spacing: -0.0125rem;
 }
 
