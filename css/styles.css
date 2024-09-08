@@ -249,11 +249,6 @@ h3 ion-icon {
     margin-left: 0.25rem;
 }
 
-p ion-icon {
-    color: hsl(from var(--body) h s l / 30%);
-    margin-left: 0.3125rem;
-}
-
 strong {
     color: var(--default);
     font-weight: 600;
@@ -385,10 +380,6 @@ p.links a:hover {
     color: var(--body);
 }
 
-p.links a:hover ion-icon {
-    color: hsl(from var(--body) h s l / 50%);
-}
-
 a h3 {
     color: var(--default);
     transition: color 400ms ease-in-out;
@@ -399,17 +390,6 @@ a.inline-icon {
     align-items: center;
     text-decoration: none;
     -webkit-text-decoration: none;
-}
-
-a.inline-icon:hover ion-icon {
-    color: hsl(from var(--body) h s l / 50%);
-    transition: color 120ms ease-in-out;
-}
-
-a.inline-icon:not(:hover) ion-icon {
-    transition:
-        color 120ms ease-in-out,
-        transition-delay 120ms;
 }
 
 a.project-item {
@@ -425,9 +405,7 @@ a.project-item:hover ion-icon {
 
 a.project-item:not(:hover) ion-icon {
     transform: translate(0, 0);
-    transition:
-        all 120ms ease-in-out,
-        transition-delay 120ms;
+    transition: all 120ms ease-in-out, transition-delay 120ms;
 }
 
 figure.project-img {
