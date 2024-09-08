@@ -177,11 +177,13 @@ h3 {
 }
 
 h1.homepage {
-    font-size: 1.5rem;
+    font-family: 'Newsreader Display', serif;
+    font-size: 1.75rem;
+    line-height: 1.1;
     font-weight: 400;
     letter-spacing: -0.0125rem;
     text-wrap: pretty;
-    max-width: 28ch;
+    max-width: 26ch;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     margin-left: 0;
@@ -195,9 +197,10 @@ h1.homepage {
 h1.main-title,
 h2.section-title {
     font-size: 1.75rem;
+    font-weight: 400;
     font-family: 'Newsreader Display', serif;
     font-weight: normal;
-    letter-spacing: -0.00625rem;
+    letter-spacing: -0.0125rem;
 }
 
 .subpage-header {
@@ -216,6 +219,7 @@ h2.section-title_small {
 
 h2.section-title_smaller {
     font-family: 'Newsreader Display', serif;
+    font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.4;
     text-wrap: pretty;
@@ -260,15 +264,6 @@ em {
     font-size: 1.125rem;
     letter-spacing: normal;
     line-height: normal;
-}
-
-.header-em {
-    font-family: 'Newsreader Display', serif;
-    color: var(--caption-metadata);
-    font-size: 1.5625rem;
-    letter-spacing: -0.00625rem;
-    line-height: normal;
-    transition: color 400ms ease-in-out;
 }
 
 .italic {
