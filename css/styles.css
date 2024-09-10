@@ -1,11 +1,15 @@
 *,
 *::before,
 *::after {
-    margin-block: 0;
-    margin-inline: auto;
-    padding: 0;
-    text-rendering: optimizeLegibility;
     box-sizing: border-box;
+    margin-inline: auto;
+    margin-block: 0;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
 @font-face {
@@ -55,14 +59,16 @@
 }
 
 body {
-    display: block;
+    min-height: 100vh;
     color: var(--default);
     background-color: var(--background);
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 0.9375rem;
     letter-spacing: -0.0075rem;
     line-height: 1.5;
+    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     hanging-punctuation: first allow-end last;
     transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
 }
@@ -221,7 +227,7 @@ h2.section-title_smaller {
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.4;
-    text-wrap: pretty;
+    text-wrap: balance;
 }
 
 p,
@@ -235,6 +241,12 @@ figcaption {
     margin: 1rem auto;
     text-wrap: pretty;
     transition: color 400ms ease-in-out;
+}
+
+ul,
+ol,
+dl {
+    padding: 0;
 }
 
 .homepage-header p {
