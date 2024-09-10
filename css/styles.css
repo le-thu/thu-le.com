@@ -420,6 +420,13 @@ a:not(:hover) .subtle {
     transition: all 120ms ease-in-out;
 }
 
+img,
+picture {
+    max-width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
 figure.project-img {
     max-width: 800px;
     margin: 2.5rem auto 4rem;
@@ -433,11 +440,6 @@ figure.project-img-small {
 figure.project-img-tiny {
     max-width: 320px;
     margin: 2.5rem auto;
-}
-
-.image {
-    border-radius: 4px;
-    max-width: 100%;
 }
 
 div.links-page {
