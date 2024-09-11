@@ -118,7 +118,6 @@ body {
 
 button {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 32px;
     height: 32px;
@@ -164,7 +163,6 @@ button:hover {
     transition: transform 200ms ease-in-out, transition-delay 200ms;
 }
 
-.menu,
 h1,
 h2,
 h3,
