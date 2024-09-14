@@ -94,12 +94,6 @@ body {
     margin-right: 0;
 }
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
-}
-
 .nav-links a {
     color: var(--default);
     font-weight: 500;
