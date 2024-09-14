@@ -42,7 +42,6 @@ html {
 
 :root {
     --background: #FAF9F9;
-    --navbar-bg: rgba(250, 249, 249, 0.64);
     --default: #0F0F0F;
     --body: #292929;
     --secondary: #707070;
@@ -51,7 +50,6 @@ html {
 
 .dark {
     --background: #0F0F0F;
-    --navbar-bg: rgba(15, 15, 15, 0.64);
     --default: #F2F2F2;
     --body: #E0E0E0;
     --secondary: #949494;
@@ -79,6 +77,7 @@ body {
 
 .sticky-nav {
     padding: 1rem 0;
+    z-index: 9999;
 }
 
 .menu-container {
@@ -117,12 +116,13 @@ body {
 button {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 32px;
     height: 32px;
     background-color: transparent;
     color: var(--secondary);
     border: none;
-    border-radius: 100px;
+    border-radius: 24px;
     font-size: 1rem;
     line-height: 1;
     cursor: pointer;
