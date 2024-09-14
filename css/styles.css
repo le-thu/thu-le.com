@@ -77,7 +77,6 @@ body {
 
 .sticky-nav {
     padding: 1rem 0;
-    z-index: 9999;
 }
 
 .menu-container {
@@ -116,7 +115,6 @@ body {
 button {
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 32px;
     height: 32px;
     background-color: transparent;
