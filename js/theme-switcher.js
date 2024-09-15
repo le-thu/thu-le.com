@@ -1,12 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     const switcher = document.getElementById('theme-switcher');
+    const moonIcon = switcher.querySelector('.moon-icon');
+    const sunIcon = switcher.querySelector('.sun-icon');
     const themeSwitcherClickSound = document.getElementById('themeSwitcherClickSound');
     if (themeSwitcherClickSound) {
         themeSwitcherClickSound.volume = 0.4;
     }
 
     function updateThemeIcon(isDark) {
-        switcher.innerHTML = isDark ? '<ion-icon name="sunny"></ion-icon>' : '<ion-icon name="moon"></ion-icon>';
+        moonIcon.style.display = isDark ? 'none' : 'inline-block';
+        sunIcon.style.display = isDark ? 'inline-block' : 'none';
     }
 
     function applyTheme(isDark) {

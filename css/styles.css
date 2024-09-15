@@ -112,7 +112,7 @@ body {
     color: var(--secondary);
 }
 
-button {
+button#theme-switcher {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,14 +122,41 @@ button {
     height: 36px;
     border: none;
     border-radius: 24px;
+    padding: 0;
     font-size: 1rem;
     line-height: 1;
     cursor: pointer;
     transition: all 120ms ease-in-out;
 }
 
-button:hover {
+button#theme-switcher:hover {
     background-color: hsl(from var(--default) h s l / 10%);
+}
+
+.theme-icon {
+    width: 16px;
+    height: 16px;
+    transition: all 120ms ease-in-out;
+    fill: currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moon-icon {
+    display: flex;
+}
+
+.sun-icon {
+    display: none;
+}
+
+.dark .moon-icon {
+    display: none;
+}
+
+.dark .sun-icon {
+    display: flex;
 }
 
 .avatar-container {
@@ -137,7 +164,7 @@ button:hover {
     display: inline-block;
 }
 
-.avatar {
+img.avatar {
     width: 88px;
     height: 88px;
     border-radius: 33% 67% 40% 60% / 66% 39% 61% 34%;
@@ -245,11 +272,6 @@ dl {
 .homepage-header p {
     max-width: 50ch;
     margin-left: 0;
-}
-
-h3 ion-icon {
-    color: hsl(from var(--default) h s l / 35%);
-    margin-left: 0.25rem;
 }
 
 strong {
