@@ -469,6 +469,12 @@ hr.divider {
     transition: border-color 400ms ease-in-out;
 }
 
+hr.small-break {
+    max-width: 600px;
+    border: 0;
+    border-top: 1px dashed hsl(from var(--default) h s l / 15%);
+}
+
 details > summary {
     cursor: pointer;
     font-family: 'Newsreader Text', serif;
