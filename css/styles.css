@@ -550,10 +550,7 @@ footer {
         padding: 0;
     }
 
-    .menu-container {
-        padding: 0 1.25rem;
-    }
-
+    .menu-container,
     h1,
     h2,
     h3,
@@ -590,6 +587,10 @@ footer {
     figcaption,
     .footer-text {
         font-size: 0.875rem;
+    }
+
+    hr.small-break {
+        margin: auto 1.25rem;
     }
 
     .footer-container {
