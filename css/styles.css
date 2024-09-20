@@ -91,10 +91,15 @@ body {
     margin: 0;
 }
 
+.nav-links {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
 .nav-links a {
     color: var(--default);
     font-weight: 500;
-    margin-right: 1rem;
     text-decoration: none;
     -webkit-text-decoration: none;
     transition: all 120ms ease-in-out;
@@ -390,8 +395,8 @@ a {
     -webkit-text-decoration-color: hsl(from var(--default) h s l / 20%);
     text-decoration-thickness: 0.0625rem;
     -webkit-text-decoration-thickness: 0.0625rem;
-    text-underline-offset: 0.25rem;
-    -webkit-text-underline-offset: 0.25rem;
+    text-underline-offset: 0.1875rem;
+    -webkit-text-underline-offset: 0.1875rem;
     transition: all 120ms ease-in-out;
 }
 
