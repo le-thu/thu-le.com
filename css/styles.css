@@ -426,7 +426,7 @@ a h3 {
 }
 
 .inline-icon {
-    color: var(--secondary);
+    color: inherit;
     display: inline-flex;
     align-items: baseline;
     text-decoration: none;
