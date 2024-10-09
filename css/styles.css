@@ -393,24 +393,24 @@ figcaption {
 
 a {
     display: inline-block;
-    color: var(--secondary);
+    color: inherit;
     text-decoration: underline;
     -webkit-text-decoration: underline;
     text-decoration-style: solid;
     -webkit-text-decoration-style: solid;
-    text-decoration-color: hsl(from var(--default) h s l / 20%);
-    -webkit-text-decoration-color: hsl(from var(--default) h s l / 20%);
+    text-decoration-color: hsl(from var(--default) h s l / 30%);
+    -webkit-text-decoration-color: hsl(from var(--default) h s l / 30%);
     text-decoration-thickness: 0.0625rem;
     -webkit-text-decoration-thickness: 0.0625rem;
-    text-underline-offset: 0.1875rem;
-    -webkit-text-underline-offset: 0.1875rem;
+    text-underline-offset: 0.21875rem;
+    -webkit-text-underline-offset: 0.21875rem;
     transition: all 120ms ease-in-out;
 }
 
 a:hover {
     color: var(--default);
-    text-decoration-color: hsl(from var(--default) h s l / 35%);
-    -webkit-text-decoration-color: hsl(from var(--default) h s l / 35%);
+    text-decoration-color: hsl(from var(--default) h s l / 60%);
+    -webkit-text-decoration-color: hsl(from var(--default) h s l / 60%);
 }
 
 a h3 {
@@ -418,7 +418,8 @@ a h3 {
     transition: color 400ms ease-in-out;
 }
 
-a.inline-icon {
+.inline-icon {
+    color: var(--secondary);
     display: inline-flex;
     align-items: baseline;
     text-decoration: none;
@@ -463,10 +464,6 @@ figure.project-img-tiny {
 
 div.links-page {
     margin: 3.5rem auto;
-}
-
-a.links-page-header {
-    color: var(--default);
 }
 
 p.links-page {
@@ -528,7 +525,7 @@ footer {
 
 .links-side-by-side {
     display: flex;
-    column-gap: 1rem;
+    column-gap: 0.75rem;
     margin-right: 0;
 }
 
