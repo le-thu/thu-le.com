@@ -473,6 +473,10 @@ div.links-page {
     margin: 3.5rem auto;
 }
 
+div.links-page-section {
+    margin: 1.5rem auto;
+}
+
 p.links-page {
     margin: 0.125rem auto;
 }
