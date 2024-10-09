@@ -76,7 +76,7 @@ body {
 }
 
 .global-nav {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 
 .nav-container {
@@ -191,6 +191,12 @@ img.avatar {
 .avatar:not(:hover) {
     transform: translate(0, 0);
     transition: transform 200ms ease-in-out, transition-delay 200ms;
+}
+
+img.avatar-small {
+    width: 36px;
+    height: 36px;
+    border-radius: 33% 67% 40% 60% / 66% 39% 61% 34%;
 }
 
 h1,
@@ -389,6 +395,7 @@ figcaption {
     color: var(--caption-metadata);
     text-align: center;
     font-size: 0.8125rem;
+    letter-spacing: normal;
 }
 
 a {
