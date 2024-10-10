@@ -440,7 +440,6 @@ a.project-item {
 
 a:hover .subtle {
     color: var(--default);
-    transition: all 120ms ease-in-out;
 }
 
 a:not(:hover) .subtle {
