@@ -249,6 +249,13 @@ h2.section-title {
     margin: 3.5rem auto 0.75rem;
 }
 
+h2.section-title_medium {
+    font-family: 'Newsreader Display', serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 3.5rem auto 0.75rem;
+}
+
 h2.section-title_small {
     font-size: 1.25rem;
     line-height: 1;
@@ -260,7 +267,6 @@ h2.section-title_smaller {
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.4;
-    text-wrap: balance;
 }
 
 p,
