@@ -266,7 +266,7 @@ h2.section-title_smaller {
     font-family: 'Newsreader Display', serif;
     font-weight: 400;
     font-size: 1.125rem;
-    line-height: 1.4;
+    line-height: 1.3;
 }
 
 p,
@@ -439,9 +439,14 @@ a h3 {
     -webkit-text-decoration: none;
 }
 
-a.project-item {
+a.project-item,
+a.links-page-header {
     text-decoration: none;
     -webkit-text-decoration: none;
+}
+
+a.links-page-header:hover {
+    color: var(--secondary);
 }
 
 a:hover .subtle {
