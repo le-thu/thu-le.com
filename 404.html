@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <script async data-id="101421242" src="//static.getclicky.com/js"></script>
-        <meta charset="UTF-8">
-        <title>404 👀</title>
-        <meta name="author" content="Thu Le">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="title" content="404 👀">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="404 👀">
-        <meta property="og:url" content="https://thu-le.com/404">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="404 👀">
-        <meta name="twitter:creator" content="@_tple">
-        <meta name="twitter:site" content="@_tple">
-        <link rel="icon" type="image/png" href="assets/favicon.png">
-        <link rel="apple-touch-icon" href="assets/apple-icon.png">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-        <nav class="sticky-nav">
-            <div class="menu-container">
-                <div class="nav-left">
-                </div>
-                <div class="nav-right">
-                    <div class="theme-switcher">
-                    </div>
+
+<head>
+    <script async data-id="101421242" src="//static.getclicky.com/js"></script>
+    
+    <script>
+        (function() {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+        }
+        })();
+    </script>
+    
+    <meta charset="UTF-8">
+    <title>404 👀</title>
+    <meta name="author" content="Thu Le">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="404 👀">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="404 👀">
+    <meta property="og:url" content="https://thu-le.com/404">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="404 👀">
+    <meta name="twitter:creator" content="@_tple">
+    <meta name="twitter:site" content="@_tple">
+    
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-icon.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="sticky-nav">
+        <div class="menu-container">
+            <div class="nav-left">
+            </div>
+            <div class="nav-right">
+                <div class="theme-switcher">
                 </div>
             </div>
-        </nav>
-        <main>
-            <div class="subpage-header">
-                <h1 class="main-title">
+        </div>
+    </nav>
+    <main>
+        <div class="subpage-header">
+            <h1 class="main-title">
                 👀
-                </h1>
-                <p class="compact">
-                    Doesn't look like that page exists.
-                </p>
-                <p class="compact">
-                    Wanna <a href="mailto:thu@thu-le.com?subject=Where's the page?">forward</a> me the link so I can check for ya?
-                </p>
-                <p class="secondary">
-                    <a class="inline-icon" href="/"><span class="subtle unselectable">&#8592;&#160;</span>Home</a>
-                </p>
-            </div>
-        </main>
-    <audio id="themeSwitcherClickSound" src="audio/switch.wav"></audio>
-    <script src="js/theme-switcher.js"></script>
+            </h1>
+            <p class="compact">
+                Doesn't look like that page exists.
+            </p>
+            <p class="compact">
+                Wanna <a href="mailto:thu@thu-le.com?subject=Where's the page?">forward</a> me the link so I can check for ya?
+            </p>
+            <p class="secondary">
+                <a class="inline-icon" href="/"><span class="subtle unselectable">&#8592;&#160;</span>Home</a>
+            </p>
+        </div>
+    </main>
+<audio id="themeSwitcherClickSound" src="audio/switch.wav"></audio>
+<script src="js/theme-switcher.js"></script>
 </body>
+
 </html>

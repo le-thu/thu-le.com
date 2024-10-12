@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     const carousel = document.querySelector('.carousel');
 
     if (carousel) {
