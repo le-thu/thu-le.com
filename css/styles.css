@@ -296,7 +296,6 @@ dl {
 strong {
     color: var(--default);
     font-weight: 600;
-    transition: color 400ms ease-in-out;
 }
 
 em {
@@ -368,7 +367,6 @@ li {
 li::marker,
 .subtle {
     color: hsl(from var(--default) h s l / 30%);
-    transition: color 400ms ease-in-out;
 }
 
 .stylized-number {
@@ -411,8 +409,8 @@ a {
     -webkit-text-decoration: underline;
     text-decoration-style: solid;
     -webkit-text-decoration-style: solid;
-    text-decoration-color: hsl(from var(--default) h s l / 30%);
-    -webkit-text-decoration-color: hsl(from var(--default) h s l / 30%);
+    text-decoration-color: hsl(from var(--default) h s l / 20%);
+    -webkit-text-decoration-color: hsl(from var(--default) h s l / 20%);
     text-decoration-thickness: 0.0625rem;
     -webkit-text-decoration-thickness: 0.0625rem;
     text-underline-offset: 0.21875rem;
@@ -472,11 +470,6 @@ figure.project-img {
 figure.project-img-small {
     max-width: 600px;
     margin: 2.5rem auto 3rem;
-}
-
-figure.project-img-tiny {
-    max-width: 320px;
-    margin: 2.5rem auto;
 }
 
 div.links-page {
