@@ -188,6 +188,7 @@ img.avatar-small {
 h1,
 h2,
 h3,
+.page-block,
 .two-column,
 .links-page,
 details,
@@ -310,29 +311,22 @@ s {
     margin: 2.5rem auto 0.5rem;
 }
 
-div.project-block {
-    max-width: 600px;
-    margin: auto;
+div.block-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin: 2rem 0;
+    transition: background-color 120ms ease-in-out;
 }
 
-.project-title {
-    font-size: 0.9375rem;
+p.blog-title {
+    color: var(--default);
     align-items: baseline;
     margin: 0;
 }
 
-div.project-item-box {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    padding: 0.75rem 0;
-    margin-bottom: 0.5rem;
-    transition: background-color 120ms ease-in-out;
-}
-
-.project-description {
-    line-height: 1.4;
-    max-width: 56ch;
+p.blog-date {
+    font-size: 0.875rem;
     margin: 0;
 }
 
@@ -422,10 +416,14 @@ a h3 {
     -webkit-text-decoration: none;
 }
 
-a.project-item,
+a.blog-item,
 a.links-page-header {
     text-decoration: none;
     -webkit-text-decoration: none;
+}
+
+a.blog-item {
+    display: block;
 }
 
 a.links-page-header:hover {
@@ -563,11 +561,13 @@ footer {
 
 .footer-header {
     font-weight: 500;
+    font-size: 0.875rem;
     line-height: 1.3;
     margin: 0.5rem 0 1rem;
 }
 
 .footer-text {
+    font-size: 0.875rem;
     line-height: 1.3;
     margin: 0.5rem 0;
 }
