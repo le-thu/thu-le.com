@@ -122,7 +122,8 @@ button {
     transition: all 120ms ease-in-out;
 }
 
-button#theme-switcher {
+button#theme-switcher,
+button#back-button {
     width: 36px;
     height: 36px;
     border: none;
@@ -134,6 +135,7 @@ button:hover {
     background-color: hsl(from var(--default) h s l / 10%);
 }
 
+.nav-icon,
 .theme-icon {
     width: 16px;
     height: 16px;
@@ -487,12 +489,7 @@ hr.small-break {
 
 details > summary {
     cursor: pointer;
-    font-family: 'Newsreader Text', serif;
-    font-style: italic;
-    font-size: 1.125rem;
-    letter-spacing: normal;
-    line-height: normal;
-    margin: 2.5rem auto 0;
+    margin: 1.5rem auto 0;
 }
 
 summary::marker,
@@ -595,6 +592,10 @@ footer {
     button,
     img.avatar {
         margin-left: 1.25rem;
+    }
+
+    .nav-left button {
+        margin-left: 0;
     }
 
     .stylized-paragraph {
