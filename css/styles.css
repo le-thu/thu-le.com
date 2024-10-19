@@ -104,24 +104,35 @@ body {
     color: var(--secondary);
 }
 
-button#theme-switcher {
+button {
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--secondary);
     background-color: transparent;
-    width: 36px;
-    height: 36px;
-    border: none;
-    border-radius: 24px;
-    padding: 0;
-    font-size: 1rem;
+    height: 32px;
+    border: 0.75px solid hsl(from var(--default) h s l / 30%);
+    border-radius: 40px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: inherit;
     line-height: 1;
+    letter-spacing: -0.003125rem;
     cursor: pointer;
+    margin: 0;
+    padding: 0.75rem;
     transition: all 120ms ease-in-out;
 }
 
-button#theme-switcher:hover {
+button#theme-switcher {
+    width: 36px;
+    height: 36px;
+    border: none;
+    padding: 0;
+    font-size: 1rem;
+}
+
+button:hover {
     background-color: hsl(from var(--default) h s l / 10%);
 }
 
@@ -361,15 +372,6 @@ li::marker,
     margin: 0.5rem auto;
 }
 
-.italic {
-    font-style: italic;
-}
-
-.secondary {
-    color: var(--secondary);
-    transition: color 400ms ease-in-out;
-}
-
 .mono {
     font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
     letter-spacing: normal;
@@ -437,6 +439,15 @@ a:hover .subtle {
 
 a:not(:hover) .subtle {
     transition: all 120ms ease-in-out;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.secondary {
+    color: var(--secondary);
+    transition: color 400ms ease-in-out;
 }
 
 img,
@@ -583,6 +594,7 @@ footer {
         padding: 0 1.25rem;
     }
 
+    button,
     img.avatar {
         margin-left: 1.25rem;
     }
