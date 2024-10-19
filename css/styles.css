@@ -83,7 +83,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 1rem;
     max-width: 600px;
 }
 
@@ -286,7 +285,7 @@ dl {
 }
 
 .homepage-header p {
-    max-width: 50ch;
+    max-width: 44ch;
     margin-left: 0;
 }
 
