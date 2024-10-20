@@ -202,6 +202,7 @@ h3,
 .page-block,
 .two-column,
 .links-page,
+.separator,
 details,
 footer {
     max-width: 600px;
@@ -310,6 +311,10 @@ s {
     -webkit-text-decoration-thickness: 0.0625rem;
 }
 
+.medium {
+    font-weight: 500;
+}
+
 .unselectable {
     user-select: none;
     webkit-user-select: none;
@@ -355,7 +360,7 @@ li {
 
 li::marker,
 .subtle {
-    color: hsl(from var(--default) h s l / 35%);
+    color: hsl(from var(--default) h s l / 40%);
 }
 
 .stylized-number {
@@ -475,11 +480,11 @@ div.links-page-section {
 
 hr.divider {
     max-width: 264px;
-    border: 0.5px solid hsl(from var(--default) h s l / 12%);
+    border: 0.5px solid hsl(from var(--default) h s l / 10%);
     margin: 3.5rem auto;
 }
 
-hr.small-break {
+hr.decorative-line {
     max-width: 600px;
     border: 0;
     border-top: 1px dashed hsl(from var(--default) h s l / 15%);
@@ -522,6 +527,14 @@ footer {
     display: flex;
     column-gap: 1rem;
     justify-content: center;
+}
+
+.separator {
+    text-align: center;
+    color: hsl(from var(--default) h s l / 30%);
+    margin: 2.5rem auto;
+    user-select: none;
+    webkit-user-select: none;
 }
 
 .footer-header,
@@ -607,7 +620,7 @@ footer {
 }
 
 @media screen and (max-width: 640px) {
-    hr.small-break {
+    hr.decorative-line {
         margin: auto 1.25rem;
     }
 }
