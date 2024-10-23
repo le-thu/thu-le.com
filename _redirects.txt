@@ -1,7 +1,0 @@
-/process /blog/process 301
-
-/comments /work/comments 301
-
-/advanced-dashboard /work/advanced-dashboard 301
-
-/liquid /work/liquid 301
