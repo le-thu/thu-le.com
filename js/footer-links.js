@@ -12,9 +12,6 @@ class FooterLinks extends HTMLElement {
                     text: "Blog",
                     url: "/blog"
                 }, {
-                    text: "Blogroll",
-                    url: "/blogroll"
-                }, {
                     text: "Links",
                     url: "/links"
                 }, {
@@ -23,6 +20,9 @@ class FooterLinks extends HTMLElement {
                 }, {
                     text: "Uses",
                     url: "/uses"
+                }, {
+                    text: "Blogroll",
+                    url: "/blogroll"
                 }, {
                     text: "Work",
                     url: "/work"
