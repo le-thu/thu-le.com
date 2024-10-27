@@ -6,7 +6,29 @@ class FooterLinks extends HTMLElement {
 
         const footerData = {
             sections: [{
-                title: "Information",
+
+                title: "Browse",
+                links: [{
+                    text: "Blog",
+                    url: "/blog"
+                }, {
+                    text: "Blogroll",
+                    url: "/blogroll"
+                }, {
+                    text: "Links",
+                    url: "/links"
+                }, {
+                    text: "Books",
+                    url: "/books"
+                }, {
+                    text: "Uses",
+                    url: "/uses"
+                }, {
+                    text: "Work",
+                    url: "/work"
+                }]
+            }, {
+                title: "Index",
                 links: [{
                     text: "Home",
                     url: "/"
@@ -26,35 +48,17 @@ class FooterLinks extends HTMLElement {
                     showIcon: true
                 }]
             }, {
-                title: "Browse",
-                links: [{
-                    text: "Blog",
-                    url: "/blog"
-                }, {
-                    text: "Links",
-                    url: "/links"
-                }, {
-                    text: "Books",
-                    url: "/books"
-                }, {
-                    text: "Uses",
-                    url: "/uses"
-                }, {
-                    text: "Work",
-                    url: "/work"
-                }]
-            }, {
                 title: "Connect",
                 links: [{
-                    text: "Email",
+                    text: "thu@thu-le.com",
                     url: "mailto:thu@thu-le.com"
                 }, {
-                    text: "read.cv",
+                    text: "Read.cv",
                     url: "https://tple.read.cv",
                     external: true,
                     showIcon: false
                 }, {
-                    text: "Posts",
+                    text: "Posts by Read.cv",
                     url: "https://posts.cv/tple",
                     external: true,
                     showIcon: false
