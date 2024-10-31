@@ -203,6 +203,7 @@ h3,
 .two-column,
 .links-page,
 .separator,
+.body-section,
 details,
 footer {
     max-width: 600px;
@@ -500,6 +501,13 @@ summary::-webkit-details-marker {
     color: hsl(from var(--default) h s l / 30%);
 }
 
+blockquote {
+    padding: 0 1.5rem;
+    margin: 1rem auto;
+    border-left: 0.09375rem solid hsl(from var(--default) h s l / 15%);
+    transition: border-color 400ms ease-in-out;
+}
+
 .two-column {
     display: flex;
     align-items: baseline;
@@ -596,8 +604,13 @@ footer {
     ol,
     figure,
     details > summary,
+    .body-section,
     footer {
         padding: 0 1.25rem;
+    }
+
+    blockquote p {
+        padding: 0;
     }
 
     button,
