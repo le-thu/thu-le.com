@@ -226,7 +226,7 @@ h3 {
 h1.homepage {
     font-family: 'Newsreader Display', serif;
     font-size: 1.75rem;
-    line-height: 1.1;
+    line-height: 1.25;
     letter-spacing: -0.025rem;
     text-wrap: pretty;
     max-width: 26ch;
@@ -521,7 +521,7 @@ blockquote {
 }
 
 footer {
-    margin: 8rem auto 4rem;
+    margin: 8rem auto 6rem;
 }
 
 .footer-container {
