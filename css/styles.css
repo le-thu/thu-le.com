@@ -109,26 +109,18 @@ button {
     justify-content: center;
     color: var(--secondary);
     background-color: transparent;
-    height: 32px;
-    border: 0.75px solid hsl(from var(--default) h s l / 30%);
+    width: 36px;
+    height: 36px;
+    border: none;
     border-radius: 40px;
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-family: inherit;
     line-height: 1;
     letter-spacing: -0.003125rem;
     cursor: pointer;
     margin: 0;
-    padding: 0.75rem;
-    transition: all 120ms ease-in-out;
-}
-
-button#theme-switcher,
-button#back-button {
-    width: 36px;
-    height: 36px;
-    border: none;
     padding: 0;
-    font-size: 1rem;
+    transition: all 120ms ease-in-out;
 }
 
 button:hover {
@@ -410,6 +402,31 @@ a:hover {
     -webkit-text-decoration-color: hsl(from var(--default) h s l / 60%);
 }
 
+a.button-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    background-color: transparent;
+    height: 32px;
+    width: fit-content;
+    border: 0.75px solid hsl(from var(--default) h s l / 30%);
+    border-radius: 40px;
+    font-size: 0.875rem;
+    font-family: inherit;
+    line-height: 1;
+    letter-spacing: -0.003125rem;
+    cursor: pointer;
+    margin: 0;
+    padding: 0.75rem;
+    transition: all 120ms ease-in-out;
+    text-decoration: none;
+}
+
+a.button-style:hover {
+    background-color: hsl(from var(--default) h s l / 10%);
+}
+
 a h3 {
     color: var(--default);
     transition: color 400ms ease-in-out;
@@ -613,13 +630,8 @@ footer {
         padding: 0;
     }
 
-    button,
     img.avatar {
         margin-left: 1.25rem;
-    }
-
-    .nav-left button {
-        margin-left: 0;
     }
 
     .stylized-paragraph {
