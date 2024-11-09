@@ -49,7 +49,7 @@ html {
 }
 
 .dark {
-    --background: #0F0F0F;
+    --background: #141414;
     --default: #F2F2F2;
     --body: #E0E0E0;
     --secondary: #949494;
@@ -410,7 +410,7 @@ a.button-style {
     background-color: transparent;
     height: 32px;
     width: fit-content;
-    border: 0.75px solid hsl(from var(--default) h s l / 30%);
+    border: 0.0625rem solid hsl(from var(--default) h s l / 10%);
     border-radius: 40px;
     font-size: 0.875rem;
     font-family: inherit;
@@ -498,14 +498,14 @@ div.links-page-section {
 
 hr.divider {
     max-width: 264px;
-    border: 0.5px solid hsl(from var(--default) h s l / 10%);
+    border: 0.03125rem solid hsl(from var(--default) h s l / 10%);
     margin: 3.5rem auto;
 }
 
 hr.decorative-line {
     max-width: 600px;
     border: 0;
-    border-top: 1px dashed hsl(from var(--default) h s l / 15%);
+    border-top: 0.0625rem dashed hsl(from var(--default) h s l / 15%);
 }
 
 details > summary {
@@ -542,7 +542,7 @@ footer {
 }
 
 .footer-container {
-    border-top: 1px solid hsl(from var(--default) h s l / 10%);
+    border-top: 0.0625rem solid hsl(from var(--default) h s l / 10%);
     padding: 2rem 0 0 0;
     margin: 2.5rem auto 2rem;
     transition: border-color 400ms ease-in-out;
