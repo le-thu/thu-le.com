@@ -58,7 +58,7 @@ class FooterLinks extends HTMLElement {
                     external: true,
                     showIcon: false
                 }, {
-                    text: "Posts by Read.cv",
+                    text: "Posts",
                     url: "https://posts.cv/tple",
                     external: true,
                     showIcon: false
