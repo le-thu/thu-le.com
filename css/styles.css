@@ -323,7 +323,6 @@ div.block-item-container {
     flex-direction: column;
     gap: 0.25rem;
     margin: 2rem 0;
-    transition: background-color 120ms ease-in-out;
 }
 
 p.blog-title {
@@ -351,9 +350,13 @@ li {
     margin: 0.5rem 0 0.5rem 1.75rem;
 }
 
-li::marker,
-.subtle {
+li::marker {
     color: hsl(from var(--default) h s l / 40%);
+}
+
+.subtle,
+.subtle-static {
+    color: hsl(from var(--default) h s l / 30%);
 }
 
 .stylized-number {
@@ -402,31 +405,6 @@ a:hover {
     -webkit-text-decoration-color: hsl(from var(--default) h s l / 60%);
 }
 
-a.button-style {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--secondary);
-    background-color: transparent;
-    height: 32px;
-    width: fit-content;
-    border: 0.0625rem solid hsl(from var(--default) h s l / 10%);
-    border-radius: 40px;
-    font-size: 0.875rem;
-    font-family: inherit;
-    line-height: 1;
-    letter-spacing: -0.003125rem;
-    cursor: pointer;
-    margin: 0;
-    padding: 0.75rem;
-    transition: all 120ms ease-in-out;
-    text-decoration: none;
-}
-
-a.button-style:hover {
-    background-color: hsl(from var(--default) h s l / 10%);
-}
-
 a h3 {
     color: var(--default);
     transition: color 400ms ease-in-out;
@@ -460,6 +438,31 @@ a:hover .subtle {
 
 a:not(:hover) .subtle {
     transition: all 120ms ease-in-out;
+}
+
+a.button-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    background-color: transparent;
+    height: 32px;
+    width: fit-content;
+    border: 0.0625rem solid hsl(from var(--default) h s l / 10%);
+    border-radius: 40px;
+    font-size: 0.875rem;
+    font-family: inherit;
+    line-height: 1;
+    letter-spacing: -0.003125rem;
+    cursor: pointer;
+    margin: 0;
+    padding: 0.75rem;
+    transition: all 120ms ease-in-out;
+    text-decoration: none;
+}
+
+a.button-style:hover {
+    background-color: hsl(from var(--default) h s l / 10%);
 }
 
 .italic {
@@ -508,15 +511,7 @@ hr.decorative-line {
     border-top: 0.0625rem dashed hsl(from var(--default) h s l / 15%);
 }
 
-details > summary {
-    cursor: pointer;
-    margin: 1.5rem auto 0;
-}
 
-summary::marker,
-summary::-webkit-details-marker {
-    color: hsl(from var(--default) h s l / 30%);
-}
 
 blockquote {
     padding: 0 1.5rem;
