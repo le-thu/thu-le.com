@@ -49,7 +49,7 @@ html {
 }
 
 .dark {
-    --background: #141414;
+    --background: #1A1919;
     --default: #F2F2F2;
     --body: #E0E0E0;
     --secondary: #949494;
@@ -281,7 +281,6 @@ dl {
 }
 
 strong {
-    color: var(--default);
     font-weight: 600;
 }
 
@@ -334,7 +333,7 @@ p.date {
 }
 
 p.compact {
-    margin: 0.5rem auto;
+    margin: 0.25rem auto;
 }
 
 ul,
@@ -349,6 +348,7 @@ li {
 
 li::marker {
     color: hsl(from var(--default) h s l / 40%);
+    transition: color 400ms ease-in-out;
 }
 
 .subtle,
@@ -389,8 +389,8 @@ a {
     -webkit-text-decoration-style: solid;
     text-decoration-color: hsl(from var(--default) h s l / 30%);
     -webkit-text-decoration-color: hsl(from var(--default) h s l / 30%);
-    text-decoration-thickness: 0.0625rem;
-    -webkit-text-decoration-thickness: 0.0625rem;
+    text-decoration-thickness: 0.03125rem;
+    -webkit-text-decoration-thickness: 0.03125rem;
     text-underline-offset: 0.21875rem;
     -webkit-text-underline-offset: 0.21875rem;
     transition: all 120ms ease-in-out;

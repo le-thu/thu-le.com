@@ -75,7 +75,7 @@ class FooterLinks extends HTMLElement {
                 }]
             }],
             copyright: {
-                text: `© ${currentYear} Thu Le. This site`,
+                text: `&COPY; ${currentYear} Thu Le <span class="subtle">&sdot;</span> This site`,
                 privacyLink: {
                     text: "respects your privacy",
                     url: "https://themarkup.org/blacklight?url=thu-le.com&device=mobile&location=us-ca&force=true",
