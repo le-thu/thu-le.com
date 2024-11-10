@@ -315,7 +315,7 @@ s {
 }
 
 div.block-item-container {
-    margin: 2rem 0;
+    margin: 1.75rem 0;
 }
 
 p.blog-title {
@@ -398,8 +398,8 @@ a {
 
 a:hover {
     color: var(--default);
-    text-decoration-color: hsl(from var(--default) h s l / 60%);
-    -webkit-text-decoration-color: hsl(from var(--default) h s l / 60%);
+    text-decoration-color: hsl(from var(--default) h s l / 80%);
+    -webkit-text-decoration-color: hsl(from var(--default) h s l / 80%);
 }
 
 a h3 {
@@ -421,8 +421,18 @@ a.links-page-header {
     -webkit-text-decoration: none;
 }
 
+a.blog-item:hover,
 a.links-page-header:hover {
-    color: var(--secondary);
+    text-decoration: underline;
+    -webkit-text-decoration: underline;
+    text-decoration-style: solid;
+    -webkit-text-decoration-style: solid;
+    text-decoration-color: hsl(from var(--default) h s l / 80%);
+    -webkit-text-decoration-color: hsl(from var(--default) h s l / 80%);
+    text-decoration-thickness: 0.03125rem;
+    -webkit-text-decoration-thickness: 0.03125rem;
+    text-underline-offset: 0.21875rem;
+    -webkit-text-underline-offset: 0.21875rem;
 }
 
 a:hover .subtle {
@@ -489,7 +499,7 @@ div.links-page {
 }
 
 div.links-page-section {
-    margin: 2rem auto;
+    margin: 1.75rem auto;
 }
 
 hr.divider {
