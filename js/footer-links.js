@@ -23,9 +23,6 @@ class FooterLinks extends HTMLElement {
                 }, {
                     text: "Blogroll",
                     url: "/blogroll"
-                }, {
-                    text: "Work",
-                    url: "/work"
                 }]
             }, {
                 title: "Index",

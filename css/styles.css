@@ -49,7 +49,7 @@ html {
 }
 
 .dark {
-    --background: #1A1919;
+    --background: #171717;
     --default: #F2F2F2;
     --body: #E0E0E0;
     --secondary: #949494;
@@ -99,18 +99,14 @@ body {
     transition: all 120ms ease-in-out;
 }
 
-.nav-links a:hover {
-    color: var(--secondary);
-}
-
 button {
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--secondary);
     background-color: transparent;
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     border: none;
     border-radius: 40px;
     font-size: 1rem;
@@ -129,8 +125,8 @@ button:hover {
 
 .nav-icon,
 .theme-icon {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
     transition: all 120ms ease-in-out;
     fill: currentColor;
     display: flex;
@@ -351,8 +347,7 @@ li::marker {
     transition: color 400ms ease-in-out;
 }
 
-.subtle,
-.subtle-static {
+.subtle {
     color: hsl(from var(--default) h s l / 30%);
 }
 
@@ -436,7 +431,7 @@ a.links-page-header:hover {
 }
 
 a:hover .subtle {
-    color: var(--default);
+    color: var(--secondary);
 }
 
 a:not(:hover) .subtle {
@@ -449,23 +444,18 @@ a.button-style {
     justify-content: center;
     color: var(--secondary);
     background-color: transparent;
-    height: 32px;
+    height: 1.25rem;
     width: fit-content;
-    border: 0.0625rem solid hsl(from var(--default) h s l / 10%);
-    border-radius: 40px;
-    font-size: 0.875rem;
-    font-family: inherit;
+    border: none;
     line-height: 1;
-    letter-spacing: -0.003125rem;
     cursor: pointer;
     margin: 0;
-    padding: 0.75rem;
     transition: all 120ms ease-in-out;
     text-decoration: none;
 }
 
 a.button-style:hover {
-    background-color: hsl(from var(--default) h s l / 10%);
+    color: var(--default);
 }
 
 .italic {
