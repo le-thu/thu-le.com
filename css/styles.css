@@ -76,14 +76,14 @@ body {
 }
 
 .global-nav {
-    padding: 1.5rem 0;
+    padding: 5rem 0 1.5rem;
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 600px;
+    max-width: 560px;
 }
 
 .nav-left,
@@ -109,10 +109,7 @@ button {
     height: 32px;
     border: none;
     border-radius: 40px;
-    font-size: 1rem;
-    font-family: inherit;
     line-height: 1;
-    letter-spacing: -0.003125rem;
     cursor: pointer;
     margin: 0;
     padding: 0;
@@ -178,12 +175,6 @@ img.avatar {
     transition: transform 200ms ease-in-out, transition-delay 200ms;
 }
 
-img.avatar-small {
-    width: 36px;
-    height: 36px;
-    border-radius: 33% 67% 40% 60% / 66% 39% 61% 34%;
-}
-
 h1,
 h2,
 h3,
@@ -192,9 +183,8 @@ h3,
 .links-page,
 .separator,
 .body-section,
-details,
 footer {
-    max-width: 600px;
+    max-width: 560px;
 }
 
 h1,
@@ -203,12 +193,13 @@ h3 {
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 400;
     line-height: 1.2;
+    letter-spacing: -0.003125rem;
     text-wrap: balance;
 }
 
 .homepage-header {
-    margin: 6.5rem auto;
-    max-width: 600px;
+    margin: 4rem auto;
+    max-width: 560px;
 }
 
 h1.homepage {
@@ -222,7 +213,7 @@ h1.homepage {
 }
 
 .subpage-header {
-    margin: 8rem auto 4rem;
+    margin: 6rem auto 5rem;
 }
 
 h1.main-title,
@@ -238,17 +229,11 @@ h2.section-title_medium {
     margin: 3.5rem auto 0.75rem;
 }
 
-h2.section-title_small {
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1;
-    margin: 2.5rem auto 0.5rem;
-}
-
 h2.section-title_smaller {
     font-size: 1.0625rem;
     font-weight: 500;
     line-height: 1.25;
+    letter-spacing: inherit;
     text-wrap: pretty;
 }
 
@@ -259,7 +244,7 @@ li,
 figcaption {
     color: var(--body);
     font-weight: 400;
-    max-width: 600px;
+    max-width: 560px;
     margin: 1rem auto;
     text-wrap: pretty;
     transition: color 400ms ease-in-out;
@@ -349,18 +334,6 @@ li::marker {
 
 .subtle {
     color: hsl(from var(--default) h s l / 30%);
-}
-
-.stylized-number {
-    display: inline-block;
-    width: 32px;
-    text-align: right;
-    margin-right: 1rem;
-}
-
-.stylized-paragraph {
-    padding-left: 3rem;
-    margin: 0.5rem auto;
 }
 
 .mono {
@@ -480,7 +453,7 @@ figure.project-img {
 }
 
 figure.project-img-small {
-    max-width: 600px;
+    max-width: 560px;
     margin: 2.5rem auto 3rem;
 }
 
@@ -498,12 +471,11 @@ hr.divider {
     margin: 3.5rem auto;
 }
 
-hr.decorative-line {
-    max-width: 600px;
+.decorative-line {
+    max-width: 560px;
     border: 0;
     border-top: 0.0625rem dashed hsl(from var(--default) h s l / 15%);
 }
-
 
 blockquote {
     padding: 0 1.5rem;
@@ -607,7 +579,6 @@ footer {
     ul,
     ol,
     figure,
-    details > summary,
     .body-section,
     footer {
         padding: 0 1.25rem;
@@ -621,10 +592,6 @@ footer {
         margin-left: 1.25rem;
     }
 
-    .stylized-paragraph {
-        padding-left: 4.25rem;
-    }
-
     .footer-header,
     .footer-text {
         padding: 0;
@@ -632,7 +599,11 @@ footer {
 }
 
 @media screen and (max-width: 640px) {
-    hr.decorative-line {
+    .global-nav {
+        padding: 2rem 0 1.5rem;
+}
+
+    .decorative-line {
         margin: auto 1.25rem;
     }
 }
