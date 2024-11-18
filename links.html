@@ -4,15 +4,6 @@
 <head>
     <script async defer src="https://scripts.withcabin.com/hello.js"></script>
     
-    <script>
-        (function() {
-        const storedTheme = localStorage.getItem('theme');
-        if (storedTheme === 'dark') {
-        document.documentElement.classList.add('dark');
-        }
-        })();
-    </script>
-    
     <meta charset="UTF-8">
     <title>Thu Le &#8901; Links</title>
     <meta name="author" content="Thu Le">
@@ -41,23 +32,21 @@
 <body>
     <nav class="global-nav">
         <div class="nav-container">
-            <div class="nav-left">
-                <a href="/" class="button-style">
-                    <span class="unselectable subtle">&LeftArrow;&#160;</span> Home
-                </a>
-            </div>
-            <div class="nav-right">
-                <div class="theme-switcher">
-                    <button id="theme-switcher" aria-label="Toggle theme">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="theme-icon moon-icon" viewBox="0 0 512 512" width="15" height="15">
-                            <path d="M264 480A232 232 0 0132 248c0-94 54-178.28 137.61-214.67a16 16 0 0121.06 21.06C181.07 76.43 176 104.66 176 136c0 110.28 89.72 200 200 200 31.34 0 59.57-5.07 81.61-14.67a16 16 0 0121.06 21.06C442.28 426 358 480 264 480z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="theme-icon sun-icon" viewBox="0 0 512 512" width="15" height="15">
-                            <path d="M256 118a22 22 0 01-22-22V48a22 22 0 0144 0v48a22 22 0 01-22 22zM256 486a22 22 0 01-22-22v-48a22 22 0 0144 0v48a22 22 0 01-22 22zM369.14 164.86a22 22 0 01-15.56-37.55l33.94-33.94a22 22 0 0131.11 31.11l-33.94 33.94a21.93 21.93 0 01-15.55 6.44zM108.92 425.08a22 22 0 01-15.55-37.56l33.94-33.94a22 22 0 1131.11 31.11l-33.94 33.94a21.94 21.94 0 01-15.56 6.45zM464 278h-48a22 22 0 010-44h48a22 22 0 010 44zM96 278H48a22 22 0 010-44h48a22 22 0 010 44zM403.08 425.08a21.94 21.94 0 01-15.56-6.45l-33.94-33.94a22 22 0 0131.11-31.11l33.94 33.94a22 22 0 01-15.55 37.56zM142.86 164.86a21.89 21.89 0 01-15.55-6.44l-33.94-33.94a22 22 0 0131.11-31.11l33.94 33.94a22 22 0 01-15.56 37.55zM256 358a102 102 0 11102-102 102.12 102.12 0 01-102 102z" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
+            <a class="header-logo" href="/">
+                <svg class="logo" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_367_146)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5613 28.4801C15.3844 26.8179 15.0949 25.1697 14.6946 23.5468C14.6929 23.4948 14.6808 23.4437 14.6589 23.3965C14.6371 23.3493 14.6059 23.3071 14.5673 23.2722C14.5287 23.2374 14.4835 23.2106 14.4344 23.1937C14.3852 23.1767 14.3331 23.1698 14.2813 23.1734C13.5746 23.1734 13.8946 24.5068 13.9079 24.8268C13.8833 26.1161 13.968 27.4051 14.1613 28.6801C14.6413 31.1734 14.6813 31.4801 14.8146 31.6134C14.9479 31.7468 15.2546 31.9601 15.5213 31.7201C15.6747 30.6464 15.6882 29.5573 15.5613 28.4801Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4139 18.6667C10.5306 18.6667 10.6425 18.6203 10.725 18.5378C10.8075 18.4553 10.8539 18.3434 10.8539 18.2267C10.8539 18.11 10.8075 17.9981 10.725 17.9155C10.6425 17.833 10.5306 17.7867 10.4139 17.7867C8.81483 17.5285 7.1758 17.7035 5.66724 18.2933C5.5508 18.3226 5.44724 18.3894 5.37253 18.4833C5.29783 18.5773 5.25614 18.6933 5.25391 18.8133C5.72057 20 10.3072 18.7467 10.4139 18.6667Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.77342 8.13336C8.77342 8.85336 9.13342 8.84003 9.65342 8.13336C9.56875 6.98381 9.56875 5.82958 9.65342 4.68003C9.65342 3.96003 9.76009 2.01336 9.76009 1.82669C10.3734 1.28003 12.8401 1.5067 14.2401 1.53336C14.3468 1.97336 14.2401 1.20003 14.3201 4.33336C14.3046 4.47516 14.3046 4.61823 14.3201 4.76003C13.5601 4.94669 11.6534 4.76003 10.8934 4.88003C10.8365 4.89141 10.7824 4.91389 10.7342 4.94618C10.686 4.97847 10.6446 5.01995 10.6124 5.06823C10.5802 5.11652 10.5578 5.17067 10.5466 5.2276C10.5353 5.28453 10.5354 5.34312 10.5468 5.40003C10.5581 5.45693 10.5806 5.51104 10.6129 5.55926C10.6452 5.60748 10.6867 5.64887 10.735 5.68106C10.7832 5.71325 10.8374 5.73561 10.8943 5.74688C10.9513 5.75814 11.0099 5.75808 11.0668 5.74669C12.0801 5.57336 13.9468 6.20003 15.0668 5.74669C15.5468 5.52003 15.5601 4.88003 15.5734 4.41336C15.7323 3.17958 15.7547 1.93204 15.6401 0.693362C15.5474 0.513562 15.4082 0.361862 15.237 0.254009C15.0659 0.146157 14.869 0.0860843 14.6668 0.0800283C13.2377 -0.0274899 11.8025 -0.0274899 10.3734 0.0800283C7.89342 0.520028 8.50676 1.92003 8.49342 2.4267C8.422 4.33343 8.51568 6.24277 8.77342 8.13336Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28.9741 14.7734C28.2941 11.7067 28.0274 9.86672 25.2274 9.13339C23.2674 8.61339 10.9074 7.21339 5.22742 10.2401C4.65024 10.5737 4.1454 11.0192 3.74247 11.5503C3.33953 12.0815 3.04657 12.6876 2.88075 13.3334C2.45788 14.7889 2.24683 16.2977 2.25409 17.8134C2.30308 19.4862 2.44105 21.1552 2.66742 22.8134C2.68033 22.8809 2.711 22.9437 2.75626 22.9954C2.80152 23.0471 2.85974 23.0858 2.92492 23.1075C2.99011 23.1293 3.05991 23.1332 3.12714 23.119C3.19437 23.1048 3.2566 23.073 3.30742 23.0267C3.66742 22.7601 2.34742 15.2934 4.74742 12.4401C5.54069 11.4825 6.65838 10.8501 7.8877 10.6633C9.11702 10.4764 10.3721 10.7481 11.4141 11.4267C13.6274 12.7601 13.9608 16.2134 14.1741 18.8267C14.3208 20.6801 14.4808 21.6534 12.9608 21.9067C12.8541 21.9067 6.29409 22.5067 5.38742 22.3201C4.94742 22.2267 4.70742 21.7467 4.33409 22.1201C4.29256 22.161 4.25959 22.2098 4.23709 22.2636C4.21458 22.3174 4.20299 22.3751 4.20299 22.4334C4.20299 22.4917 4.21458 22.5494 4.23709 22.6032C4.25959 22.657 4.29256 22.7058 4.33409 22.7467C4.6206 22.9737 4.95073 23.1394 5.30395 23.2334C5.65718 23.3274 6.02597 23.3479 6.38742 23.2934C8.12075 23.2934 13.0541 23.0934 13.1341 23.0801C15.6008 22.7734 15.6408 20.9601 15.5208 18.7334C15.3074 14.7334 14.8274 11.1601 11.2141 9.65339H11.6408C19.9874 9.97339 20.4941 9.24006 24.8541 10.5201C26.7341 11.0667 26.8408 11.8534 27.5208 15.0934C27.9608 16.9867 29.2408 21.0134 27.2408 21.6134C25.7741 22.0534 16.4008 22.1734 16.0541 22.1867C15.9374 22.1867 15.8255 22.2331 15.743 22.3156C15.6604 22.3981 15.6141 22.51 15.6141 22.6267C15.6141 22.7434 15.6604 22.8553 15.743 22.9378C15.8255 23.0204 15.9374 23.0667 16.0541 23.0667H19.3741C18.8519 25.6182 18.6903 28.2303 18.8941 30.8267C18.8941 31.3334 18.8941 32.0134 19.4008 31.9467C19.4934 31.9558 19.5863 31.9311 19.6622 31.8772C19.7381 31.8233 19.7921 31.7439 19.8141 31.6534C19.8941 31.4801 20.3074 28.0267 20.3474 27.2934C20.3948 26.5742 20.3948 25.8526 20.3474 25.1334C20.2976 24.4454 20.2976 23.7547 20.3474 23.0667C21.7874 23.0667 23.2941 23.0667 25.2808 22.9867C26.8008 22.9067 28.4408 23.0934 29.2808 21.6534C30.3208 19.6534 29.4408 16.9201 28.9741 14.7734Z" fill="currentColor"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_367_146">
+                    <rect width="32" height="32" fill="currentColor"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </a>
         </div>
     </nav>
     <header>
@@ -71,313 +60,319 @@
         <section>
             <div class="links-page">
                 <p class="date">
-                    Nov 12, 2024
+                    November 12, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://blog.jim-nielsen.com/2024/my-failed-peronsal-site-redesign" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://blog.jim-nielsen.com/2024/my-failed-peronsal-site-redesign" target="_blank" rel="noopener">
+                        <p class="compact">
                             My Failed Personal Site Redesign
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         I love reading about other people's process and the behind-the-scene details, and I feel like I'm going through a similar thing Jim Nielsen did here.
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://everythingchanges.us/blog/stay-in-the-gap" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://everythingchanges.us/blog/stay-in-the-gap" target="_blank" rel="noopener">
+                        <p class="compact">
                             Stay in the game
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>As you build your craft, whether it’s writing or radio or glass blowing or leading a team, you develop ever more ideas about what’s possible in your work. As your skill grows, so too do your ambitions, such that your taste always and forever outstrips your abilities. For every increment of improvement, you extend your desires out that much further.</q>
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://uxdesign.cc/a-good-design-is-a-good-essay-197f4bd31c92" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://uxdesign.cc/a-good-design-is-a-good-essay-197f4bd31c92" target="_blank" rel="noopener">
+                        <p class="compact">
                             A good design is a good essay
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Developing a persuasive argument is at the core of how UX creates value. When we shirk that responsibility, we set ourselves up to fail.</q>
                     </p>
                 </div>
             </div>
+            
             <div class="links-page">
                 <p class="date">
-                    Nov 9, 2024
+                    November 9, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://rhfoerger.wordpress.com/2019/10/11/yutori-spaciousness" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://rhfoerger.wordpress.com/2019/10/11/yutori-spaciousness" target="_blank" rel="noopener">
+                        <p class="compact">
                             Yutori ~ Spaciousness
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>The Japanese have a concept called ‘yutori’ – an idea that connotes a sense of spaciousness, elbowroom, leeway, reserve, margin, allowance, latitude… time.</q>
                     </p>
                 </div>
             </div>
+            
             <div class="links-page">
                 <p class="date">
-                    Nov 8, 2024
+                    November 8, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://www.jonesish.com/blog/2024/11/finding-my-place-in-the-unfamiliar" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://www.jonesish.com/blog/2024/11/finding-my-place-in-the-unfamiliar" target="_blank" rel="noopener">
+                        <p class="compact">
                             Finding My Place in the Unfamiliar
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Innovation rarely comes from the centre of things. It comes from the edges, from the people who question assumptions because they've never quite fit into them. From the ones who bring different perspectives because they've had to navigate different worlds.</q>
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://www.founderstribune.org/p/becoming-steve-jobs-foreword-by-marc-andreessen-b165" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://www.founderstribune.org/p/becoming-steve-jobs-foreword-by-marc-andreessen-b165" target="_blank" rel="noopener">
+                        <p class="compact">
                             Becoming Steve Jobs Foreword
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>It’s like anything in life. There are standards. The standards have to be enforced. If the standards aren’t enforced, then the standards slip. This is the role of the CEO in any company. Some care and some don’t. Great CEOs care a lot. Steve cared a lot.</q>
                     </p>
                 </div>
             </div>
+            
             <div class="links-page">
                 <p class="date">
-                    Nov 4, 2024
+                    November 4, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://martinrue.com/what-if-you-hadn't" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://martinrue.com/what-if-you-hadn't" target="_blank" rel="noopener">
+                        <p class="compact">
                             What if you hadn't?
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Nurture and follow your curiosity like it might kill you if you don't.</q>
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://cutlefish.substack.com/p/keep-product-management-messy" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://cutlefish.substack.com/p/keep-product-management-messy" target="_blank" rel="noopener">
+                        <p class="compact">
                             Keep Product Management Messy
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>What this means is that if you want to learn product management, you may need to shift your learning approach. Move from formal mentorship to guided mentorship, from one-way teaching to two-way apprenticeship, and from classroom learning to hands-on shadowing. You might focus more on collaborative sense-making rather than individual learning, exploratory role growth instead of structured career paths, and learning through real-world challenges rather than rote learning.</q>
                     </p>
                 </div>
             </div>
+            
             <div class="links-page">
                 <p class="date">
-                    Nov 2, 2024
+                    November 2, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://www.brinkerhoffpoetry.org" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://www.brinkerhoffpoetry.org" target="_blank" rel="noopener">
+                        <p class="compact">
                             The Adrian Brinkerhoff Poetry Foundation
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         A beautiful site for discovering poetry.
                     </p>
                 </div>
             </div>
+            
             <div class="links-page">
                 <p class="date">
-                    Oct 29, 2024
+                    October 29, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://ineedacoffee.framer.website" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://ineedacoffee.framer.website" target="_blank" rel="noopener">
+                        <p class="compact">
                             I Need A Coffee
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         An online curated space where good design and coffee meet. Two of my favorite things!
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://www.proofofconcept.pub/p/the-obsession-over-craft" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://www.proofofconcept.pub/p/the-obsession-over-craft" target="_blank" rel="noopener">
+                        <p class="compact">
                             The obsession over craft
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Design is about consistency, and consistency builds trust. Increasing trustworthy craft means you know the teammate next to you will sweat the details as you should.</q>
                     </p>
                 </div>
             </div>
+            
             <div class="links-page">
                 <p class="date">
-                    Oct 25, 2024
+                    October 25, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://pjonori.blog/posts/in-defense-of-hard" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://pjonori.blog/posts/in-defense-of-hard" target="_blank" rel="noopener">
+                        <p class="compact">
                             In defense of hard
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>If a subject is naturally complex, work to make it no more complex than it needs to be—but no less. People are not averse to complexity, but they need to know it’s worth their time and energy. Educating them on how to do something is not enough, there should be education on why it’s important. People enjoy learning if the subject is engaging.</q>
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://world.hey.com/jason/version-1-is-for-you-658422f3" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://world.hey.com/jason/version-1-is-for-you-658422f3" target="_blank" rel="noopener">
+                        <p class="compact">
                             Version 1 is for you
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Version 1 is all about being selfish. You’ll make a better product that way. For you, and, ultimately, for them too.</q>
                     </p>
                 </div>
             </div>
+            
             <div class="links-page">
                 <p class="date">
-                    Oct 20, 2024
+                    October 20, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://thewonger.com/wabi-sabi" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://thewonger.com/wabi-sabi" target="_blank" rel="noopener">
+                        <p class="compact">
                             Wabi Sabi in the Workplace
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         A lot I can resonate with and have experienced firsthand.
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://stephango.com/40-questions" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://stephango.com/40-questions" target="_blank" rel="noopener">
+                        <p class="compact">
                             40 questions to ask yourself every year
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         This is my second year returning to this list by Steph Ango. Almost that time of the year again.
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://www.linkedin.com/pulse/you-do-belong-brian-collins-rk01e" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://www.linkedin.com/pulse/you-do-belong-brian-collins-rk01e" target="_blank" rel="noopener">
+                        <p class="compact">
                             You Do Not Belong
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Find people who challenge you, but never feed your self-doubt. Find people who, rather than give you what they think are the right answers, instead hold up a mirror and push you to discover the answer for your own damn self. They’ll be cheering you on, waiting for you at the finish line.</q>
                     </p>
                 </div>
             </div>
+            
             <div class="links-page">
                 <p class="date">
-                    Oct 19, 2024
+                    October 19, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://robinrendle.com/essays/newsletters" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://robinrendle.com/essays/newsletters" target="_blank" rel="noopener">
+                        <p class="compact">
                             Newsletters
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         I enjoy this visual essay by Robin Rendle. This topic in particular is something I've been pondering recently.
                     </p>
                 </div>
             </div>
+            
             <div class="links-page">
                 <p class="date">
-                    Oct 13, 2024
+                    October 13, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://www.bydamo.la/p/ai-manifesto" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://www.bydamo.la/p/ai-manifesto" target="_blank" rel="noopener">
+                        <p class="compact">
                             The /ai 'manifesto'
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         I love this idea as someone who uses AI every day for work and life. Going to add one for my site soon.
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://every.to/p/the-disappearance-of-an-internet-domain" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://every.to/p/the-disappearance-of-an-internet-domain" target="_blank" rel="noopener">
+                        <p class="compact">
                             The Disappearance of an Internet Domain
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Physical history is never as separate from our digital future as we like to think.</q>
                     </p>
                 </div>
-            </div>
-            <div class="links-page">
-                <p class="date">
-                    Oct 12, 2024
-                </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://www.nytimes.com/2024/08/29/well/mind/life-review-therapy.html" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://www.nytimes.com/2024/08/29/well/mind/life-review-therapy.html" target="_blank" rel="noopener">
+                        <p class="compact">
                             A ‘Life Review’ Can Be Powerful, at Any Age
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Life transitions tend to put everything upside down. The things that were important before are perhaps not that important anymore. Life review helps people accept changes and also to search for new commitments.</q>
                     </p>
                 </div>
             </div>
+            
             <div class="links-page">
                 <p class="date">
-                    Oct 10, 2024
+                    October 10, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://youtu.be/r-rHc8tm5_c?si=mdugEr6rVsWVibaA" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://youtu.be/r-rHc8tm5_c?si=mdugEr6rVsWVibaA" target="_blank" rel="noopener">
+                        <p class="compact">
                             Wisdom at 96: Life Advice from a Century of Experience
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>We shall not cease from exploration, and the end of all our exploring will be to arrive where we started and know the place for the first time.</q> &mdash; T.S. Eliot
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://amivora.substack.com/p/how-to-stop-getting-interrupted-aka" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://amivora.substack.com/p/how-to-stop-getting-interrupted-aka" target="_blank" rel="noopener">
+                        <p class="compact">
                             How to stop getting interrupted (aka, turn the worst offenders into the best defenders)
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>I’ve found that enlisting people as protectors of a cause helps them embrace that need for themselves.</q>
                     </p>
                 </div>
             </div>
+            
             <div class="links-page">
                 <p class="date">
-                    Oct 6, 2024
+                    October 6, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://www.henrikkarlsson.xyz/p/limitatons" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://www.henrikkarlsson.xyz/p/limitatons" target="_blank" rel="noopener">
+                        <p class="compact">
                             On limitations that hide in your blindspot
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Looking for limitations is about extending care to your future self.</q>
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://paulstamatiou.com/the-startup-designer" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://paulstamatiou.com/the-startup-designer" target="_blank" rel="noopener">
+                        <p class="compact">
                             The Startup Designer
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>There's nothing glamorous about being a designer at a startup. It's a role that frequently values speed and pragmatism over going deep in the craft. It's not all big launches, viral tweets, building for happy paths, and clear-cut product requirements.</q>
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://moretothat.com/metric-less-success" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://moretothat.com/metric-less-success" target="_blank" rel="noopener">
+                        <p class="compact">
                             Metric-Less Success
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Aligning yourself in this way is difficult, but such is the case for the most meaningful endeavors in life. Difficulty requires ingenuity, and ingenuity is what makes you feel like you’re working toward your potential. The thing about potential, however, is that it’s invisible and can’t be photographed on a magazine cover. But having integrity is about trusting that it’s there, even if you’re the only one that can see it.</q>
@@ -387,23 +382,23 @@
             
             <div class="links-page">
                 <p class="date">
-                    Oct 4, 2024
+                    October 4, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://cybermonk.substack.com/p/how-to-stay-human" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://cybermonk.substack.com/p/how-to-stay-human" target="_blank" rel="noopener">
+                        <p class="compact">
                             How to stay human
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Relaxation is calm alertness guided by love; and as such it often induces great effort, growth, learning, and transformation.</q>
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://www.rkg.blog/desperation-induced-focus.php" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://www.rkg.blog/desperation-induced-focus.php" target="_blank" rel="noopener">
+                        <p class="compact">
                             Desperation-Induced Focus
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Desperation is the single greatest advantage you have as a startup. It takes you down to the lowest level of detail. Desperation inspires creativity and intense focus. It is an essential ingredient to building great products and services.</q>
@@ -413,13 +408,13 @@
             
             <div class="links-page">
                 <p class="date">
-                    Sep 29, 2024
+                    September 29, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://aworkinglibrary.com/writing/coming-home" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://aworkinglibrary.com/writing/coming-home" target="_blank" rel="noopener">
+                        <p class="compact">
                             Coming home
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>My own magic is a small one: to write in order to uncover what I think; to prefigure a future of work that serves the living; to listen intently as people speak aloud a story of themselves that is, in the speaking, being rewritten.</q>
@@ -429,13 +424,13 @@
             
             <div class="links-page">
                 <p class="date">
-                    Sep 28, 2024
+                    September 28, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://daringfireball.net/2024/09/the_things_they_carried" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://daringfireball.net/2024/09/the_things_they_carried" target="_blank" rel="noopener">
+                        <p class="compact">
                             The Things They Carried
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         Thoughts and Observations in the Wake of Apple’s ‘It’s Glowtime’ Keynote.
@@ -445,13 +440,13 @@
             
             <div class="links-page">
                 <p class="date">
-                    Sep 26, 2024
+                    September 26, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://moretothat.com/the-three-foundational-questions/" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://moretothat.com/the-three-foundational-questions/" target="_blank" rel="noopener">
+                        <p class="compact">
                             The Three Foundational Questions
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Without hope, there can be no ambition, and I believe that ambition is critical to the development of a healthy mind. The only reason you work on something is because there’s something you’re working toward, and it’s this ability to envision a future state that makes challenge possible in the first place.</q>
@@ -461,13 +456,13 @@
             
             <div class="links-page">
                 <p class="date">
-                    Sep 21, 2024
+                    September 21, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://www.feltpresence.com/small-tools-for-shaping" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://www.feltpresence.com/small-tools-for-shaping" target="_blank" rel="noopener">
+                        <p class="compact">
                             Small tools for shaping
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>There's a difference between a process and a toolbox. There's no "right order" for applying these tools. They don't make up a process. Each tool is a small thing used in a response to a specific challenge in a specific moment.</q>
@@ -477,33 +472,33 @@
             
             <div class="links-page">
                 <p class="date">
-                    Sep 16, 2024
+                    September 16, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://www.teresamira.com/writing/mastering-our-mind-for-better-ideas" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://www.teresamira.com/writing/mastering-our-mind-for-better-ideas" target="_blank" rel="noopener">
+                        <p class="compact">
                             Mastering our mind for better ideas
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Six habits for mental clarity, creative insight; and ironically, sustained productivity.</q>
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://camera-apps.com" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://camera-apps.com" target="_blank" rel="noopener">
+                        <p class="compact">
                             The Best Camera Apps for iPhone
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         Guillaume shared this with me on <a href="https://posts.cv/heliographe/XV3znAzChHIONaaca5IR" target="_blank" rel="noopener">Posts</a>. I've downloaded just about every app on the list.
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://www.popsci.com/technology/full-scale-lego-mclaren-p1" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://www.popsci.com/technology/full-scale-lego-mclaren-p1" target="_blank" rel="noopener">
+                        <p class="compact">
                             LEGO built a full-scale, drivable McLaren P1 model
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>It can't hit 217 mph, but it did complete a lap at the Silverstone Circuit.</q>
@@ -513,13 +508,13 @@
             
             <div class="links-page">
                 <p class="date">
-                    Sep 15, 2024
+                    September 15, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://www.bytedrum.com/posts/art-of-finishing" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://www.bytedrum.com/posts/art-of-finishing" target="_blank" rel="noopener">
+                        <p class="compact">
                             The Art of Finishing
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>This journey isn’t just about completing code; it’s about growing as a developer and creator. Each finished project, no matter how small, is a step towards becoming someone who not only starts with enthusiasm but finishes with satisfaction.</q>
@@ -529,23 +524,23 @@
             
             <div class="links-page">
                 <p class="date">
-                    Sep 11, 2024
+                    September 11, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://blog.jim-nielsen.com/2024/sanding-ui" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://blog.jim-nielsen.com/2024/sanding-ui" target="_blank" rel="noopener">
+                        <p class="compact">
                             Sanding UI
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>It’s a small thing, but lots of small splinters lead to an agonizing experience.</q>
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://owickstrom.github.io/the-monospace-web" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://owickstrom.github.io/the-monospace-web" target="_blank" rel="noopener">
+                        <p class="compact">
                             The Monospace Web
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         A minimalist design exploration.
@@ -555,29 +550,29 @@
             
             <div class="links-page">
                 <p class="date">
-                    Sep 8, 2024
+                    September 8, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://interconnected.org/home/2024/09/05/cursor-party" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://interconnected.org/home/2024/09/05/cursor-party" target="_blank" rel="noopener">
+                        <p class="compact">
                             Every webpage deserves to be a place
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
-                        Cursor party on your website 😮
+                        Have a cursor party on your website.
                     </p>
                 </div>
             </div>
             
             <div class="links-page">
                 <p class="date">
-                    Sep 7, 2024
+                    September 7, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://www.fastcompany.com/91185536/jony-ives-lovefrom-reinvents-the-button-with-moncler" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://www.fastcompany.com/91185536/jony-ives-lovefrom-reinvents-the-button-with-moncler" target="_blank" rel="noopener">
+                        <p class="compact">
                             Jony Ive’s LoveFrom reinvents the button with Moncler
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>MagSafe for coats!</q>
@@ -587,33 +582,33 @@
             
             <div class="links-page">
                 <p class="date">
-                    Sep 5, 2024
+                    September 5, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://alexanderobenauer.com/work" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://alexanderobenauer.com/work" target="_blank" rel="noopener">
+                        <p class="compact">
                             How I approach my core work
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Everyone deserves the opportunity to do this: to find the thing they love as much as my companion-in-conversation at a boring event loved butterflies, and to contribute their spark to it, which might even be the inspiration for the next person.</q>
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://visakanv.substack.com/p/are-you-serious" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://visakanv.substack.com/p/are-you-serious" target="_blank" rel="noopener">
+                        <p class="compact">
                             Are you serious?
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Seriousness is love and curiosity expressed earnestly.</q>
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://ohhelloana.blog/just-get-a-website" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://ohhelloana.blog/just-get-a-website" target="_blank" rel="noopener">
+                        <p class="compact">
                             You don't have to be a “content creator” to have a website.
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Give yourself permission to exist and be seen regardless of whether you have a blog, side projects or “content” - whatever it means.</q>
@@ -623,43 +618,43 @@
             
             <div class="links-page">
                 <p class="date">
-                    Sep 1, 2024
+                    September 1, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://youtu.be/IXWmrXt52wM?si=3JR2SJWzqlDOeOy6" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://youtu.be/IXWmrXt52wM?si=3JR2SJWzqlDOeOy6" target="_blank" rel="noopener">
+                        <p class="compact">
                             Making a Portable Macintosh Mini
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         A nice iteration after the <a href="https://youtu.be/BuEziDm9gQw?si=UEanndrje_EDYVhE" target="_blank" rel="noopener">Macintosh Studio</a>.
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://piccalil.li/blog/redesigning-piccalilli-the-second-part-of-the-design-process" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://piccalil.li/blog/redesigning-piccalilli-the-second-part-of-the-design-process" target="_blank" rel="noopener">
+                        <p class="compact">
                             Redesigning Piccalilli: the first part of the design process
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Everything in the design process is also completely disposable. It gives us the freedom to experiment and work at an incredibly fast pace as a unit.</q>
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://codepen.io/fimion/full/oNVQBRJ" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://codepen.io/fimion/full/oNVQBRJ" target="_blank" rel="noopener">
+                        <p class="compact">
                             Markdown CSS Framework
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         Genius framework!
                     </p>
                 </div>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="http://quotesandaccents.com" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="http://quotesandaccents.com" target="_blank" rel="noopener">
+                        <p class="compact">
                             Quotes &#38; Accents (&#38; Dashes)
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Don’t use dumb quotes for quotations or apostrophes—the nerds will revolt.</q>
@@ -669,29 +664,29 @@
             
             <div class="links-page">
                 <p class="date">
-                    Aug 6, 2024
+                    August 6, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://www.henrikkarlsson.xyz/p/unfolding" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://www.henrikkarlsson.xyz/p/unfolding" target="_blank" rel="noopener">
+                        <p class="compact">
                             Everything that turned out well in my life followed the same design process
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
-                        <q>I paid attention to things I liked to do, and found ways to do more of that. I made it easy for interesting people to find me, and then I hung out with them. We did projects together. I kept iterating—paying attention to the context, removing things that frustrated me, and expanding things that made me feel alive. Eventually, I looked up and noticed that my life was nothing like I imagined it would be. But it fit me.</q>
+                        <q>I paid attention to things I liked to do, and found ways to do more of that. I made it easy for interesting people to find me, and then I hung out with them. We did projects together. I kept iterating—paying attention to the context, removing things that frustrated me, and expanding things that made me feel alive. Eventually, I looked up and noticed that my life was nothing like I imagined it would be. But it fit me.</q>
                     </p>
                 </div>
             </div>
             
             <div class="links-page">
                 <p class="date">
-                    Aug 3, 2024
+                    August 3, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://matthewstrom.com/writing/copying" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://matthewstrom.com/writing/copying" target="_blank" rel="noopener">
+                        <p class="compact">
                             Copying is the way design works
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>Whether you believe that it’s worthwhile or worthless to copy, whether you think that copies are a valuable part of the design community or a scourge, you are using software, hardware, websites and apps that all owe their existence to copying.</q>
@@ -701,13 +696,13 @@
             
             <div class="links-page">
                 <p class="date">
-                    Jul 29, 2024
+                    July 29, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://benji.org/family-values" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://benji.org/family-values" target="_blank" rel="noopener">
+                        <p class="compact">
                             Family Values
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         Great writeup, and very nice interactions.
@@ -717,13 +712,13 @@
             
             <div class="links-page">
                 <p class="date">
-                    Jul 15, 2024
+                    July 15, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://sebastianstockmarr.com/Great-design-starts-with-writing" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://sebastianstockmarr.com/Great-design-starts-with-writing" target="_blank" rel="noopener">
+                        <p class="compact">
                             Great design starts with writing
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>The best method for doing great design work is writing. In prose. Not in bullet points, not wireframes, not diagrams, and never spreadsheets.</q>
@@ -733,13 +728,13 @@
             
             <div class="links-page">
                 <p class="date">
-                    Jul 2, 2024
+                    July 2, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://joelcalifa.com/blog/your-work-is-starstuff" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://joelcalifa.com/blog/your-work-is-starstuff" target="_blank" rel="noopener">
+                        <p class="compact">
                             Your Work is Starstuff
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         <q>The things we make are never done. There’s always the next feature or pivot or bug or optimization. In this way, digital design is inherently ephemeral. Our work was never meant to exist forever, and honestly, it would be a shame if it did.</q>
@@ -749,13 +744,13 @@
             
             <div class="links-page">
                 <p class="date">
-                    Jun 29, 2024
+                    June 29, 2024
                 </p>
                 <div class="links-page-section">
-                    <a class="links-page-header" href="https://fullystacked.net/system-font-deep-dive" target="_blank" rel="noopener">
-                        <h2 class="section-title_smaller">
+                    <a href="https://fullystacked.net/system-font-deep-dive" target="_blank" rel="noopener">
+                        <p class="compact">
                             System font deep dive
-                        </h2>
+                        </p>
                     </a>
                     <p class="compact">
                         When in doubt, use the system font stack.
@@ -765,12 +760,30 @@
         </section>
     </main>
     <footer>
-        <footer-links>
-        </footer-links>
+        <div class="footer-container">
+            <a href="/">
+                <svg class="footer-logo" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_388_22)">
+                        <path d="M8.69016 7.07006C8.36205 6.99788 8.02512 6.97429 7.69016 7.00006C7.35513 7.0154 7.02296 7.06909 6.70016 7.16006C6.32833 7.25058 5.98201 7.42459 5.68745 7.6689C5.3929 7.9132 5.15786 8.22138 5.00016 8.57006C4.97746 8.63689 4.93193 8.69358 4.87158 8.73016C4.81122 8.76674 4.7399 8.78087 4.67016 8.77006C4.6318 8.75867 4.59611 8.73972 4.56518 8.71432C4.53426 8.68893 4.50873 8.65761 4.49009 8.6222C4.47145 8.58679 4.46009 8.54801 4.45667 8.50814C4.45324 8.46828 4.45783 8.42813 4.47016 8.39006C4.57333 7.88387 4.79979 7.41096 5.12948 7.01325C5.45916 6.61553 5.88188 6.3053 6.36016 6.11006C7.17488 5.76183 8.08865 5.72272 8.93016 6.00006C9.43692 6.14189 9.89634 6.41713 10.2604 6.79707C10.6246 7.17701 10.88 7.64772 11.0002 8.16006C11.0275 8.24253 11.0232 8.33223 10.9881 8.41171C10.953 8.49118 10.8896 8.55476 10.8102 8.59006C10.724 8.61487 10.6315 8.60462 10.5528 8.56154C10.4741 8.51846 10.4157 8.44604 10.3902 8.36006C10.2387 8.019 10.0034 7.72184 9.70618 7.49627C9.40892 7.2707 9.05938 7.12407 8.69016 7.07006Z" fill="currentColor"/>
+                        <path d="M17.6802 5.89997C17.2726 5.74152 16.8373 5.66671 16.4002 5.67997C15.9606 5.68129 15.5255 5.76965 15.1202 5.93997C14.6644 6.14086 14.2565 6.43648 13.9237 6.80718C13.591 7.17788 13.3409 7.61516 13.1902 8.08997C13.1623 8.16459 13.1632 8.24695 13.1928 8.32092C13.2224 8.3949 13.2785 8.45518 13.3502 8.48997C13.4232 8.51994 13.505 8.51996 13.578 8.49001C13.651 8.46006 13.7093 8.40256 13.7402 8.32997C14.1288 7.67209 14.7612 7.19414 15.5002 6.99997C15.8002 6.91524 16.1088 6.86492 16.4202 6.84997C16.946 6.79689 17.4753 6.90653 17.9368 7.16407C18.3982 7.42161 18.7694 7.81462 19.0002 8.28997C19.0338 8.37348 19.0982 8.44086 19.1801 8.47811C19.2621 8.51535 19.3552 8.5196 19.4402 8.48997C19.4824 8.4744 19.521 8.45063 19.554 8.42003C19.5869 8.38943 19.6134 8.35261 19.632 8.31169C19.6506 8.27077 19.6609 8.22657 19.6623 8.18165C19.6637 8.13673 19.6562 8.09197 19.6402 8.04997C19.5052 7.56292 19.2574 7.1145 18.9169 6.74099C18.5764 6.36748 18.1527 6.07937 17.6802 5.89997Z" fill="currentColor"/>
+                        <path d="M17.3073 11.834C17.3521 11.8305 17.3971 11.8359 17.4398 11.8499C17.5239 11.8775 17.594 11.9368 17.6351 12.0152C17.6761 12.0937 17.685 12.185 17.6598 12.2699C17.2698 13.7499 15.7998 14.7399 14.0098 15.1699C13.3537 15.3193 12.6827 15.3931 12.0098 15.3899C11.3345 15.3828 10.6627 15.2921 10.0098 15.1199C8.18978 14.6399 6.75978 13.5599 6.50978 12.0699C6.50103 12.0318 6.50009 11.9923 6.50702 11.9537C6.51395 11.9152 6.5286 11.8785 6.55009 11.8458C6.57158 11.8131 6.59946 11.7851 6.63206 11.7635C6.66466 11.7418 6.7013 11.727 6.73978 11.7199C6.81666 11.7018 6.89759 11.7147 6.96498 11.7559C7.03238 11.7971 7.08082 11.8632 7.09978 11.9399C7.43978 13.1299 8.73978 13.7599 10.2498 14.0599C10.8335 14.1708 11.4257 14.231 12.0198 14.2399C12.8133 14.2578 13.6061 14.1772 14.3798 13.9999C14.9414 13.9143 15.4739 13.694 15.9319 13.358C16.3898 13.0219 16.7597 12.5799 17.0098 12.0699C17.0234 12.0271 17.0453 11.9874 17.0744 11.9532C17.1034 11.9189 17.1389 11.8907 17.1789 11.8703C17.2189 11.8498 17.2625 11.8375 17.3073 11.834Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.81 2.72001C22.39 4.78001 23.91 7.60001 24 9.60001C24.1772 11.6524 23.7162 13.7095 22.68 15.49C21.5594 17.2401 19.8265 18.5095 17.82 19.05C17.2406 19.1889 16.6526 19.2891 16.06 19.35C15.02 19.48 14.03 19.48 13.62 19.48C13.4903 19.6478 13.3242 19.9059 13.1301 20.2075C12.8154 20.6966 12.4267 21.3005 12 21.82C11.7086 22.1781 11.3725 22.4974 11 22.77C9.91038 23.4079 8.69617 23.8035 7.43997 23.93C7.14842 23.97 6.85416 23.9867 6.55997 23.98C6.47842 23.9834 6.39759 23.9635 6.32693 23.9226C6.25627 23.8818 6.1987 23.8216 6.16095 23.7493C6.12319 23.6769 6.10681 23.5953 6.11372 23.514C6.12063 23.4327 6.15054 23.355 6.19997 23.29C6.67485 22.6862 6.98495 21.9695 7.09997 21.21C7.21381 20.6996 7.21381 20.1704 7.09997 19.66C7.09208 19.6364 7.0847 19.6127 7.07749 19.5896C7.03901 19.4664 7.00578 19.36 6.92997 19.36C4.38997 18.51 2.51997 17.74 1.44997 16.51C0.379966 15.28 -0.100034 13.49 0.0799664 10.43C0.36427 7.46992 1.80094 4.74025 4.07997 2.83001C6.36067 0.945206 9.24182 -0.05894 12.2 1.44963e-05C14.9713 0.0197515 17.654 0.978624 19.81 2.72001ZM17.65 18.4C19.4646 17.8771 21.0169 16.6924 22 15.08H21.94C22.8965 13.4392 23.3193 11.5417 23.15 9.65001C23.03 7.85001 21.57 5.37001 19.22 3.55001C17.2417 1.99352 14.7971 1.14814 12.28 1.15001C9.58772 1.09852 6.96486 2.00589 4.87997 3.71001C2.8041 5.40071 1.47537 7.83912 1.17997 10.5C0.929966 13.18 1.17997 14.66 2.17997 15.86C3.17997 17.06 4.84997 17.67 7.17997 18.52C7.33136 18.5828 7.46714 18.678 7.57772 18.7989C7.68831 18.9199 7.771 19.0636 7.81997 19.22C7.99815 19.7299 8.05966 20.2732 7.99997 20.81C7.95658 21.63 7.73837 22.4313 7.35997 23.16C8.50366 23.0697 9.61336 22.7283 10.61 22.16C11.0266 21.8426 11.394 21.4652 11.7 21.04C11.9719 20.6874 12.2347 20.2879 12.4725 19.9265C12.7943 19.4373 13.0702 19.018 13.26 18.88C13.4372 18.7511 13.8308 18.7578 14.3618 18.7668C14.8194 18.7746 15.379 18.7841 15.99 18.71C16.5499 18.6461 17.1047 18.5425 17.65 18.4Z" fill="currentColor"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_388_22">
+                    <rect width="24" height="24" fill="currentColor"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <div class="footer-links">
+                <a class="minimal-link" href="/now">Now</a>
+                <a class="minimal-link" href="/about">About</a>
+                <a class="minimal-link" href="/blog">Blog</a>
+            </div>
+        </div>
     </footer>
-<audio id="themeSwitcherClickSound" src="audio/switch.wav"></audio>
-<script src="js/theme-switcher.js" defer></script>
-<script src="js/footer-links.js" defer></script>
+    <script src="js/theme-switcher.js" defer></script>
 </body>
 
 </html>
