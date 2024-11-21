@@ -147,7 +147,6 @@ strong {
 
 .unselectable {
     user-select: none;
-    webkit-user-select: none;
 }
 
 .italic {
@@ -367,6 +366,7 @@ svg.footer-logo:not(:hover) {
     blockquote p {
         padding: 0;
     }
+}
 
 @media screen and (max-width: 480px) {
     .global-nav {
