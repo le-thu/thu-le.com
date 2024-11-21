@@ -8,26 +8,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
         carousel.addEventListener('mousedown', (e) => {
             isDown = true;
-            carousel.style.cursor = 'grabbing'; // Change cursor to indicate dragging
+            carousel.style.cursor = 'grabbing';
             startX = e.pageX - carousel.offsetLeft;
             scrollLeft = carousel.scrollLeft;
         });
 
         carousel.addEventListener('mouseleave', () => {
             isDown = false;
-            carousel.style.cursor = 'grab'; // Restore cursor on mouse leave
+            carousel.style.cursor = 'grab';
         });
 
         carousel.addEventListener('mouseup', () => {
             isDown = false;
-            carousel.style.cursor = 'grab'; // Restore cursor on mouse up
+            carousel.style.cursor = 'grab';
         });
 
         carousel.addEventListener('mousemove', (e) => {
             if (!isDown) return;
             e.preventDefault();
             const x = e.pageX - carousel.offsetLeft;
-            const walk = (x - startX) * 3; // Adjust scrolling sensitivity if needed
+            const walk = (x - startX) * 3;
             carousel.scrollLeft = scrollLeft - walk;
         });
 
