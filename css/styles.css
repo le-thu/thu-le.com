@@ -83,10 +83,7 @@ svg.logo:hover {
     transition: color 120ms ease-in-out;
 }
 
-.homepage-header {
-    margin-block: 4rem;
-}
-
+.homepage-header,
 .subpage-header {
     margin-block: 4rem;
 }
@@ -149,10 +146,6 @@ strong {
     user-select: none;
 }
 
-.italic {
-    font-style: italic;
-}
-
 .compact-heading {
     margin-block: 2rem 0.25rem;
 }
@@ -213,7 +206,7 @@ a {
     text-decoration-style: solid;
     text-decoration-color: hsl(from var(--default) h s l / 30%);
     text-decoration-thickness: 0.05rem;
-    text-underline-offset: 0.21875rem;
+    text-underline-offset: 0.1875rem;
     transition: all 120ms ease-in-out;
 }
 
@@ -235,7 +228,6 @@ a:hover {
     display: inline-block;
     vertical-align: middle;
     line-height: 1;
-    text-decoration: none;
 }
 
 .inline-icon svg path {
