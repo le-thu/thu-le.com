@@ -337,7 +337,7 @@ svg.footer-logo:not(:hover) {
     display: none;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 560px) {
     .global-nav {
         padding-block: 4rem 0;
     }
