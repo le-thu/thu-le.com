@@ -232,6 +232,11 @@ a:hover {
 
 .inline-icon svg path {
     color: hsl(from var(--default) h s l / 30%);
+    transition: color 120ms ease-in-out;
+}
+
+.blog-title:hover .inline-icon svg path {
+    color: hsl(from var(--default) h s l / 60%);
 }
 
 .secondary {
