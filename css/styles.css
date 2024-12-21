@@ -308,6 +308,7 @@ svg.footer-logo:not(:hover) {
 
 .separator {
     text-align: center;
+    font-size: 1.25rem;
     color: hsl(from var(--default) h s l / 30%);
     margin-block: 2.5rem;
     user-select: none;
