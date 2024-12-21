@@ -38,14 +38,14 @@
 }
 
 :root {
-    --background: #FAF9F9;
+    --background: #FAF9F5;
     --default: #0F0F0F;
     --secondary: #707070;
     --caption-metadata: #4D4C4C;
 }
 
 .dark {
-    --background: #171717;
+    --background: #1A1919;
     --default: #F0F0F0;
     --secondary: #949494;
     --caption-metadata: #C7C7C7;
