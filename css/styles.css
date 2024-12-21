@@ -366,10 +366,6 @@ svg.footer-logo:not(:hover) {
 }
 
 @media screen and (max-width: 480px) {
-    .global-nav {
-        padding-block: 3rem 0;
-    }
-
     div.decorative-line {
         margin: auto 1.25rem;
     }
