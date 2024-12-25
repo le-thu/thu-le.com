@@ -364,9 +364,7 @@ svg.footer-logo:not(:hover) {
     blockquote p {
         padding: 0;
     }
-}
-
-@media screen and (max-width: 480px) {
+    
     div.decorative-line {
         margin: auto 1.25rem;
     }
