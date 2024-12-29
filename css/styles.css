@@ -87,9 +87,6 @@ svg.logo:hover {
     margin-block: 4rem;
 }
 
-h1,
-h2,
-h3,
 .page-block,
 .links-page,
 .separator,
@@ -107,6 +104,7 @@ h3 {
     line-height: 1.25;
     text-wrap: balance;
     margin-block: 4rem 1rem;
+    max-width: 480px;
 }
 
 h2.section-title {
@@ -270,7 +268,7 @@ blockquote {
 }
 
 footer {
-    margin-block: 6rem;
+    margin-block: 5rem;
 }
 
 .footer-container {
@@ -280,7 +278,6 @@ footer {
     gap: 1rem;
     border-top: 0.0625rem solid hsl(from var(--default) h s l / 8%);
     padding-block: 3rem 0;
-    margin-block: 3rem;
 }
 
 svg.footer-logo {
@@ -319,9 +316,9 @@ svg.footer-logo:not(:hover) {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     padding: 0 1.25rem;
-    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
-    scrollbar-width: none;     /* Hide scrollbar for Firefox */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
 }
 
 .carousel::-webkit-scrollbar {
