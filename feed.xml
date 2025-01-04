@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
     <channel>
-        <title>Thu Le's Blog</title>
+        <title>Thu’s Blog</title>
         <link>https://thu-le.com/blog</link>
         <description>Musings and ideas, out loud.</description>
         <language>en-us</language>
@@ -52,7 +52,7 @@
             <link>https://thu-le.com/blog/things-i-know</link>
             <pubDate>Fri, 18 Oct 2024 23:59:00 +0700</pubDate>
             <guid isPermaLink="true">https://thu-le.com/blog/things-i-know</guid>
-            <description>I turned 30 and here are some things I've learned along the way.</description>
+            <description>I turned 30 and here are some things I’ve learned along the way.</description>
         </item>
 
         <item>
