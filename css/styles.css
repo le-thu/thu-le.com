@@ -135,6 +135,15 @@ figcaption {
     margin-block: 0.5rem;
 }
 
+.paragraph-indent p {
+  text-indent: 1.5em;
+}
+
+.paragraph-indent p:first-of-type,
+.body-section:has(blockquote) + p {
+  text-indent: 0;
+}
+
 strong {
     font-weight: 600;
 }
