@@ -136,7 +136,7 @@ figcaption {
 }
 
 .paragraph-indent p {
-  text-indent: 1.5em;
+  text-indent: 1.5rem;
 }
 
 .paragraph-indent p:first-of-type,
