@@ -116,6 +116,11 @@ h2.section-title-small {
     margin-block: 3rem 1rem;
 }
 
+h3 {
+    font-size: 1.375rem;
+    margin-block: 3rem 1rem;
+}
+
 p,
 ul,
 ol,
@@ -136,12 +141,13 @@ figcaption {
 }
 
 .paragraph-indent p {
-  text-indent: 1.5rem;
+    text-indent: 1.5rem;
 }
 
+.paragraph-indent :is(h1, h2, h3) + p,
 .paragraph-indent p:first-of-type,
 .body-section:has(blockquote) + p {
-  text-indent: 0;
+    text-indent: 0;
 }
 
 strong {
