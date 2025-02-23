@@ -35,7 +35,7 @@
 }
 
 :root {
-    --background: #FAF9F5;
+    --background: #F5F4F0;
     --default: #0F0F0F;
     --secondary: #707070;
     --caption-metadata: #4D4C4C;
@@ -44,7 +44,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #1A1919;
-        --default: #F0F0F0;
+        --default: #F0F0EE;
         --secondary: #949494;
         --caption-metadata: #C7C7C7;
     }
