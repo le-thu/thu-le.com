@@ -73,8 +73,8 @@ img, picture, video, canvas {
 }
 
 .nav-container {
-    max-width: 480px;
-    height: 32px;
+    max-width: 31.25rem;
+    height: 2rem;
 }
 
 svg.logo:hover {
@@ -92,7 +92,7 @@ svg.logo:hover {
 .separator,
 .body-section,
 footer {
-    max-width: 480px;
+    max-width: 31.25rem;
 }
 
 h1,
@@ -104,7 +104,7 @@ h3 {
     line-height: 1.25;
     text-wrap: balance;
     margin-block: 4rem 1rem;
-    max-width: 480px;
+    max-width: 31.25rem;
 }
 
 h2.section-title {
@@ -126,14 +126,14 @@ ul,
 ol,
 li,
 figcaption {
-    max-width: 480px;
+    max-width: 31.25rem;
     margin-block: 1rem;
     text-wrap: pretty;
 }
 
 .homepage-header p {
     line-height: 1.4;
-    text-wrap: balance;
+    text-wrap: pretty;
 }
 
 #index p {
@@ -266,12 +266,12 @@ figure.project-img {
 }
 
 figure.project-img-small {
-    max-width: 480px;
+    max-width: 31.25rem;
     margin-block: 3rem;
 }
 
 div.decorative-line {
-    max-width: 480px;
+    max-width: 31.25rem;
     border: 0;
     border-top: 0.0625rem dashed hsl(from var(--default) h s l / 15%);
 }
