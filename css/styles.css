@@ -141,7 +141,7 @@ figcaption {
 }
 
 .paragraph-indent p {
-    text-indent: 1.5rem;
+    text-indent: 1.25rem;
 }
 
 .paragraph-indent :is(h1, h2, h3) + p,
@@ -277,7 +277,7 @@ div.decorative-line {
 }
 
 blockquote {
-    padding: 0 1.5rem;
+    padding: 0 1.25rem;
     margin-block: 1rem;
     border-left: 0.0625rem solid hsl(from var(--default) h s l / 15%);
 }
