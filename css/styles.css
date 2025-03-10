@@ -356,6 +356,23 @@ svg.footer-logo:not(:hover) {
     max-height: 100%;
 }
 
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header,
+main,
+footer {
+  animation: slideUp 400ms ease-out;
+}
+
 @media screen and (max-width: 640px) {
     .global-nav {
         padding-block: 4rem 0;
