@@ -54,7 +54,7 @@ body {
     background-color: var(--background);
     color: var(--default);
     font-family: 'Crimson Pro', Iowan, Georgia, ui-serif;
-    font-size: 1.125rem;
+    font-size: 1.1875rem;
     font-kerning: normal;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
@@ -74,7 +74,7 @@ img, picture, video, canvas {
 
 .nav-container {
     max-width: 31.25rem;
-    height: 2rem;
+    height: 2.5rem;
 }
 
 svg.logo:hover {
@@ -98,9 +98,9 @@ footer {
 h1,
 h2,
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.6875rem;
     font-weight: 400;
-    letter-spacing: -0.12px;
+    letter-spacing: -0.015625rem;
     line-height: 1.25;
     text-wrap: balance;
     margin-block: 4rem 1rem;
@@ -108,17 +108,13 @@ h3 {
 }
 
 h2.section-title {
-    margin-block: 4rem 0.5rem;
-}
-
-h2.section-title-small {
-    font-size: 1.25rem;
-    margin-block: 3rem 1rem;
+    margin-block: 4rem 0.75rem;
 }
 
 h3 {
-    font-size: 1.375rem;
+    font-size: 1.4375rem;
     margin-block: 3rem 1rem;
+    text-wrap: pretty;
 }
 
 p,
@@ -131,17 +127,12 @@ figcaption {
     text-wrap: pretty;
 }
 
-.homepage-header p {
-    line-height: 1.4;
-    text-wrap: pretty;
-}
-
 #index p {
-    margin-block: 0.5rem;
+    margin-block: 0.75rem;
 }
 
 .paragraph-indent p {
-    text-indent: 1.25rem;
+    text-indent: 1.5rem;
 }
 
 .paragraph-indent :is(h1, h2, h3) + p,
@@ -177,10 +168,6 @@ div.links-page-section {
 
 div.links-page-section p {
     line-height: 1.4;
-}
-
-p.blog-title {
-    text-wrap: balance;
 }
 
 p.date {
@@ -277,7 +264,7 @@ div.decorative-line {
 }
 
 blockquote {
-    padding: 0 1.25rem;
+    padding: 0 1.5rem;
     margin-block: 1rem;
     border-left: 0.0625rem solid hsl(from var(--default) h s l / 15%);
 }
@@ -359,9 +346,8 @@ svg.footer-logo:not(:hover) {
 @keyframes slideUp {
     from {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(12px);
     }
-    
     to {
         opacity: 1;
         transform: translateY(0);
