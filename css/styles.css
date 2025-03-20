@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
@@ -35,18 +33,18 @@
 }
 
 :root {
-    --background: #F5F4F0;
-    --default: #0F0F0F;
-    --secondary: #707070;
-    --caption-metadata: #4D4C4C;
+    --background: #EAF3E2;
+    --default: #31481E;
+    --secondary: #637A52;
+    --caption-metadata: #637A52;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #1A1919;
-        --default: #F0F0EE;
-        --secondary: #949494;
-        --caption-metadata: #C7C7C7;
+        --background: #131D0C;
+        --default: #E2E3C9;
+        --secondary: #888E6F;
+        --caption-metadata: #888E6F;
     }
 }
 
@@ -95,13 +93,11 @@ footer {
     max-width: 31.25rem;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-size: 1.6875rem;
     font-weight: 400;
     letter-spacing: -0.015625rem;
-    line-height: 1.25;
+    line-height: 1.2;
     text-wrap: balance;
     margin-block: 4rem 1rem;
     max-width: 31.25rem;
@@ -117,11 +113,7 @@ h3 {
     text-wrap: pretty;
 }
 
-p,
-ul,
-ol,
-li,
-figcaption {
+p, ul, ol, li, figcaption {
     max-width: 31.25rem;
     margin-block: 1rem;
     text-wrap: pretty;
@@ -188,7 +180,7 @@ li::marker {
 }
 
 .subtle {
-    color: hsl(from var(--default) h s l / 30%);
+    color: hsl(from var(--default) h s l / 40%);
 }
 
 figcaption {
@@ -260,13 +252,13 @@ figure.project-img-small {
 div.decorative-line {
     max-width: 31.25rem;
     border: 0;
-    border-top: 0.0625rem dashed hsl(from var(--default) h s l / 15%);
+    border-top: 0.0625rem dashed hsl(from var(--default) h s l / 18%);
 }
 
 blockquote {
     padding: 0 1.5rem;
     margin-block: 1rem;
-    border-left: 0.0625rem solid hsl(from var(--default) h s l / 15%);
+    border-left: 0.0625rem solid hsl(from var(--default) h s l / 20%);
 }
 
 footer {
@@ -278,7 +270,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    border-top: 0.0625rem solid hsl(from var(--default) h s l / 8%);
+    border-top: 0.0625rem solid hsl(from var(--default) h s l / 10%);
     padding-block: 3rem 0;
 }
 
@@ -354,9 +346,7 @@ svg.footer-logo:not(:hover) {
     }
 }
 
-header,
-main,
-footer {
+header, main, footer {
   animation: slideUp 400ms ease-out;
 }
 
