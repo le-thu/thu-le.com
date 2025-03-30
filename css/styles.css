@@ -195,15 +195,15 @@ a {
     color: inherit;
     text-decoration: underline;
     text-decoration-style: solid;
-    text-decoration-color: hsl(from var(--default) h s l / 30%);
-    text-decoration-thickness: 0.05rem;
+    text-decoration-color: hsl(from var(--default) h s l / 25%);
+    text-decoration-thickness: 0.0625rem;
     text-underline-offset: 0.1875rem;
     transition: all 120ms ease-in-out;
 }
 
 a:hover {
     color: var(--default);
-    text-decoration-color: hsl(from var(--default) h s l / 80%);
+    text-decoration-color: hsl(from var(--default) h s l / 60%);
 }
 
 .minimal-link {
