@@ -245,7 +245,7 @@ figure.project-img {
 }
 
 figure.project-img-small {
-    max-width: 31.25rem;
+    max-width: 500px;
     margin-block: 3rem;
 }
 
@@ -331,7 +331,7 @@ svg.footer-logo:not(:hover) {
 
 .carousel .project-img-small img {
     display: block;
-    width: 400px;
+    max-width: 400px;
     max-height: 100%;
 }
 
