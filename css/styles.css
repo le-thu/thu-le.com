@@ -236,12 +236,12 @@ a:hover {
     color: var(--secondary);
 }
 
-figure.project-img {
+figure.media-img {
     max-width: 640px;
     margin-block: 4rem;
 }
 
-figure.project-img-small {
+figure.media-img-small {
     max-width: 500px;
     margin-block: 3rem;
 }
@@ -293,11 +293,14 @@ svg.footer-logo:not(:hover) {
     gap: 1rem;
 }
 
-.separator {
-    text-align: center;
-    font-size: 1.25rem;
-    color: hsl(from var(--default) h s l / 30%);
-    margin-block: 2.5rem;
+.separator::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;   
+    content: "\2733 \2733 \2733";
+    letter-spacing: 1rem;
+    color: hsl(from var(--default) h s l / 40%);
     user-select: none;
 }
 
@@ -305,14 +308,18 @@ svg.footer-logo:not(:hover) {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    padding: 0 1.25rem;
-    -ms-overflow-style: none;
+    overscroll-behavior-x: contain;
+    padding: 0 1.25rem 0 0;
     scrollbar-width: none;
+    -ms-overflow-style: none;
     -webkit-overflow-scrolling: touch;
+
+    @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+    }
 }
 
-.carousel .project-img-small {
+.carousel .media-img-small {
     display: flex;
     flex: 0 0 auto;
     scroll-snap-align: start;
@@ -322,7 +329,7 @@ svg.footer-logo:not(:hover) {
     padding: 0 0 0 1.25rem;
 }
 
-.carousel .project-img-small img {
+.carousel .media-img-small img {
     display: block;
     max-width: 400px;
     max-height: 100%;
@@ -331,7 +338,7 @@ svg.footer-logo:not(:hover) {
 @keyframes slideUp {
     from {
         opacity: 0;
-        transform: translateY(12px);
+        transform: translateY(14px);
     }
     to {
         opacity: 1;
@@ -369,12 +376,12 @@ header, main, footer {
         margin: auto 1.25rem;
     }
 
-    figure.project-img,
-    figure.project-img-small {
+    figure.media-img,
+    figure.media-img-small {
         margin-block: 2.5rem;
     }
 
-    .carousel .project-img-small img {
+    .carousel .media-img-small img {
         width: 300px;
     }
 }
