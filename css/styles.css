@@ -55,6 +55,7 @@ body {
     font-size: 1.1875rem;
     font-kerning: normal;
     line-height: 1.5;
+    text-wrap: pretty;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -71,7 +72,7 @@ img, picture, video, canvas {
 }
 
 .nav-container {
-    max-width: 31.25rem;
+    max-width: 500px;
     height: 2.5rem;
 }
 
@@ -89,38 +90,34 @@ svg.logo:hover {
 .links-page,
 .separator,
 .body-section,
-footer {
-    max-width: 31.25rem;
+h1, h2, h3, p, ul, ol, li, figcaption, footer {
+    max-width: 500px;
 }
 
 h1, h2, h3 {
     font-size: 1.6875rem;
     font-weight: 400;
     letter-spacing: -0.015625rem;
-    line-height: 1.2;
-    text-wrap: balance;
+    line-height: 1.25;
     margin-block: 4rem 1rem;
-    max-width: 31.25rem;
 }
 
-h2.section-title {
-    margin-block: 4rem 0.75rem;
+h1.main-title {
+    line-height: 1.2;
+    text-wrap: balance;
 }
 
 h3 {
     font-size: 1.4375rem;
     margin-block: 3rem 1rem;
-    text-wrap: pretty;
 }
 
-p, ul, ol, li, figcaption {
-    max-width: 31.25rem;
-    margin-block: 1rem;
-    text-wrap: pretty;
-}
-
-#index p {
+p {
     margin-block: 0.75rem;
+}
+
+ul, ol, li {
+    margin-block: 1rem;
 }
 
 .paragraph-indent p {
@@ -135,6 +132,18 @@ p, ul, ol, li, figcaption {
 
 strong {
     font-weight: 600;
+}
+
+img, picture {
+    border-radius: 4px;
+}
+
+figcaption {
+    font-size: 1.0635rem;
+    line-height: 1.4;
+    color: var(--caption-metadata);
+    text-align: center;
+    margin-block: 1.25rem;
 }
 
 .unselectable {
@@ -183,13 +192,6 @@ li::marker {
     color: hsl(from var(--default) h s l / 40%);
 }
 
-figcaption {
-    font-size: 1rem;
-    line-height: 1.4;
-    color: var(--caption-metadata);
-    text-align: center;
-}
-
 a {
     display: inline;
     color: inherit;
@@ -234,11 +236,6 @@ a:hover {
     color: var(--secondary);
 }
 
-img,
-picture {
-    border-radius: 4px;
-}
-
 figure.project-img {
     max-width: 640px;
     margin-block: 4rem;
@@ -250,7 +247,7 @@ figure.project-img-small {
 }
 
 div.decorative-line {
-    max-width: 31.25rem;
+    max-width: 500px;
     border: 0;
     border-top: 0.0625rem dashed hsl(from var(--default) h s l / 18%);
 }
@@ -313,10 +310,6 @@ svg.footer-logo:not(:hover) {
     -ms-overflow-style: none;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
-}
-
-.carousel::-webkit-scrollbar {
-    display: none;
 }
 
 .carousel .project-img-small {
