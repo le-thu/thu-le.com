@@ -313,10 +313,12 @@ svg.footer-logo:not(:hover) {
     scrollbar-width: none;
     -ms-overflow-style: none;
     -webkit-overflow-scrolling: touch;
+}
 
-    @media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
+  .carousel {
     scroll-behavior: smooth;
-    }
+  }
 }
 
 .carousel .media-img-small {
