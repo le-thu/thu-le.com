@@ -108,6 +108,7 @@ h1.main-title {
 }
 
 h3 {
+    letter-spacing: -0.00625rem;
     font-size: 1.4375rem;
     margin-block: 3rem 1rem;
 }
@@ -358,15 +359,8 @@ header, main, footer {
     }
     
     .nav-container,
-    h1,
-    h2,
-    h3,
-    p,
-    ul,
-    ol,
-    figure,
-    .body-section,
-    footer {
+    h1, h2, h3, p, ul, ol, figure, footer,
+    .body-section {
         padding: 0 1.25rem;
     }
 
