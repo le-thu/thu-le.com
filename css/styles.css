@@ -54,7 +54,7 @@ body {
     font-family: 'Crimson Pro', Iowan, Georgia, ui-serif;
     font-size: 1.1875rem;
     font-kerning: normal;
-    line-height: 1.5;
+    line-height: 1.4;
     text-wrap: pretty;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -160,8 +160,9 @@ div.links-page {
     margin-block: 3rem;
 }
 
-div.block-item-container p {
-    margin-block: 0;
+div.block-item-container p,
+p.compact {
+    margin-block: 0.25rem;
 }
 
 div.links-page-section {
@@ -174,10 +175,6 @@ div.links-page-section p {
 
 p.date {
     color: var(--secondary);
-}
-
-p.compact {
-    margin: 0.25rem auto;
 }
 
 li {
