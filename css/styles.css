@@ -249,6 +249,7 @@ figure.media-img-small {
 
 div.decorative-line {
     max-width: 500px;
+    margin-block: 1.25rem;
     border: 0;
     border-top: 0.0625rem dashed hsl(from var(--default) h s l / 18%);
 }
