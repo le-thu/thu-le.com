@@ -136,7 +136,7 @@ strong {
 }
 
 img, picture {
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 figcaption {
@@ -196,7 +196,7 @@ a {
     text-decoration: underline;
     text-decoration-style: solid;
     text-decoration-color: hsl(from var(--default) h s l / 25%);
-    text-decoration-thickness: 0.0625rem;
+    text-decoration-thickness: 0.0875rem;
     text-underline-offset: 0.1875rem;
     transition: all 120ms ease-in-out;
 }
@@ -248,13 +248,13 @@ div.decorative-line {
     max-width: 500px;
     margin-block: 1.25rem;
     border: 0;
-    border-top: 0.0625rem dashed hsl(from var(--default) h s l / 18%);
+    border-top: 0.0625rem dashed hsl(from var(--default) h s l / 20%);
 }
 
 blockquote {
     padding: 0 1.5rem;
     margin-block: 1rem;
-    border-left: 0.0625rem solid hsl(from var(--default) h s l / 20%);
+    border-left: 0.1rem solid hsl(from var(--default) h s l / 20%);
 }
 
 footer {
