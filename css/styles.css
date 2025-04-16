@@ -41,10 +41,10 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #131D0C;
-        --default: #E2E3C9;
-        --secondary: #888E6F;
-        --caption-metadata: #888E6F;
+        --background: #0E130C;
+        --default: #E3F2D9;
+        --secondary: #98AA8C;
+        --caption-metadata: #98AA8C;
     }
 }
 
