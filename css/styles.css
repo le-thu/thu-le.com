@@ -99,7 +99,7 @@ h1, h2, h3 {
     font-weight: 400;
     letter-spacing: -0.015625rem;
     line-height: 1.25;
-    margin-block: 4rem 1rem;
+    margin-block: 4rem 0.5rem;
 }
 
 h1.main-title {
@@ -108,8 +108,8 @@ h1.main-title {
 }
 
 h3 {
-    letter-spacing: -0.00625rem;
     font-size: 1.4375rem;
+    letter-spacing: -0.00625rem;
     margin-block: 3rem 1rem;
 }
 
@@ -121,11 +121,15 @@ p, ul, ol, li {
     margin-block: 0.75rem;
 }
 
+p.subhead {
+    margin-block: 0.5rem;
+}
+
 .paragraph-indent p {
     text-indent: 1.5rem;
 }
 
-.paragraph-indent :is(h1, h2, h3) + p,
+.paragraph-indent :is(h1, h2, h3, figure) + p,
 .paragraph-indent p:first-of-type,
 .body-section:has(blockquote) + p {
     text-indent: 0;
@@ -173,7 +177,8 @@ div.links-page-section p {
     line-height: 1.4;
 }
 
-p.date {
+p.date,
+.secondary {
     color: var(--secondary);
 }
 
@@ -182,12 +187,9 @@ li {
     margin: 0.75rem 0 0.75rem 1.75rem;
 }
 
-li::marker {
-    color: hsl(from var(--default) h s l / 50%);
-}
-
+li::marker,
 .subtle {
-    color: hsl(from var(--default) h s l / 40%);
+    color: hsl(from var(--default) h s l / 50%);
 }
 
 a {
@@ -228,10 +230,6 @@ a:hover {
 
 .blog-title:hover .inline-icon svg path {
     color: hsl(from var(--default) h s l / 60%);
-}
-
-.secondary {
-    color: var(--secondary);
 }
 
 figure.media-img {
