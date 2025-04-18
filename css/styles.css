@@ -113,12 +113,12 @@ h3 {
     margin-block: 3rem 1rem;
 }
 
-p {
-    margin-block: 0.75rem;
+p, ul, ol, li {
+    margin-block: 1rem;
 }
 
-ul, ol, li {
-    margin-block: 1rem;
+#index p {
+    margin-block: 0.75rem;
 }
 
 .paragraph-indent p {
@@ -183,7 +183,7 @@ li {
 }
 
 li::marker {
-    color: hsl(from var(--default) h s l / 40%);
+    color: hsl(from var(--default) h s l / 50%);
 }
 
 .subtle {
