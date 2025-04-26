@@ -131,7 +131,8 @@ p.subhead {
 
 .paragraph-indent :is(h1, h2, h3, figure) + p,
 .paragraph-indent p:first-of-type,
-.body-section:has(blockquote) + p {
+.body-section:has(blockquote) + p,
+.paragraph-indent blockquote p {
     text-indent: 0;
 }
 
