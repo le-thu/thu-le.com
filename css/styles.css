@@ -41,7 +41,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #0E130C;
+        --background: #171C1B;
         --default: #E3F2D9;
         --secondary: #98AA8C;
         --caption-metadata: #98AA8C;
