@@ -72,7 +72,7 @@ img, picture, video, canvas {
 }
 
 .nav-container {
-    max-width: 520px;
+    max-width: 560px;
     height: 2.5rem;
 }
 
@@ -91,7 +91,7 @@ svg.logo:hover {
 .separator,
 .body-section,
 h1, h2, h3, p, ul, ol, li, figcaption, footer {
-    max-width: 520px;
+    max-width: 560px;
 }
 
 h1, h2, h3 {
@@ -248,12 +248,12 @@ figure.media-img {
 }
 
 figure.media-img-small {
-    max-width: 520px;
+    max-width: 560px;
     margin-block: 3rem;
 }
 
 div.decorative-line {
-    max-width: 520px;
+    max-width: 560px;
     margin-block: 1.25rem;
     border: 0;
     border-top: 0.0625rem dashed hsl(from var(--default) h s l / 20%);
