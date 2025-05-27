@@ -324,7 +324,7 @@ svg.footer-logo:not(:hover) {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;   
+    height: 64px;   
     content: "\2733 \2733 \2733";
     letter-spacing: 1rem;
     color: hsl(from var(--default) h s l / 40%);
