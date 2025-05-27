@@ -201,6 +201,12 @@ div.links-page-section p {
     line-height: 1.4;
 }
 
+.links-title {
+    font-size: 1.3125rem;
+    font-weight: 500;
+    letter-spacing: -0.00625rem;
+}
+
 p.date,
 .secondary {
     color: var(--secondary);
