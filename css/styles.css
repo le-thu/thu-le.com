@@ -20,6 +20,20 @@
 
 @font-face {
     font-family: 'Crimson Pro';
+    src: url('/fonts/CrimsonPro-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Crimson Pro';
+    src: url('/fonts/CrimsonPro-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Crimson Pro';
     src: url('/fonts/CrimsonPro-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
@@ -96,8 +110,8 @@ h1, h2, h3, p, ul, ol, li, figcaption, footer {
 
 h1, h2, h3 {
     font-size: 1.6875rem;
-    font-weight: 400;
-    letter-spacing: -0.015625rem;
+    font-weight: 500;
+    letter-spacing: -0.01125rem;
     line-height: 1.25;
     margin-block: 4rem 0.5rem;
 }
@@ -117,6 +131,7 @@ p, ul, ol, li {
     margin-block: 1lh;
 }
 
+.homepage-header p,
 #index p {
     margin-block: 0.75rem;
 }
@@ -136,7 +151,6 @@ p.subhead {
     text-indent: 0;
 }
 
-.homepage-header p,
 .blogroll p,
 .links-page p {
     margin-block: 1rem;
