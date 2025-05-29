@@ -272,13 +272,6 @@ figure.media-img-small {
     margin-block: 3rem;
 }
 
-div.decorative-line {
-    max-width: 560px;
-    margin-block: 1.25rem;
-    border: 0;
-    border-top: 0.0625rem dashed hsl(from var(--default) h s l / 20%);
-}
-
 blockquote {
     padding: 0 1.5rem;
     margin-block: 1rem;
@@ -393,10 +386,6 @@ header, main, footer {
 
     blockquote p {
         padding: 0;
-    }
-    
-    div.decorative-line {
-        margin: auto 1.25rem;
     }
 
     figure.media-img,
