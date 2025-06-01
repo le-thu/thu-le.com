@@ -155,7 +155,7 @@ p.subhead,
     text-indent: 1.5rem;
 }
 
-.paragraph-indent :is(h1, h2, h3, figure) + p,
+.paragraph-indent :is(h1, h2, h3, figure, .separator) + p,
 .paragraph-indent p:first-of-type,
 .body-section:has(blockquote) + p,
 .paragraph-indent blockquote p {
@@ -318,15 +318,24 @@ svg.footer-logo:not(:hover) {
     gap: 1rem;
 }
 
-.separator::before {
+.separator::before,
+.separator-minimal::before {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: hsl(from var(--default) h s l / 40%);
+    user-select: none;
+}
+
+.separator::before {
     height: 64px;   
     content: "✳✳✳";
     letter-spacing: 1rem;
-    color: hsl(from var(--default) h s l / 40%);
-    user-select: none;
+}
+
+.separator-minimal::before {
+    height: 32px;   
+    content: "✳";
 }
 
 .carousel {
