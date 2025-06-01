@@ -108,22 +108,23 @@ h1, h2, h3, p, ul, ol, li, figcaption, footer {
     max-width: 560px;
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-size: 1.6875rem;
     font-weight: 500;
     letter-spacing: -0.01125rem;
-    line-height: 1.25;
+    line-height: 1.2;
     margin-block: 4rem 0.5rem;
 }
 
 h1.main-title {
-    line-height: 1.2;
     text-wrap: balance;
 }
 
 h3 {
     font-size: 1.4375rem;
+    font-weight: 500;
     letter-spacing: -0.00625rem;
+    line-height: 1.25;
     margin-block: 3.5rem 1rem;
 }
 
