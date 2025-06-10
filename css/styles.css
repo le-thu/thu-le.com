@@ -278,6 +278,11 @@ figure.media-img-small {
     margin-block: 3rem;
 }
 
+figure.media-img-tiny {
+    max-width: 400px;
+    margin-block: 3rem;
+}
+
 blockquote {
     padding: 0 1.5rem;
     margin-block: 1rem;
