@@ -69,6 +69,7 @@ body {
     font-size: 1.1875rem;
     font-kerning: normal;
     line-height: 1.4;
+    letter-spacing: -0.00625rem;
     text-wrap: pretty;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -96,7 +97,8 @@ svg.logo:hover {
 }
 
 .homepage-header,
-.subpage-header {
+.subpage-header,
+footer {
     margin-block: 4rem;
 }
 
@@ -123,7 +125,6 @@ h1.main-title {
 h3 {
     font-size: 1.4375rem;
     font-weight: 500;
-    letter-spacing: -0.00625rem;
     line-height: 1.25;
     margin-block: 3.5rem 1rem;
 }
@@ -140,7 +141,6 @@ p, ul, ol, li {
 .sub-heading,
 .links-title {
     font-size: 1.3125rem;
-    letter-spacing: -0.00625rem;
 }
 
 .links-title {
@@ -287,10 +287,6 @@ blockquote {
     padding: 0 1.5rem;
     margin-block: 1rem;
     border-left: 0.1rem solid hsl(from var(--default) h s l / 20%);
-}
-
-footer {
-    margin-block: 5rem;
 }
 
 .footer-container {
