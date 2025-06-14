@@ -4,19 +4,28 @@
     padding: 0;
 }
 
-@font-face { font-family: 'Crimson Pro'; src: url('/fonts/CrimsonPro-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Crimson Pro'; src: url('/fonts/CrimsonPro-Italic.woff2') format('woff2'); font-weight: 400; font-style: italic; font-display: swap; }
-@font-face { font-family: 'Crimson Pro'; src: url('/fonts/CrimsonPro-Medium.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Crimson Pro'; src: url('/fonts/CrimsonPro-MediumItalic.woff2') format('woff2'); font-weight: 500; font-style: italic; font-display: swap; }
-@font-face { font-family: 'Crimson Pro'; src: url('/fonts/CrimsonPro-SemiBold.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Crimson Pro'; src: url('/fonts/CrimsonPro-SemiBoldItalic.woff2') format('woff2'); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face{
+    font-family: 'Source Serif 4';
+    font-weight: 200 900;
+    font-style: normal;
+    src: url('../fonts/SourceSerif4Variable-Roman.otf.woff2') format('woff2-variations'),
+         url('../fonts/SourceSerif4Variable-Roman.ttf.woff2') format('woff2-variations');
+}
+
+@font-face{
+    font-family: 'Source Serif 4';
+    font-weight: 200 900;
+    font-style: italic;
+    src: url('../fonts/SourceSerif4Variable-Italic.otf.woff2') format('woff2-variations'),
+         url('../fonts/SourceSerif4Variable-Italic.ttf.woff2') format('woff2-variations');
+}
 
 :root {
     --background: #EAF3E2;
-    --default: #31481E;
+    --default: #2B401B;
     --secondary: #637A52;
     --caption-metadata: #637A52;
-    --selection: #2A3D19;
+    --selection: #273817;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,10 +51,11 @@
 body {
     background-color: var(--background);
     color: var(--default);
-    font-family: 'Crimson Pro', Iowan, Georgia, ui-serif;
-    font-size: 1.1875rem;
+    font-family: 'Source Serif 4', Iowan, Georgia, ui-serif;
+    font-size: 1rem;
     font-kerning: normal;
-    line-height: 1.4;
+    font-weight: 420;
+    line-height: 1.5;
     letter-spacing: -0.00625rem;
     text-wrap: pretty;
     text-rendering: optimizeLegibility;
@@ -87,11 +97,12 @@ h1, h2, h3, p, ul, ol, li, figcaption, footer {
     max-width: 560px;
 }
 
-h1, h2 {
-    font-size: 1.6875rem;
-    font-weight: 500;
-    letter-spacing: -0.01125rem;
-    line-height: 1.2;
+h1, h2, h3 {
+    font-size: 1.5625rem;
+    font-weight: 520;
+    font-variation-settings: 'opsz' 12;
+    letter-spacing: -0.025rem;
+    line-height: 1.25;
     margin-block: 4rem 0.5rem;
 }
 
@@ -100,9 +111,7 @@ h1.main-title {
 }
 
 h3 {
-    font-size: 1.4375rem;
-    font-weight: 500;
-    line-height: 1.25;
+    font-size: 1.375rem;
     margin-block: 3.5rem 1rem;
 }
 
@@ -116,11 +125,14 @@ p, figcaption, ul, ol, li {
 
 .sub-heading,
 .links-title {
-    font-size: 1.3125rem;
+    font-size: 1.1875rem;
+    font-weight: 420;
+    font-variation-settings: 'opsz' 12;
+    letter-spacing: -0.015625rem;
 }
 
 .links-title {
-    font-weight: 500;
+    font-weight: 520;
 }
 
 p.subhead,
@@ -128,13 +140,12 @@ p.subhead,
     margin-block: 0.5rem;
 }
 
-.blogroll p,
 .links-page p {
     margin-block: 1rem;
 }
 
 strong {
-    font-weight: 600;
+    font-weight: 620;
 }
 
 img, picture {
@@ -142,17 +153,13 @@ img, picture {
 }
 
 figcaption {
-    font-size: 1.0625rem;
+    font-size: 0.9375rem;
     color: var(--caption-metadata);
     text-align: center;
 }
 
 .unselectable {
     user-select: none;
-}
-
-.compact-heading {
-    margin-block: 2rem 0.25rem;
 }
 
 div.block-item-container {
@@ -165,7 +172,7 @@ div.links-page {
 
 div.block-item-container p,
 p.compact {
-    margin-block: 0.25rem;
+    margin-block: 0.5rem;
 }
 
 div.links-page-section {
@@ -184,7 +191,7 @@ li {
 
 li::marker,
 .subtle {
-    color: hsl(from var(--default) h s l / 50%);
+    color: hsl(from var(--default) h s l / 60%);
 }
 
 a {
@@ -356,7 +363,7 @@ header, main, footer {
     .nav-container,
     h1, h2, h3, p, ul, ol, figure, footer,
     .body-section {
-        padding: 0 1.25rem;
+        padding: 0 1.5rem;
     }
 
     blockquote p {
