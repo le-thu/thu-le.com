@@ -93,7 +93,7 @@ img, picture, video, canvas {
 
 svg.logo:hover {
     color: var(--secondary);
-    transition: color 120ms ease-in-out;
+    transition: color 200ms ease-in-out;
 }
 
 .homepage-header,
@@ -306,7 +306,7 @@ svg.footer-logo {
 svg.footer-logo:hover {
     color: var(--secondary);
     transform: translate(0, -4px);
-    transition: transform 200ms ease-in-out, color 120ms ease-in-out;
+    transition: transform 200ms ease-in-out, color 160ms ease-in-out;
 }
 
 svg.footer-logo:not(:hover) {
