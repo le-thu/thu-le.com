@@ -184,16 +184,6 @@ p.date,
     color: var(--secondary);
 }
 
-li {
-    padding-left: 0.25rem;
-    margin: 1rem 0 1rem 1.75rem;
-}
-
-li::marker,
-.subtle {
-    color: hsl(from var(--default) h s l / 60%);
-}
-
 a {
     display: inline;
     color: inherit;
@@ -215,8 +205,15 @@ a:hover {
     text-decoration: none;
 }
 
+li {
+    padding-left: 0.25rem;
+    margin: 1rem 0 1rem 1.75rem;
+}
+
+li::marker,
+.subtle,
 .minimal-link:hover {
-    color: var(--secondary);
+    color: hsl(from var(--default) h s l / 60%);
 }
 
 .inline-icon {
@@ -260,8 +257,7 @@ blockquote {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    border-top: 0.0625rem solid hsl(from var(--default) h s l / 10%);
-    padding-block: 3rem 0;
+    padding-block: 4rem 0;
 }
 
 svg.footer-logo {
