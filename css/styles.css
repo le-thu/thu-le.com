@@ -4,53 +4,19 @@
     padding: 0;
 }
 
-@font-face {
-    font-family: 'Crimson Pro';
-    src: url('/fonts/CrimsonPro-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Crimson Pro';
-    src: url('/fonts/CrimsonPro-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Crimson Pro';
-    src: url('/fonts/CrimsonPro-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Crimson Pro';
-    src: url('/fonts/CrimsonPro-MediumItalic.woff2') format('woff2');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Crimson Pro';
-    src: url('/fonts/CrimsonPro-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Crimson Pro';
-    src: url('/fonts/CrimsonPro-SemiBoldItalic.woff2') format('woff2');
-    font-weight: 600;
-    font-style: italic;
-}
+@font-face { font-family: 'Crimson Pro'; src: url('/fonts/CrimsonPro-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Crimson Pro'; src: url('/fonts/CrimsonPro-Italic.woff2') format('woff2'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Crimson Pro'; src: url('/fonts/CrimsonPro-Medium.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Crimson Pro'; src: url('/fonts/CrimsonPro-MediumItalic.woff2') format('woff2'); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Crimson Pro'; src: url('/fonts/CrimsonPro-SemiBold.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Crimson Pro'; src: url('/fonts/CrimsonPro-SemiBoldItalic.woff2') format('woff2'); font-weight: 600; font-style: italic; font-display: swap; }
 
 :root {
     --background: #EAF3E2;
     --default: #31481E;
     --secondary: #637A52;
     --caption-metadata: #637A52;
+    --selection: #2A3D19;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -59,7 +25,18 @@
         --default: #E3F2D9;
         --secondary: #98AA8C;
         --caption-metadata: #98AA8C;
+        --selection: #EDFCE2;
     }
+}
+
+::selection {
+    background-color: hsl(from var(--default) h s l / 12%);
+    color: var(--selection);
+}
+
+::-moz-selection {
+    background-color: hsl(from var(--default) h s l / 12%);
+    color: var(--selection);
 }
 
 body {
@@ -87,7 +64,6 @@ img, picture, video, canvas {
 }
 
 .nav-container {
-    max-width: 560px;
     height: 2.5rem;
 }
 
@@ -102,6 +78,7 @@ footer {
     margin-block: 4rem;
 }
 
+.nav-container,
 .page-block,
 .links-page,
 .separator,
@@ -129,12 +106,11 @@ h3 {
     margin-block: 3.5rem 1rem;
 }
 
-.homepage-header p,
-#index p {
+.homepage-header p, #index p {
     margin-block: 0.75rem;
 }
 
-p, ul, ol, li {
+p, figcaption, ul, ol, li {
     margin-block: 1lh;
 }
 
@@ -152,17 +128,6 @@ p.subhead,
     margin-block: 0.5rem;
 }
 
-.paragraph-indent p {
-    text-indent: 1.5rem;
-}
-
-.paragraph-indent :is(h1, h2, h3, figure, .separator) + p,
-.paragraph-indent p:first-of-type,
-.body-section:has(blockquote) + p,
-.paragraph-indent blockquote p {
-    text-indent: 0;
-}
-
 .blogroll p,
 .links-page p {
     margin-block: 1rem;
@@ -177,11 +142,9 @@ img, picture {
 }
 
 figcaption {
-    font-size: 1.0635rem;
-    line-height: 1.4;
+    font-size: 1.0625rem;
     color: var(--caption-metadata);
     text-align: center;
-    margin-block: 1.25rem;
 }
 
 .unselectable {
@@ -209,17 +172,13 @@ div.links-page-section {
     margin-block: 1.75rem;
 }
 
-div.links-page-section p {
-    line-height: 1.4;
-}
-
 p.date,
 .secondary {
     color: var(--secondary);
 }
 
 li {
-    padding-left: 0.5rem;
+    padding-left: 0.25rem;
     margin: 1rem 0 1rem 1.75rem;
 }
 
@@ -330,13 +289,13 @@ svg.footer-logo:not(:hover) {
 }
 
 .separator::before {
-    height: 64px;   
+    height: 4rem;   
     content: "✳✳✳";
     letter-spacing: 1rem;
 }
 
 .separator-minimal::before {
-    height: 32px;   
+    height: 2rem;   
     content: "✳";
 }
 
@@ -376,7 +335,7 @@ svg.footer-logo:not(:hover) {
 @keyframes slideUp {
     from {
         opacity: 0;
-        transform: translateY(14px);
+        transform: translateY(1rem);
     }
     
     to {
@@ -386,7 +345,7 @@ svg.footer-logo:not(:hover) {
 }
 
 header, main, footer {
-  animation: slideUp 400ms ease-out;
+  animation: slideUp 480ms ease-out;
 }
 
 @media screen and (max-width: 640px) {
