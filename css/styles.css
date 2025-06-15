@@ -21,11 +21,11 @@
 }
 
 :root {
-    --background: #EAF3E2;
-    --default: #2B401B;
-    --secondary: #637A52;
-    --caption-metadata: #637A52;
-    --selection: #273817;
+    --background: #F0F6EA;
+    --default: #254010;
+    --secondary: #617A4E;
+    --caption-metadata: #617A4E;
+    --selection: #1C3409;
 }
 
 @media (prefers-color-scheme: dark) {
