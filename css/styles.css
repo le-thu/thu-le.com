@@ -23,9 +23,10 @@
 :root {
     --background: #F0F6EA;
     --default: #254010;
-    --secondary: #617A4E;
-    --caption-metadata: #617A4E;
+    --secondary: #637E4E;
+    --caption-metadata: #637E4E;
     --selection: #1C3409;
+    --accent: #2D6600;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,6 +36,7 @@
         --secondary: #98AA8C;
         --caption-metadata: #98AA8C;
         --selection: #EDFCE2;
+        --accent: #E0FFCC;
     }
 }
 
@@ -78,7 +80,7 @@ img, picture, video, canvas {
 }
 
 svg.logo:hover {
-    color: var(--secondary);
+    color: var(--accent);
     transition: color 200ms ease-in-out;
 }
 
@@ -131,17 +133,14 @@ p, figcaption, ul, ol, li {
     letter-spacing: -0.015625rem;
 }
 
-.links-title {
-    font-weight: 520;
+.links-page p {
+    margin-block: 1rem;
 }
 
 p.subhead,
-.sub-heading {
+.sub-heading,
+p.compact {
     margin-block: 0.5rem;
-}
-
-.links-page p {
-    margin-block: 1rem;
 }
 
 strong {
@@ -170,9 +169,8 @@ div.links-page {
     margin-block: 4.5rem;
 }
 
-div.block-item-container p,
-p.compact {
-    margin-block: 0.5rem;
+div.block-item-container p {
+    margin-block: 0.25rem;
 }
 
 div.links-page-section {
@@ -189,20 +187,25 @@ a {
     color: inherit;
     text-decoration: underline;
     text-decoration-style: solid;
-    text-decoration-color: hsl(from var(--default) h s l / 25%);
+    text-decoration-color: hsl(from var(--default) h s l / 20%);
     text-decoration-thickness: 0.0875rem;
     text-underline-offset: 0.1875rem;
     transition: all 120ms ease-in-out;
 }
 
 a:hover {
-    color: var(--default);
-    text-decoration-color: hsl(from var(--default) h s l / 60%);
+    color: var(--accent);
+    text-decoration-color: hsl(from var(--accent) h s l / 60%);
 }
 
+.links-title a,
 .minimal-link {
     color: inherit;
     text-decoration: none;
+}
+
+.links-title a {
+    font-weight: 520;
 }
 
 li {
@@ -211,9 +214,13 @@ li {
 }
 
 li::marker,
-.subtle,
-.minimal-link:hover {
+.subtle {
     color: hsl(from var(--default) h s l / 60%);
+}
+
+.links-title a:hover,
+.minimal-link:hover {
+    color: var(--accent);
 }
 
 .inline-icon {
@@ -228,7 +235,7 @@ li::marker,
 }
 
 .blog-title:hover .inline-icon svg path {
-    color: hsl(from var(--default) h s l / 60%);
+    color: hsl(from var(--accent) h s l / 60%);
 }
 
 figure.media-img {
@@ -266,7 +273,7 @@ svg.footer-logo {
 }
 
 svg.footer-logo:hover {
-    color: var(--secondary);
+    color: var(--accent);
     transform: translate(0, -4px);
     transition: transform 200ms ease-in-out, color 160ms ease-in-out;
 }
@@ -326,7 +333,7 @@ svg.footer-logo:not(:hover) {
     scroll-snap-align: start;
     scroll-snap-stop: always;
     align-items: baseline;
-    padding: 0 0 0 1.55rem;
+    padding: 0 0 0 1.5rem;
 }
 
 .carousel .media-img-small img {
