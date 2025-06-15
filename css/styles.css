@@ -1,6 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: auto;
     padding: 0;
 }
 
@@ -307,7 +307,7 @@ svg.footer-logo:not(:hover) {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     overscroll-behavior-x: contain;
-    padding: 0 1.25rem 0 0;
+    padding: 0 1.5rem 0 0;
     margin: 3rem auto 0;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -326,7 +326,7 @@ svg.footer-logo:not(:hover) {
     scroll-snap-align: start;
     scroll-snap-stop: always;
     align-items: baseline;
-    padding: 0 0 0 1.25rem;
+    padding: 0 0 0 1.55rem;
 }
 
 .carousel .media-img-small img {
