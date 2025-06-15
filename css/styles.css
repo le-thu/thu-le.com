@@ -95,6 +95,7 @@ footer {
 .links-page,
 .separator,
 .body-section,
+.minimal-link-container,
 h1, h2, h3, p, ul, ol, li, figcaption, footer {
     max-width: 560px;
 }
@@ -259,6 +260,20 @@ blockquote {
     border-left: 0.1rem solid hsl(from var(--default) h s l / 20%);
 }
 
+.minimal-link-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.25rem;
+    margin-block: 1rem;
+}
+
+.minimal-link-container a {
+    text-align: left;
+    margin: 0;
+}
+
 .footer-container {
     display: flex;
     flex-direction: column;
@@ -365,7 +380,8 @@ header, main, footer {
     
     .nav-container,
     h1, h2, h3, p, ul, ol, figure, footer,
-    .body-section {
+    .body-section,
+    .minimal-link-container {
         padding: 0 1.5rem;
     }
 
@@ -385,4 +401,10 @@ header, main, footer {
     .carousel .media-img-small img {
         width: 300px;
     }
+
+    .minimal-link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
 }
