@@ -23,8 +23,6 @@
 :root {
     --background: #F0F6EA;
     --default: #254010;
-    --secondary: #637E4E;
-    --caption-metadata: #637E4E;
     --selection: #1C3409;
     --accent: #317A00;
 }
@@ -33,20 +31,18 @@
     :root {
         --background: #171C1B;
         --default: #E3F2D9;
-        --secondary: #98AA8C;
-        --caption-metadata: #98AA8C;
         --selection: #EDFCE2;
         --accent: #429B08;
     }
 }
 
 ::selection {
-    background-color: hsl(from var(--default) h s l / 12%);
+    background-color: hsl(from var(--default) h s l / 14%);
     color: var(--selection);
 }
 
 ::-moz-selection {
-    background-color: hsl(from var(--default) h s l / 12%);
+    background-color: hsl(from var(--default) h s l / 14%);
     color: var(--selection);
 }
 
@@ -132,6 +128,7 @@ p, figcaption, ul, ol, li {
     font-weight: 420;
     font-variation-settings: 'opsz' 12;
     letter-spacing: -0.015625rem;
+    line-height: 1.3;
 }
 
 .links-page p {
@@ -154,7 +151,7 @@ img, picture {
 
 figcaption {
     font-size: 0.9375rem;
-    color: var(--caption-metadata);
+    color: hsl(from var(--default) h s l / 80%);
     text-align: center;
 }
 
@@ -180,7 +177,7 @@ div.links-page-section {
 
 p.date,
 .secondary {
-    color: var(--secondary);
+    color: hsl(from var(--default) h s l / 70%);
 }
 
 a {
