@@ -61,8 +61,8 @@ body {
 }
 
 img, picture, video, canvas {
-  display: block;
-  max-inline-size: 100%;
+    display: block;
+    max-inline-size: 100%;
 }
 
 .global-nav {
@@ -255,13 +255,13 @@ blockquote {
 }
 
 code {
-  background-color: hsl(from var(--background) h s calc(l * 1.25));
-  color: var(--default);
-  border: 1px solid hsl(from var(--default) h s l / 20%);
-  border-radius: 4px;
-  padding: 2px 4px;
-  font-family: ui-monospace, monospace;
-  font-size: 0.84375rem;
+    background-color: hsl(from var(--background) h s calc(l * 1.25));
+    color: var(--default);
+    border: 1px solid hsl(from var(--default) h s l / 20%);
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-family: ui-monospace, monospace;
+    font-size: 0.84375rem;
 }
 
 .minimal-link-container {
@@ -407,8 +407,8 @@ header, main, footer {
     }
 
     .minimal-link-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
 }
