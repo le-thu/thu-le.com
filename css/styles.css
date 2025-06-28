@@ -122,9 +122,12 @@ p, figcaption, ul, ol, li {
 .sub-heading,
 .links-title {
     font-size: 1.1875rem;
+    line-height: 1.375;
+}
+
+.links-title {
     font-variation-settings: 'opsz' 12;
     letter-spacing: -0.015625rem;
-    line-height: 1.375;
 }
 
 .links-page p {
