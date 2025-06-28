@@ -57,7 +57,6 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    hanging-punctuation: first allow-end last;
 }
 
 img, picture, video, canvas {
@@ -81,7 +80,7 @@ svg.logo:hover {
 .homepage-header,
 .subpage-header,
 footer {
-    margin-block: 4rem;
+    margin-block: 5rem;
 }
 
 .nav-container,
