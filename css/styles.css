@@ -99,7 +99,7 @@ h1, h2, h3 {
     font-variation-settings: 'opsz' 12;
     letter-spacing: -0.025rem;
     line-height: 1.25;
-    margin-block: 4rem 0.5rem;
+    margin-block: 4rem 0.25rem;
 }
 
 h1.main-title {
@@ -113,15 +113,6 @@ h3 {
 
 .homepage-header p, #index p {
     margin-block: 0.75rem;
-}
-
-#index .block-item-container {
-    margin-block: 2.25rem;
-}
-
-#index .blog-title,
-#index .date {
-    margin-block: 0.25rem;
 }
 
 p, figcaption, ul, ol, li {
@@ -142,7 +133,10 @@ p, figcaption, ul, ol, li {
     margin-block: 1rem;
 }
 
-.subhead, .sub-heading,
+.subhead, .sub-heading {
+    margin-block: 0.25rem;
+}
+
 p.compact {
     margin-block: 0.5rem;
 }
@@ -165,13 +159,19 @@ figcaption {
     user-select: none;
 }
 
+#index .block-item-container {
+    margin-block: 2.25rem;
+}
+
 div.block-item-container {
     margin-block: 4rem;
 }
 
 div.block-item-container .blog-title,
-div.block-item-container .date {
-    margin-block: 0.25rem;
+div.block-item-container .date,
+#index .blog-title,
+#index .date {
+    margin-block: 0.125rem;
 }
     
 div.links-page {
