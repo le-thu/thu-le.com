@@ -115,12 +115,21 @@ h3 {
     margin-block: 0.75rem;
 }
 
+#index .block-item-container {
+    margin-block: 2.25rem;
+}
+
+#index .blog-title,
+#index .date {
+    margin-block: 0.25rem;
+}
+
 p, figcaption, ul, ol, li {
     margin-block: 1lh;
 }
 
 .sub-heading, .links-title {
-    font-size: 1.1875rem;
+    font-size: 1.125rem;
     line-height: 1.375;
 }
 
@@ -157,11 +166,12 @@ figcaption {
 }
 
 div.block-item-container {
-    margin-block: 2.5rem;
+    margin-block: 4rem;
 }
 
-div.block-item-container p {
-    margin-block: 0.125rem;
+div.block-item-container .blog-title,
+div.block-item-container .date {
+    margin-block: 0.25rem;
 }
     
 div.links-page {
