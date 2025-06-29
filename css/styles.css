@@ -119,8 +119,7 @@ p, figcaption, ul, ol, li {
     margin-block: 1lh;
 }
 
-.sub-heading,
-.links-title {
+.sub-heading, .links-title {
     font-size: 1.1875rem;
     line-height: 1.375;
 }
@@ -134,8 +133,7 @@ p, figcaption, ul, ol, li {
     margin-block: 1rem;
 }
 
-p.subhead,
-.sub-heading,
+.subhead, .sub-heading,
 p.compact {
     margin-block: 0.5rem;
 }
@@ -161,21 +159,20 @@ figcaption {
 div.block-item-container {
     margin-block: 2.5rem;
 }
+
+div.block-item-container p {
+    margin-block: 0.125rem;
+}
     
 div.links-page {
     margin-block: 4.5rem;
-}
-
-div.block-item-container p {
-    margin-block: 0.25rem;
 }
 
 div.links-page-section {
     margin-block: 1.75rem;
 }
 
-p.date,
-.secondary {
+.date, .secondary {
     color: hsl(from var(--default) h s l / 70%);
 }
 
