@@ -3,9 +3,17 @@
     <channel>
         <title>Thu Le</title>
         <link>https://thu-le.com/blog</link>
-        <description>Musings and ideas, out loud.</description>
+        <description>Musings &#8212; a public journal.</description>
         <language>en-us</language>
-        <lastBuildDate>Tue, 10 Jun 2025 09:02:00 +0700</lastBuildDate>
+        <lastBuildDate>Tue, 01 Jul 2025 13:17:00 +0700</lastBuildDate>
+
+        <item>
+            <title>Good work</title>
+            <link>https://thu-le.com/blog/good-work</link>
+            <pubDate>Tue, 01 Jul 2025 13:17:00 +0700</pubDate>
+            <guid isPermaLink="true">https://thu-le.com/blog/good-work</guid>
+            <description>My journey into design and the search for good work.</description>
+        </item>
 
         <item>
             <title>Going back to the beach</title>
