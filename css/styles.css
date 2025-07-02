@@ -317,8 +317,10 @@ svg.footer-logo:not(:hover) {
     gap: 1rem;
 }
 
-.separator::before,
-.separator-minimal::before {
+.separator {
+    border: none;
+    padding: 0;
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,14 +330,24 @@ svg.footer-logo:not(:hover) {
 }
 
 .separator::before {
-    height: 4rem;   
-    content: "✳✳✳";
+    content: "✳︎✳︎✳︎";
     letter-spacing: 1rem;
 }
 
+.separator-minimal {
+    border: none;
+    padding: 0;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(from var(--default) h s l / 40%);
+    user-select: none;
+    font-variant-emoji: text;
+}
+
 .separator-minimal::before {
-    height: 2rem;   
-    content: "✳";
+    content: "✳︎";
 }
 
 .carousel {
