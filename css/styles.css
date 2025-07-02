@@ -324,6 +324,7 @@ svg.footer-logo:not(:hover) {
     align-items: center;
     color: hsl(from var(--default) h s l / 40%);
     user-select: none;
+    font-variant-emoji: text;
 }
 
 .separator::before {
