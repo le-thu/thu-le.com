@@ -34,11 +34,7 @@
     }
 }
 
-::selection {
-    background-color: hsl(from var(--default) h s l / 15%);
-    color: hsl(from var(--default) h s calc(l * 0.94));
-}
-
+::selection,
 ::-moz-selection {
     background-color: hsl(from var(--default) h s l / 15%);
     color: hsl(from var(--default) h s calc(l * 0.94));
@@ -77,9 +73,7 @@ svg.logo:hover {
     transition: color 200ms ease-in-out;
 }
 
-.homepage-header,
-.subpage-header,
-footer {
+.homepage-header, .subpage-header, footer {
     margin-block: 5rem;
 }
 
@@ -111,7 +105,7 @@ h3 {
     margin-block: 3.5rem 1rem;
 }
 
-.homepage-header p, #index p {
+.homepage-header p {
     margin-block: 0.75rem;
 }
 
@@ -129,7 +123,7 @@ p, figcaption, ul, ol, li {
     letter-spacing: -0.015625rem;
 }
 
-.links-page p {
+#index p, .links-page p {
     margin-block: 1rem;
 }
 
@@ -278,7 +272,7 @@ code {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 1.25rem;
+    gap: 1rem;
     margin-block: 1rem;
 }
 
@@ -317,16 +311,20 @@ svg.footer-logo:not(:hover) {
     gap: 1rem;
 }
 
-.separator {
+.separator,
+.separator-minimal {
     border: none;
     padding: 0;
-    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: hsl(from var(--default) h s l / 40%);
     user-select: none;
     font-variant-emoji: text;
+}
+
+.separator {
+    height: 4rem;
 }
 
 .separator::before {
@@ -335,15 +333,7 @@ svg.footer-logo:not(:hover) {
 }
 
 .separator-minimal {
-    border: none;
-    padding: 0;
     height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: hsl(from var(--default) h s l / 40%);
-    user-select: none;
-    font-variant-emoji: text;
 }
 
 .separator-minimal::before {
@@ -405,9 +395,9 @@ header, main, footer {
     }
     
     .nav-container,
-    h1, h2, h3, p, ul, ol, figure, footer,
     .body-section,
-    .minimal-link-container {
+    .minimal-link-container,
+    h1, h2, h3, p, ul, ol, figure {
         padding: 0 1.5rem;
     }
 
@@ -415,8 +405,7 @@ header, main, footer {
         padding: 0;
     }
 
-    figure.media-img,
-    figure.media-img-small {
+    figure.media-img, figure.media-img-small {
         margin-block: 2rem;
     }
 
