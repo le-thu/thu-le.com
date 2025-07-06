@@ -46,7 +46,7 @@ body {
     font-family: 'Source Serif 4', Iowan, Georgia, ui-serif;
     font-size: 1rem;
     font-kerning: normal;
-    font-weight: 420;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: -0.00625rem;
     text-wrap: pretty;
@@ -86,7 +86,7 @@ h1, h2, h3, p, ul, ol, li, figcaption, footer {
 
 h1, h2, h3 {
     font-size: 1.5625rem;
-    font-weight: 520;
+    font-weight: 500;
     font-variation-settings: 'opsz' 12;
     letter-spacing: -0.025rem;
     line-height: 1.25;
@@ -133,7 +133,7 @@ p.compact {
 }
 
 strong {
-    font-weight: 620;
+    font-weight: 600;
 }
 
 img, picture {
@@ -162,7 +162,7 @@ div.block-item-container .blog-title,
 div.block-item-container .date,
 #index .blog-title,
 #index .date {
-    margin-block: 0.125rem;
+    margin-block: 0;
 }
     
 div.links-page {
@@ -200,7 +200,7 @@ a:hover {
 }
 
 .links-title a {
-    font-weight: 520;
+    font-weight: 500;
 }
 
 li {
