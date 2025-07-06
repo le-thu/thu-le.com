@@ -66,6 +66,7 @@ img, picture, video, canvas {
 
 .nav-container {
     height: 2.5rem;
+    max-width: 560px;
 }
 
 svg.logo:hover {
@@ -77,10 +78,6 @@ svg.logo:hover {
     margin-block: 5rem;
 }
 
-.nav-container,
-.page-block,
-.links-page,
-.separator,
 .body-section,
 .minimal-link-container,
 h1, h2, h3, p, ul, ol, li, figcaption, footer {
@@ -105,7 +102,7 @@ h3 {
     margin-block: 3.5rem 1rem;
 }
 
-.homepage-header p {
+.homepage-header p, .blogroll p {
     margin-block: 0.75rem;
 }
 
@@ -319,6 +316,7 @@ svg.footer-logo:not(:hover) {
     color: hsl(from var(--default) h s l / 40%);
     user-select: none;
     font-variant-emoji: text;
+    word-spacing: 1rem;
 }
 
 .separator {
@@ -326,8 +324,7 @@ svg.footer-logo:not(:hover) {
 }
 
 .separator::before {
-    content: "✳︎✳︎✳︎";
-    letter-spacing: 1rem;
+    content: "✳︎ ✳︎ ✳︎";
 }
 
 .separator-minimal {
@@ -403,8 +400,8 @@ header, main, footer {
         padding: 0;
     }
 
-    figure.media-img, figure.media-img-small {
-        margin-block: 2rem;
+    figure.media-img {
+        margin-block: 3rem;
     }
 
     .carousel {
