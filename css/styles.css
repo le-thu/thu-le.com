@@ -34,7 +34,11 @@
     }
 }
 
-::selection,
+::selection {
+    background-color: hsl(from var(--default) h s l / 15%);
+    color: hsl(from var(--default) h s calc(l * 0.94));
+}
+
 ::-moz-selection {
     background-color: hsl(from var(--default) h s l / 15%);
     color: hsl(from var(--default) h s calc(l * 0.94));
