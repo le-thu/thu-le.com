@@ -5,7 +5,15 @@
         <link>https://thu-le.com/blog</link>
         <description>Musings &#8212; a public journal.</description>
         <language>en-us</language>
-        <lastBuildDate>Tue, 01 Jul 2025 13:17:00 +0700</lastBuildDate>
+        <lastBuildDate>Sun, 13 Jul 2025 11:27:00 +0700</lastBuildDate>
+
+        <item>
+            <title>Personal manifesto</title>
+            <link>https://thu-le.com/blog/personal-manifesto</link>
+            <pubDate>Sun, 13 Jul 2025 11:27:00 +0700</pubDate>
+            <guid isPermaLink="true">https://thu-le.com/blog/personal-manifesto</guid>
+            <description>MOperating principles for how I think, relate, and work.</description>
+        </item>
 
         <item>
             <title>Good work</title>

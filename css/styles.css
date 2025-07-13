@@ -111,7 +111,7 @@ h3 {
     margin-block: 0.75rem;
 }
 
-p, figcaption, ul, ol, li {
+p, figcaption {
     margin-block: 1lh;
 }
 
@@ -208,14 +208,18 @@ a:hover {
     font-weight: 510;
 }
 
+li::marker,
+.subtle {
+    color: hsl(from var(--default) h s l / 60%);
+}
+
 li {
     padding-left: 0.25rem;
     margin: 1rem 0 1rem 1.75rem;
 }
 
-li::marker,
-.subtle {
-    color: hsl(from var(--default) h s l / 60%);
+.list-compact li {
+    margin-block: 0.75rem;
 }
 
 .links-title a:hover,
