@@ -134,10 +134,6 @@ p, figcaption {
     margin-block: 0.5rem;
 }
 
-p.compact {
-    margin-block: 0.5rem;
-}
-
 strong {
     font-weight: 600;
 }
@@ -217,8 +213,9 @@ li {
     margin: 1rem 0 1rem 1.75rem;
 }
 
-.list-compact li {
-    margin-block: 0.75rem;
+.list-compact li,
+p.compact {
+    margin-block: 0.5rem;
 }
 
 .links-title a:hover,
