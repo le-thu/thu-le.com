@@ -89,10 +89,10 @@ h1, h2, h3, p, ul, ol, li, figcaption, footer {
 }
 
 h1, h2, h3 {
-    font-size: 1.5625rem;
+    font-size: 1.728rem;
     font-weight: 500;
     font-variation-settings: 'opsz' 12;
-    letter-spacing: -0.025rem;
+    letter-spacing: -0.04375rem;
     line-height: 1.25;
     margin-block: 4rem 0.25rem;
 }
@@ -102,8 +102,9 @@ h1.main-title {
 }
 
 h3 {
-    font-size: 1.375rem;
+    font-size: 1.44rem;
     font-weight: 510;
+    letter-spacing: -0.03125rem;
     margin-block: 3.5rem 1rem;
 }
 
@@ -116,7 +117,7 @@ p, figcaption {
 }
 
 .sub-heading, .links-title {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     line-height: 1.375;
 }
 
@@ -130,7 +131,7 @@ p, figcaption {
 }
 
 .subhead, .sub-heading {
-    margin-block: 0.25rem;
+    margin-block: 0.5rem;
 }
 
 p.compact {
@@ -146,7 +147,6 @@ img, picture {
 }
 
 figcaption {
-    font-size: 0.9375rem;
     color: hsl(from var(--default) h s l / 80%);
     text-align: center;
 }
@@ -269,7 +269,7 @@ code {
     border-radius: 4px;
     padding: 2px 4px;
     font-family: ui-monospace, monospace;
-    font-size: 0.84375rem;
+    font-size: 0.833rem;
 }
 
 .minimal-link-container {
