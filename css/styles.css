@@ -29,7 +29,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #171C1B;
-        --default: #E3F2D9;
+        --default: #CDDCC6;
         --accent: #429B08;
     }
 }
