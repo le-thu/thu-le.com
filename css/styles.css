@@ -47,16 +47,23 @@
 body {
     background-color: var(--background);
     color: var(--default);
-    font-family: 'Source Serif 4', Iowan, Georgia, ui-serif;
+    font-family: 'Source Serif 4', ui-serif;
     font-size: 1rem;
-    font-kerning: normal;
-    font-weight: 400;
+    font-weight: 425;
+    font-optical-sizing: auto;
+    font-synthesis-weight: none;
     line-height: 1.5;
     letter-spacing: -0.00625rem;
     text-wrap: pretty;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    font-weight: 400;
+  }
 }
 
 img, picture, video, canvas {
