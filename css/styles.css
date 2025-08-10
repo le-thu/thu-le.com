@@ -95,7 +95,7 @@ h1, h2, h3, p, ul, ol, li, figcaption, footer {
     max-width: 560px;
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-size: 1.728rem;
     font-weight: 500;
     font-variation-settings: 'opsz' 12;
@@ -110,8 +110,10 @@ h1.main-title {
 
 h3 {
     font-size: 1.44rem;
-    font-weight: 500;
+    font-weight: 525;
+    font-variation-settings: 'opsz' 12;
     letter-spacing: -0.03125rem;
+    line-height: 1.25;
     margin-block: 3.5rem 1rem;
 }
 
@@ -207,7 +209,7 @@ a:hover {
 }
 
 .links-title a {
-    font-weight: 500;
+    font-weight: 525;
 }
 
 li::marker,
