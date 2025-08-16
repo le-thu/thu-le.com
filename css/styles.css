@@ -382,7 +382,7 @@ svg.footer-logo:not(:hover) {
 @keyframes slideUp {
     from {
         opacity: 0;
-        transform: translateY(1.5rem);
+        transform: translateY(2rem);
     }
     
     to {
@@ -392,7 +392,7 @@ svg.footer-logo:not(:hover) {
 }
 
 header, main, footer {
-  animation: slideUp 480ms ease-out;
+  animation: slideUp 500ms ease-out;
 }
 
 @media screen and (max-width: 640px) {
