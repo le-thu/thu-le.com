@@ -91,16 +91,20 @@ svg.logo:hover {
 
 .body-section,
 .minimal-link-container,
-h1, h2, h3, p, ul, ol, li, figcaption, footer {
+p, ul, ol, li, figcaption, footer {
     max-width: 560px;
 }
 
-h1, h2 {
-    font-size: 1.728rem;
-    font-weight: 500;
+h1, h2, h3 {
+    max-width: 560px;
     font-variation-settings: 'opsz' 12;
-    letter-spacing: -0.04375rem;
+    font-weight: 500;
     line-height: 1.25;
+}
+
+h1 {
+    font-size: 2.074rem;
+    letter-spacing: -0.05rem;
     margin-block: 4rem 0.25rem;
 }
 
@@ -108,39 +112,44 @@ h1.main-title {
     text-wrap: balance;
 }
 
+h2 {
+    font-size: 1.728rem;
+    letter-spacing: -0.04375rem;
+    margin-block: 4rem 0.25rem;
+}
+
 h3 {
     font-size: 1.44rem;
-    font-weight: 525;
-    font-variation-settings: 'opsz' 12;
     letter-spacing: -0.03125rem;
-    line-height: 1.25;
     margin-block: 3.5rem 1rem;
 }
 
-.homepage-header p, .blogroll p {
-    margin-block: 0.75rem;
+.links-title {
+    font-size: 1.2rem;
+    line-height: 1.375;
+    font-variation-settings: 'opsz' 12;
+    letter-spacing: -0.01875rem;
+}
+
+.sub-heading {
+    font-size: 1.2rem;
+    margin-block: 0.5rem;
+}
+
+.subhead {
+    margin-block: 0.5rem;
 }
 
 p, figcaption {
     margin-block: 1lh;
 }
 
-.sub-heading, .links-title {
-    font-size: 1.2rem;
-    line-height: 1.375;
-}
-
-.links-title {
-    font-variation-settings: 'opsz' 12;
-    letter-spacing: -0.015625rem;
+.homepage-header p, .blogroll p {
+    margin-block: 0.75rem;
 }
 
 #index p, .links-page p {
     margin-block: 1rem;
-}
-
-.subhead, .sub-heading {
-    margin-block: 0.5rem;
 }
 
 strong {
@@ -203,13 +212,13 @@ a:hover {
     text-decoration-color: hsl(from var(--accent) h s l / 60%);
 }
 
-.links-title a,
 .minimal-link {
     text-decoration: none;
 }
 
 .links-title a {
-    font-weight: 525;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 li::marker,
@@ -320,33 +329,21 @@ svg.footer-logo:not(:hover) {
     gap: 1rem;
 }
 
-.separator,
-.separator-minimal {
+.separator {
     border: none;
+    height: 3.5rem;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: hsl(from var(--default) h s l / 40%);
+    color: hsl(from var(--accent) h s l / 50%);
     user-select: none;
     font-variant-emoji: text;
     word-spacing: 1rem;
 }
 
-.separator {
-    height: 4rem;
-}
-
 .separator::before {
     content: "✳︎ ✳︎ ✳︎";
-}
-
-.separator-minimal {
-    height: 2rem;
-}
-
-.separator-minimal::before {
-    content: "✳︎";
 }
 
 .carousel {
