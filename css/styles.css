@@ -165,10 +165,6 @@ figcaption {
     text-align: center;
 }
 
-.unselectable {
-    user-select: none;
-}
-
 #index .block-item-container {
     margin-block: 2.25rem;
 }
