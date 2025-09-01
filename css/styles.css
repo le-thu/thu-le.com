@@ -54,7 +54,7 @@ body {
     color: var(--default);
     font-family: 'Source Serif 4', ui-serif;
     font-size: 1rem;
-    font-weight: 425;
+    font-weight: 400;
     font-optical-sizing: auto;
     font-synthesis-weight: none;
     line-height: 1.5;
@@ -62,13 +62,6 @@ body {
     text-wrap: pretty;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    font-weight: 400;
-  }
 }
 
 img, picture, video, canvas {
