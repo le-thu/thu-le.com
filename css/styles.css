@@ -273,16 +273,6 @@ blockquote {
     border-left: 0.1rem solid hsl(from var(--default) h s l / 15%);
 }
 
-code {
-    background-color: hsl(from var(--background) h s calc(l * 1.25));
-    color: var(--default);
-    border: 1px solid hsl(from var(--default) h s l / 20%);
-    border-radius: 4px;
-    padding: 2px 4px;
-    font-family: ui-monospace, monospace;
-    font-size: 0.833rem;
-}
-
 .minimal-link-container {
     display: flex;
     flex-direction: row;
