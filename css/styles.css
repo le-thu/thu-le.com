@@ -8,22 +8,26 @@
     font-family: 'Source Serif 4';
     font-weight: 200 900;
     font-style: normal;
-    src: url('../fonts/SourceSerif4Variable-Roman.otf.woff2') format('woff2-variations'),
-         url('../fonts/SourceSerif4Variable-Roman.ttf.woff2') format('woff2-variations');
+    src: url('../fonts/SourceSerif4Variable-Roman.otf.woff2') format('woff2-variations');
 }
 
 @font-face{
     font-family: 'Source Serif 4';
     font-weight: 200 900;
     font-style: italic;
-    src: url('../fonts/SourceSerif4Variable-Italic.otf.woff2') format('woff2-variations'),
-         url('../fonts/SourceSerif4Variable-Italic.ttf.woff2') format('woff2-variations');
+    src: url('../fonts/SourceSerif4Variable-Italic.otf.woff2') format('woff2-variations');
 }
 
 :root {
     --background: #F0F5EB;
     --default: #254010;
     --accent: #317A00;
+
+    --default-15: hsl(from var(--default) h s l / 15%);
+    --default-25: hsl(from var(--default) h s l / 25%);
+    --default-60: hsl(from var(--default) h s l / 60%);
+    --default-70: hsl(from var(--default) h s l / 70%);
+    --accent-60: hsl(from var(--accent) h s l / 60%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,16 +35,17 @@
         --background: #171C1B;
         --default: #CDDCC6;
         --accent: #429B08;
+
+        --default-15: hsl(from var(--default) h s l / 15%);
+        --default-25: hsl(from var(--default) h s l / 25%);
+        --default-60: hsl(from var(--default) h s l / 60%);
+        --default-70: hsl(from var(--default) h s l / 70%);
+        --accent-60: hsl(from var(--accent) h s l / 60%);
     }
 }
 
 ::selection {
-    background-color: hsl(from var(--default) h s l / 15%);
-    color: hsl(from var(--default) h s calc(l * 0.94));
-}
-
-::-moz-selection {
-    background-color: hsl(from var(--default) h s l / 15%);
+    background-color: var(--default-15);
     color: hsl(from var(--default) h s calc(l * 0.94));
 }
 
@@ -161,7 +166,7 @@ img, picture {
 }
 
 figcaption {
-    color: hsl(from var(--default) h s l / 80%);
+    color: var(--default-70);
     text-align: center;
 }
 
@@ -189,15 +194,13 @@ div.links-page-section {
 }
 
 .date, .secondary {
-    color: hsl(from var(--default) h s l / 70%);
+    color: var(--default-70);
 }
 
 a {
-    display: inline;
     color: inherit;
     text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: hsl(from var(--default) h s l / 25%);
+    text-decoration-color: var(--default-25);
     text-decoration-thickness: 0.0875rem;
     text-underline-offset: 0.1875rem;
     transition: all 120ms ease-in-out;
@@ -205,7 +208,7 @@ a {
 
 a:hover {
     color: var(--accent);
-    text-decoration-color: hsl(from var(--accent) h s l / 60%);
+    text-decoration-color: var(--accent-60);
 }
 
 .minimal-link {
@@ -217,14 +220,13 @@ a:hover {
     text-decoration: none;
 }
 
-li::marker,
-.subtle {
-    color: hsl(from var(--default) h s l / 60%);
+li::marker, .subtle {
+    color: var(--default-60);
 }
 
 li {
     padding-left: 0.25rem;
-    margin: 1rem 0 1rem 1.75rem;
+    margin: 1rem 0 1rem 1.5rem;
 }
 
 .list-compact li,
@@ -244,12 +246,12 @@ p.compact {
 }
 
 .inline-icon svg path {
-    color: hsl(from var(--default) h s l / 30%);
+    color: var(--default-60);
     transition: color 120ms ease-in-out;
 }
 
 .blog-title:hover .inline-icon svg path {
-    color: hsl(from var(--accent) h s l / 60%);
+    color: var(--accent-60);
 }
 
 figure.media-img {
@@ -270,12 +272,11 @@ figure.media-img-tiny {
 blockquote {
     padding: 0 1.5rem;
     margin-block: 1rem;
-    border-left: 0.1rem solid hsl(from var(--default) h s l / 15%);
+    border-left: 0.1rem solid var(--default-15);
 }
 
 .minimal-link-container {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     gap: 1rem;
     margin-block: 1rem;
@@ -322,7 +323,7 @@ svg.footer-logo:not(:hover) {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: hsl(from var(--accent) h s l / 50%);
+    color: var(--accent-60);
     user-select: none;
     font-variant-emoji: text;
     word-spacing: 1rem;
@@ -340,8 +341,6 @@ svg.footer-logo:not(:hover) {
     padding: 0 1.5rem 0 0;
     margin: 3rem auto 0;
     scrollbar-width: none;
-    -ms-overflow-style: none;
-    -webkit-overflow-scrolling: touch;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -365,20 +364,21 @@ svg.footer-logo:not(:hover) {
     max-height: 100%;
 }
 
+header, main, footer {
+    will-change: transform, opacity;
+    animation: slideUp 500ms ease-out forwards;
+}
+
 @keyframes slideUp {
     from {
         opacity: 0;
         transform: translateY(2rem);
     }
-    
     to {
         opacity: 1;
         transform: translateY(0);
+        will-change: auto;
     }
-}
-
-header, main, footer {
-  animation: slideUp 500ms ease-out;
 }
 
 @media screen and (max-width: 640px) {
