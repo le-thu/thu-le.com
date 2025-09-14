@@ -228,17 +228,23 @@ ol li::marker {
     color: var(--default-60);
 }
 
-ul {
-    list-style: none;
+@counter-style dash {
+    system: cyclic;
+    symbols: "―";
+    suffix: " ";
 }
 
-ul li::before {
-    content: "―";
+ul {
+    list-style-type: dash;
+    padding-left: 1.25rem;
+}
+
+ul li::marker {
     color: var(--accent-70);
-    padding-right: 0.25rem;
 }
 
 ul li {
+    padding-left: 0.125rem;
     margin-block: 1rem;
 }
 
@@ -379,7 +385,7 @@ svg.footer-logo:not(:hover) {
 
 header, main, footer {
     will-change: transform, opacity;
-    animation: slideUp 500ms ease-out forwards;
+    animation: slideUp 600ms ease-out forwards;
 }
 
 @keyframes slideUp {
@@ -402,8 +408,13 @@ header, main, footer {
     .nav-container,
     .body-section,
     .minimal-link-container,
-    h1, h2, h3, p, ul, ol, figure {
+    h1, h2, h3, p, ol, figure {
         padding: 0 1.5rem;
+    }
+
+    ul {
+        padding-left: 2.75rem;
+        padding-right: 1.5rem;
     }
 
     blockquote p {
