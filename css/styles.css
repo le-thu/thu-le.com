@@ -22,13 +22,22 @@
     --background: #F0F5EB;
     --default: #254010;
     --accent: #317A00;
-
     --default-15: hsl(from var(--default) h s l / 15%);
     --default-25: hsl(from var(--default) h s l / 25%);
     --default-60: hsl(from var(--default) h s l / 60%);
     --default-70: hsl(from var(--default) h s l / 70%);
     --accent-60: hsl(from var(--accent) h s l / 60%);
     --accent-70: hsl(from var(--accent) h s l / 70%);
+    
+    --font-size-sm: 0.9375rem;  /* 15px - Base */
+    --font-size-md: 1.13rem;    /* 18px */
+    --font-size-lg: 1.35rem;    /* 21.6px */
+    --font-size-xl: 1.62rem;    /* 25.9px */
+    --font-size-2xl: 1.94rem;   /* 31.1px */
+    
+    --letter-spacing-normal: -0.005em;
+    --letter-spacing-heading: -0.02em;
+    --letter-spacing-tight: -0.03em;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,7 +45,6 @@
         --background: #171C1B;
         --default: #CDDCC6;
         --accent: #429B08;
-
         --default-15: hsl(from var(--default) h s l / 15%);
         --default-25: hsl(from var(--default) h s l / 25%);
         --default-60: hsl(from var(--default) h s l / 60%);
@@ -55,12 +63,12 @@ body {
     background-color: var(--background);
     color: var(--default);
     font-family: 'Source Serif 4', ui-serif;
-    font-size: 1rem;
+    font-size: var(--font-size-sm);
     font-weight: 400;
     font-optical-sizing: auto;
     font-synthesis-weight: none;
     line-height: 1.5;
-    letter-spacing: -0.00625rem;
+    letter-spacing: var(--letter-spacing-normal);
     text-wrap: pretty;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -76,8 +84,13 @@ img, picture, video, canvas {
 }
 
 .nav-container {
-    height: 2.5rem;
+    height: 2.25rem;
     max-width: 560px;
+}
+
+svg.logo {
+    height: 2.25rem;
+    width: 2.25rem;
 }
 
 svg.logo:hover {
@@ -99,41 +112,41 @@ h1, h2, h3 {
     max-width: 560px;
     font-variation-settings: 'opsz' 12;
     font-weight: 500;
-    line-height: 1.25;
+    line-height: 1.2;
+    letter-spacing: var(--letter-spacing-heading);
 }
 
 h1 {
-    font-size: 2.074rem;
-    letter-spacing: -0.05rem;
+    font-size: var(--font-size-2xl);
     margin-block: 4rem 0.25rem;
 }
 
 h1.main-title {
     text-wrap: balance;
+    letter-spacing: var(--letter-spacing-tight);
 }
 
 h2 {
-    font-size: 1.728rem;
-    letter-spacing: -0.04375rem;
+    font-size: var(--font-size-xl);
     margin-block: 4rem 0.25rem;
 }
 
 h3 {
-    font-size: 1.44rem;
-    letter-spacing: -0.03125rem;
+    font-size: var(--font-size-lg);
     margin-block: 3.5rem 1rem;
 }
 
 .links-title {
-    font-size: 1.2rem;
-    line-height: 1.375;
+    font-size: var(--font-size-md);
+    line-height: 1.35;
     font-variation-settings: 'opsz' 12;
-    letter-spacing: -0.01875rem;
+    letter-spacing: var(--letter-spacing-heading);
 }
 
 .sub-heading {
-    font-size: 1.2rem;
+    font-size: var(--font-size-md);
     margin-block: 0.5rem;
+    letter-spacing: var(--letter-spacing-normal);
 }
 
 .subhead {
@@ -432,7 +445,9 @@ header, main, footer {
     .carousel .media-img-small img {
         width: 300px;
     }
+}
 
+@media screen and (max-width: 380px) {
     .minimal-link-container {
         display: flex;
         flex-direction: column;
