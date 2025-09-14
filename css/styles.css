@@ -157,14 +157,6 @@ p, figcaption {
     margin-block: 1lh;
 }
 
-.homepage-header p {
-    margin-block: 0.75rem;
-}
-
-#index p, .links-page p {
-    margin-block: 1rem;
-}
-
 strong {
     font-weight: 600;
 }
@@ -177,21 +169,6 @@ figcaption {
     color: var(--default-70);
     text-align: center;
 }
-
-#index .block-item-container {
-    margin-block: 2.25rem;
-}
-
-div.block-item-container {
-    margin-block: 4rem;
-}
-
-div.block-item-container .blog-title,
-div.block-item-container .date,
-#index .blog-title,
-#index .date {
-    margin-block: 0;
-}
     
 div.links-page {
     margin-block: 4.5rem;
@@ -199,6 +176,10 @@ div.links-page {
 
 div.links-page-section {
     margin-block: 1.75rem;
+}
+
+.links-page p {
+    margin-block: 1rem;
 }
 
 .date, .secondary {
