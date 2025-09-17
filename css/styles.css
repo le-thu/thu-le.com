@@ -30,10 +30,10 @@
     --accent-70: hsl(from var(--accent) h s l / 70%);
     
     --font-size-sm: 0.9375rem;  /* 15px - Base */
-    --font-size-md: 1.13rem;    /* 18px */
+    --font-size-md: 1.125rem;    /* 18px */
     --font-size-lg: 1.35rem;    /* 21.6px */
-    --font-size-xl: 1.62rem;    /* 25.9px */
-    --font-size-2xl: 1.94rem;   /* 31.1px */
+    --font-size-xl: 1.62rem;    /* 25.92px */
+    --font-size-2xl: 1.944rem;   /* 31.104px */
     
     --letter-spacing-normal: -0.005em;
     --letter-spacing-heading: -0.02em;
@@ -428,7 +428,7 @@ header, main, footer {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
     .minimal-link-container {
         display: flex;
         flex-direction: column;
