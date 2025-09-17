@@ -153,6 +153,14 @@ h3 {
     margin-block: 0.5rem;
 }
 
+.overline {
+    font-size: var(--font-size-lg);
+    font-variation-settings: 'opsz' 8;
+    font-weight: 600;
+    letter-spacing: normal;
+    margin-block: 4rem 1rem;
+}
+
 p, figcaption {
     margin-block: 1lh;
 }
