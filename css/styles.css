@@ -29,7 +29,7 @@
     --accent-60: hsl(from var(--accent) h s l / 60%);
     --accent-70: hsl(from var(--accent) h s l / 70%);
     
-    --font-size-sm: 0.9375rem;  /* 15px - Base */
+    --font-size-sm: 0.9375rem;  /* 15px base */
     --font-size-md: 1.125rem;    /* 18px */
     --font-size-lg: 1.35rem;    /* 21.6px */
     --font-size-xl: 1.62rem;    /* 25.92px */
