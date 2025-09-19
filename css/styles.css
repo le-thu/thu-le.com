@@ -179,15 +179,11 @@ figcaption {
 }
     
 div.links-page {
-    margin-block: 4.5rem;
+    margin-block: 4rem;
 }
 
 div.links-page-section {
-    margin-block: 1.75rem;
-}
-
-.links-page p {
-    margin-block: 1rem;
+    margin-block: 1.5rem;
 }
 
 .date, .secondary {
