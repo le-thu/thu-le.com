@@ -29,11 +29,11 @@
     --accent-60: hsl(from var(--accent) h s l / 60%);
     --accent-70: hsl(from var(--accent) h s l / 70%);
     
-    --font-size-sm: 0.9375rem;  /* 15px base */
-    --font-size-md: 1.125rem;    /* 18px */
-    --font-size-lg: 1.35rem;    /* 21.6px */
-    --font-size-xl: 1.62rem;    /* 25.92px */
-    --font-size-2xl: 1.944rem;   /* 31.104px */
+    --font-size-sm: 1.0625rem;   /* 17px base */
+    --font-size-md: 1.25rem;     /* 20px */
+    --font-size-lg: 1.4375rem;   /* 23px */
+    --font-size-xl: 1.625rem;    /* 26px */
+    --font-size-2xl: 1.875rem;   /* 30px */
     
     --letter-spacing-normal: -0.005em;
     --letter-spacing-heading: -0.02em;
