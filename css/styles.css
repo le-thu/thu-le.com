@@ -24,6 +24,7 @@
     --accent: #317A00;
     --default-15: hsl(from var(--default) h s l / 15%);
     --default-25: hsl(from var(--default) h s l / 25%);
+    --default-40: hsl(from var(--default) h s l / 40%);
     --default-60: hsl(from var(--default) h s l / 60%);
     --default-70: hsl(from var(--default) h s l / 70%);
     --accent-60: hsl(from var(--accent) h s l / 60%);
@@ -47,6 +48,7 @@
         --accent: #429B08;
         --default-15: hsl(from var(--default) h s l / 15%);
         --default-25: hsl(from var(--default) h s l / 25%);
+        --default-40: hsl(from var(--default) h s l / 40%);
         --default-60: hsl(from var(--default) h s l / 60%);
         --default-70: hsl(from var(--default) h s l / 70%);
         --accent-60: hsl(from var(--accent) h s l / 60%);
@@ -85,7 +87,7 @@ img, picture, video, canvas {
 
 .nav-container {
     height: 2.25rem;
-    max-width: 560px;
+    max-width: 600px;
 }
 
 svg.logo {
@@ -99,17 +101,21 @@ svg.logo:hover {
 }
 
 .homepage-header, .subpage-header, footer {
-    margin-block: 5rem;
+    margin-block: 4rem 5rem;
+}
+
+.blogpage-header {
+    margin-block: 10rem 4rem;
 }
 
 .body-section,
 .minimal-link-container,
 p, ul, ol, li, figcaption, footer {
-    max-width: 560px;
+    max-width: 600px;
 }
 
 h1, h2, h3 {
-    max-width: 560px;
+    max-width: 600px;
     font-variation-settings: 'opsz' 12;
     font-weight: 500;
     line-height: 1.2;
@@ -238,7 +244,7 @@ ul {
 }
 
 ul li::marker {
-    color: var(--accent-70);
+    color: var(--default-40);
 }
 
 ul li {
@@ -272,12 +278,12 @@ p.compact {
 }
 
 figure.media-img {
-    max-width: 640px;
+    max-width: 680px;
     margin-block: 4rem;
 }
 
 figure.media-img-small {
-    max-width: 560px;
+    max-width: 600px;
     margin-block: 3rem;
 }
 
@@ -335,15 +341,16 @@ svg.footer-logo:not(:hover) {
 
 .separator {
     border: none;
-    height: 3.5rem;
+    height: 4rem;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--accent-60);
+    color: var(--default-40);
+    font-size: 1rem;
     user-select: none;
     font-variant-emoji: text;
-    word-spacing: 1rem;
+    word-spacing: 0.5rem;
 }
 
 .separator::before {
@@ -398,9 +405,13 @@ header, main, footer {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 680px) {
     .global-nav {
         padding-block: 4rem 0;
+    }
+
+    .blogpage-header {
+        margin-block: 6rem 4rem;
     }
     
     .nav-container,
