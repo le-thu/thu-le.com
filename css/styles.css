@@ -99,8 +99,12 @@ svg.logo:hover {
     transition: color 200ms ease-in-out;
 }
 
-.homepage-header, .subpage-header, footer {
+.homepage-header, footer {
     margin-block: 4rem;
+}
+
+.subpage-header {
+    margin-block: 4rem 6rem;
 }
 
 .blogpage-header {
@@ -382,6 +386,7 @@ svg.footer-logo:not(:hover) {
     scroll-snap-stop: always;
     align-items: baseline;
     padding: 0 0 0 1.5rem;
+    margin-block: 1.5rem;
 }
 
 .carousel .media-img-small img {
@@ -410,6 +415,10 @@ header, main, footer {
 @media screen and (max-width: 680px) {
     .global-nav {
         padding-block: 2rem 1remm;
+    }
+
+    .subpage-header {
+        margin-block: 4rem;
     }
 
     .blogpage-header {
