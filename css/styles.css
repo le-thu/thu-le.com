@@ -19,8 +19,8 @@
 }
 
 :root {
-    --background: #F0F5EB;
-    --default: #254010;
+    --background: #E4EAE1;
+    --default: #243815;
     --accent: #317A00;
     --default-15: hsl(from var(--default) h s l / 15%);
     --default-25: hsl(from var(--default) h s l / 25%);
@@ -44,7 +44,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #171C1B;
-        --default: #CDDCC6;
+        --default: #BFC8BB;
         --accent: #429B08;
         --default-15: hsl(from var(--default) h s l / 15%);
         --default-25: hsl(from var(--default) h s l / 25%);
