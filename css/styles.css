@@ -131,6 +131,7 @@ h1 {
 }
 
 h1.main-title {
+    text-align: center;
     text-wrap: balance;
 }
 
@@ -162,6 +163,7 @@ h3 {
 }
 
 .subhead {
+    text-align: center;
     margin-block: 0.5rem;
 }
 
