@@ -72,13 +72,14 @@ img, picture, video, canvas {
 }
 
 .nav-container {
-    height: 2.25rem;
+    height: 2rem;
     max-width: 600px;
 }
 
 svg.logo {
-    height: 2.25rem;
-    width: 2.25rem;
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
 }
 
 svg.logo:hover {
@@ -91,15 +92,14 @@ svg.logo:hover {
 }
 
 .subpage-header {
-    margin-block: 4rem 6rem;
+    margin-block: 10.5rem 6rem;
 }
 
 .blogpage-header {
-    margin-block: 10.75rem 4rem;
+    margin-block: 10.5rem 4rem;
 }
 
-.body-section,
-.minimal-link-container,
+.body-section, .minimal-link-container,
 p, ul, ol, li, figcaption, footer {
     max-width: 600px;
 }
@@ -312,22 +312,6 @@ blockquote {
     padding-block: 4rem 0;
 }
 
-svg.footer-logo {
-    position: relative;
-    display: block;
-}
-
-svg.footer-logo:hover {
-    color: var(--accent);
-    transform: translate(0, -4px);
-    transition: transform 200ms ease-in-out, color 160ms ease-in-out;
-}
-
-svg.footer-logo:not(:hover) {
-    transform: translate(0, 0);
-    transition: transform 200ms ease-in-out, transition-delay 200ms;
-}
-
 .footer-links {
     display: flex;
     justify-content: center;
@@ -379,7 +363,6 @@ svg.footer-logo:not(:hover) {
 }
 
 .carousel .media-img-small img {
-    display: block;
     max-width: 400px;
     max-height: 100%;
 }
@@ -406,17 +389,11 @@ header, main, footer {
         padding-block: 2rem 1rem;
     }
 
-    .subpage-header {
+    .subpage-header, .blogpage-header {
         margin-block: 4rem;
     }
 
-    .blogpage-header {
-        margin-block: 6rem 4rem;
-    }
-    
-    .nav-container,
-    .body-section,
-    .minimal-link-container,
+    .nav-container, .body-section, .minimal-link-container,
     h1, h2, h3, p, ol, figure {
         padding: 0 1.5rem;
     }
