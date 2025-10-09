@@ -108,7 +108,7 @@ h1, h2, h3 {
     max-width: 600px;
     font-variation-settings: 'opsz' 10;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.25;
 }
 
 h1 {
@@ -135,7 +135,7 @@ h3 {
 
 .links-title {
     font-size: var(--font-size-md);
-    line-height: 1.35;
+    line-height: 1.375;
     font-variation-settings: 'opsz' 10;
     letter-spacing: var(--letter-spacing-heading);
 }
@@ -317,16 +317,16 @@ blockquote {
 }
 
 .separator {
-    border: none;
-    height: 4rem;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--default-40);
+    border: none;
+    height: 4rem;
+    padding: 0;
     font-size: 1rem;
-    user-select: none;
     font-variant-emoji: text;
+    user-select: none;
     word-spacing: 0.5rem;
 }
 
@@ -340,7 +340,7 @@ blockquote {
     scroll-snap-type: x mandatory;
     overscroll-behavior-x: contain;
     padding: 0 1.5rem 0 0;
-    margin: 3rem auto 0;
+    margin-block: 3rem 0;
     scrollbar-width: none;
 }
 
@@ -350,7 +350,7 @@ blockquote {
   }
 }
 
-.carousel .media-img-small {
+.carousel .media-img-tiny {
     display: flex;
     flex: 0 0 auto;
     scroll-snap-align: start;
@@ -358,11 +358,6 @@ blockquote {
     align-items: baseline;
     padding: 0 0 0 1.5rem;
     margin-block: 1.5rem;
-}
-
-.carousel .media-img-small img {
-    max-width: 400px;
-    max-height: 100%;
 }
 
 header, main, footer {
@@ -405,16 +400,12 @@ header, main, footer {
         padding: 0;
     }
 
-    figure.media-img {
-        margin-block: 3rem;
-    }
-
     .carousel {
-        margin: 2rem auto 0;
+        margin-block: 2rem 0;
     }
 
-    .carousel .media-img-small img {
-        width: 300px;
+    .carousel .media-img-tiny img {
+        max-width: 300px;
     }
 }
 
