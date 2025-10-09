@@ -51,7 +51,7 @@
 body {
     background-color: var(--background);
     color: var(--default);
-    font-family: 'Source Serif 4', ui-serif;
+    font-family: 'Source Serif 4', ui-sans-serif;
     font-size: var(--font-size-sm);
     font-weight: 400;
     font-variation-settings: 'opsz' 16;
