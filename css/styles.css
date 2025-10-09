@@ -403,7 +403,7 @@ header, main, footer {
 
 @media screen and (max-width: 680px) {
     .global-nav {
-        padding-block: 2rem 1remm;
+        padding-block: 2rem 1rem;
     }
 
     .subpage-header {
