@@ -286,7 +286,7 @@ figure.media-img-tiny {
 }
 
 blockquote {
-    padding: 0 1.5rem;
+    padding: 0 1.25rem;
     margin-block: 1rem;
     border-left: 0.1rem solid var(--default-15);
 }
