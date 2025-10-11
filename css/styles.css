@@ -20,10 +20,10 @@
 
 :root {
     color-scheme: light dark;
-    
     --background: light-dark(#E8EDE9, #171C1B);
     --default: light-dark(#243815, #BCCAB4);
     --accent: light-dark(#317A00, #429B08);
+    
     --default-15: hsl(from var(--default) h s l / 15%);
     --default-25: hsl(from var(--default) h s l / 25%);
     --default-40: hsl(from var(--default) h s l / 40%);
