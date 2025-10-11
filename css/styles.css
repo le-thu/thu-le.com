@@ -24,13 +24,13 @@
     --background: light-dark(#E8EDE9, #171C1B);
     --default: light-dark(#243815, #BCCAB4);
     --accent: light-dark(#317A00, #429B08);
-    --default-15: light-dark(#24381526, #BCCAB426);
-    --default-25: light-dark(#24381540, #BCCAB440);
-    --default-40: light-dark(#24381566, #BCCAB466);
-    --default-60: light-dark(#24381599, #BCCAB499);
-    --default-70: light-dark(#243815B3, #BCCAB4B3);
-    --accent-60: light-dark(#317A0099, #429B0899);
-    --accent-70: light-dark(#317A00B3, #429B08B3);
+    --default-15: hsl(from var(--default) h s l / 15%);
+    --default-25: hsl(from var(--default) h s l / 25%);
+    --default-40: hsl(from var(--default) h s l / 40%);
+    --default-60: hsl(from var(--default) h s l / 60%);
+    --default-70: hsl(from var(--default) h s l / 70%);
+    --accent-60: hsl(from var(--accent) h s l / 60%);
+    --accent-70: hsl(from var(--accent) h s l / 70%);
     
     --font-size-sm: 1.0625rem;   /* 17px base */
     --font-size-md: 1.25rem;     /* 20px */
