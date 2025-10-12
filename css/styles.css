@@ -142,7 +142,6 @@ h3 {
 
 .sub-heading {
     font-size: var(--font-size-md);
-    font-variation-settings: 'opsz' 18;
     margin-block: 0.5rem;
     letter-spacing: var(--letter-spacing-normal);
 }
