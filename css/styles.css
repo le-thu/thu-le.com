@@ -359,6 +359,20 @@ blockquote {
     margin-block: 1.5rem;
 }
 
+.about-container {
+    position: relative;
+}
+
+.profile-image {
+    position: absolute;
+    top: -18rem;
+    right: 3rem;
+    max-width: 230px;
+    border-radius: 3px;
+    border: 5px solid #fff;
+    transform: rotate(-9deg);
+}
+
 header, main, footer {
     will-change: transform, opacity;
     animation: slideUp 600ms ease-out forwards;
@@ -373,6 +387,15 @@ header, main, footer {
         opacity: 1;
         transform: translateY(0);
         will-change: auto;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .profile-image {
+    top: -19rem;
+    right: 3rem;
+    max-width: 210px;
+    transform: rotate(-9deg);
     }
 }
 
@@ -405,6 +428,10 @@ header, main, footer {
 
     .carousel .media-img-tiny img {
         max-width: 300px;
+    }
+
+    .profile-image {
+        display: none;
     }
 }
 
