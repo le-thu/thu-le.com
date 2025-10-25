@@ -54,7 +54,7 @@ body {
     font-family: 'Source Serif 4', Georgia, Charter, serif;
     font-size: var(--font-size-sm);
     font-weight: 400;
-    font-variation-settings: 'opsz' 16;
+    font-variation-settings: 'opsz' 17;
     line-height: 1.5;
     letter-spacing: var(--letter-spacing-normal);
     text-wrap: pretty;
@@ -99,7 +99,7 @@ svg.logo:hover {
     margin-block: 10.5rem 4rem;
 }
 
-.body-section, .minimal-link-container,
+.minimal-link-container,
 p, ul, ol, li, figcaption, footer {
     max-width: 600px;
 }
@@ -143,12 +143,48 @@ h3 {
 .sub-heading {
     font-size: var(--font-size-md);
     margin-block: 0.5rem;
-    letter-spacing: var(--letter-spacing-normal);
 }
 
 .subhead {
     text-align: center;
     margin-block: 0.5rem;
+}
+
+.prev-next {
+    max-width: 600px;
+    margin-block: 6rem 0;
+    border-top: 0.03125rem solid var(--default-25);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.prev-next > div {
+    margin: 0;
+    align-self: start;
+}
+
+.prev-next > :nth-child(1) {
+    grid-column: 1;
+    text-align: left;
+    margin-inline: 0;
+}
+
+.prev-next > :nth-child(2) {
+    grid-column: 2;
+    text-align: right;
+    margin-inline: 0;
+}
+
+.label {
+    font-weight: 500;
+    font-variation-settings: 'opsz' 8;
+    letter-spacing: var(--letter-spacing-tight);
+    margin-block: 2rem 0;
+}
+
+.minimal-margin {
+    margin-block: 0.125rem;
 }
 
 .overline {
@@ -285,6 +321,7 @@ figure.media-img-tiny {
 }
 
 blockquote {
+    max-width: 600px;
     padding: 0 1.25rem;
     margin-block: 1rem;
     border-left: 0.1rem solid var(--default-15);
@@ -400,6 +437,11 @@ header, main, footer {
 }
 
 @media screen and (max-width: 680px) {
+    body {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
     .global-nav {
         padding-block: 2rem 1rem;
     }
@@ -408,18 +450,15 @@ header, main, footer {
         margin-block: 4rem;
     }
 
-    .nav-container, .body-section, .minimal-link-container,
-    h1, h2, h3, p, ol, figure {
-        padding: 0 1.5rem;
+    .prev-next {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 
-    ul {
-        padding-left: 2.75rem;
-        padding-right: 1.5rem;
-    }
-
-    blockquote p {
-        padding: 0;
+    .prev-next > :nth-child(1),
+    .prev-next > :nth-child(2) {
+        grid-column: 1;
+        text-align: left;
     }
 
     .carousel {
