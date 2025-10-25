@@ -218,7 +218,7 @@ div.links-page {
 }
 
 div.links-page-section {
-    margin-block: 1.5rem;
+    margin-block: 2rem;
 }
 
 .date, .secondary {
@@ -323,9 +323,9 @@ figure.media-img-tiny {
 
 blockquote {
     max-width: 600px;
-    padding: 0 1.25rem;
+    padding: 0 0 0 1.25rem;
     margin-block: 1rem;
-    border-left: 0.1rem solid var(--default-15);
+    border-left: 0.1rem solid var(--accent-60);
 }
 
 .minimal-link-container {
