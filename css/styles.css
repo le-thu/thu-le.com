@@ -45,7 +45,7 @@
 
 ::selection {
     background-color: var(--default-15);
-    color: hsl(from var(--default) h s calc(l * 0.94));
+    color: var(--default);
 }
 
 body {
@@ -100,7 +100,6 @@ svg.logo:hover {
     margin-block: 10.5rem 4rem;
 }
 
-.minimal-link-container,
 p, ul, ol, li, figcaption, footer {
     max-width: 600px;
 }
@@ -225,6 +224,10 @@ div.links-page-section {
     color: var(--default-70);
 }
 
+.subtle {
+    color: var(--default-60);
+}
+
 a {
     color: inherit;
     text-decoration: underline;
@@ -239,17 +242,13 @@ a:hover {
     text-decoration-color: var(--accent-60);
 }
 
-.minimal-link {
+a.minimal-link {
     text-decoration: none;
 }
 
 .links-title a {
     font-weight: 500;
     text-decoration: none;
-}
-
-.subtle {
-    color: var(--default-60);
 }
 
 ol li {
@@ -281,8 +280,7 @@ ul li {
     margin-block: 1rem;
 }
 
-.list-compact li,
-p.compact {
+.list-compact li, p.compact {
     margin-block: 0.5rem;
 }
 
@@ -329,6 +327,7 @@ blockquote {
 }
 
 .minimal-link-container {
+    max-width: 600px;
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
@@ -373,10 +372,10 @@ blockquote {
 .carousel {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
     overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
     padding: 0 1.5rem 0 0;
-    margin-block: 3rem 0;
+    margin-block: 2rem 0;
     scrollbar-width: none;
 }
 
@@ -455,14 +454,9 @@ header, main, footer {
         gap: 0;
     }
 
-    .prev-next > :nth-child(1),
-    .prev-next > :nth-child(2) {
+    .prev-next > * {
         grid-column: 1;
         text-align: left;
-    }
-
-    .carousel {
-        margin-block: 2rem 0;
     }
 
     .carousel .media-img-tiny img {
