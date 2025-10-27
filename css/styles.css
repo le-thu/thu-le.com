@@ -321,7 +321,7 @@ figure.media-img-tiny {
 
 blockquote {
     max-width: 600px;
-    padding: 0 0 0 1.25rem;
+    padding: 0 0 0 1.125rem;
     margin-block: 1rem;
     border-left: 0.1rem solid var(--accent-60);
 }
