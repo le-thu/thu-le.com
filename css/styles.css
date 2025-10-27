@@ -251,6 +251,11 @@ a.minimal-link {
     text-decoration: none;
 }
 
+.minimal-link:hover,
+.links-title a:hover {
+    color: var(--accent);
+}
+
 ol li {
     padding-left: 0.25rem;
     margin: 1rem 0 1rem 1.5rem;
@@ -282,11 +287,6 @@ ul li {
 
 .list-compact li, p.compact {
     margin-block: 0.5rem;
-}
-
-.links-title a:hover,
-.minimal-link:hover {
-    color: var(--accent);
 }
 
 .inline-icon {
