@@ -124,7 +124,7 @@ h1.main-title {
 h2 {
     font-size: var(--font-size-xl);
     letter-spacing: var(--letter-spacing-heading);
-    margin-block: 4rem 0.25rem;
+    margin-block: 4rem 1rem;
 }
 
 h3 {
