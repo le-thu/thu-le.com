@@ -431,7 +431,7 @@ header, main, footer {
     }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (width < 1080px) {
     .profile-image {
     top: -19rem;
     right: 3rem;
@@ -440,7 +440,7 @@ header, main, footer {
     }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (width < 680px) {
     body {
         margin-left: 1.5rem;
         margin-right: 1.5rem;
@@ -463,7 +463,7 @@ header, main, footer {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (width <= 375px) {
     .minimal-link-container {
         display: flex;
         flex-direction: column;
