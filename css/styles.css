@@ -207,6 +207,22 @@ img, picture {
     border-radius: 4px;
 }
 
+figure {
+    margin-block: 3rem;
+}
+
+.media-img {
+    max-width: 720px;
+}
+
+.media-img-small {
+    max-width: 600px;
+}
+
+.media-img-tiny {
+    max-width: 400px;
+}
+
 figcaption {
     color: var(--default-70);
     text-align: center;
@@ -304,21 +320,6 @@ ul li {
     color: var(--accent-60);
 }
 
-figure.media-img {
-    max-width: 680px;
-    margin-block: 4rem;
-}
-
-figure.media-img-small {
-    max-width: 600px;
-    margin-block: 3rem;
-}
-
-figure.media-img-tiny {
-    max-width: 400px;
-    margin-block: 3rem;
-}
-
 blockquote {
     max-width: 600px;
     padding: 0 0 0 1.125rem;
@@ -414,7 +415,7 @@ blockquote {
     transform: rotate(-10deg);
 }
 
-header, main, footer {
+main, footer {
     will-change: transform, opacity;
     animation: slideUp 600ms ease-out forwards;
 }
