@@ -29,6 +29,8 @@
     --letter-spacing-normal: -0.007em;
     --letter-spacing-heading: -0.02em;
     --letter-spacing-tight: -0.0275em;
+    
+    --content-max-width: 37.5rem; /* 600px */
 }
 
 /* fonts */
@@ -79,7 +81,7 @@ img, picture, video, canvas {
 /* typography */
 
 p, ul, ol, li, figcaption, footer {
-    max-width: 600px;
+    max-width: var(--content-max-width);
 }
 
 p, figcaption {
@@ -91,7 +93,7 @@ strong {
 }
 
 h1, h2, h3 {
-    max-width: 600px;
+    max-width: var(--content-max-width);
     font-variation-settings: 'opsz' 10;
     font-weight: 500;
     line-height: 1.25;
@@ -166,7 +168,7 @@ h3 {
 }
 
 blockquote {
-    max-width: 600px;
+    max-width: var(--content-max-width);
     padding: 0 0 0 1.125rem;
     margin-block: 1rem;
     border-left: 0.1rem solid var(--accent-60);
@@ -268,7 +270,7 @@ ol li::marker {
 
 .nav-container {
     height: 2rem;
-    max-width: 600px;
+    max-width: var(--content-max-width);
 }
 
 svg.logo {
@@ -296,7 +298,7 @@ svg.logo:hover {
 }
 
 .prev-next {
-    max-width: 600px;
+    max-width: var(--content-max-width);
     margin-block: 6rem 0;
     border-top: 0.03125rem solid var(--default-25);
     display: grid;
@@ -322,7 +324,7 @@ svg.logo:hover {
 }
 
 .minimal-link-container {
-    max-width: 600px;
+    max-width: var(--content-max-width);
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
@@ -380,7 +382,7 @@ figcaption {
 }
 
 .media-img-small {
-    max-width: 600px;
+    max-width: var(--content-max-width);
 }
 
 .media-img-tiny {
