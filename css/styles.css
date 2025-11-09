@@ -17,7 +17,6 @@
     --default-40: hsl(from var(--default) h s l / 40%);
     --default-60: hsl(from var(--default) h s l / 60%);
     --default-70: hsl(from var(--default) h s l / 70%);
-    --accent-60: hsl(from var(--accent) h s l / 60%);
     --accent-70: hsl(from var(--accent) h s l / 70%);
     
     --font-size-sm: 1.0625rem;   /* 17px base */
@@ -171,7 +170,7 @@ blockquote {
     max-width: var(--content-max-width);
     padding: 0 0 0 1.125rem;
     margin-block: 1rem;
-    border-left: 0.1rem solid var(--accent-60);
+    border-left: 0.1rem solid var(--accent-70);
 }
 
 .anchor {
@@ -210,7 +209,7 @@ a {
 
 a:hover {
     color: var(--accent);
-    text-decoration-color: var(--accent-60);
+    text-decoration-color: var(--accent-70);
 }
 
 a.minimal-link {
@@ -377,10 +376,6 @@ figcaption {
     text-align: center;
 }
 
-.media-img {
-    max-width: 720px;
-}
-
 .media-img-small {
     max-width: var(--content-max-width);
 }
@@ -427,16 +422,16 @@ figcaption {
 }
 
 .blog-title:hover .inline-icon svg path {
-    color: var(--accent-60);
+    color: var(--accent-70);
 }
 
 /* page specific */
 
-div.links-page {
+.links-page {
     margin-block: 4rem;
 }
 
-div.links-page-section {
+.links-page-section {
     margin-block: 2rem;
 }
 
@@ -514,7 +509,6 @@ main, footer {
 
 @media screen and (max-width: 375px) {
     .minimal-link-container {
-        display: flex;
         flex-direction: column;
     }
 }
