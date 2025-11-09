@@ -4,19 +4,9 @@
     padding: 0;
 }
 
-@font-face{
-    font-family: 'Source Serif 4';
-    font-weight: 200 900;
-    font-style: normal;
-    src: url('../fonts/SourceSerif4Variable-Roman.otf.woff2') format('woff2-variations');
-}
-
-@font-face{
-    font-family: 'Source Serif 4';
-    font-weight: 200 900;
-    font-style: italic;
-    src: url('../fonts/SourceSerif4Variable-Italic.otf.woff2') format('woff2-variations');
-}
+/* ==========================================================================
+   Variables
+   ========================================================================== */
 
 :root {
     color-scheme: light dark;
@@ -43,6 +33,28 @@
     --letter-spacing-tight: -0.0275em;
 }
 
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face{
+    font-family: 'Source Serif 4';
+    font-weight: 200 900;
+    font-style: normal;
+    src: url('../fonts/SourceSerif4Variable-Roman.otf.woff2') format('woff2-variations');
+}
+
+@font-face{
+    font-family: 'Source Serif 4';
+    font-weight: 200 900;
+    font-style: italic;
+    src: url('../fonts/SourceSerif4Variable-Italic.otf.woff2') format('woff2-variations');
+}
+
+/* ==========================================================================
+   Base Elements
+   ========================================================================== */
+
 ::selection {
     background-color: var(--default-15);
     color: var(--default);
@@ -65,43 +77,23 @@ body {
 img, picture, video, canvas {
     display: block;
     max-inline-size: 100%;
+    border-radius: 4px;
 }
 
-.global-nav {
-    padding-block: 2.5rem 2rem;
-}
-
-.nav-container {
-    height: 2rem;
-    max-width: 600px;
-}
-
-svg.logo {
-    color: var(--default-60);
-    height: 2rem;
-    width: 2rem;
-    display: inline-block;
-}
-
-svg.logo:hover {
-    color: var(--default);
-    transition: color 200ms ease-in-out;
-}
-
-.homepage-header, footer {
-    margin-block: 4rem;
-}
-
-.subpage-header {
-    margin-block: 10.5rem 6rem;
-}
-
-.blogpage-header {
-    margin-block: 10.5rem 4rem;
-}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
 
 p, ul, ol, li, figcaption, footer {
     max-width: 600px;
+}
+
+p, figcaption {
+    margin-block: 1lh;
+}
+
+strong {
+    font-weight: 580;
 }
 
 h1, h2, h3 {
@@ -141,39 +133,15 @@ h3 {
 }
 
 .sub-heading {
+    color: var(--default-60);
     font-size: var(--font-size-md);
     margin-block: 0.5rem;
 }
 
 .subhead {
+    color: var(--default-70);
     text-align: center;
     margin-block: 0.5rem;
-}
-
-.prev-next {
-    max-width: 600px;
-    margin-block: 6rem 0;
-    border-top: 0.03125rem solid var(--default-25);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-}
-
-.prev-next > div {
-    margin: 0;
-    align-self: start;
-}
-
-.prev-next > :nth-child(1) {
-    grid-column: 1;
-    text-align: left;
-    margin-inline: 0;
-}
-
-.prev-next > :nth-child(2) {
-    grid-column: 2;
-    text-align: right;
-    margin-inline: 0;
 }
 
 .label {
@@ -195,54 +163,47 @@ h3 {
     margin-block: 4rem 1rem;
 }
 
-p, figcaption {
-    margin-block: 1lh;
-}
-
-strong {
-    font-weight: 580;
-}
-
-img, picture {
-    border-radius: 4px;
-}
-
-figure {
-    margin-block: 3rem;
-}
-
-.media-img {
-    max-width: 720px;
-}
-
-.media-img-small {
-    max-width: 600px;
-}
-
-.media-img-tiny {
-    max-width: 400px;
-}
-
-figcaption {
-    color: var(--default-70);
-    text-align: center;
-}
-    
-div.links-page {
-    margin-block: 4rem;
-}
-
-div.links-page-section {
-    margin-block: 2rem;
-}
-
-.date, .secondary {
+.secondary {
     color: var(--default-70);
 }
 
 .subtle {
     color: var(--default-60);
 }
+
+blockquote {
+    max-width: 600px;
+    padding: 0 0 0 1.125rem;
+    margin-block: 1rem;
+    border-left: 0.1rem solid var(--accent-60);
+}
+
+.anchor {
+    margin-left: 0.25rem;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.25;
+}
+
+h2:hover .anchor,
+h3:hover .anchor {
+    opacity: 1;
+}
+
+@media (hover: hover) {
+    .anchor {
+        opacity: 0; 
+    }
+
+    h2:hover .anchor,
+    h3:hover .anchor {
+        opacity: 1;
+    }
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
 
 a {
     color: inherit;
@@ -272,14 +233,9 @@ a.minimal-link {
     color: var(--accent);
 }
 
-ol li {
-    padding-left: 0.25rem;
-    margin: 1rem 0 1rem 1.5rem;
-}
-
-ol li::marker {
-    color: var(--default-60);
-}
+/* ==========================================================================
+   Lists
+   ========================================================================== */
 
 @counter-style dash {
     system: cyclic;
@@ -292,39 +248,89 @@ ul {
     padding-left: 1.25rem;
 }
 
+ul li {
+    padding-left: 0.125rem;
+    margin-block: 1rem;
+}
+
 ul li::marker {
     color: var(--default-40);
 }
 
-ul li {
-    padding-left: 0.125rem;
-    margin-block: 1rem;
+ol li {
+    padding-left: 0.25rem;
+    margin: 1rem 0 1rem 1.5rem;
+}
+
+ol li::marker {
+    color: var(--default-60);
 }
 
 .list-compact li, p.compact {
     margin-block: 0.5rem;
 }
 
-.inline-icon {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1;
+/* ==========================================================================
+   Layout Components
+   ========================================================================== */
+
+.global-nav {
+    padding-block: 2.5rem 2rem;
 }
 
-.inline-icon svg path {
-    color: var(--default-60);
-    transition: color 120ms ease-in-out;
-}
-
-.blog-title:hover .inline-icon svg path {
-    color: var(--accent-60);
-}
-
-blockquote {
+.nav-container {
+    height: 2rem;
     max-width: 600px;
-    padding: 0 0 0 1.125rem;
-    margin-block: 1rem;
-    border-left: 0.1rem solid var(--accent-60);
+}
+
+svg.logo {
+    color: var(--default-60);
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+}
+
+svg.logo:hover {
+    color: var(--default);
+    transition: color 200ms ease-in-out;
+}
+
+.homepage-header, footer {
+    margin-block: 4rem;
+}
+
+.subpage-header {
+    margin-block: 10.5rem 6rem;
+}
+
+.blogpage-header {
+    margin-block: 10.5rem 4rem;
+}
+
+.prev-next {
+    max-width: 600px;
+    margin-block: 6rem 0;
+    border-top: 0.03125rem solid var(--default-25);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.prev-next > div {
+    margin: 0;
+    align-self: start;
+}
+
+.prev-next > :nth-child(1) {
+    grid-column: 1;
+    text-align: left;
+    margin-inline: 0;
+}
+
+.prev-next > :nth-child(2) {
+    grid-column: 2;
+    text-align: right;
+    margin-inline: 0;
 }
 
 .minimal-link-container {
@@ -370,6 +376,31 @@ blockquote {
     content: "✳︎ ✳︎ ✳︎";
 }
 
+/* ==========================================================================
+   Media Components
+   ========================================================================== */
+
+figure {
+    margin-block: 3rem;
+}
+
+figcaption {
+    color: var(--default-70);
+    text-align: center;
+}
+
+.media-img {
+    max-width: 720px;
+}
+
+.media-img-small {
+    max-width: 600px;
+}
+
+.media-img-tiny {
+    max-width: 400px;
+}
+
 .carousel {
     display: flex;
     overflow-x: auto;
@@ -396,6 +427,33 @@ blockquote {
     margin-block: 1.5rem;
 }
 
+.inline-icon {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.inline-icon svg path {
+    color: var(--default-60);
+    transition: color 120ms ease-in-out;
+}
+
+.blog-title:hover .inline-icon svg path {
+    color: var(--accent-60);
+}
+
+/* ==========================================================================
+   Page-Specific
+   ========================================================================== */
+
+div.links-page {
+    margin-block: 4rem;
+}
+
+div.links-page-section {
+    margin-block: 2rem;
+}
+
 .about-container {
     position: relative;
 }
@@ -415,6 +473,10 @@ blockquote {
     transform: rotate(-10deg);
 }
 
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
 main, footer {
     will-change: transform, opacity;
     animation: slideUp 600ms ease-out forwards;
@@ -431,6 +493,10 @@ main, footer {
         will-change: auto;
     }
 }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
 
 @media screen and (width < 1080px) {
     .profile-image {
@@ -469,22 +535,4 @@ main, footer {
         display: flex;
         flex-direction: column;
     }
-}
-
-.anchor {
-    margin-left: 0.25rem;
-    text-decoration: none;
-    color: inherit;
-    opacity: 0.25;
-}
-
-h2:hover .anchor,
-h3:hover .anchor {
-    opacity: 1;
-}
-
-@media (hover: hover) {
-    .anchor { opacity: 0; }
-    h2:hover .anchor,
-    h3:hover .anchor { opacity: 1; }
 }
