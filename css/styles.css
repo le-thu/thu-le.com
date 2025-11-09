@@ -37,6 +37,7 @@
     font-family: 'Source Serif 4';
     font-weight: 200 900;
     font-style: normal;
+    font-display: swap;
     src: url('../fonts/SourceSerif4Variable-Roman.otf.woff2') format('woff2-variations');
 }
 
@@ -44,6 +45,7 @@
     font-family: 'Source Serif 4';
     font-weight: 200 900;
     font-style: italic;
+    font-display: swap;
     src: url('../fonts/SourceSerif4Variable-Italic.otf.woff2') format('woff2-variations');
 }
 
@@ -476,7 +478,7 @@ main, footer {
 
 /* media queries */
 
-@media screen and (width < 1080px) {
+@media screen and (max-width: 1080px) {
     .profile-image {
     top: -19rem;
     right: 3rem;
@@ -485,7 +487,7 @@ main, footer {
     }
 }
 
-@media screen and (width < 680px) {
+@media screen and (max-width: 680px) {
     body {
         margin-left: 1.5rem;
         margin-right: 1.5rem;
@@ -508,7 +510,7 @@ main, footer {
     }
 }
 
-@media screen and (width <= 375px) {
+@media screen and (max-width: 375px) {
     .minimal-link-container {
         display: flex;
         flex-direction: column;
