@@ -470,3 +470,21 @@ main, footer {
         flex-direction: column;
     }
 }
+
+.anchor {
+    margin-left: 0.25rem;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.25;
+}
+
+h2:hover .anchor,
+h3:hover .anchor {
+    opacity: 1;
+}
+
+@media (hover: hover) {
+    .anchor { opacity: 0; }
+    h2:hover .anchor,
+    h3:hover .anchor { opacity: 1; }
+}
