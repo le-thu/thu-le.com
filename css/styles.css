@@ -151,8 +151,8 @@ h3 {
 }
 
 .overline {
-    color: var(--default-60);
     font-size: var(--font-size-lg);
+    font-weight: 500;
     font-variation-settings: 'opsz' 8;
     letter-spacing: normal;
     margin-block: 4rem 1rem;
