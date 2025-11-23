@@ -7,13 +7,21 @@
         <link>https://thu-le.com/blog</link>
         <description>Musings on intentional living, productivity, and everyday life.</description>
         <language>en-us</language>
-        <lastBuildDate>Sun, 16 Nov 2025 17:19:00 +0700</lastBuildDate>
+        <lastBuildDate>Sun, 23 Nov 2025 10:55:00 +0700</lastBuildDate>
+
+        <item>
+            <title>How I track my work and life</title>
+            <link>https://thu-le.com/blog/how-i-track-my-work-and-life</link>
+            <pubDate>Sun, 23 Nov 2025 10:55:00 +0700</pubDate>
+            <guid isPermaLink="true">https://thu-le.com/blog/how-i-track-my-work-and-life</guid>
+            <description><![CDATA[How I use simple calendar systems in Notion to track work tasks and life goals.]]></description>
+        </item>
 
         <item>
             <title>November 2025</title>
             <link>https://thu-le.com/now/november-2025</link>
             <pubDate>Sun, 16 Nov 2025 17:19:00 +0700</pubDate>
-            <guid isPermaLink="true">https://thu-le.com/blog/ipad-mini-reading-setup</guid>
+            <guid isPermaLink="true">https://thu-le.com/now/november-2025</guid>
             <description><![CDATA[Managing for the first time, and why I keep thinking about airports.]]></description>
         </item>
 
