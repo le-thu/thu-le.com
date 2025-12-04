@@ -207,7 +207,8 @@ a {
     transition: all 120ms ease-in-out;
 }
 
-a:hover {
+a:hover,
+a:focus-visible {
     color: var(--accent);
     text-decoration-color: var(--accent-70);
 }
