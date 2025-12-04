@@ -213,6 +213,12 @@ a:focus-visible {
     text-decoration-color: var(--accent-70);
 }
 
+a:focus-visible {
+    outline: 0.09375rem solid var(--accent-70);
+    outline-offset: 0.125rem;
+    border-radius: 0.125rem;
+}
+
 a.minimal-link {
     text-decoration: none;
 }
