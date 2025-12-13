@@ -396,6 +396,12 @@ figcaption {
     scrollbar-width: none;
 }
 
+.carousel:focus {
+    outline: 0.125rem solid var(--accent);
+    outline-offset: 0.25rem;
+    border-radius: 0.25rem;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .carousel {
     scroll-behavior: smooth;
