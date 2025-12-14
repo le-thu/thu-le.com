@@ -155,7 +155,7 @@ h3 {
     font-weight: 500;
     font-variation-settings: 'opsz' 8;
     letter-spacing: normal;
-    margin-block: 4rem 1rem;
+    margin-block: 5rem 1rem;
 }
 
 .secondary {
@@ -270,10 +270,6 @@ ol li::marker {
 
 /* layout components */
 
-.global-nav {
-    padding-block: 2.5rem 2rem;
-}
-
 .nav-container {
     height: 2rem;
     max-width: var(--content-max-width);
@@ -291,11 +287,7 @@ svg.logo:hover {
     transition: color 200ms ease-in-out;
 }
 
-.homepage-header, footer {
-    margin-block: 4rem;
-}
-
-.subpage-header {
+.homepage-header, .subpage-header {
     margin-block: 10.5rem 6rem;
 }
 
@@ -334,6 +326,10 @@ svg.logo:hover {
 
 .minimal-link-container a {
     margin: 0;
+}
+
+footer {
+    margin-block: 4rem;
 }
 
 .footer-container {
@@ -443,6 +439,29 @@ figcaption {
     margin-block: 2rem;
 }
 
+.blog-entry {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    max-width: var(--content-max-width);
+}
+
+.blog-entry .blog-title {
+    margin: 0;
+}
+
+.blog-entry .dashed-line {
+    flex-grow: 1;
+    border-bottom: 1px dashed var(--default-25);
+    min-width: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-entry .blog-date {
+    color: var(--default-70);
+    white-space: nowrap;
+}
+
 .about-container {
     position: relative;
 }
@@ -464,7 +483,7 @@ figcaption {
 
 /* animations */
 
-main, footer {
+header, main, footer {
     will-change: transform, opacity;
     animation: slideUp 600ms ease-out forwards;
 }
@@ -494,12 +513,7 @@ main, footer {
 
 @media screen and (max-width: 680px) {
     body {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
-
-    .global-nav {
-        padding-block: 2rem 1rem;
+        margin-inline: 1.5rem;
     }
 
     .subpage-header, .blogpage-header {
@@ -512,6 +526,12 @@ main, footer {
 
     .profile-image {
         display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blog-entry .dashed-line {
+        visibility: hidden;
     }
 }
 
