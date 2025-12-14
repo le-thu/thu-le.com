@@ -173,6 +173,10 @@ blockquote {
     border-left: 0.1rem solid var(--accent-70);
 }
 
+blockquote p {
+    font-style: italic;
+}
+
 .anchor {
     margin-left: 0.25rem;
     text-decoration: none;
