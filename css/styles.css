@@ -153,8 +153,8 @@ h3 {
 .overline {
     font-size: var(--font-size-lg);
     font-weight: 500;
+    font-variant-numeric: tabular-nums;
     font-variation-settings: 'opsz' 8;
-    letter-spacing: normal;
     margin-block: 5rem 1rem;
 }
 
@@ -508,10 +508,10 @@ header, main, footer {
 
 @media screen and (max-width: 1080px) {
     .profile-image {
-    top: -19rem;
-    right: 3rem;
-    max-width: 210px;
-    transform: rotate(-9deg);
+        top: -19rem;
+        right: 3rem;
+        max-width: 210px;
+        transform: rotate(-9deg);
     }
 }
 
@@ -520,22 +520,32 @@ header, main, footer {
         margin-inline: 1.5rem;
     }
 
-    .subpage-header, .blogpage-header {
+    .homepage-header, .subpage-header, .blogpage-header {
         margin-block: 4rem;
+    }
+
+    .profile-image {
+        top: -15rem;
+        max-width: 160px;
+        transform: rotate(-9deg);
+    }
+
+    .carousel {
+        margin-inline: -1.5rem;
     }
 
     .carousel .media-img-tiny img {
         max-width: 300px;
-    }
-
-    .profile-image {
-        display: none;
     }
 }
 
 @media screen and (max-width: 480px) {
     .blog-entry .dashed-line {
         visibility: hidden;
+    }
+
+    .profile-image {
+        display: none;
     }
 }
 
