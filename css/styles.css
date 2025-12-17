@@ -488,7 +488,6 @@ figcaption {
 /* animations */
 
 header, main, footer {
-    will-change: transform, opacity;
     animation: slideUp 600ms ease-out forwards;
 }
 
