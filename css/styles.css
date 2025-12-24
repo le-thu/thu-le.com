@@ -487,8 +487,10 @@ figcaption {
 
 /* animations */
 
-header, main, footer {
+@media (prefers-reduced-motion: no-preference) {
+  header, main, footer {
     animation: slideUp 600ms ease-out forwards;
+  }
 }
 
 @keyframes slideUp {
