@@ -143,7 +143,7 @@ h3 {
     font-weight: 540;
     font-variation-settings: 'opsz' 8;
     letter-spacing: var(--letter-spacing-heading);
-    margin-block: 2rem 0;
+    margin-block: 1.5rem 0;
 }
 
 .minimal-margin {
@@ -421,13 +421,10 @@ figcaption {
     line-height: 1;
 }
 
-.inline-icon svg path {
+.inline-icon svg {
     color: var(--default-60);
+    margin-inline-start: 0.25rem;
     transition: color 120ms ease-in-out;
-}
-
-.blog-title:hover .inline-icon svg path {
-    color: var(--accent);
 }
 
 /* page specific */
@@ -445,10 +442,12 @@ figcaption {
     align-items: baseline;
     gap: 0.5rem;
     max-width: var(--content-max-width);
+    text-decoration: none;
 }
 
 .blog-entry .blog-title {
     margin: 0;
+    font-weight: 500;
 }
 
 .blog-entry .dashed-line {
@@ -456,11 +455,23 @@ figcaption {
     border-bottom: 1px dashed var(--default-25);
     min-width: 2rem;
     margin-bottom: 0.5rem;
+    transition: border-color 120ms ease-in-out;
 }
 
 .blog-entry .blog-date {
     color: var(--default-70);
     white-space: nowrap;
+    transition: color 120ms ease-in-out;
+}
+
+a.blog-entry:hover .blog-title,
+a.blog-entry:hover .blog-date,
+a.blog-entry:hover .inline-icon svg {
+    color: var(--accent);
+}
+
+a.blog-entry:hover .dashed-line {
+    border-color: var(--accent-70);
 }
 
 .about-container {
