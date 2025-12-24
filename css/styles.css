@@ -178,26 +178,21 @@ blockquote p {
 }
 
 .anchor {
-    margin-left: 0.25rem;
+    margin-inline-start: 0.25rem;
     text-decoration: none;
     color: inherit;
     opacity: 0.25;
-}
-
-h2:hover .anchor,
-h3:hover .anchor {
-    opacity: 1;
 }
 
 @media (hover: hover) {
     .anchor {
         opacity: 0; 
     }
+}
 
-    h2:hover .anchor,
-    h3:hover .anchor {
-        opacity: 1;
-    }
+h2:hover .anchor,
+h3:hover .anchor {
+    opacity: 1;
 }
 
 /* links */
@@ -260,9 +255,11 @@ ul li::marker {
 }
 
 ol li {
-    padding-left: 0.25rem;
-    margin: 1rem 0 1rem 1.5rem;
+    padding-inline-start: 0.25rem;
+    margin-block: 1rem;
+    margin-inline-start: 1.5rem;
 }
+
 
 ol li::marker {
     color: var(--default-60);
@@ -501,7 +498,6 @@ figcaption {
     to {
         opacity: 1;
         transform: translateY(0);
-        will-change: auto;
     }
 }
 
