@@ -4,8 +4,6 @@
     padding: 0;
 }
 
-/* variables */
-
 :root {
     color-scheme: light dark;
     --background: light-dark(#e9f3ed, #111714);
@@ -31,8 +29,6 @@
     
     --content-max-width: 37.5rem; /* 600px */
 }
-
-/* fonts */
 
 @font-face{
     font-family: 'Source Serif 4';
@@ -122,6 +118,7 @@ h3 {
 
 .links-title {
     font-size: var(--font-size-md);
+    font-weight: 500;
     line-height: 1.375;
     font-variation-settings: 'opsz' 10;
     letter-spacing: var(--letter-spacing-heading);
@@ -218,12 +215,8 @@ a:focus-visible {
     border-radius: 0.125rem;
 }
 
-a.minimal-link {
-    text-decoration: none;
-}
-
+.minimal-link,
 .links-title a {
-    font-weight: 500;
     text-decoration: none;
 }
 
@@ -260,12 +253,12 @@ ol li {
     margin-inline-start: 1.5rem;
 }
 
-
 ol li::marker {
     color: var(--default-60);
 }
 
-.list-compact li, p.compact {
+.list-compact li,
+p.compact {
     margin-block: 0.5rem;
 }
 
@@ -288,7 +281,8 @@ svg.logo:hover {
     transition: color 200ms ease-in-out;
 }
 
-.homepage-header, .subpage-header {
+.homepage-header,
+.subpage-header {
     margin-block: 10.5rem 6rem;
 }
 
@@ -443,11 +437,11 @@ figcaption {
     gap: 0.5rem;
     max-width: var(--content-max-width);
     text-decoration: none;
+    margin-block: 1.5rem;
 }
 
-.blog-entry .blog-title {
+.blog-entry .links-title {
     margin: 0;
-    font-weight: 500;
 }
 
 .blog-entry .dashed-line {
@@ -464,7 +458,7 @@ figcaption {
     transition: color 120ms ease-in-out;
 }
 
-a.blog-entry:hover .blog-title,
+a.blog-entry:hover .links-title,
 a.blog-entry:hover .blog-date,
 a.blog-entry:hover .inline-icon svg {
     color: var(--accent);
