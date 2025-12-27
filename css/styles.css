@@ -27,7 +27,7 @@
     --letter-spacing-heading: -0.02em;
     --letter-spacing-tight: -0.0275em;
     
-    --content-max-width: 37.5rem; /* 600px */
+    --content-max-width: 40rem; /* 600px */
 }
 
 @font-face{
