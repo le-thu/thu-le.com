@@ -435,18 +435,19 @@ figcaption {
     display: flex;
     align-items: baseline;
     gap: 0.5rem;
-    max-width: var(--content-max-width);
     text-decoration: none;
+    max-width: var(--content-max-width);
     margin-block: 1.5rem;
 }
 
 .blog-entry .links-title {
     margin: 0;
+    text-wrap: wrap;
 }
 
 .blog-entry .dashed-line {
     flex-grow: 1;
-    border-bottom: 1px dashed var(--default-25);
+    border-top: 0.03125rem solid var(--default-25);
     min-width: 2rem;
     margin-bottom: 0.5rem;
     transition: border-color 120ms ease-in-out;
