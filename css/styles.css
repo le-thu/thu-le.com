@@ -140,7 +140,7 @@ h3 {
     font-weight: 540;
     font-variation-settings: 'opsz' 8;
     letter-spacing: var(--letter-spacing-heading);
-    margin-block: 1.5rem 0;
+    margin-block: 1.5rem 0.25rem;
 }
 
 .minimal-margin {
@@ -546,6 +546,10 @@ a.blog-entry:hover .dashed-line {
     .blog-entry .dashed-line {
         visibility: hidden;
     }
+
+    .prev-next {
+        gap: 2rem;
+}
 
     .profile-image {
         display: none;
