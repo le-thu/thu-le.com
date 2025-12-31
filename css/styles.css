@@ -79,7 +79,7 @@ p, ul, ol, li, figcaption, footer {
     max-width: var(--content-max-width);
 }
 
-p, figcaption {
+p {
     margin-block: 1lh;
 }
 
@@ -364,8 +364,9 @@ figure {
 }
 
 figcaption {
-    color: var(--default-70);
+    color: var(--default-60);
     text-align: center;
+    margin-block: 1rem;
 }
 
 .media-img-small {
