@@ -10,11 +10,11 @@
     --default: light-dark(#184306, #b8d2aa);
     --accent: light-dark(#2f8f00, #00c900);
     
-    --default-15: hsl(from var(--default) h s l / 15%);
-    --default-25: hsl(from var(--default) h s l / 25%);
+    --default-20: hsl(from var(--default) h s l / 20%);
     --default-40: hsl(from var(--default) h s l / 40%);
-    --default-60: hsl(from var(--default) h s l / 60%);
-    --default-70: hsl(from var(--default) h s l / 70%);
+    --default-65: hsl(from var(--default) h s l / 65%);
+    --default-75: hsl(from var(--default) h s l / 75%);
+    --accent-60: hsl(from var(--accent) h s l / 60%);
     --accent-70: hsl(from var(--accent) h s l / 70%);
     
     --font-size-sm: 1.0625rem;   /* 17px base */
@@ -49,7 +49,7 @@
 /* base elements */
 
 ::selection {
-    background-color: var(--default-15);
+    background-color: var(--default-20);
     color: var(--default);
 }
 
@@ -125,13 +125,13 @@ h3 {
 }
 
 .sub-heading {
-    color: var(--default-60);
+    color: var(--default-65);
     font-size: var(--font-size-md);
     margin-block: 0.5rem;
 }
 
 .subhead {
-    color: var(--default-70);
+    color: var(--default-75);
     text-align: center;
     margin-block: 0.5rem;
 }
@@ -155,11 +155,11 @@ h3 {
 }
 
 .secondary {
-    color: var(--default-70);
+    color: var(--default-75);
 }
 
 .subtle {
-    color: var(--default-60);
+    color: var(--default-65);
 }
 
 blockquote {
@@ -170,7 +170,7 @@ blockquote {
 }
 
 blockquote p {
-    font-style: italic;
+    color: var(--default-75);
 }
 
 .anchor {
@@ -196,9 +196,9 @@ h3:hover .anchor {
 a {
     color: inherit;
     text-decoration: underline;
-    text-decoration-color: var(--default-25);
-    text-decoration-thickness: 0.0875rem;
-    text-underline-offset: 0.1875rem;
+    text-decoration-color: var(--accent-60);
+    text-decoration-thickness: 0.078125rem;
+    text-underline-offset: 0.1875em;
     transition: all 120ms ease-in-out;
 }
 
@@ -253,7 +253,7 @@ ol li {
 }
 
 ol li::marker {
-    color: var(--default-60);
+    color: var(--default-65);
 }
 
 .list-compact li,
@@ -280,8 +280,7 @@ svg.logo:hover {
     transition: color 200ms ease-in-out;
 }
 
-.homepage-header,
-.subpage-header {
+.homepage-header, .subpage-header {
     margin-block: 10.5rem 6rem;
 }
 
@@ -290,7 +289,7 @@ svg.logo:hover {
 }
 
 .prev-next {
-    border-top: 0.03125rem solid var(--default-25);
+    border-top: 0.03125rem solid var(--default-20);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -364,7 +363,7 @@ figure {
 }
 
 figcaption {
-    color: var(--default-60);
+    color: var(--default-65);
     text-align: center;
     margin-block: 1rem;
 }
@@ -416,7 +415,7 @@ figcaption {
 }
 
 .inline-icon svg {
-    color: var(--default-60);
+    color: var(--default-65);
     margin-inline-start: 0.25rem;
     transition: color 120ms ease-in-out;
 }
@@ -447,14 +446,14 @@ figcaption {
 
 .blog-entry .dashed-line {
     flex-grow: 1;
-    border-top: 0.03125rem solid var(--default-25);
+    border-top: 0.03125rem solid var(--default-20);
     min-width: 2rem;
     margin-bottom: 0.5rem;
     transition: border-color 120ms ease-in-out;
 }
 
 .blog-entry .blog-date {
-    color: var(--default-70);
+    color: var(--default-75);
     white-space: nowrap;
     transition: color 120ms ease-in-out;
 }
