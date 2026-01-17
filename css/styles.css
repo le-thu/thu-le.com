@@ -6,7 +6,7 @@
 
 :root {
     color-scheme: light dark;
-    --background: light-dark(#e9e8e2, #1c1b17,);
+    --background: light-dark(#e9e8e2, #1c1b17);
     --default: light-dark(#1c1b17, #d3d1c5);
     --accent: light-dark(#624c35, #a3998f);
     
