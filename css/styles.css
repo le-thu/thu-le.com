@@ -6,15 +6,14 @@
 
 :root {
     color-scheme: light dark;
-    --background: light-dark(#e9f3ed, #111714);
-    --default: light-dark(#184306, #b8d2aa);
-    --accent: light-dark(#2f8f00, #00c900);
+    --background: light-dark(#e9e8e2, #1c1b17,);
+    --default: light-dark(#1c1b17, #d3d1c5);
+    --accent: light-dark(#624c35, #a3998f);
     
     --default-20: hsl(from var(--default) h s l / 20%);
     --default-40: hsl(from var(--default) h s l / 40%);
     --default-65: hsl(from var(--default) h s l / 65%);
     --default-75: hsl(from var(--default) h s l / 75%);
-    --accent-60: hsl(from var(--accent) h s l / 60%);
     --accent-70: hsl(from var(--accent) h s l / 70%);
     
     --font-size-sm: 1.0625rem;   /* 17px base */
@@ -196,8 +195,8 @@ h3:hover .anchor {
 a {
     color: inherit;
     text-decoration: underline;
-    text-decoration-color: var(--accent-60);
-    text-decoration-thickness: 0.078125rem;
+    text-decoration-color: var(--default-40);
+    text-decoration-thickness: 0.0625rem;
     text-underline-offset: 0.1875em;
     transition: all 120ms ease-in-out;
 }
