@@ -33,7 +33,6 @@
     font-family: 'Source Serif 4';
     font-weight: 200 900;
     font-style: normal;
-    font-display: auto;
     src: url('../fonts/SourceSerif4Variable-Roman.ttf.woff2') format('woff2-variations');
 }
 
@@ -41,7 +40,6 @@
     font-family: 'Source Serif 4';
     font-weight: 200 900;
     font-style: italic;
-    font-display: auto;
     src: url('../fonts/SourceSerif4Variable-Italic.ttf.woff2') format('woff2-variations');
 }
 
@@ -98,7 +96,7 @@ h1 {
     margin-block: 4rem 0.25rem;
 }
 
-h1.main-title {
+.main-title {
     text-align: center;
 }
 
