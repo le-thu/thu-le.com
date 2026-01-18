@@ -12,8 +12,8 @@
     
     --default-20: hsl(from var(--default) h s l / 20%);
     --default-40: hsl(from var(--default) h s l / 40%);
-    --default-65: hsl(from var(--default) h s l / 65%);
-    --default-75: hsl(from var(--default) h s l / 75%);
+    --default-60: hsl(from var(--default) h s l / 60%);
+    --default-70: hsl(from var(--default) h s l / 70%);
     --accent-70: hsl(from var(--accent) h s l / 70%);
     
     --font-size-sm: 1.0625rem;   /* 17px base */
@@ -123,13 +123,13 @@ h3 {
 }
 
 .sub-heading {
-    color: var(--default-65);
+    color: var(--default-60);
     font-size: var(--font-size-md);
     margin-block: 0.5rem;
 }
 
 .subhead {
-    color: var(--default-75);
+    color: var(--default-70);
     text-align: center;
     margin-block: 0.5rem;
 }
@@ -153,11 +153,11 @@ h3 {
 }
 
 .secondary {
-    color: var(--default-75);
+    color: var(--default-70);
 }
 
 .subtle {
-    color: var(--default-65);
+    color: var(--default-60);
 }
 
 blockquote {
@@ -168,7 +168,7 @@ blockquote {
 }
 
 blockquote p {
-    color: var(--default-75);
+    color: var(--default-70);
 }
 
 .anchor {
@@ -251,7 +251,7 @@ ol li {
 }
 
 ol li::marker {
-    color: var(--default-65);
+    color: var(--default-60);
 }
 
 .list-compact li,
@@ -361,7 +361,7 @@ figure {
 }
 
 figcaption {
-    color: var(--default-65);
+    color: var(--default-60);
     text-align: center;
     margin-block: 1rem;
 }
@@ -413,7 +413,7 @@ figcaption {
 }
 
 .inline-icon svg {
-    color: var(--default-65);
+    color: var(--default-60);
     margin-inline-start: 0.25rem;
     transition: color 120ms ease-in-out;
 }
@@ -451,7 +451,7 @@ figcaption {
 }
 
 .blog-entry .blog-date {
-    color: var(--default-75);
+    color: var(--default-70);
     white-space: nowrap;
     transition: color 120ms ease-in-out;
 }
