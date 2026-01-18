@@ -22,7 +22,7 @@
     --font-size-xl: 1.625rem;    /* 26px */
     --font-size-2xl: 1.875rem;   /* 30px */
     
-    --letter-spacing-normal: -0.007em;
+    --letter-spacing-normal: -0.008em;
     --letter-spacing-heading: -0.02em;
     --letter-spacing-tight: -0.0275em;
     
@@ -34,7 +34,7 @@
     font-weight: 200 900;
     font-style: normal;
     font-display: auto;
-    src: url('../fonts/SourceSerif4Variable-Roman.otf.woff2') format('woff2-variations');
+    src: url('../fonts/SourceSerif4Variable-Roman.ttf.woff2') format('woff2-variations');
 }
 
 @font-face{
@@ -42,7 +42,7 @@
     font-weight: 200 900;
     font-style: italic;
     font-display: auto;
-    src: url('../fonts/SourceSerif4Variable-Italic.otf.woff2') format('woff2-variations');
+    src: url('../fonts/SourceSerif4Variable-Italic.ttf.woff2') format('woff2-variations');
 }
 
 /* base elements */
@@ -58,7 +58,6 @@ body {
     font-family: 'Source Serif 4', Georgia, Charter, serif;
     font-size: var(--font-size-sm);
     font-weight: 400;
-    font-variation-settings: 'opsz' 17;
     line-height: 1.5;
     letter-spacing: var(--letter-spacing-normal);
     text-wrap: pretty;
@@ -136,7 +135,7 @@ h3 {
 }
 
 .label {
-    font-weight: 540;
+    font-weight: 520;
     font-variation-settings: 'opsz' 8;
     letter-spacing: var(--letter-spacing-heading);
     margin-block: 1.5rem 0.25rem;
