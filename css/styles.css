@@ -509,7 +509,6 @@ a.blog-entry:hover .dashed-line {
         top: -19rem;
         right: 3rem;
         max-width: 210px;
-        transform: rotate(-9deg);
     }
 }
 
@@ -525,7 +524,6 @@ a.blog-entry:hover .dashed-line {
     .profile-image {
         top: -15rem;
         max-width: 160px;
-        transform: rotate(-9deg);
     }
 
     .carousel {
