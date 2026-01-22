@@ -1,0 +1,31 @@
+# Thu Le
+
+> Personal website of Thu Le, a product designer based in Saigon, Vietnam.
+
+Thu Le is a product designer who leads product design at Anduin, a B2B SaaS startup in the private markets space. She has been designing digital products for over six years.
+
+This is her personal website where she shares writing on intentional living, productivity, tools, and everyday life.
+
+## Main sections
+
+- /about: About Thu, how to connect, and site colophon
+- /blog: Personal essays and reflections
+- /now: What she's currently focused on
+- /uses: Tools and software she uses
+- /links: Various links and resources
+- /blogroll: Blogs she follows and recommends
+
+## Notable posts
+
+- /blog/personal-manifesto: Her guiding principles for life and work
+- /blog/why-i-rebuilt-this-site: The story behind starting this blog
+- /blog/how-i-track-my-work-and-life: Her productivity system and tools
+- /blog/on-running: Reflections on running as a practice
+- /blog/things-i-know: Hard-won lessons and beliefs
+- /blog/50-things-i-learned-in-2025: Annual learnings roundup
+
+## Contact
+
+- Website: https://thu-le.com
+- Bluesky: https://bsky.app/profile/thu-le.com
+- GitHub: https://github.com/le-thu
