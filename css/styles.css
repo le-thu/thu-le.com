@@ -7,24 +7,24 @@
 :root {
     color-scheme: light dark;
     --background: light-dark(#e9e8e2, #1c1b17);
-    --default: light-dark(#1c1b17, #d3d1c5);
+    --default: light-dark(#312e26, #d3d1c5);
     --accent: light-dark(#624c35, #a3998f);
     
     --default-20: hsl(from var(--default) h s l / 20%);
+    --default-30: hsl(from var(--default) h s l / 30%);
     --default-40: hsl(from var(--default) h s l / 40%);
     --default-60: hsl(from var(--default) h s l / 60%);
     --default-70: hsl(from var(--default) h s l / 70%);
     --accent-70: hsl(from var(--accent) h s l / 70%);
     
-    --font-size-sm: 1.0625rem;   /* 17px base */
-    --font-size-md: 1.25rem;     /* 20px */
-    --font-size-lg: 1.4375rem;   /* 23px */
-    --font-size-xl: 1.625rem;    /* 26px */
-    --font-size-2xl: 1.875rem;   /* 30px */
+    --font-size-sm: 1rem;       /* 16px base */
+    --font-size-md: 1.1875rem;  /* 19px */
+    --font-size-lg: 1.375rem;   /* 22px */
+    --font-size-xl: 1.5rem;     /* 24px */
+    --font-size-2xl: 1.75rem;   /* 28px */
     
-    --letter-spacing-normal: -0.008em;
-    --letter-spacing-heading: -0.02em;
-    --letter-spacing-tight: -0.0275em;
+    --letter-spacing-normal: -0.005em;
+    --letter-spacing-heading: -0.0175em;
     
     --content-max-width: 40rem;
 }
@@ -92,7 +92,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: var(--font-size-2xl);
-    letter-spacing: var(--letter-spacing-tight);
+    letter-spacing: var(--letter-spacing-heading);
     margin-block: 4rem 0.25rem;
 }
 
@@ -192,7 +192,7 @@ h3:hover .anchor {
 a {
     color: inherit;
     text-decoration: underline;
-    text-decoration-color: var(--default-40);
+    text-decoration-color: var(--default-30);
     text-decoration-thickness: 0.0625rem;
     text-underline-offset: 0.1875em;
     transition: all 120ms ease-in-out;
@@ -234,12 +234,12 @@ ul {
 }
 
 ul li {
-    padding-left: 0.125rem;
+    padding-left: 0.3125rem;
     margin-block: 1rem;
 }
 
 ul li::marker {
-    color: var(--default-40);
+    color: var(--accent-70);
 }
 
 ol li {
