@@ -339,7 +339,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--default-40);
+    color: var(--accent-70);
     border: none;
     height: 5rem;
     font-size: 1rem;
