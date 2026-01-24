@@ -86,7 +86,7 @@ strong {
 h1, h2, h3 {
     max-width: var(--content-max-width);
     font-variation-settings: 'opsz' 10;
-    font-weight: 480;
+    font-weight: 500;
     line-height: 1.25;
 }
 
@@ -145,7 +145,7 @@ h3 {
 
 .overline {
     font-size: var(--font-size-lg);
-    font-weight: 480;
+    font-weight: 500;
     font-variant-numeric: tabular-nums;
     font-variation-settings: 'opsz' 8;
 }
@@ -170,7 +170,7 @@ blockquote p {
 }
 
 .anchor {
-    margin-inline-start: 0.25rem;
+    margin-inline-start: 0.1875rem;
     text-decoration: none;
     color: inherit;
     opacity: 0.25;
@@ -184,7 +184,7 @@ blockquote p {
 
 h2:hover .anchor,
 h3:hover .anchor {
-    opacity: 1;
+    opacity: 0.6;
 }
 
 /* links */
