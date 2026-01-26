@@ -385,6 +385,7 @@ figcaption {
 
 .media-img-tiny {
     max-width: 400px;
+    margin-inline: auto;
 }
 
 .carousel {
@@ -562,11 +563,5 @@ a.blog-entry:hover .dashed-line {
 
     .profile-image {
         display: none;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .minimal-link-container {
-        flex-direction: column;
     }
 }
