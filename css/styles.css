@@ -75,14 +75,13 @@ body {
     line-height: 1.5;
     letter-spacing: var(--letter-spacing-normal);
     text-wrap: pretty;
-    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
 
 img, picture, video, canvas {
     display: block;
     max-inline-size: 100%;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 }
 
 /* typography */
@@ -214,7 +213,7 @@ a {
     text-decoration-color: var(--default-30);
     text-decoration-thickness: 0.0625rem;
     text-underline-offset: 0.1875em;
-    transition: all 120ms ease-in-out;
+    transition: color 120ms ease-in-out, text-decoration-color 120ms ease-in-out;
 }
 
 a:hover,
@@ -289,11 +288,11 @@ svg.logo {
     height: 2rem;
     width: 2rem;
     display: inline-block;
+    transition: color 200ms ease-in-out;
 }
 
 svg.logo:hover {
     color: var(--accent);
-    transition: color 200ms ease-in-out;
 }
 
 .homepage-header, .subpage-header {
@@ -312,14 +311,6 @@ svg.logo:hover {
     max-width: var(--content-max-width);
     margin-inline: auto;
     margin-block: 6rem 0;
-}
-
-.prev-next > :nth-child(1) {
-    grid-column: 1;
-}
-
-.prev-next > :nth-child(2) {
-    grid-column: 2;
 }
 
 .minimal-link-container {
@@ -384,7 +375,7 @@ figcaption {
 }
 
 .media-img-tiny {
-    max-width: 400px;
+    max-width: 25rem;
     margin-inline: auto;
 }
 
@@ -489,9 +480,9 @@ a.blog-entry:hover .dashed-line {
     position: absolute;
     top: -18rem;
     right: 3rem;
-    max-width: 230px;
-    border-radius: 4px;
-    border: 5px solid #fff;
+    max-width: 14.375rem;
+    border-radius: 0.25rem;
+    border: 0.3125rem solid #fff;
     transform: rotate(-9deg);
     transition: transform 200ms ease-in-out;
 }
@@ -525,7 +516,7 @@ a.blog-entry:hover .dashed-line {
     .profile-image {
         top: -19rem;
         right: 3rem;
-        max-width: 210px;
+        max-width: 13.125rem;
     }
 }
 
@@ -540,7 +531,7 @@ a.blog-entry:hover .dashed-line {
 
     .profile-image {
         top: -15rem;
-        max-width: 160px;
+        max-width: 10rem;
     }
 
     .carousel {
@@ -548,7 +539,7 @@ a.blog-entry:hover .dashed-line {
     }
 
     .carousel .media-img-tiny img {
-        max-width: 300px;
+        max-width: 18.75rem;
     }
 }
 
@@ -559,7 +550,7 @@ a.blog-entry:hover .dashed-line {
 
     .prev-next {
         gap: 2rem;
-}
+    }
 
     .profile-image {
         display: none;
