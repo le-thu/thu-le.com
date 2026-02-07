@@ -59,12 +59,12 @@ a, button, input, label, select, textarea, [tabindex] {
     src: url('../fonts/SourceSerif4Variable-Italic.ttf.woff2') format('woff2-variations');
 }
 
-/* base elements */
-
 ::selection {
     background-color: var(--default-20);
     color: var(--default);
 }
+
+/* base elements */
 
 body {
     background-color: var(--background);
