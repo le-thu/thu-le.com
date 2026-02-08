@@ -19,6 +19,7 @@ This is her personal website where she shares writing on intentional living, pro
 
 - /blog/personal-manifesto: Her guiding principles for life and work
 - /blog/why-i-rebuilt-this-site: The story behind starting this blog
+- /blog/how-i-track-my-finances: Her multi-layered finance tracking system
 - /blog/how-i-track-my-work-and-life: Her productivity system and tools
 - /blog/on-running: Reflections on running as a practice
 - /blog/things-i-know: Hard-won lessons and beliefs
