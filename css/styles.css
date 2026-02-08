@@ -4,20 +4,17 @@
     padding: 0;
 }
 
+html {
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
 a, button, input, label, select, textarea, [tabindex] {
     touch-action: manipulation;
 }
 
 [hidden] {
     display: none !important;
-}
-
-:focus:not(:focus-visible) {
-    outline: none;
-}
-
-[disabled] {
-    cursor: not-allowed;
 }
 
 :root {
@@ -28,7 +25,6 @@ a, button, input, label, select, textarea, [tabindex] {
     
     --default-20: hsl(from var(--default) h s l / 20%);
     --default-30: hsl(from var(--default) h s l / 30%);
-    --default-40: hsl(from var(--default) h s l / 40%);
     --default-60: hsl(from var(--default) h s l / 60%);
     --default-70: hsl(from var(--default) h s l / 70%);
     --accent-70: hsl(from var(--accent) h s l / 70%);
@@ -78,10 +74,14 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-img, picture, video, canvas {
+img, picture, audio, video, canvas {
     display: block;
     max-inline-size: 100%;
     border-radius: 0.25rem;
+}
+
+svg:not([fill]) {
+    fill: currentColor;
 }
 
 /* typography */
@@ -89,6 +89,10 @@ img, picture, video, canvas {
 p, ul, ol, li, figcaption, footer {
     max-width: var(--content-max-width);
     margin-inline: auto;
+}
+
+p, blockquote, figcaption, li {
+    hanging-punctuation: first allow-end last;
 }
 
 p {
@@ -317,7 +321,6 @@ svg.logo:hover {
     max-width: var(--content-max-width);
     margin-inline: auto;
     display: flex;
-    justify-content: flex-start;
     gap: 1rem;
     margin-block: 1rem;
 }
@@ -445,7 +448,6 @@ figcaption {
 
 .blog-entry .links-title {
     margin: 0;
-    text-wrap: wrap;
 }
 
 .blog-entry .dashed-line {
