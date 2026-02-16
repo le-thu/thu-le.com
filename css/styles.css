@@ -317,7 +317,7 @@ svg.logo:hover {
     padding-top: 1rem;
 }
 
-aside {
+.post-navigation aside {
     border-bottom: 0.03125rem solid var(--default-20);
     margin-bottom: 1rem;
     padding-bottom: 2.5rem;
