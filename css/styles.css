@@ -206,8 +206,7 @@ blockquote p {
     }
 }
 
-h2:hover .anchor,
-h3:hover .anchor {
+:is(h2, h3):hover .anchor {
     opacity: 0.6;
 }
 
@@ -477,10 +476,8 @@ figcaption {
     transition: color 120ms ease-in-out;
 }
 
-a.blog-entry:hover .links-title,
-a.blog-entry:hover .blog-date,
-a.blog-entry:hover .inline-icon svg {
-    color: var(--accent);
+a.blog-entry:hover :is(.links-title, .blog-date, .inline-icon svg) {
+  color: var(--accent);
 }
 
 a.blog-entry:hover .dashed-line {
