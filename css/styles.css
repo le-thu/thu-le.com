@@ -110,11 +110,11 @@ h1, h2, h3 {
     font-variation-settings: 'opsz' 10;
     font-weight: 500;
     line-height: 1.25;
+    letter-spacing: var(--letter-spacing-heading);
 }
 
 h1 {
     font-size: var(--font-size-2xl);
-    letter-spacing: var(--letter-spacing-heading);
     margin-block: 4rem 0.25rem;
 }
 
@@ -124,13 +124,11 @@ h1 {
 
 h2 {
     font-size: var(--font-size-xl);
-    letter-spacing: var(--letter-spacing-heading);
     margin-block: 4rem 1rem;
 }
 
 h3 {
     font-size: var(--font-size-lg);
-    letter-spacing: var(--letter-spacing-heading);
     margin-block: 3rem 1rem;
 }
 
@@ -236,11 +234,6 @@ a:focus-visible {
 .minimal-link,
 .links-title a {
     text-decoration: none;
-}
-
-.minimal-link:hover,
-.links-title a:hover {
-    color: var(--accent);
 }
 
 /* lists */
@@ -456,32 +449,34 @@ figcaption {
     max-width: var(--content-max-width);
     margin-inline: auto;
     margin-block: 1.5rem;
+
+    & .links-title {
+        margin: 0;
+    }
+
+    & .dashed-line {
+        flex-grow: 1;
+        border-top: 0.03125rem solid var(--default-20);
+        min-width: 2rem;
+        margin-bottom: 0.5rem;
+        transition: border-color 120ms ease-in-out;
+    }
+
+    & .blog-date {
+        color: var(--default-70);
+        white-space: nowrap;
+        transition: color 120ms ease-in-out;
+    }
 }
 
-.blog-entry .links-title {
-    margin: 0;
-}
+a.blog-entry:hover {
+    & :is(.links-title, .blog-date, .inline-icon svg) {
+        color: var(--accent);
+    }
 
-.blog-entry .dashed-line {
-    flex-grow: 1;
-    border-top: 0.03125rem solid var(--default-20);
-    min-width: 2rem;
-    margin-bottom: 0.5rem;
-    transition: border-color 120ms ease-in-out;
-}
-
-.blog-entry .blog-date {
-    color: var(--default-70);
-    white-space: nowrap;
-    transition: color 120ms ease-in-out;
-}
-
-a.blog-entry:hover :is(.links-title, .blog-date, .inline-icon svg) {
-  color: var(--accent);
-}
-
-a.blog-entry:hover .dashed-line {
-    border-color: var(--accent-70);
+    & .dashed-line {
+        border-color: var(--accent-70);
+    }
 }
 
 .about-container {
@@ -495,12 +490,12 @@ a.blog-entry:hover .dashed-line {
     max-width: 14.375rem;
     border-radius: 0.25rem;
     border: 0.3125rem solid #fff;
-    transform: rotate(-9deg);
-    transition: transform 200ms ease-in-out;
+    rotate: -9deg;
+    transition: rotate 200ms ease-in-out;
 }
 
 .profile-image:hover {
-    transform: rotate(-10deg);
+    rotate: -10deg;
 }
 
 /* animations */
@@ -514,11 +509,11 @@ a.blog-entry:hover .dashed-line {
 @keyframes slideUp {
     from {
         opacity: 0;
-        transform: translateY(2rem);
+        translate: 0 2rem;
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        translate: 0;
     }
 }
 
@@ -527,7 +522,6 @@ a.blog-entry:hover .dashed-line {
 @media screen and (max-width: 1080px) {
     .profile-image {
         top: -19rem;
-        right: 3rem;
         max-width: 13.125rem;
     }
 }
