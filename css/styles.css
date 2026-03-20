@@ -490,7 +490,7 @@ a.blog-entry:hover {
     top: -18rem;
     right: 3rem;
     max-width: 14.375rem;
-    border-radius: 0.25rem;
+    border-radius: 0.625rem;
     border: 0.3125rem solid #fff;
     rotate: -9deg;
     transition: rotate 200ms ease-in-out;
