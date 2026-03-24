@@ -37,7 +37,7 @@ a, button, input, label, select, textarea, [tabindex] {
     
     --letter-spacing-normal: -0.005em;
     --letter-spacing-heading: -0.0175em;
-    --letter-spacing-label: 0.1em;
+    --letter-spacing-label: 0.07em;
     
     --content-max-width: 40rem;
 }
@@ -312,8 +312,6 @@ svg.logo:hover {
 }
 
 .post-navigation aside {
-    border-bottom: 0.03125rem solid var(--default-20);
-    margin-bottom: 1rem;
     padding-bottom: 2.5rem;
 }
 
