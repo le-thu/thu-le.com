@@ -517,6 +517,25 @@ a.blog-entry:hover {
     }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  figure {
+    animation: fadeIn linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+  }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        translate: 0 1rem;
+    }
+    to {
+        opacity: 1;
+        translate: 0;
+    }
+}
+
 /* media queries */
 
 @media screen and (max-width: 1080px) {
