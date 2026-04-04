@@ -502,14 +502,14 @@ a.blog-entry:hover {
 
 @media (prefers-reduced-motion: no-preference) {
   header, main, footer {
-    animation: slideUp 600ms ease-out forwards;
+    animation: slideUp 400ms ease-out forwards;
   }
 }
 
 @keyframes slideUp {
     from {
         opacity: 0;
-        translate: 0 2rem;
+        translate: 0 1.5rem;
     }
     to {
         opacity: 1;
