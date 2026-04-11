@@ -19,7 +19,7 @@ a, button, input, label, select, textarea, [tabindex] {
 
 :root {
     color-scheme: light dark;
-    --background: light-dark(#e9e8e2, #1c1b17);
+    --background: light-dark(#F0EFE8, #1C1B19);
     --default: light-dark(#312e26, #d3d1c5);
     --accent: light-dark(#624c35, #a3998f);
     
