@@ -35,7 +35,7 @@ a, button, input, label, select, textarea, [tabindex] {
     --font-size-xl: 1.5rem;     /* 24px */
     --font-size-2xl: 1.75rem;   /* 28px */
     
-    --letter-spacing-normal: -0.005em;
+    --letter-spacing-normal: -0.0125em;
     --letter-spacing-heading: -0.0175em;
     --letter-spacing-label: 0.07em;
     
@@ -69,6 +69,7 @@ body {
     font-family: 'Source Serif 4', Georgia, Charter, serif;
     font-size: var(--font-size-sm);
     font-weight: 400;
+    font-variation-settings: 'opsz' 15;
     line-height: 1.5;
     letter-spacing: var(--letter-spacing-normal);
     text-wrap: pretty;
@@ -107,7 +108,7 @@ strong {
 h1, h2, h3 {
     max-width: var(--content-max-width);
     margin-inline: auto;
-    font-variation-settings: 'opsz' 10;
+    font-variation-settings: 'opsz' 9;
     font-weight: 500;
     line-height: 1.25;
     letter-spacing: var(--letter-spacing-heading);
@@ -136,7 +137,7 @@ h3 {
     font-size: var(--font-size-md);
     font-weight: 480;
     line-height: 1.375;
-    font-variation-settings: 'opsz' 10;
+    font-variation-settings: 'opsz' 9;
     letter-spacing: var(--letter-spacing-heading);
 }
 
