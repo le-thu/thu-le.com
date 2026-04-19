@@ -19,14 +19,15 @@ a, button, input, label, select, textarea, [tabindex] {
 
 :root {
     color-scheme: light dark;
-    --background: light-dark(#FBFAF9, #1C1B19);
-    --default: light-dark(#312e26, #d3d1c5);
-    --accent: light-dark(#624c35, #a3998f);
+    --background: light-dark(#FBF9F9, #1C1B19);
+    --default: light-dark(#403B3B, #CFCEC9);
+    --accent: light-dark(#3D2929, #F8F7F7);
     
     --default-20: hsl(from var(--default) h s l / 20%);
     --default-30: hsl(from var(--default) h s l / 30%);
     --default-60: hsl(from var(--default) h s l / 60%);
     --default-70: hsl(from var(--default) h s l / 70%);
+    --accent-10: hsl(from var(--accent) h s l / 10%);
     --accent-70: hsl(from var(--accent) h s l / 70%);
     
     --font-size-sm: 1rem;       /* 16px base */
@@ -37,7 +38,6 @@ a, button, input, label, select, textarea, [tabindex] {
     
     --letter-spacing-normal: -0.0125em;
     --letter-spacing-heading: -0.0175em;
-    --letter-spacing-label: 0.07em;
     
     --content-max-width: 40rem;
 }
@@ -57,8 +57,8 @@ a, button, input, label, select, textarea, [tabindex] {
 }
 
 ::selection {
-    background-color: var(--default-20);
-    color: var(--default);
+    background-color: var(--accent-10);
+    color: var(--accent);
 }
 
 /* base elements */
@@ -150,14 +150,12 @@ h3 {
 .subhead {
     color: var(--default-70);
     text-align: center;
-    margin-block: 0.5rem;
+    margin-block: 1rem;
 }
 
 .label {
     font-weight: 500;
     font-variation-settings: 'opsz' 8;
-    letter-spacing: var(--letter-spacing-label);
-    font-variant-caps: all-small-caps;
     margin-block: 1.5rem 0.25rem;
 }
 
@@ -285,7 +283,7 @@ p.compact {
 }
 
 svg.logo {
-    color: var(--default);
+    color: var(--default-70);
     height: 2rem;
     width: 2rem;
     display: inline-block;
@@ -327,7 +325,7 @@ svg.logo:hover {
     max-width: var(--content-max-width);
     margin-inline: auto;
     display: flex;
-    gap: 1rem;
+    gap: 1.25rem;
     margin-block: 1rem;
 }
 
@@ -339,14 +337,15 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     padding-block: 4rem 0;
 }
 
 .footer-links {
+    color: var(--default-70);
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.25rem;
 }
 
 .separator {
@@ -489,8 +488,7 @@ a.blog-entry:hover {
     top: -18rem;
     right: 3rem;
     max-width: 14.375rem;
-    border-radius: 0.625rem;
-    border: 0.3125rem solid #fff;
+    border-radius: 0.375rem;
     rotate: -9deg;
     transition: rotate 200ms ease-in-out;
 }
