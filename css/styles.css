@@ -40,6 +40,10 @@ a, button, input, label, select, textarea, [tabindex] {
     --letter-spacing-heading: -0.025em;
     
     --content-max-width: 40rem;
+
+    --enter-duration: 800ms;
+    --enter-ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --enter-step: 80ms;
 }
 
 @font-face{
@@ -502,7 +506,7 @@ a.blog-entry:hover {
 @media (prefers-reduced-motion: no-preference) {
     /* Containers slide+fade without blur (so they don't stack on their kids) */
     header, main {
-        animation: slideUp 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: slideUp var(--enter-duration) var(--enter-ease) both;
     }
 
     /* Content elements get the blur-to-focus treatment */
@@ -510,30 +514,47 @@ a.blog-entry:hover {
     .homepage-header > *,
     .subpage-header > *,
     main > * {
-        animation: slideUpBlur 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: slideUpBlur var(--enter-duration) var(--enter-ease) both;
     }
 
-    /* Cascade timing */
+    /* Cascade timing (in --enter-step increments) */
     header { animation-delay: 0ms; }
 
     .homepage-header > *:nth-child(1),
     .subpage-header > *:nth-child(1) { animation-delay: 0ms; }
     .homepage-header > *:nth-child(2),
-    .subpage-header > *:nth-child(2) { animation-delay: 80ms; }
-    .subpage-header > *:nth-child(3) { animation-delay: 160ms; }
+    .subpage-header > *:nth-child(2) { animation-delay: calc(var(--enter-step) * 1); }
+    .subpage-header > *:nth-child(3) { animation-delay: calc(var(--enter-step) * 2); }
 
-    main { animation-delay: 80ms; }
-    main > *:nth-child(1) { animation-delay: 160ms; }
-    main > *:nth-child(2) { animation-delay: 240ms; }
-    main > *:nth-child(3) { animation-delay: 320ms; }
+    main { animation-delay: calc(var(--enter-step) * 1); }
+    main > *:nth-child(1) { animation-delay: calc(var(--enter-step) * 2); }
+    main > *:nth-child(2) { animation-delay: calc(var(--enter-step) * 3); }
+    main > *:nth-child(3) { animation-delay: calc(var(--enter-step) * 4); }
 
-    footer { animation-delay: 320ms; }
+    footer { animation-delay: calc(var(--enter-step) * 4); }
 
     /* Carousel wrapper: skip blur to avoid stacking with the scroll-driven
        blur on figures inside */
     .subpage-header > *:has(.carousel) {
         animation-name: slideUp;
     }
+
+    /* About page: cascade profile image and sections independently */
+    .about-container {
+        animation-name: slideUp;
+    }
+
+    .profile-image {
+        animation: slideUpBlur var(--enter-duration) var(--enter-ease) both;
+        animation-delay: calc(var(--enter-step) * 2);
+    }
+
+    .about-container > section {
+        animation: slideUpBlur var(--enter-duration) var(--enter-ease) both;
+    }
+    .about-container > section:nth-of-type(1) { animation-delay: calc(var(--enter-step) * 3); }
+    .about-container > section:nth-of-type(2) { animation-delay: calc(var(--enter-step) * 4); }
+    .about-container > section:nth-of-type(3) { animation-delay: calc(var(--enter-step) * 5); }
 }
 
 @keyframes slideUp {
