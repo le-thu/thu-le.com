@@ -30,7 +30,7 @@ a, button, input, label, select, textarea, [tabindex] {
     --accent-10: hsl(from var(--accent) h s l / 10%);
     --accent-70: hsl(from var(--accent) h s l / 70%);
     
-    --font-size-sm: 1rem;       /* 16px base */
+    --font-size-base: 1rem;     /* 16px base */
     --font-size-md: 1.1875rem;  /* 19px */
     --font-size-lg: 1.375rem;   /* 22px */
     --font-size-xl: 1.5rem;     /* 24px */
@@ -71,7 +71,7 @@ body {
     background-color: var(--background);
     color: var(--default);
     font-family: 'Source Serif 4', Georgia, Charter, serif;
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
     font-weight: 400;
     font-variation-settings: 'opsz' 15;
     line-height: 1.5;
@@ -229,7 +229,7 @@ a:focus-visible {
 }
 
 a:focus-visible {
-    outline: 0.09375rem solid var(--accent-70);
+    outline: 0.125rem solid var(--accent-70);
     outline-offset: 0.125rem;
     border-radius: 0.125rem;
 }
@@ -307,7 +307,7 @@ svg.logo:hover {
 }
 
 .post-navigation {
-    border-top: 0.03125rem solid var(--default-20);
+    border-top: 0.0625rem solid var(--default-20);
     margin-block: 6rem 0;
     margin-inline: auto;
     max-width: var(--content-max-width);
@@ -460,7 +460,7 @@ figcaption {
 
     & .dashed-line {
         flex-grow: 1;
-        border-top: 0.03125rem solid var(--default-20);
+        border-top: 0.0625rem solid var(--default-20);
         min-width: 2rem;
         margin-bottom: 0.5rem;
         transition: border-color 120ms ease-in-out;
