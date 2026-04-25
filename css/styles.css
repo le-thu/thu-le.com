@@ -606,7 +606,7 @@ a.blog-entry:hover {
     }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 744px) {
     body {
         margin-inline: 1.5rem;
     }
@@ -629,7 +629,7 @@ a.blog-entry:hover {
     }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 430px) {
     .blog-entry .dashed-line {
         visibility: hidden;
     }
