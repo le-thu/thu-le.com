@@ -39,7 +39,7 @@ a, button, input, label, select, textarea, [tabindex] {
     --letter-spacing-normal: -0.0125em;
     --letter-spacing-heading: -0.025em;
     
-    --content-max-width: 40rem;
+    --content-max-width: 35rem;
 
     --enter-duration: 800ms;
     --enter-ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -191,7 +191,7 @@ blockquote {
 }
 
 blockquote p {
-    color: var(--default-70);
+    color: var(--accent);
 }
 
 .anchor {
