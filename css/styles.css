@@ -500,15 +500,27 @@ a.blog-entry:hover {
 /* animations */
 
 @media (prefers-reduced-motion: no-preference) {
-  header, main, footer {
-    animation: slideUp 400ms ease-out forwards;
-  }
+    header, footer, main > * {
+        animation: slideUpBlur 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+
+    main {
+        animation: slideUp 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation-delay: 80ms;
+    }
+
+    header { animation-delay: 0ms; }
+    footer { animation-delay: 320ms; }
+
+    main > *:nth-child(1) { animation-delay: 160ms; }
+    main > *:nth-child(2) { animation-delay: 240ms; }
+    main > *:nth-child(3) { animation-delay: 320ms; }
 }
 
 @keyframes slideUp {
     from {
         opacity: 0;
-        translate: 0 1.5rem;
+        translate: 0 1rem;
     }
     to {
         opacity: 1;
@@ -516,12 +528,25 @@ a.blog-entry:hover {
     }
 }
 
+@keyframes slideUpBlur {
+    from {
+        opacity: 0;
+        translate: 0 1rem;
+        filter: blur(5px);
+    }
+    to {
+        opacity: 1;
+        translate: 0;
+        filter: blur(0);
+    }
+}
+
 @media (prefers-reduced-motion: no-preference) {
-  figure {
-    animation: fadeIn linear both;
-    animation-timeline: view();
-    animation-range: entry 0% entry 100%;
-  }
+    figure {
+        animation: fadeIn linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 100%;
+    }
 }
 
 @keyframes fadeIn {
