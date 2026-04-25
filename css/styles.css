@@ -584,15 +584,6 @@ a.blog-entry:hover {
         animation-range: entry 0% entry 100%;
     }
 
-    .carousel figure {
-        animation: carouselFocus linear both;
-        animation-timeline: view(inline);
-        animation-range: entry 0% cover 50%;
-    }
-
-    .carousel figure:nth-last-child(-n+2) {
-        animation-range: entry 0% entry 100%;
-    }
 }
 
 @keyframes fadeIn {
@@ -603,15 +594,6 @@ a.blog-entry:hover {
     to {
         opacity: 1;
         translate: 0;
-    }
-}
-
-@keyframes carouselFocus {
-    from {
-        filter: blur(6px);
-    }
-    to {
-        filter: blur(0);
     }
 }
 
