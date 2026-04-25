@@ -497,10 +497,6 @@ a.blog-entry:hover {
     transition: rotate 200ms ease-in-out;
 }
 
-.profile-image:hover {
-    rotate: -10deg;
-}
-
 /* animations */
 
 @media (prefers-reduced-motion: no-preference) {
@@ -594,8 +590,7 @@ a.blog-entry:hover {
         animation-range: entry 0% cover 50%;
     }
 
-    /* Last image can't reach cover 50% before scroll ends, so clear it sooner */
-    .carousel figure:last-child {
+    .carousel figure:nth-last-child(-n+2) {
         animation-range: entry 0% entry 100%;
     }
 }
@@ -652,13 +647,9 @@ a.blog-entry:hover {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 440px) {
     .blog-entry .dashed-line {
         visibility: hidden;
-    }
-
-    .prev-next {
-        gap: 2rem;
     }
 
     .profile-image {
