@@ -37,7 +37,7 @@ a, button, input, label, select, textarea, [tabindex] {
     --font-size-2xl: 1.75rem;   /* 28px */
     
     --letter-spacing-normal: -0.0125em;
-    --letter-spacing-heading: -0.0175em;
+    --letter-spacing-heading: -0.025em;
     
     --content-max-width: 40rem;
 }
@@ -397,7 +397,7 @@ figcaption {
     scrollbar-width: none;
 }
 
-.carousel:focus {
+.carousel:focus-visible {
     outline: 0.125rem solid var(--accent);
     outline-offset: 0.25rem;
     border-radius: 0.25rem;
@@ -500,21 +500,40 @@ a.blog-entry:hover {
 /* animations */
 
 @media (prefers-reduced-motion: no-preference) {
-    header, footer, main > * {
+    /* Containers slide+fade without blur (so they don't stack on their kids) */
+    header, main {
+        animation: slideUp 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+
+    /* Content elements get the blur-to-focus treatment */
+    footer,
+    .homepage-header > *,
+    .subpage-header > *,
+    main > * {
         animation: slideUpBlur 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     }
 
-    main {
-        animation: slideUp 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-        animation-delay: 80ms;
-    }
-
+    /* Cascade timing */
     header { animation-delay: 0ms; }
-    footer { animation-delay: 320ms; }
 
+    .homepage-header > *:nth-child(1),
+    .subpage-header > *:nth-child(1) { animation-delay: 0ms; }
+    .homepage-header > *:nth-child(2),
+    .subpage-header > *:nth-child(2) { animation-delay: 80ms; }
+    .subpage-header > *:nth-child(3) { animation-delay: 160ms; }
+
+    main { animation-delay: 80ms; }
     main > *:nth-child(1) { animation-delay: 160ms; }
     main > *:nth-child(2) { animation-delay: 240ms; }
     main > *:nth-child(3) { animation-delay: 320ms; }
+
+    footer { animation-delay: 320ms; }
+
+    /* Carousel wrapper: skip blur to avoid stacking with the scroll-driven
+       blur on figures inside */
+    .subpage-header > *:has(.carousel) {
+        animation-name: slideUp;
+    }
 }
 
 @keyframes slideUp {
@@ -547,6 +566,17 @@ a.blog-entry:hover {
         animation-timeline: view();
         animation-range: entry 0% entry 100%;
     }
+
+    .carousel figure {
+        animation: carouselFocus linear both;
+        animation-timeline: view(inline);
+        animation-range: entry 0% cover 50%;
+    }
+
+    /* Last image can't reach cover 50% before scroll ends, so clear it sooner */
+    .carousel figure:last-child {
+        animation-range: entry 0% entry 100%;
+    }
 }
 
 @keyframes fadeIn {
@@ -557,6 +587,15 @@ a.blog-entry:hover {
     to {
         opacity: 1;
         translate: 0;
+    }
+}
+
+@keyframes carouselFocus {
+    from {
+        filter: blur(6px);
+    }
+    to {
+        filter: blur(0);
     }
 }
 
