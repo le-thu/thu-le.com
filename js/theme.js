@@ -34,8 +34,6 @@
         override.setAttribute('content', theme === 'dark' ? '#1C1B19' : '#FBF9F9');
     }
 
-    root.classList.add('no-transition');
-
     try {
         var saved = localStorage.getItem(STORAGE_KEY);
         if (saved === 'light' || saved === 'dark') {
@@ -46,11 +44,6 @@
 
     document.addEventListener('DOMContentLoaded', function () {
         updateThemeColorMeta(root.dataset.theme);
-        requestAnimationFrame(function () {
-            requestAnimationFrame(function () {
-                root.classList.remove('no-transition');
-            });
-        });
 
         var buttons = document.querySelectorAll('.theme-toggle');
         buttons.forEach(function (button) {
