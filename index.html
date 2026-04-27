@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light dark">
+
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FBF9F9">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1C1B19">
     
+    <script src="/js/theme.js"></script>
     <link rel="stylesheet" href="/css/styles.css">
     
     <link rel="dns-prefetch" href="https://cloud.umami.is">
@@ -139,20 +140,26 @@
                 <a class="minimal-link" href="/blog">View all blog posts</a>
             </p>
         </section>
-        <section class="links-page">
-            <h2>
-                Connect
-            </h2>
-            <div class="minimal-link-container">
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="top-nav-links">
                 <a class="minimal-link" href="/feed.xml" target="_blank" rel="noopener">RSS</a>
                 <a class="minimal-link" href="mailto:thu@thu-le.com">Email</a>
                 <a class="minimal-link" href="https://bsky.app/profile/thu-le.com" target="_blank" rel="noopener">Bluesky</a>
                 <a class="minimal-link" href="https://literal.club/tple" target="_blank" rel="noopener">Literal</a>
                 <a class="minimal-link" href="https://letterboxd.com/tple/films/diary/" target="_blank" rel="noopener">Letterboxd</a>
             </div>
-        </section>
-    </main>
-    <footer>
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <svg class="theme-toggle-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.8742 5.46667C17.1326 5.14167 16.8742 4.93334 16.3909 5.10834C14.0207 6.1523 11.8562 7.61134 9.99922 9.41667C9.70756 9.67501 9.63256 10.1583 10.1409 10.05C11.8826 8.82501 15.2576 6.41667 16.8742 5.46667Z" fill="currentColor"/>
+                    <path d="M11.1522 5.90828C12.2479 5.15186 13.2868 4.3163 14.2606 3.40828C14.4356 3.25828 14.2189 2.80828 13.8022 3.05828C12.3374 3.84745 10.9862 4.83139 9.78556 5.98328C9.51889 6.29162 9.46889 6.71662 9.78556 6.64162C10.2856 6.33328 10.6522 6.23328 11.1522 5.90828Z" fill="currentColor"/>
+                    <path d="M19.351 7.25C17.6843 2.94167 12.1843 -0.108329 8.0343 0.783338C2.8093 1.93334 -1.9407 9.7 0.834296 15C1.46681 16.0808 2.3211 17.0154 3.3409 17.7422C4.36071 18.469 5.52291 18.9715 6.75096 19.2167C9.25096 19.75 16.5676 19.0417 19.0426 14.5667C19.6255 13.4437 19.9552 12.2066 20.0084 10.9425C20.0617 9.67844 19.8373 8.41803 19.351 7.25ZM2.1843 6.84167C2.86455 5.56634 3.80378 4.44723 4.94177 3.55606C6.07977 2.6649 7.39141 2.02135 8.79263 1.66667C8.33071 7.32871 8.55736 13.0259 9.46763 18.6333H9.2843C2.06763 18.8583 -1.3157 13.1583 2.1843 6.84167ZM18.4343 14.25C16.451 17.9917 10.3926 18.5333 10.3093 18.5417H10.051C9.7593 12.9167 9.21763 5.69167 9.3343 1.54167C13.2593 1.06667 17.2426 5.28334 17.2593 5.275C17.8302 6.11933 18.3371 7.00513 18.776 7.925C19.1625 8.94497 19.3318 10.0344 19.273 11.1236C19.2141 12.2127 18.9285 13.2776 18.4343 14.25Z" fill="currentColor"/>
+                    <path d="M18.3338 10.9833C13.9922 13.1167 12.8172 14.5 10.3338 16.1417C10.0088 16.35 10.1422 16.9083 10.4338 16.7333C14.6672 14.6417 16.1505 12.8 18.5838 11.4667C18.6212 11.4538 18.6553 11.4331 18.6839 11.4058C18.7125 11.3786 18.7349 11.3456 18.7496 11.3089C18.7643 11.2722 18.7709 11.2328 18.769 11.1934C18.7671 11.1539 18.7567 11.1154 18.7386 11.0803C18.7204 11.0452 18.695 11.0145 18.6639 10.9901C18.6328 10.9658 18.5968 10.9484 18.5584 10.9392C18.52 10.93 18.48 10.9292 18.4413 10.9368C18.4025 10.9444 18.3659 10.9603 18.3338 10.9833Z" fill="currentColor"/>
+                    <path d="M18.2327 8.2833C18.6493 7.9583 18.3993 7.6833 17.9243 7.7833C15.118 9.05298 12.4992 10.7017 10.141 12.6833C9.85768 12.9916 9.89935 13.45 10.3327 13.2833C12.9827 11.3416 17.191 8.91663 18.2327 8.2833Z" fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
     </footer>
 </body>
 
