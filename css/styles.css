@@ -300,11 +300,11 @@ svg.site-mark:hover {
 }
 
 .subpage-header {
-    margin-block: 8rem 6rem;
+    margin-block: 7rem 6rem;
 }
 
 .blogpage-header {
-    margin-block: 8rem 4rem;
+    margin-block: 7rem 4rem;
 }
 
 .post-navigation {
@@ -353,11 +353,11 @@ footer {
 }
 
 .top-nav {
-    padding-block: 2rem;
+    padding-block: 1.5rem;
+    padding-inline: 2rem;
 }
 
 .top-nav-inner {
-    max-width: var(--content-max-width);
     margin-inline: auto;
     display: flex;
     align-items: center;
@@ -542,8 +542,8 @@ a.blog-entry:hover {
 
 .profile-image {
     position: absolute;
-    top: -18rem;
-    right: 3rem;
+    top: -15rem;
+    right: 5rem;
     max-width: 14.375rem;
     border-radius: 0.375rem;
     rotate: -9deg;
@@ -653,7 +653,7 @@ a.blog-entry:hover {
 @media screen and (max-width: 1080px) {
     .profile-image {
         top: -19rem;
-        max-width: 13.125rem;
+        max-width: 12.5rem;
     }
 }
 
@@ -663,8 +663,8 @@ a.blog-entry:hover {
     }
 
     .top-nav {
-    padding-block: 1.5rem;
-}
+        padding-inline: 0;
+    }
 
     .homepage-header, .subpage-header, .blogpage-header {
         margin-block: 5rem 4rem;
@@ -672,6 +672,7 @@ a.blog-entry:hover {
 
     .profile-image {
         top: -15rem;
+        right: 2rem;
         max-width: 10rem;
     }
 
