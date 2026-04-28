@@ -449,7 +449,7 @@ figcaption {
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
-    padding: 0 1.5rem 0 0;
+    padding: 0 1rem 0 0;
     margin-block: 2rem 0;
     scrollbar-width: none;
 }
@@ -472,7 +472,7 @@ figcaption {
     scroll-snap-align: start;
     scroll-snap-stop: always;
     align-items: baseline;
-    padding: 0 0 0 1.5rem;
+    padding: 0 0 0 1rem;
     margin-block: 1.5rem;
 }
 
@@ -603,6 +603,8 @@ a.blog-entry:hover {
     .about-container > section:nth-of-type(1) { animation-delay: calc(var(--enter-step) * 3); }
     .about-container > section:nth-of-type(2) { animation-delay: calc(var(--enter-step) * 4); }
     .about-container > section:nth-of-type(3) { animation-delay: calc(var(--enter-step) * 5); }
+    .about-container > section:nth-of-type(4) { animation-delay: calc(var(--enter-step) * 6); }
+    .about-container > section:nth-of-type(5) { animation-delay: calc(var(--enter-step) * 7); }
 }
 
 @keyframes slideUp {
@@ -685,7 +687,19 @@ a.blog-entry:hover {
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 440px) {
+    body {
+        margin-inline: 1rem;
+    }
+
+    .top-nav {
+        padding-block: 1rem;
+    }
+
+    .carousel {
+        margin-inline: -1rem;
+    }
+
     .blog-entry .dashed-line {
         visibility: hidden;
     }
