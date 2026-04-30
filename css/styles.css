@@ -306,7 +306,7 @@ svg.site-mark:hover {
 }
 
 .post-navigation {
-    border-top: 0.0625rem solid var(--default-20);
+    border-top: 0.05rem solid var(--default-20);
     margin-block: 6rem 0;
     margin-inline: auto;
     max-width: var(--content-max-width);
@@ -509,7 +509,7 @@ figcaption {
 
     & .dashed-line {
         flex-grow: 1;
-        border-top: 0.0625rem solid var(--default-20);
+        border-top: 0.05rem solid var(--default-20);
         min-width: 2rem;
         margin-bottom: 0.5rem;
         transition: border-color 120ms ease-in-out;
