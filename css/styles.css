@@ -237,8 +237,7 @@ a:focus-visible {
     border-radius: 0.125rem;
 }
 
-.minimal-link,
-.links-title a {
+.minimal-link {
     text-decoration: none;
 }
 
