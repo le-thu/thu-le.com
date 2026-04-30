@@ -552,12 +552,10 @@ a.blog-entry:hover {
 /* animations */
 
 @media (prefers-reduced-motion: no-preference) {
-    /* Containers slide+fade without blur (so they don't stack on their kids) */
     header, main {
         animation: slideUp var(--enter-duration) var(--enter-ease) both;
     }
 
-    /* Content elements get the blur-to-focus treatment */
     footer,
     .top-nav,
     .homepage-header > *,
@@ -566,7 +564,6 @@ a.blog-entry:hover {
         animation: slideUpBlur var(--enter-duration) var(--enter-ease) both;
     }
 
-    /* Cascade timing (in --enter-step increments) */
     .top-nav { animation-delay: 0ms; }
     header { animation-delay: 0ms; }
 
