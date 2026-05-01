@@ -369,6 +369,10 @@ footer {
     color: var(--default-70);
 }
 
+.top-nav-links a[aria-current="page"] {
+    color: var(--accent);
+}
+
 .theme-toggle {
     background: none;
     border: none;
