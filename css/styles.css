@@ -232,8 +232,7 @@ a:focus-visible {
 }
 
 a:focus-visible,
-.theme-toggle:focus-visible,
-.carousel:focus-visible {
+.theme-toggle:focus-visible {
     outline: 0.0625rem dashed var(--accent);
     outline-offset: 0.25rem;
 }
@@ -442,30 +441,39 @@ figcaption {
     margin-inline: auto;
 }
 
-.carousel {
-    display: flex;
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    padding: 0 1rem 0 0;
-    margin-block: 2rem 0;
-    scrollbar-width: none;
+header:has(.collage) {
+    position: relative;
+    z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .carousel {
-    scroll-behavior: smooth;
-  }
+.collage {
+    position: relative;
+    height: 18rem;
+    margin-block: 0 2rem;
+    touch-action: none;
+    --stack-left: max(48px, calc(50% - var(--content-max-width) / 2));
 }
 
-.carousel .media-img-tiny {
-    display: flex;
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    align-items: baseline;
-    padding: 0 0 0 1rem;
-    margin-block: 1.5rem;
+.collage-photo {
+    position: absolute;
+    width: 16rem;
+    height: auto;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-drag: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.2s ease;
+}
+
+.collage-photo.is-dragging {
+    cursor: grabbing;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.collage:focus-visible,
+.collage-photo:focus-visible {
+    outline: 0.0625rem dashed var(--accent);
+    outline-offset: 0.25rem;
 }
 
 .inline-icon {
@@ -537,7 +545,6 @@ a.blog-entry:hover {
     top: -15rem;
     right: 5rem;
     max-width: 14.375rem;
-    border-radius: 0.375rem;
     rotate: -9deg;
     transition: rotate 200ms ease-in-out;
 }
@@ -573,7 +580,7 @@ a.blog-entry:hover {
 
     footer { animation-delay: calc(var(--enter-step) * 4); }
 
-    .subpage-header > *:has(.carousel) {
+    .subpage-header > .collage {
         animation-name: slideUp;
     }
 
@@ -656,12 +663,12 @@ a.blog-entry:hover {
         max-width: 10rem;
     }
 
-    .carousel {
-        margin-inline: -1.5rem;
+    .collage {
+        height: 16rem;
     }
 
-    .carousel .media-img-tiny img {
-        max-width: 18.75rem;
+    .collage-photo {
+        width: 12rem;
     }
 }
 
@@ -672,10 +679,6 @@ a.blog-entry:hover {
 
     .top-nav {
         padding-block: 1rem;
-    }
-
-    .carousel {
-        margin-inline: -1rem;
     }
 
     .blog-entry .dashed-line {

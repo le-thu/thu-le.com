@@ -11,6 +11,7 @@
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1C1B19">
     
     <script src="/js/theme.js"></script>
+    <script src="/js/collage.js" defer></script>
     <link rel="stylesheet" href="/css/styles.css">
     
     <link rel="dns-prefetch" href="https://cloud.umami.is">
@@ -72,38 +73,16 @@
             <p class="sub-heading">
                 What I&#8217;m doing now
             </p>
-            <div role="group" aria-label="Photo gallery with images">
-                <div class="carousel" tabindex="0" aria-label="Horizontal scrollable image gallery. Use arrow keys to navigate.">
-                    <!--
-                    <figure class="media-img-small">
-                        <img loading="lazy" src="images/now/" alt="" title="">
-                    </figure>
-                    -->
-                    <figure class="media-img-tiny">
-                        <img loading="lazy" src="/now/images/home-workspace-2025.webp" alt="Minimalist desk setup with an Apple Studio Display, mechanical keyboard, mouse, iced coffee, trackpad, and a pair of HomePod minis with bright window with curtains" title="My home workspace">
-                    </figure>
-                    <figure class="media-img-tiny">
-                        <img loading="lazy" src="/now/images/hanoi-fall-morning-2025.webp" alt="Cozy cafe table with iced cafe latte and water glass, green French colonial doors and framed newspaper in background" title="Morning coffee at a Hà Nội cafe">
-                    </figure>
-                    <figure class="media-img-tiny">
-                        <img loading="lazy" src="/now/images/hanoi-fall-cafe-2025.webp" alt="Narrow cafe interior with warm lighting, barista working behind counter, bar stools, open door showing street view with delivery truck" title="Inside a cozy Hà Nội neighborhood cafe">
-                    </figure>
-                    <figure class="media-img-tiny">
-                        <img loading="lazy" src="/now/images/brunch-date-2025.webp" alt="Two women wearing glasses taking a selfie at an outdoor brunch spot with white-tiled building and trees in background" title="Brunch with my fiancée">
-                    </figure>
-                    <figure class="media-img-tiny">
-                        <img loading="lazy" src="/now/images/wknd-brunch-2025.webp" alt="Three friends posing for selfie at restaurant table with lush plants, holding menus and drinks with colorful coasters" title="Weekend brunch gathering">
-                    </figure>
-                    <figure class="media-img-tiny">
-                        <img loading="lazy" src="/now/images/tu-bar-2025.webp" alt="Green cocktail in martini glass and plated dessert with chocolate drizzle on shaved ice decorative plate at dimly lit bar" title="Cocktail and food set at a local bar">
-                    </figure>
-                    <figure class="media-img-tiny">
-                        <img loading="lazy" src="/now/images/mui-ne-2025.webp" alt="Beachfront Vietnamese sizzling steak-and-eggs breakfast served on a cast-iron plate, fresh juice, and coffee overlooking pool and ocean with palm trees and umbrellas" title="Breakfast by the beach in Mũi Né">
-                    </figure>
-                    <figure class="media-img-tiny">
-                        <img loading="lazy" src="/now/images/taipei-2025.webp" alt="Busy street intersection in Taipei with low-rise commercial buildings, yellow taxi, scooters, and pedestrian crossing" title="Street scene in Taipei">
-                    </figure>
-                </div>
+            <div class="collage" aria-label="Scattered photo collage. Drag photos to rearrange.">
+                <img class="collage-photo" loading="lazy" src="/now/images/home-office.webp" alt="" style="left: calc(var(--stack-left) - 20px); top: 4rem; rotate: -8deg; z-index: 1;">
+                <img class="collage-photo" loading="lazy" src="/now/images/shanghai-selfie.webp" alt="" style="left: calc(var(--stack-left) + 15px); top: 5rem; rotate: 5deg; z-index: 2;">
+                <img class="collage-photo" loading="lazy" src="/now/images/shanghai-skyline.webp" alt="" style="left: calc(var(--stack-left) - 40px); top: 3rem; rotate: -3deg; z-index: 3;">
+                <img class="collage-photo" loading="lazy" src="/now/images/wuzhen.webp" alt="" style="left: calc(var(--stack-left) + 30px); top: 6rem; rotate: -7deg; z-index: 4;">
+                <img class="collage-photo" loading="lazy" src="/now/images/forbidden-city.webp" alt="" style="left: calc(var(--stack-left) - 5px); top: 4.5rem; rotate: 8deg; z-index: 5;">
+                <img class="collage-photo" loading="lazy" src="/now/images/summer-palace.webp" alt="" style="left: calc(var(--stack-left) + 20px); top: 3.5rem; rotate: -4deg; z-index: 6;">
+                <img class="collage-photo" loading="lazy" src="/now/images/great-wall.webp" alt="" style="left: calc(var(--stack-left) - 25px); top: 5.5rem; rotate: 6deg; z-index: 7;">
+                <img class="collage-photo" loading="lazy" src="/now/images/phu-quy.webp" alt="" style="left: calc(var(--stack-left) + 10px); top: 7rem; rotate: -9deg; z-index: 8;">
+                <img class="collage-photo" loading="lazy" src="/now/images/phu-quy-sea.webp" alt="" style="left: calc(var(--stack-left) + 35px); top: 4rem; rotate: 4deg; z-index: 9;">
             </div>
         </div>
     </header>
@@ -113,7 +92,7 @@
                 <a href=/now/may-2026>May 2026</a>
             </h2>
             <p>
-                I spent T&#7871;t in Hanoi with my fianc&#233;e&#8217;s family. It was the first year I gave out red envelopes, which made me feel officially adult. I love her family, they&#8217;re warm and welcoming, but staying seven days with them was&#8202;&#8230;&#8202;a lot. Third day in, I was rolling between the New Year&#8217;s feast meals and looking for any excuse to camp out at a caf&#233; in the Old Quarter for a few hours of air and time for myself. Next time I&#8217;m gonna cap it at four or five days at their house. I also caught up with a few friends. This year Hanoi was rather warm and only got cold the day we left for Beijing, of course.
+                I spent T&#7871;t in Hanoi with my fianc&#233;e&#8217;s family. It was the first year I gave out red envelopes, which made me feel officially adult. I love her family, they&#8217;re warm and welcoming, but staying seven days with them was... a lot. Third day in, I was rolling between the New Year&#8217;s feast meals and looking for any excuse to camp out at a caf&#233; in the Old Quarter for a few hours of air and time for myself. Next time I&#8217;m gonna cap it at four or five days at their house. I also caught up with a few friends. This year Hanoi was rather warm and only got cold the day we left for Beijing, of course.
             </p>
             <p>
                 China was something else. Beijing, Shanghai, Wuzhen, about ten days. Great Wall was incredible. Forbidden City and Summer Palace were beautiful. Wuzhen surprised me the most &mdash; we did one day there from Shanghai and I had the best mutton noodle of my life, in a little water town I had no expectations about. I don&#8217;t know why I waited this long to visit China. What surprised me more than I expected was how futuristic everything is. Cash is essentially nonexistent. You pay for street food, taxis, museum tickets, vending machines, all of it through Alipay or WeChat Pay &mdash; a scan or a tap away. The metro system is enormous and immaculate. Restaurants have a QR code on the table, and you order and pay from your phone. Also, I was raking in 15,000&ndash;20,000 steps a day. The language barrier was a real thing though &mdash; almost nobody spoke English, even in downtown Beijing and Shanghai. My fianc&#233;e knew some Mandarin and genuinely saved us a couple of times. Hong Kong was originally part of the plan for the New Year break too, but we ended up using all the time in China instead. It&#8217;s booked for the end of May now.
