@@ -407,14 +407,6 @@ svg.theme-toggle-icon {
     content: "✳︎ ✳︎ ✳︎";
 }
 
-/* theme transition */
-
-@media (prefers-reduced-motion: no-preference) {
-    *, *::before, *::after {
-        transition: background-color 0.4s ease, border-color 0.4s ease;
-    }
-}
-
 /* media components */
 
 figure {
