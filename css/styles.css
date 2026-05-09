@@ -9,12 +9,8 @@ html {
     text-size-adjust: none;
 }
 
-a, button, input, label, select, textarea, [tabindex] {
+a, button, input, label {
     touch-action: manipulation;
-}
-
-[hidden] {
-    display: none !important;
 }
 
 :root[data-theme="light"] { color-scheme: light; }
@@ -83,7 +79,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-img, picture, audio, video, canvas {
+img, picture, audio, video {
     display: block;
     max-inline-size: 100%;
     border-radius: 0.25rem;
