@@ -9,18 +9,25 @@
     };
 
     const updateThemeColorMeta = (theme) => {
-        let override = document.querySelector('meta[name="theme-color"][data-theme-override]');
-        if (theme !== 'light' && theme !== 'dark') {
-            if (override) override.remove();
-            return;
+        const lightMeta = document.querySelector('meta[name="theme-color"][media*="light"]');
+        const darkMeta = document.querySelector('meta[name="theme-color"][media*="dark"]');
+        if (!lightMeta || !darkMeta) return;
+        if (theme === 'light') {
+            lightMeta.content = '#FBF9F9';
+            darkMeta.content = '#FBF9F9';
+        } else if (theme === 'dark') {
+            lightMeta.content = '#1C1B19';
+            darkMeta.content = '#1C1B19';
+        } else {
+            lightMeta.content = '#FBF9F9';
+            darkMeta.content = '#1C1B19';
         }
-        if (!override) {
-            override = document.createElement('meta');
-            override.setAttribute('name', 'theme-color');
-            override.setAttribute('data-theme-override', '');
-            document.head.appendChild(override);
-        }
-        override.setAttribute('content', theme === 'dark' ? '#1C1B19' : '#FBF9F9');
+    };
+
+    const updateToggleA11y = (button, theme) => {
+        const isDark = theme === 'dark';
+        button.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+        button.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
     };
 
     const applyTheme = (theme) => {
@@ -46,10 +53,12 @@
         updateThemeColorMeta(root.dataset.theme);
 
         document.querySelectorAll('.theme-toggle').forEach((button) => {
+            updateToggleA11y(button, effectiveTheme());
             button.addEventListener('click', () => {
                 const next = effectiveTheme() === 'dark' ? 'light' : 'dark';
                 applyTheme(next);
                 try { localStorage.setItem(STORAGE_KEY, next); } catch (e) {}
+                updateToggleA11y(button, next);
             });
         });
     });
