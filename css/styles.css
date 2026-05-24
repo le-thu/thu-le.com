@@ -354,6 +354,7 @@ footer {
 
 .top-nav-inner {
     margin-inline: auto;
+    max-width: 90rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
