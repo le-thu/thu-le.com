@@ -122,10 +122,6 @@ h1 {
     margin-block: 4rem 0.25rem;
 }
 
-.main-title {
-    text-align: center;
-}
-
 h2 {
     font-size: var(--font-size-xl);
     margin-block: 4rem 1rem;
@@ -152,7 +148,6 @@ h3 {
 
 .subhead {
     color: var(--default-70);
-    text-align: center;
     margin-block: 1rem;
 }
 
@@ -300,6 +295,11 @@ svg.site-mark:hover {
 
 .blogpage-header {
     margin-block: 7rem 4rem;
+}
+
+.blog-section,
+.post-date {
+    margin-block: 4rem;
 }
 
 .post-navigation {
