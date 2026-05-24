@@ -146,11 +146,6 @@ h3 {
     margin-block: 0.5rem;
 }
 
-.subhead {
-    color: var(--default-70);
-    margin-block: 1rem;
-}
-
 .label {
     font-weight: 500;
     font-variation-settings: 'opsz' 8;
