@@ -1,3 +1,5 @@
+Sitemap: https://thu-le.com/sitemap.xml
+
 User-agent: *
 Allow: /
 
