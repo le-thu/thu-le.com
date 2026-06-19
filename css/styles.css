@@ -24,9 +24,11 @@ a, button, input, label {
     
     --default-20: hsl(from var(--default) h s l / 20%);
     --default-30: hsl(from var(--default) h s l / 30%);
+    --default-50: hsl(from var(--default) h s l / 50%);
     --default-60: hsl(from var(--default) h s l / 60%);
     --default-70: hsl(from var(--default) h s l / 70%);
     --accent-10: hsl(from var(--accent) h s l / 10%);
+    --accent-50: hsl(from var(--accent) h s l / 50%);
     --accent-70: hsl(from var(--accent) h s l / 70%);
     
     --font-size-base: 1rem;     /* 16px base */
@@ -168,7 +170,7 @@ h3 {
 }
 
 .subtle {
-    color: var(--default-60);
+    color: var(--default-50);
 }
 
 blockquote {
@@ -187,7 +189,7 @@ blockquote p {
     margin-inline-start: 0.1875rem;
     text-decoration: none;
     color: inherit;
-    opacity: 0.25;
+    opacity: 0.3;
 }
 
 @media (hover: hover) {
@@ -197,7 +199,7 @@ blockquote p {
 }
 
 :is(h2, h3):hover .anchor {
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 /* links */
@@ -221,6 +223,11 @@ a:focus-visible,
 .theme-toggle:focus-visible {
     outline: 0.0625rem dashed var(--accent);
     outline-offset: 0.25rem;
+}
+
+.default-link {
+    color: var(--default);
+    text-decoration: none;
 }
 
 .minimal-link {
@@ -390,7 +397,7 @@ svg.theme-toggle-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--accent-70);
+    color: var(--accent-50);
     border: none;
     height: 5rem;
     font-size: 1rem;
