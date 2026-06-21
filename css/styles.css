@@ -113,8 +113,8 @@ strong {
 h1, h2, h3 {
     max-width: var(--content-max-width);
     margin-inline: auto;
-    font-variation-settings: 'opsz' 9;
-    font-weight: 500;
+    font-variation-settings: 'opsz' 10;
+    font-weight: 520;
     line-height: 1.25;
     letter-spacing: var(--letter-spacing-heading);
 }
@@ -136,9 +136,9 @@ h3 {
 
 .links-title {
     font-size: var(--font-size-md);
-    font-weight: 480;
+    font-weight: 500;
     line-height: 1.375;
-    font-variation-settings: 'opsz' 9;
+    font-variation-settings: 'opsz' 10;
     letter-spacing: var(--letter-spacing-heading);
 }
 
@@ -150,7 +150,7 @@ h3 {
 
 .label {
     font-weight: 500;
-    font-variation-settings: 'opsz' 8;
+    font-variation-settings: 'opsz' 10;
     margin-block: 1.5rem 0.25rem;
 }
 
@@ -162,7 +162,7 @@ h3 {
     font-size: var(--font-size-lg);
     font-weight: 500;
     font-variant-numeric: tabular-nums;
-    font-variation-settings: 'opsz' 8;
+    font-variation-settings: 'opsz' 10;
 }
 
 .secondary {
