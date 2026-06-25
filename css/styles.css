@@ -38,8 +38,9 @@ a, button, input, label {
     --font-size-xl: 1.5rem;     /* 24px */
     --font-size-2xl: 1.75rem;   /* 28px */
     
-    --letter-spacing-normal: -0.0125em;
-    --letter-spacing-heading: -0.025em;
+    --letter-spacing-normal: -0.009375em;
+    --letter-spacing-med: -0.0171875em;
+    --letter-spacing-heading: -0.0225em;
     
     --content-max-width: 35rem;
 
@@ -75,7 +76,6 @@ body {
     font-family: 'Source Serif 4', Georgia, Charter, serif;
     font-size: var(--font-size-base);
     font-weight: 400;
-    font-variation-settings: 'opsz' 15;
     line-height: 1.5;
     letter-spacing: var(--letter-spacing-normal);
     text-wrap: pretty;
@@ -140,7 +140,7 @@ h3 {
     font-weight: 500;
     line-height: 1.375;
     font-variation-settings: 'opsz' 10;
-    letter-spacing: var(--letter-spacing-heading);
+    letter-spacing: var(--letter-spacing-med);
 }
 
 .sub-heading {
@@ -164,6 +164,7 @@ h3 {
     font-weight: 500;
     font-variant-numeric: tabular-nums;
     font-variation-settings: 'opsz' 10;
+    letter-spacing: var(--letter-spacing-med);
 }
 
 .secondary {
@@ -255,7 +256,7 @@ ul li {
 }
 
 ul li::marker {
-    color: var(--accent-70);
+    color: var(--accent-50);
 }
 
 ol li {
