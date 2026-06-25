@@ -28,6 +28,7 @@ a, button, input, label {
     --default-60: hsl(from var(--default) h s l / 60%);
     --default-70: hsl(from var(--default) h s l / 70%);
     --accent-10: hsl(from var(--accent) h s l / 10%);
+    --accent-20: hsl(from var(--accent) h s l / 20%);
     --accent-50: hsl(from var(--accent) h s l / 50%);
     --accent-70: hsl(from var(--accent) h s l / 70%);
     
@@ -178,7 +179,7 @@ blockquote {
     margin-inline: auto;
     padding: 0 0 0 1.125rem;
     margin-block: 1rem;
-    border-left: 0.1rem solid var(--accent-70);
+    border-left: 0.1875rem solid var(--accent-20);
 }
 
 blockquote p {
