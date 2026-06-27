@@ -9,28 +9,24 @@ html {
     text-size-adjust: none;
 }
 
-a, button, input, label {
-    touch-action: manipulation;
-}
-
 :root[data-theme="light"] { color-scheme: light; }
 :root[data-theme="dark"]  { color-scheme: dark; }
 
 :root {
     color-scheme: light dark;
-    --background: light-dark(#FBF9F9, #1C1B19);
-    --default: light-dark(#403B3B, #CFCEC9);
-    --accent: light-dark(#3D2929, #F8F7F7);
+    --color-background: light-dark(#FBF9F9, #1C1B19);
+    --color-display: light-dark(#3E3838, #D9D8D4);
+    --color-body: light-dark(#554E4E, #CAC9C4);
+    --color-accent: light-dark(#271717, #FAFAFA);
     
-    --default-20: hsl(from var(--default) h s l / 20%);
-    --default-30: hsl(from var(--default) h s l / 30%);
-    --default-50: hsl(from var(--default) h s l / 50%);
-    --default-60: hsl(from var(--default) h s l / 60%);
-    --default-70: hsl(from var(--default) h s l / 70%);
-    --accent-10: hsl(from var(--accent) h s l / 10%);
-    --accent-20: hsl(from var(--accent) h s l / 20%);
-    --accent-50: hsl(from var(--accent) h s l / 50%);
-    --accent-70: hsl(from var(--accent) h s l / 70%);
+    --color-display-20: hsl(from var(--color-display) h s l / 20%);
+    --color-display-30: hsl(from var(--color-display) h s l / 30%);
+    --color-display-50: hsl(from var(--color-display) h s l / 50%);
+    --color-display-70: hsl(from var(--color-display) h s l / 70%);
+    --color-accent-10: hsl(from var(--color-accent) h s l / 10%);
+    --color-accent-20: hsl(from var(--color-accent) h s l / 20%);
+    --color-accent-50: hsl(from var(--color-accent) h s l / 50%);
+    --color-accent-70: hsl(from var(--color-accent) h s l / 70%);
     
     --font-size-base: 1rem;     /* 16px base */
     --font-size-md: 1.1875rem;  /* 19px */
@@ -38,8 +34,8 @@ a, button, input, label {
     --font-size-xl: 1.5rem;     /* 24px */
     --font-size-2xl: 1.75rem;   /* 28px */
     
-    --font-body: 'Source Serif 4', Georgia, Charter, serif;
     --font-display: 'Bricolage Grotesque', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    --font-body: 'Source Serif 4', Georgia, Charter, serif;
 
     --letter-spacing-normal: -0.009375em;
     --letter-spacing-med: -0.0171875em;
@@ -75,15 +71,15 @@ a, button, input, label {
 }
 
 ::selection {
-    background-color: var(--accent-10);
-    color: var(--accent);
+    background-color: var(--color-accent-10);
+    color: var(--color-accent);
 }
 
 /* base elements */
 
 body {
-    background-color: var(--background);
-    color: var(--default);
+    background-color: var(--color-background);
+    color: var(--color-display);
     font-family: var(--font-body);
     font-size: var(--font-size-base);
     font-weight: 400;
@@ -93,7 +89,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, figcaption,
+h1, h2, h3, figcaption, blockquote,
 .links-title,
 .label,
 .overline,
@@ -127,6 +123,7 @@ p, blockquote, figcaption, li {
 }
 
 p {
+    color: var(--color-body);
     margin-block: 1lh;
 }
 
@@ -165,7 +162,7 @@ h3 {
 }
 
 .sub-heading {
-    color: var(--default-60);
+    color: var(--color-body);
     font-size: var(--font-size-md);
     margin-block: 0.5rem;
 }
@@ -187,11 +184,11 @@ h3 {
 }
 
 .secondary {
-    color: var(--default-70);
+    color: var(--color-display-70);
 }
 
 .subtle {
-    color: var(--default-50);
+    color: var(--color-display-50);
 }
 
 blockquote {
@@ -199,11 +196,11 @@ blockquote {
     margin-inline: auto;
     padding: 0 0 0 1.125rem;
     margin-block: 1rem;
-    border-left: 0.1875rem solid var(--accent-20);
+    border-left: 0.1875rem solid var(--color-accent-20);
 }
 
 blockquote p {
-    color: var(--accent);
+    color: var(--color-display);
 }
 
 .anchor {
@@ -228,7 +225,7 @@ blockquote p {
 a {
     color: inherit;
     text-decoration: underline;
-    text-decoration-color: var(--default-30);
+    text-decoration-color: var(--color-display-30);
     text-decoration-thickness: 0.0625rem;
     text-underline-offset: 0.1875em;
     transition: color 120ms ease-in-out, text-decoration-color 120ms ease-in-out;
@@ -236,18 +233,22 @@ a {
 
 a:hover,
 a:focus-visible {
-    color: var(--accent);
-    text-decoration-color: var(--accent-70);
+    color: var(--color-accent);
+    text-decoration-color: var(--color-accent-70);
 }
 
 a:focus-visible,
 .theme-toggle:focus-visible {
-    outline: 0.0625rem dashed var(--accent);
+    outline: 0.0625rem dashed var(--color-accent);
     outline-offset: 0.25rem;
 }
 
+ul a {
+    color: var(--color-body);
+}
+
 .default-link {
-    color: var(--default);
+    color: var(--color-display);
     text-decoration: none;
 }
 
@@ -270,22 +271,23 @@ ul {
 }
 
 ul li {
+    color: var(--color-body);
     padding-left: 0.3125rem;
     margin-block: 1rem;
 }
 
 ul li::marker {
-    color: var(--accent-50);
+    color: var(--color-accent-50);
 }
 
 ol li {
+    color: var(--color-body);
     padding-inline-start: 0.25rem;
     margin-block: 1rem;
     margin-inline-start: 1.5rem;
 }
 
 ol li::marker {
-    color: var(--default-60);
     font-variant-numeric: tabular-nums;
 }
 
@@ -297,7 +299,7 @@ p.compact {
 /* layout components */
 
 svg.site-mark {
-    color: var(--default-70);
+    color: var(--color-display-70);
     height: 2rem;
     width: 2rem;
     display: inline-block;
@@ -305,7 +307,7 @@ svg.site-mark {
 }
 
 svg.site-mark:hover {
-    color: var(--accent);
+    color: var(--color-accent);
 }
 
 .homepage-header {
@@ -320,13 +322,12 @@ svg.site-mark:hover {
     margin-block: 7rem 4rem;
 }
 
-.blog-section,
-.page-date {
+.blog-section, .page-date {
     margin-block: 4rem;
 }
 
 .post-navigation {
-    border-top: 0.05rem solid var(--default-20);
+    border-top: 0.05rem solid var(--color-display-20);
     margin-block: 6rem 0;
     margin-inline: auto;
     max-width: var(--content-max-width);
@@ -335,6 +336,10 @@ svg.site-mark:hover {
 
 .post-navigation aside {
     padding-bottom: 2.5rem;
+}
+
+.post-navigation p {
+    color: var(--color-display);
 }
 
 .prev-next {
@@ -387,18 +392,18 @@ footer {
     display: flex;
     gap: 1.25rem;
     align-items: center;
-    color: var(--default-70);
+    color: var(--color-display-70);
 }
 
 .top-nav-links a[aria-current="page"] {
-    color: var(--accent);
+    color: var(--color-accent);
 }
 
 .theme-toggle {
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--default-70);
+    color: var(--color-display-70);
     padding: 0;
     display: flex;
     align-items: center;
@@ -411,14 +416,14 @@ svg.theme-toggle-icon {
 }
 
 .theme-toggle:hover {
-    color: var(--accent);
+    color: var(--color-accent);
 }
 
 .separator {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--accent-50);
+    color: var(--color-accent-50);
     border: none;
     height: 5rem;
     font-size: 1rem;
@@ -438,7 +443,7 @@ figure {
 }
 
 figcaption {
-    color: var(--default-60);
+    color: var(--color-display-70);
     text-align: center;
     margin-block: 1rem;
 }
@@ -484,7 +489,7 @@ header:has(.collage) {
 
 .collage:focus-visible,
 .collage-photo:focus-visible {
-    outline: 0.0625rem dashed var(--accent);
+    outline: 0.0625rem dashed var(--color-accent);
     outline-offset: 0.25rem;
 }
 
@@ -495,7 +500,7 @@ header:has(.collage) {
 }
 
 .inline-icon svg {
-    color: var(--default-60);
+    color: var(--color-display-50);
     margin-inline-start: 0.25rem;
     transition: color 120ms ease-in-out;
 }
@@ -525,14 +530,14 @@ header:has(.collage) {
 
     & .dashed-line {
         flex-grow: 1;
-        border-top: 0.05rem solid var(--default-20);
+        border-top: 0.05rem solid var(--color-display-20);
         min-width: 2rem;
         margin-bottom: 0.5rem;
         transition: border-color 120ms ease-in-out;
     }
 
     & .blog-date {
-        color: var(--default-70);
+        color: var(--color-display-70);
         white-space: nowrap;
         transition: color 120ms ease-in-out;
     }
@@ -540,11 +545,11 @@ header:has(.collage) {
 
 a.blog-entry:hover {
     & :is(.links-title, .blog-date, .inline-icon svg) {
-        color: var(--accent);
+        color: var(--color-accent);
     }
 
     & .dashed-line {
-        border-color: var(--accent-70);
+        border-color: var(--color-accent-70);
     }
 }
 
