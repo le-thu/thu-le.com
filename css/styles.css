@@ -38,9 +38,12 @@ a, button, input, label {
     --font-size-xl: 1.5rem;     /* 24px */
     --font-size-2xl: 1.75rem;   /* 28px */
     
+    --font-body: 'Source Serif 4', Georgia, Charter, serif;
+    --font-display: 'Bricolage Grotesque', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
     --letter-spacing-normal: -0.009375em;
     --letter-spacing-med: -0.0171875em;
-    --letter-spacing-heading: -0.0225em;
+    --letter-spacing-heading: -0.0125em;
     
     --content-max-width: 35rem;
 
@@ -63,6 +66,14 @@ a, button, input, label {
     src: url('../fonts/SourceSerif4Variable-Italic.ttf.woff2') format('woff2-variations');
 }
 
+@font-face{
+    font-family: 'Bricolage Grotesque';
+    font-weight: 200 800;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/BricolageGrotesque-Variable.woff2') format('woff2-variations');
+}
+
 ::selection {
     background-color: var(--accent-10);
     color: var(--accent);
@@ -73,13 +84,25 @@ a, button, input, label {
 body {
     background-color: var(--background);
     color: var(--default);
-    font-family: 'Source Serif 4', Georgia, Charter, serif;
+    font-family: var(--font-body);
     font-size: var(--font-size-base);
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: var(--letter-spacing-normal);
     text-wrap: pretty;
     -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, figcaption,
+.links-title,
+.label,
+.overline,
+.sub-heading,
+.minimal-link,
+.blog-date,
+.page-date,
+.display-font {
+    font-family: var(--font-display);
 }
 
 img, picture, audio, video {
@@ -114,7 +137,6 @@ strong {
 h1, h2, h3 {
     max-width: var(--content-max-width);
     margin-inline: auto;
-    font-variation-settings: 'opsz' 10;
     font-weight: 520;
     line-height: 1.25;
     letter-spacing: var(--letter-spacing-heading);
@@ -137,9 +159,8 @@ h3 {
 
 .links-title {
     font-size: var(--font-size-md);
-    font-weight: 500;
+    font-weight: 520;
     line-height: 1.375;
-    font-variation-settings: 'opsz' 10;
     letter-spacing: var(--letter-spacing-med);
 }
 
@@ -150,8 +171,7 @@ h3 {
 }
 
 .label {
-    font-weight: 500;
-    font-variation-settings: 'opsz' 10;
+    font-weight: 580;
     margin-block: 1.5rem 0.25rem;
 }
 
@@ -161,9 +181,8 @@ h3 {
 
 .overline {
     font-size: var(--font-size-lg);
-    font-weight: 500;
+    font-weight: 520;
     font-variant-numeric: tabular-nums;
-    font-variation-settings: 'opsz' 10;
     letter-spacing: var(--letter-spacing-med);
 }
 
