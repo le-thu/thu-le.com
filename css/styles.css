@@ -436,6 +436,14 @@ svg.theme-toggle-icon {
     content: "✳︎ ✳︎ ✳︎";
 }
 
+.divider {
+    max-width: var(--content-max-width);
+    margin-block: 4rem;
+    margin-inline: auto;
+    border: none;
+    border-top: 0.05rem solid var(--color-display-20);
+}
+
 /* media components */
 
 figure {
