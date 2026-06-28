@@ -93,7 +93,7 @@ body {
     font-family: var(--font-body);
     font-size: var(--font-size-base);
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.55;
     letter-spacing: var(--letter-spacing-normal);
     font-variant-alternates: styleset(round-quotes-and-commas);
     font-variation-settings: "opsz" 16;
@@ -293,7 +293,8 @@ p.compact {
     color: var(--color-display-70);
 }
 
-.subtle {
+.subtle,
+.em-dash {
     color: var(--color-display-50);
 }
 
