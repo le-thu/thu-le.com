@@ -32,17 +32,16 @@ html {
     --color-accent-50: hsl(from var(--color-accent) h s l / 50%);
     --color-accent-70: hsl(from var(--color-accent) h s l / 70%);
     
-    --font-size-base: 1rem;     /* 16px base */
+    --font-size-base: 0.975rem;     /* 15.6px base */
     --font-size-md: 1.1875rem;  /* 19px */
     --font-size-lg: 1.375rem;   /* 22px */
     --font-size-xl: 1.5rem;     /* 24px */
     --font-size-2xl: 1.75rem;   /* 28px */
     
-    --font-display: 'Bricolage Grotesque', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-    --font-body: 'Source Serif 4', Georgia, Charter, serif;
+    --font-display: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
+    --font-body: 'InterVariable', system-ui, -apple-system, sans-serif;
 
-    --letter-spacing-normal: -0.009375em;
-    --letter-spacing-med: -0.0171875em;
+    --letter-spacing-normal: -0.015625em;
     --letter-spacing-heading: -0.0125em;
     
     --content-max-width: 35rem;
@@ -55,25 +54,30 @@ html {
 /* fonts */
 
 @font-face{
-    font-family: 'Source Serif 4';
-    font-weight: 200 900;
-    font-style: normal;
-    src: url('../fonts/SourceSerif4Variable-Roman.ttf.woff2') format('woff2-variations');
-}
-
-@font-face{
-    font-family: 'Source Serif 4';
-    font-weight: 200 900;
-    font-style: italic;
-    src: url('../fonts/SourceSerif4Variable-Italic.ttf.woff2') format('woff2-variations');
-}
-
-@font-face{
     font-family: 'Bricolage Grotesque';
     font-weight: 200 800;
     font-style: normal;
-    font-display: swap;
     src: url('../fonts/BricolageGrotesque-Variable.woff2') format('woff2-variations');
+}
+
+@font-face {
+  font-family: InterVariable;
+  font-weight: 100 900;
+  font-style: normal;
+  src: url("../fonts/InterVariable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: InterVariable;
+  font-weight: 100 900;
+  font-style: italic;
+  src: url("../fonts/InterVariable-Italic.woff2") format("woff2");
+}
+
+@font-feature-values InterVariable {
+    @styleset {
+        round-quotes-and-commas: 3;
+    }
 }
 
 /* base elements */
@@ -91,13 +95,15 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: var(--letter-spacing-normal);
+    font-variant-alternates: styleset(round-quotes-and-commas);
+    font-variation-settings: "opsz" 16;
     text-wrap: pretty;
     -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, figcaption, blockquote,
+h1, h2, h3, figcaption,
 .links-title,
-.label,
+.post-nav-label,
 .overline,
 .sub-heading,
 .minimal-link,
@@ -105,6 +111,7 @@ h1, h2, h3, figcaption, blockquote,
 .page-date,
 .display-font {
     font-family: var(--font-display);
+    font-variation-settings: normal;
 }
 
 img, picture, audio, video {
@@ -164,25 +171,25 @@ h3 {
     font-size: var(--font-size-md);
     font-weight: 520;
     line-height: 1.375;
-    letter-spacing: var(--letter-spacing-med);
 }
 
 .sub-heading {
     color: var(--color-body);
     font-size: var(--font-size-md);
+    letter-spacing: var(--letter-spacing-heading);
     margin-block: 0.5rem;
-}
-
-.label {
-    font-weight: 580;
-    margin-block: 1.5rem 0.25rem;
 }
 
 .overline {
     font-size: var(--font-size-lg);
     font-weight: 520;
     font-variant-numeric: tabular-nums;
-    letter-spacing: var(--letter-spacing-med);
+}
+
+.post-nav-label {
+    font-weight: 580;
+    letter-spacing: var(--letter-spacing-heading);
+    margin-block: 1.5rem 0.25rem;
 }
 
 blockquote {
@@ -253,15 +260,8 @@ ul a {
 
 /* lists */
 
-@counter-style dash {
-    system: cyclic;
-    symbols: "―";
-    suffix: " ";
-    speak-as: bullets;
-}
-
 ul {
-    list-style-type: dash;
+    list-style-type: disc;
     padding-inline-start: 1.25rem;
 }
 
@@ -280,10 +280,6 @@ ol li {
     padding-inline-start: 0.25rem;
     margin-block: 1rem;
     margin-inline-start: 1.5rem;
-}
-
-ol li::marker {
-    font-variant-numeric: tabular-nums;
 }
 
 .list-compact li,
