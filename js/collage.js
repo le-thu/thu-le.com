@@ -28,9 +28,15 @@
                 photo.style.top  = (e.clientY - parent.top  - offsetY) + 'px';
             });
 
-            photo.addEventListener('pointerup', () => {
+            const endDrag = (e) => {
                 photo.classList.remove('is-dragging');
-            });
+                if (photo.hasPointerCapture(e.pointerId)) {
+                    photo.releasePointerCapture(e.pointerId);
+                }
+            };
+
+            photo.addEventListener('pointerup', endDrag);
+            photo.addEventListener('pointercancel', endDrag);
         });
     }
 }

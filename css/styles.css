@@ -484,8 +484,10 @@ header:has(.collage) {
     width: 16rem;
     height: auto;
     cursor: grab;
+    touch-action: none;
     user-select: none;
     -webkit-user-drag: none;
+    -webkit-touch-callout: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: box-shadow 0.2s ease;
 }
