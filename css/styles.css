@@ -204,6 +204,7 @@ blockquote p {
 }
 
 .anchor {
+    font-weight: 400;
     margin-inline-start: 0.1875rem;
     text-decoration: none;
     color: inherit;
