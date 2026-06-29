@@ -210,7 +210,7 @@ a {
     color: inherit;
     text-decoration: underline;
     text-decoration-color: var(--color-display-30);
-    text-decoration-thickness: 0.0625rem;
+    text-decoration-thickness: 0.075rem;
     text-underline-offset: 0.1875em;
     transition: color 120ms ease-in-out, text-decoration-color 120ms ease-in-out;
 }
@@ -223,7 +223,7 @@ a:focus-visible {
 
 a:focus-visible,
 .theme-toggle:focus-visible {
-    outline: 0.0625rem dashed var(--color-accent);
+    outline: 0.0625rem dashed var(--color-accent-70);
     outline-offset: 0.25rem;
 }
 
@@ -505,7 +505,7 @@ header:has(.collage) {
 
 .collage:focus-visible,
 .collage-photo:focus-visible {
-    outline: 0.0625rem dashed var(--color-accent);
+    outline: 0.0625rem dashed var(--color-accent-70);
     outline-offset: 0.25rem;
 }
 
