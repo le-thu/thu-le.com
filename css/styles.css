@@ -174,7 +174,7 @@ h3 {
 }
 
 .sub-heading {
-    color: var(--color-body);
+    color: var(--color-display-70);
     font-size: var(--font-size-md);
     letter-spacing: var(--letter-spacing-heading);
     margin-block: 0.5rem;
