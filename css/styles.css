@@ -32,7 +32,7 @@ html {
     --color-accent-50: hsl(from var(--color-accent) h s l / 50%);
     --color-accent-70: hsl(from var(--color-accent) h s l / 70%);
     
-    --font-size-base: 0.975rem;     /* 15.6px base */
+    --font-size-base: 0.96875rem;     /* 15.5px base */
     --font-size-md: 1.1875rem;  /* 19px */
     --font-size-lg: 1.375rem;   /* 22px */
     --font-size-xl: 1.5rem;     /* 24px */
