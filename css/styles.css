@@ -108,7 +108,6 @@ h1, h2, h3, figcaption,
 .sub-heading,
 .minimal-link,
 .blog-date,
-.page-date,
 .display-font {
     font-family: var(--font-display);
     font-variation-settings: normal;
@@ -338,6 +337,11 @@ svg.site-mark:hover {
     margin-inline: auto;
     max-width: var(--content-max-width);
     padding-top: 1rem;
+}
+
+.post-navigation .minimal-link {
+    font-family: var(--font-body);
+    font-variation-settings: "opsz" 16;
 }
 
 .post-navigation aside {
