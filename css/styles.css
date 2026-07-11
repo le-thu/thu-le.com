@@ -107,7 +107,6 @@ h1, h2, h3, figcaption,
 .overline,
 .sub-heading,
 .minimal-link,
-.blog-date,
 .display-font {
     font-family: var(--font-display);
     font-variation-settings: normal;
