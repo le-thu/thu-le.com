@@ -334,6 +334,27 @@ svg.site-mark:hover {
     margin-block: 4rem;
 }
 
+.blog-section {
+    max-width: var(--content-max-width);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 4rem;
+    row-gap: 1.5rem;
+    align-items: baseline;
+}
+
+.blog-section .overline {
+    grid-row: 1;
+    margin: 0;
+}
+
+.blog-section .blog-entry {
+    grid-column: 2;
+    margin: 0;
+    max-width: none;
+}
+
 .post-navigation {
     border-top: 0.05rem solid var(--color-display-20);
     margin-block: 6rem 0;
@@ -715,6 +736,18 @@ a.blog-entry:hover {
 
     .blog-entry .dashed-line {
         visibility: hidden;
+    }
+
+    .blog-section {
+        display: block;
+    }
+
+    .blog-section .overline {
+        margin-block-end: 1rem;
+    }
+
+    .blog-section .blog-entry {
+        margin-block: 1.5rem;
     }
 
     .profile-image {
