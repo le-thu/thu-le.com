@@ -4,7 +4,7 @@
   <!-- Pages -->
   <url>
     <loc>https://thu-le.com/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://thu-le.com/about</loc>
@@ -16,7 +16,7 @@
   </url>
   <url>
     <loc>https://thu-le.com/blog</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
   </url>
   <url>
     <loc>https://thu-le.com/uses</loc>
@@ -32,6 +32,10 @@
   </url>
 
   <!-- Blog posts (newest first) -->
+  <url>
+    <loc>https://thu-le.com/blog/on-interviews</loc>
+    <lastmod>2026-07-12</lastmod>
+  </url>
   <url>
     <loc>https://thu-le.com/blog/i-love-traveling-and-im-quite-boring-about-it</loc>
     <lastmod>2026-06-16</lastmod>
