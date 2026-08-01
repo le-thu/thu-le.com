@@ -77,12 +77,6 @@ html {
   src: url("../fonts/InterVariable-Italic.woff2") format("woff2");
 }
 
-@font-feature-values InterVariable {
-    @styleset {
-        round-quotes-and-commas: 3;
-    }
-}
-
 /* base elements */
 
 ::selection {
