@@ -503,7 +503,6 @@ header:has(.collage) {
     position: relative;
     height: 18rem;
     margin-block: 0 2rem;
-    touch-action: none;
     --fan-center: calc(50% - 8rem);
     --fan-step: 24px;
 }
