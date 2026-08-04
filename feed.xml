@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <atom:link rel="self" type="application/rss+xml" href="https://thu-le.com/feed.xml" />
-        
+
         <title>Thu Le</title>
         <link>https://thu-le.com/blog</link>
         <description>Musings on intentional living, productivity, and everyday life.</description>

@@ -30,6 +30,7 @@
 
             const endDrag = (e) => {
                 photo.classList.remove('is-dragging');
+                photo.classList.add('just-dropped');
                 if (photo.hasPointerCapture(e.pointerId)) {
                     photo.releasePointerCapture(e.pointerId);
                 }
@@ -37,6 +38,10 @@
 
             photo.addEventListener('pointerup', endDrag);
             photo.addEventListener('pointercancel', endDrag);
+
+            photo.addEventListener('pointerleave', () => {
+                photo.classList.remove('just-dropped');
+            });
         });
     }
 }

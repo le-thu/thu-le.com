@@ -22,7 +22,7 @@ html {
     --color-display: light-dark(#3E3838, #D9D8D4);
     --color-body: light-dark(#554E4E, #CAC9C4);
     --color-accent: light-dark(#271717, #FAFAFA);
-    
+
     --color-display-20: hsl(from var(--color-display) h s l / 20%);
     --color-display-30: hsl(from var(--color-display) h s l / 30%);
     --color-display-50: hsl(from var(--color-display) h s l / 50%);
@@ -31,19 +31,19 @@ html {
     --color-accent-20: hsl(from var(--color-accent) h s l / 20%);
     --color-accent-50: hsl(from var(--color-accent) h s l / 50%);
     --color-accent-70: hsl(from var(--color-accent) h s l / 70%);
-    
+
     --font-size-base: 0.96875rem;     /* 15.5px base */
     --font-size-md: 1.25rem;    /* 20px */
     --font-size-lg: 1.4375rem;  /* 23px */
     --font-size-xl: 1.5625rem;  /* 25px */
     --font-size-2xl: 1.8125rem; /* 29px */
-    
+
     --font-display: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
     --font-body: 'InterVariable', system-ui, -apple-system, sans-serif;
 
     --letter-spacing-normal: -0.015625em;
     --letter-spacing-heading: -0.0125em;
-    
+
     --content-max-width: 35rem;
 
     --enter-duration: 800ms;
@@ -504,7 +504,8 @@ header:has(.collage) {
     height: 18rem;
     margin-block: 0 2rem;
     touch-action: none;
-    --stack-left: max(48px, calc(50% - var(--content-max-width) / 2));
+    --fan-center: calc(50% - 8rem);
+    --fan-step: 24px;
 }
 
 .collage-photo {
@@ -517,7 +518,14 @@ header:has(.collage) {
     -webkit-user-drag: none;
     -webkit-touch-callout: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease, translate 0.2s ease;
+}
+
+@media (hover: hover) {
+    .collage-photo:hover:not(.is-dragging):not(.just-dropped) {
+        translate: 0 -6px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .collage-photo.is-dragging {
@@ -525,10 +533,9 @@ header:has(.collage) {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
-.collage:focus-visible,
-.collage-photo:focus-visible {
-    outline: 0.0625rem dashed var(--color-accent-70);
-    outline-offset: 0.25rem;
+.collage-photo.is-dragging,
+.collage-photo.just-dropped {
+    transition: none;
 }
 
 .inline-icon {
@@ -712,10 +719,12 @@ a.blog-entry:hover {
 
     .collage {
         height: 16rem;
+        --fan-center: calc(50% - 6rem);
+        --fan-step: 14px;
     }
 
     .collage-photo {
-        width: 12rem;
+        width: 12.5rem;
     }
 }
 
