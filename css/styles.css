@@ -494,6 +494,17 @@ figcaption {
     margin-inline: auto;
 }
 
+.video-embed {
+    display: block;
+    width: 100%;
+    max-width: var(--content-max-width);
+    margin-inline: auto;
+    margin-block: 1.5rem;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 0.5rem;
+}
+
 header:has(.collage) {
     position: relative;
     z-index: 1;
