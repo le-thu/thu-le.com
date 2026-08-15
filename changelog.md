@@ -4,6 +4,8 @@ Notable design, content, accessibility, and infrastructure changes to thu-le.com
 
 ## 2026
 
+- **Aug 9:** Added responsive, lazy-loaded YouTube embeds to the Links page using YouTube’s privacy-enhanced player.
+- **Aug 4:** Refined the Now page photo collage with a fan-shaped layout, hover lift, and a brief drop state when photos are released.
 - **Jul 5:** Moved the publish date back to the top of blog posts, sitting under the title in the post header, leaving just the reply-by links at the foot of each post.
 - **Jun 28:** Optimized every image on the site, re-encoding WebPs at quality 80 and resizing oversized files to a 1600px longest edge. Cut the total image weight from roughly 14MB to 4.7MB, with formats and filenames unchanged.
 - **Jun 28:** New body typeface, Inter variable, replacing Source Serif 4. Pinned to optical size 16 and set with Inter's ss03 styleset for rounded quotes and commas. Pairs with Bricolage for headings, the current setup.
