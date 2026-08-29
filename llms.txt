@@ -8,24 +8,24 @@ This is her personal website where she shares writing on intentional living, pro
 
 ## Main sections
 
-- /about: About Thu, how to connect, and site colophon
-- /blog: Personal essays and reflections
-- /now: What she's currently focused on
-- /uses: Tools and software she uses
-- /links: Various links and resources
-- /blogroll: Blogs she follows and recommends
+- [About](https://thu-le.com/about): About Thu, how to connect, and site colophon
+- [Blog](https://thu-le.com/blog): Personal essays and reflections
+- [Now](https://thu-le.com/now): What she's currently focused on
+- [Uses](https://thu-le.com/uses): Tools and software she uses
+- [Links](https://thu-le.com/links): Various links and resources
+- [Blogroll](https://thu-le.com/blogroll): Blogs she follows and recommends
 
 ## Notable posts
 
-- /blog/personal-manifesto: Her guiding principles for life and work
-- /blog/why-i-rebuilt-this-site: The story behind starting this blog
-- /blog/how-i-track-my-finances: Her multi-layered finance tracking system
-- /blog/on-running: Reflections on running as a practice
-- /blog/good-work: Her evolving definition of meaningful work
-- /blog/50-things-i-learned-in-2025: Annual learnings roundup
+- [Personal manifesto](https://thu-le.com/blog/personal-manifesto): Her guiding principles for life and work
+- [Why I rebuilt this site](https://thu-le.com/blog/why-i-rebuilt-this-site): The story behind starting this blog
+- [How I track my finances](https://thu-le.com/blog/how-i-track-my-finances): Her multi-layered finance tracking system
+- [On running](https://thu-le.com/blog/on-running): Reflections on running as a practice
+- [Good work](https://thu-le.com/blog/good-work): Her evolving definition of meaningful work
+- [50 things I learned in 2025](https://thu-le.com/blog/50-things-i-learned-in-2025): Annual learnings roundup
 
 ## Contact
 
-- Website: https://thu-le.com
-- Bluesky: https://bsky.app/profile/thu-le.com
-- GitHub: https://github.com/le-thu
+- [Website](https://thu-le.com)
+- [Bluesky](https://bsky.app/profile/thu-le.com)
+- [GitHub](https://github.com/le-thu)
