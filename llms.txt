@@ -15,14 +15,22 @@ This is her personal website where she shares writing on intentional living, pro
 - [Links](https://thu-le.com/links): Various links and resources
 - [Blogroll](https://thu-le.com/blogroll): Blogs she follows and recommends
 
+## Now updates
+
+- [May 2026](https://thu-le.com/now/may-2026): New Year in China, new apartment, AI fatigue, and a last-minute trip
+- [November 2025](https://thu-le.com/now/november-2025): Managing for the first time, and why she keeps thinking about airports
+- [May 2025](https://thu-le.com/now/may-2025): Trying a new format for Now updates
+
 ## Notable posts
 
-- [Personal manifesto](https://thu-le.com/blog/personal-manifesto): Her guiding principles for life and work
-- [Why I rebuilt this site](https://thu-le.com/blog/why-i-rebuilt-this-site): The story behind starting this blog
-- [How I track my finances](https://thu-le.com/blog/how-i-track-my-finances): Her multi-layered finance tracking system
-- [On running](https://thu-le.com/blog/on-running): Reflections on running as a practice
-- [Good work](https://thu-le.com/blog/good-work): Her evolving definition of meaningful work
+- [Personal manifesto](https://thu-le.com/blog/personal-manifesto): Her operating principles for how she thinks, relates, and works
+- [For now](https://thu-le.com/blog/for-now): On how often "I told myself I'd never" turns out to be a snapshot, not a fact
+- [I love traveling and I'm quite boring about it](https://thu-le.com/blog/i-love-traveling-and-im-quite-boring-about-it): How she stays herself on the road, and why the airport lounge is the best part
+- [Good work](https://thu-le.com/blog/good-work): Her journey into design and the search for good work
+- [How I track my finances](https://thu-le.com/blog/how-i-track-my-finances): Her multi-layered system for daily expenses, net worth, and quarterly budgets
 - [50 things I learned in 2025](https://thu-le.com/blog/50-things-i-learned-in-2025): Annual learnings roundup
+
+Full archive at https://thu-le.com/blog
 
 ## Contact
 
