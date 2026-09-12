@@ -363,7 +363,7 @@ svg.site-mark:hover {
 }
 
 .post-navigation aside {
-    padding-bottom: 2.5rem;
+    padding-bottom: 2rem;
 }
 
 .post-navigation p {
@@ -394,7 +394,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-block: 4rem 0;
+    padding-block: 2rem 0;
 }
 
 .nav-container {
