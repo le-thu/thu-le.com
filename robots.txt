@@ -1,22 +1,98 @@
 Sitemap: https://thu-le.com/sitemap.xml
 
+# Default: everything not named below is welcome.
+# This covers all search engines - Googlebot, Bingbot,
+# Applebot, DuckDuckBot, Brave, Marginalia, and the rest.
 User-agent: *
 Allow: /
 
-# Block AI training crawlers
+# ---------------------------------------------------------
+# Block AI TRAINING crawlers
+# These collect pages to train models. Blocking them does
+# not affect search indexing or discoverability.
+# ---------------------------------------------------------
+
+# OpenAI
 User-agent: GPTBot
 Disallow: /
 
+# Common Crawl - the corpus most model trainers start from
 User-agent: CCBot
 Disallow: /
 
+# Anthropic
 User-agent: anthropic-ai
 Disallow: /
 
 User-agent: ClaudeBot
 Disallow: /
 
-# Allow AI retrieval/search crawlers
+# Google - Gemini training only, NOT Google Search
+User-agent: Google-Extended
+Disallow: /
+
+# Meta
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+# ByteDance / TikTok (known to ignore robots.txt)
+User-agent: Bytespider
+Disallow: /
+
+# Amazon
+User-agent: Amazonbot
+Disallow: /
+
+# Cohere
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: cohere-training-data-crawler
+Disallow: /
+
+# webz.io - crawls, then resells the corpus to model trainers
+User-agent: Omgili
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Webzio-Extended
+Disallow: /
+
+# Hive - image training datasets
+User-agent: ImagesiftBot
+Disallow: /
+
+# Diffbot - knowledge graph and training data
+User-agent: Diffbot
+Disallow: /
+
+# Huawei
+User-agent: PanguBot
+Disallow: /
+
+# Timpi
+User-agent: Timpibot
+Disallow: /
+
+# Semrush AI content crawler (not their SEO crawler)
+User-agent: SemrushBot-OCOB
+Disallow: /
+
+# ---------------------------------------------------------
+# Deliberately NOT blocked (these train, and that's fine):
+#   Applebot-Extended  - Apple Intelligence
+#   AI2Bot / AI2Bot-Dolma - Allen Institute, non-profit,
+#                        open Dolma research dataset
+# ---------------------------------------------------------
+
+# ---------------------------------------------------------
+# Allow AI RETRIEVAL crawlers
+# These fetch pages to answer a question someone asked, and
+# cite the source. This is how the site reaches LLM answers.
+# ---------------------------------------------------------
+
 User-agent: OAI-SearchBot
 Allow: /
 
