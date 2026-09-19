@@ -430,20 +430,28 @@ footer {
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--color-display-70);
     padding: 0;
     display: flex;
     align-items: center;
-    transition: color 120ms ease-in-out;
 }
 
 svg.theme-toggle-icon {
     width: 1.25rem;
     height: 1.25rem;
+    color: var(--color-display);
+    opacity: 0.7;
+    transition: color 120ms ease-in-out, opacity 120ms ease-in-out;
+
+    & path {
+        stroke: currentColor;
+        stroke-width: 0.25;
+        stroke-linejoin: round;
+    }
 }
 
-.theme-toggle:hover {
+.theme-toggle:hover .theme-toggle-icon {
     color: var(--color-accent);
+    opacity: 1;
 }
 
 .separator {
@@ -557,6 +565,22 @@ header:has(.collage) {
     color: var(--color-display-50);
     margin-inline-start: 0.25rem;
     transition: color 120ms ease-in-out;
+}
+
+svg.reply-icon,
+svg.back-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    vertical-align: middle;
+    margin-inline-end: 0.5rem;
+    color: var(--color-display);
+    opacity: 0.5;
+
+    & path {
+        stroke: currentColor;
+        stroke-width: 0.25;
+        stroke-linejoin: round;
+    }
 }
 
 /* page specific */
