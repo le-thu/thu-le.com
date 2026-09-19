@@ -36,7 +36,7 @@ html {
     --font-size-md: 1.25rem;    /* 20px */
     --font-size-lg: 1.4375rem;  /* 23px */
     --font-size-xl: 1.5625rem;  /* 25px */
-    --font-size-2xl: 1.8125rem; /* 29px */
+    --font-size-2xl: 1.75rem;   /* 28px */
 
     --font-display: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
     --font-body: 'InterVariable', system-ui, -apple-system, sans-serif;
