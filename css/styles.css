@@ -266,10 +266,6 @@ ul li {
     margin-block: 1rem;
 }
 
-ul li::marker {
-    color: var(--color-accent-50);
-}
-
 ol li {
     color: var(--color-body);
     padding-inline-start: 0.25rem;
