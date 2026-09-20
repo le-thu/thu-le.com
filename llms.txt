@@ -12,7 +12,7 @@ This is her personal website where she shares writing on intentional living, pro
 - [Blog](https://thu-le.com/blog): Personal essays and reflections
 - [Now](https://thu-le.com/now): What she's currently focused on
 - [Uses](https://thu-le.com/uses): Tools and software she uses
-- [Links](https://thu-le.com/links): Various links and resources
+- [Links](https://thu-le.com/links): Running notes on what she's reading, watching, and thinking about
 - [Blogroll](https://thu-le.com/blogroll): Blogs she follows and recommends
 
 ## Now updates
