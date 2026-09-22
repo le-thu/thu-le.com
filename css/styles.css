@@ -90,7 +90,7 @@ body {
     font-family: var(--font-body);
     font-size: var(--font-size-base);
     font-weight: 400;
-    line-height: 1.55;
+    line-height: 1.525;
     letter-spacing: var(--letter-spacing-normal);
     font-variation-settings: "opsz" 16;
     text-wrap: pretty;
@@ -131,7 +131,7 @@ p, blockquote, figcaption, li {
 
 p {
     color: var(--color-body);
-    margin-block: 1lh;
+    margin-block: 1.25rem;
 }
 
 strong {
@@ -148,7 +148,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: var(--font-size-2xl);
-    margin-block: 4rem 0.25rem;
+    margin-block: 0.25rem;
 }
 
 h2 {
