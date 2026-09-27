@@ -41,7 +41,7 @@ html {
     --font-display: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
     --font-body: 'InterVariable', system-ui, -apple-system, sans-serif;
 
-    --letter-spacing-normal: -0.015625em;
+    --letter-spacing-normal: -0.014375em;
     --letter-spacing-heading: -0.0125em;
 
     --content-max-width: 35rem;
@@ -234,6 +234,10 @@ a:focus-visible,
 
 :is(h2, h3):hover .anchor {
     opacity: 0.7;
+}
+
+:target {
+    scroll-margin-top: 2rem;
 }
 
 /* lists */
@@ -618,6 +622,10 @@ header:has(.collage) {
 /* animations */
 
 @media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+
     header, main {
         animation: slideUp var(--enter-duration) var(--enter-ease) both;
     }
