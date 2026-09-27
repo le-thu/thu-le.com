@@ -276,7 +276,7 @@ p.compact {
 
 .top-nav-inner {
     margin-inline: auto;
-    max-width: 90rem;
+    max-width: var(--content-max-width);
     display: flex;
     align-items: center;
     justify-content: space-between;
