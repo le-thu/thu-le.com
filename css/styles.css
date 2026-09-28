@@ -583,20 +583,20 @@ header:has(.collage) {
     user-select: none;
     -webkit-user-drag: none;
     -webkit-touch-callout: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.2s ease, translate 0.2s ease;
 }
 
 @media (hover: hover) {
     .collage-photo:hover:not(.is-dragging):not(.just-dropped) {
         translate: 0 -6px;
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
     }
 }
 
 .collage-photo.is-dragging {
     cursor: grabbing;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
 }
 
 .collage-photo.is-dragging,
