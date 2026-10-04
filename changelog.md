@@ -4,6 +4,7 @@ Notable design, content, accessibility, and infrastructure changes to thu-le.com
 
 ## 2026
 
+- **Oct 3:** Added Links to the site-wide navigation, now that the Links page carries short notes alongside the links I share.
 - **Sep 22:** Added a brief history section to the About page, listing the things that led to design before the career itself.
 - **Aug 9:** Added responsive, lazy-loaded YouTube embeds to the Links page using YouTube’s privacy-enhanced player.
 - **Aug 4:** Refined the Now page photo collage with a fan-shaped layout, hover lift, and a brief drop state when photos are released.
