@@ -103,8 +103,7 @@ h1, h2, h3, figcaption,
 .post-nav-label,
 .overline,
 .sub-heading,
-.minimal-link,
-.display-font {
+.minimal-link {
     font-family: var(--font-display);
     font-variation-settings: normal;
 }

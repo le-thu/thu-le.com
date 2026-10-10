@@ -12,16 +12,8 @@
         const lightMeta = document.querySelector('meta[name="theme-color"][media*="light"]');
         const darkMeta = document.querySelector('meta[name="theme-color"][media*="dark"]');
         if (!lightMeta || !darkMeta) return;
-        if (theme === 'light') {
-            lightMeta.content = '#FAFAFA';
-            darkMeta.content = '#FAFAFA';
-        } else if (theme === 'dark') {
-            lightMeta.content = '#1B1B1B';
-            darkMeta.content = '#1B1B1B';
-        } else {
-            lightMeta.content = '#FAFAFA';
-            darkMeta.content = '#1B1B1B';
-        }
+        lightMeta.content = theme === 'dark' ? '#1B1B1B' : '#FAFAFA';
+        darkMeta.content = theme === 'light' ? '#FAFAFA' : '#1B1B1B';
     };
 
     const updateToggleA11y = (button, theme) => {
