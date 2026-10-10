@@ -56,6 +56,7 @@
             updateToggleA11y(button, effectiveTheme());
             button.addEventListener('click', () => {
                 const next = effectiveTheme() === 'dark' ? 'light' : 'dark';
+                window.umami?.track('Theme toggle', { to: next });
                 applyTheme(next);
                 try { localStorage.setItem(STORAGE_KEY, next); } catch (e) {}
                 updateToggleA11y(button, next);
