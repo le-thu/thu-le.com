@@ -22,6 +22,7 @@ html {
     --color-display: light-dark(#2E2E2E, #D8D8D8);
     --color-body: light-dark(#444444, #C9C9C9);
     --color-accent: light-dark(#111111, #FAFAFA);
+    --color-photo-frame: light-dark(#FFFFFF, #E6E6E6);
 
     --color-display-20: hsl(from var(--color-display) h s l / 20%);
     --color-display-30: hsl(from var(--color-display) h s l / 30%);
@@ -559,6 +560,17 @@ figcaption {
     border-radius: 0.5rem;
 }
 
+/* printed photos (Now collage, About photo) */
+
+.collage-photo,
+.profile-image {
+    border: 0.5rem solid var(--color-photo-frame);
+    border-radius: 2px;
+    background-color: var(--color-photo-frame);
+    background-size: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 /* now page */
 
 header:has(.collage) {
@@ -578,12 +590,12 @@ header:has(.collage) {
     position: absolute;
     width: 16rem;
     height: auto;
+    aspect-ratio: auto 4 / 3;
     cursor: grab;
     touch-action: none;
     user-select: none;
     -webkit-user-drag: none;
     -webkit-touch-callout: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.2s ease, translate 0.2s ease;
 }
 
@@ -614,7 +626,9 @@ header:has(.collage) {
     position: absolute;
     top: -15rem;
     right: 5rem;
+    width: 100%;
     max-width: 14.375rem;
+    aspect-ratio: auto 3 / 4;
     rotate: -9deg;
     transition: rotate 200ms ease-in-out;
 }
