@@ -42,7 +42,7 @@ html {
     --font-display: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
     --font-body: 'InterVariable', system-ui, -apple-system, sans-serif;
 
-    --letter-spacing-normal: -0.014375em;
+    --letter-spacing-normal: -0.01375em;
     --letter-spacing-heading: -0.0125em;
 
     --content-max-width: 37.5rem;
@@ -93,7 +93,7 @@ body {
     font-weight: 400;
     line-height: 1.525;
     letter-spacing: var(--letter-spacing-normal);
-    font-variation-settings: "opsz" 21;
+    font-variation-settings: "opsz" 25;
     text-wrap: pretty;
     -webkit-font-smoothing: antialiased;
 }
@@ -508,7 +508,7 @@ a.blog-entry:hover {
 
 .post-navigation .minimal-link {
     font-family: var(--font-body);
-    font-variation-settings: "opsz" 16;
+    font-variation-settings: "opsz" 25;
 }
 
 .post-navigation aside {
@@ -527,7 +527,7 @@ a.blog-entry:hover {
 
 .post-nav-label {
     font-weight: 580;
-    letter-spacing: var(--letter-spacing-heading);
+    letter-spacing: -0.00625em;
     margin-block: 1.5rem 0.25rem;
 }
 
