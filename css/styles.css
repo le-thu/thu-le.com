@@ -42,7 +42,7 @@ html {
     --font-display: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
     --font-body: 'InterVariable', system-ui, -apple-system, sans-serif;
 
-    --letter-spacing-normal: -0.01375em;
+    --letter-spacing-default: -0.0125em;
     --letter-spacing-heading: -0.0125em;
 
     --content-max-width: 37.5rem;
@@ -92,7 +92,7 @@ body {
     font-size: var(--font-size-base);
     font-weight: 400;
     line-height: 1.525;
-    letter-spacing: var(--letter-spacing-normal);
+    letter-spacing: var(--letter-spacing-default);
     font-variation-settings: "opsz" 25;
     text-wrap: pretty;
     -webkit-font-smoothing: antialiased;
