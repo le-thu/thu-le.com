@@ -3,6 +3,7 @@
 
     if (photos.length) {
         let topZ = 0;
+        let dragTracked = false;
         photos.forEach((p) => {
             const z = parseInt(p.style.zIndex, 10) || 0;
             if (z > topZ) topZ = z;
@@ -23,6 +24,10 @@
 
             photo.addEventListener('pointermove', (e) => {
                 if (!photo.hasPointerCapture(e.pointerId)) return;
+                if (!dragTracked) {
+                    dragTracked = true;
+                    window.umami?.track('Collage drag');
+                }
                 const parent = photo.parentElement.getBoundingClientRect();
                 photo.style.left = (e.clientX - parent.left - offsetX) + 'px';
                 photo.style.top  = (e.clientY - parent.top  - offsetY) + 'px';
