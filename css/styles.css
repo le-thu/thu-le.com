@@ -732,8 +732,6 @@ header:has(.collage) {
 }
 
 @media screen and (max-width: 440px) {
-    body { margin-inline: 1rem; }
-    .top-nav { padding-block: 1rem; }
     .blog-entry .dashed-line { visibility: hidden; }
     .blog-section { display: block; }
     .blog-section .overline { margin-block-end: 1rem; }
