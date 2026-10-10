@@ -13,14 +13,14 @@
         const darkMeta = document.querySelector('meta[name="theme-color"][media*="dark"]');
         if (!lightMeta || !darkMeta) return;
         if (theme === 'light') {
-            lightMeta.content = '#FBF9F9';
-            darkMeta.content = '#FBF9F9';
+            lightMeta.content = '#FAFAFA';
+            darkMeta.content = '#FAFAFA';
         } else if (theme === 'dark') {
-            lightMeta.content = '#1C1B19';
-            darkMeta.content = '#1C1B19';
+            lightMeta.content = '#1B1B1B';
+            darkMeta.content = '#1B1B1B';
         } else {
-            lightMeta.content = '#FBF9F9';
-            darkMeta.content = '#1C1B19';
+            lightMeta.content = '#FAFAFA';
+            darkMeta.content = '#1B1B1B';
         }
     };
 

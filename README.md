@@ -33,7 +33,7 @@ changelog.md      notable site changes over the years
 
 ## Good to know
 
-- All colors are CSS custom properties in `:root`, with `light-dark()` for themes. The two `theme-color` meta tags on each page (`#FBF9F9` light, `#1C1B19` dark) are a hand-maintained copy of `--color-background`.
+- All colors are CSS custom properties in `:root`, with `light-dark()` for themes. The two `theme-color` meta tags on each page (`#FAFAFA` light, `#1B1B1B` dark) are a hand-maintained copy of `--color-background`.
 - Icons are inline SVG, no icon files. `viewBox="0 0 20 20"`, `fill="currentColor"`, sizing in CSS.
 - Images are kept at 1600px longest edge, WebP at quality 80, under 500KB.
 

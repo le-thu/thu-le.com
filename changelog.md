@@ -4,6 +4,7 @@ Notable design, content, accessibility, and infrastructure changes to thu-le.com
 
 ## 2026
 
+- **Oct 10:** Moved to a fully neutral grayscale palette, dropping the warm brown tint. Each color kept its perceived lightness, so contrast stayed the same, with a #FAFAFA background in light mode and #1B1B1B in dark. Light mode text also went a step darker for stronger contrast on the body copy.
 - **Oct 3:** Added Links to the site-wide navigation, now that the Links page carries short notes alongside the links I share.
 - **Sep 22:** Added a brief history section to the About page, listing the things that led to design before the career itself.
 - **Aug 9:** Added responsive, lazy-loaded YouTube embeds to the Links page using YouTube’s privacy-enhanced player.
@@ -16,7 +17,7 @@ Notable design, content, accessibility, and infrastructure changes to thu-le.com
 - **May 3:** Made the Now page photo collage draggable, replacing the photo carousel that had displayed the images before. Photos of recent travels and workspaces can be grabbed and rearranged, with grab and grabbing cursors signaling the interaction.
 - **Apr 27:** Brought back a top navigation bar with an inline SVG theme toggle, both gone since late 2024. Theme changes animate over 0.4s, and a first-paint guard suppresses the transition flash on load.
 - **Apr 25:** Refined the site-wide entrance animations. Content slides up 1rem and unblurs over 800ms on an eased curve, staggered so the header, each main block, and the footer arrive in sequence.
-- **Apr 19:** Settled into the current warm palette: an off-white #FBF9F9 background with near-black text in light mode and the inverse in dark, plus a high-contrast near-black and near-white accent.
+- **Apr 19:** Settled into a warm palette: an off-white #FBF9F9 background with near-black text in light mode and the inverse in dark, plus a high-contrast near-black and near-white accent.
 - **Feb 16:** Added related links to the bottom of blog posts.
 - **Jan 22:** Added robots.txt and llms.txt to guide search crawlers and AI agents.
 - **Jan 18:** Switched the prose to smart quotes for typographically correct quotation marks and apostrophes.

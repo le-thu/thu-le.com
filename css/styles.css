@@ -18,10 +18,10 @@ html {
 
 :root {
     color-scheme: light dark;
-    --color-background: light-dark(#FBF9F9, #1C1B19);
-    --color-display: light-dark(#3E3838, #D9D8D4);
-    --color-body: light-dark(#554E4E, #CAC9C4);
-    --color-accent: light-dark(#271717, #FAFAFA);
+    --color-background: light-dark(#FAFAFA, #1B1B1B);
+    --color-display: light-dark(#2E2E2E, #D8D8D8);
+    --color-body: light-dark(#444444, #C9C9C9);
+    --color-accent: light-dark(#111111, #FAFAFA);
 
     --color-display-20: hsl(from var(--color-display) h s l / 20%);
     --color-display-30: hsl(from var(--color-display) h s l / 30%);
