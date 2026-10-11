@@ -192,6 +192,10 @@ a {
     transition: color 120ms ease-in-out, text-decoration-color 120ms ease-in-out;
 }
 
+:is(p, li) a {
+    color: var(--color-display);
+}
+
 a:hover,
 a:focus-visible {
     color: var(--color-accent);
@@ -282,7 +286,7 @@ p.compact {
 
 .top-nav-links {
     display: flex;
-    gap: 1.125rem;
+    gap: 1rem;
     align-items: center;
     color: var(--color-display-70);
 }
@@ -308,7 +312,7 @@ p.compact {
     max-width: var(--content-max-width);
     margin-inline: auto;
     display: flex;
-    gap: 1.125rem;
+    gap: 1rem;
     margin-block: 1rem;
 }
 
