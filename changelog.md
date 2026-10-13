@@ -4,7 +4,7 @@ Notable design, content, accessibility, and infrastructure changes to thu-le.com
 
 ## 2026
 
-- **Oct 13:** Redesigned the footer. Every page now ends with a directory of the site’s pages and profiles, and a large, pale version of the site logo cropped by the bottom edge of the page that lifts slightly on hover. The homepage keeps its RSS and profile links and theme toggle above the logo.
+- **Oct 13:** Redesigned the footer. Every page now ends with a directory of the site’s pages and profiles, and a large, pale version of the site logo cropped by the bottom edge of the page that lifts slightly on hover. The homepage keeps its RSS and profile links and theme toggle above the logo. The 404 page dropped its navigation and footer for a scattered version of the same logo that reassembles as you head back home.
 - **Oct 10:** Moved to a fully neutral grayscale palette, dropping the warm brown tint. Each color kept its perceived lightness, so contrast stayed the same, with a #FAFAFA background in light mode and #1B1B1B in dark. Light mode text also went a step darker for stronger contrast on the body copy.
 - **Oct 3:** Added Links to the site-wide navigation, now that the Links page carries short notes alongside the links I share.
 - **Sep 22:** Added a brief history section to the About page, listing the things that led to design before the career itself.

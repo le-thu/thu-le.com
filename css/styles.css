@@ -699,6 +699,71 @@ header:has(.collage) {
     transition: rotate 200ms ease-in-out;
 }
 
+/* 404 page */
+
+.not-found {
+    min-height: 100svh;
+    display: grid;
+    place-content: center;
+    padding-block: 2rem;
+    text-align: center;
+
+    & p { margin-block: 0.5rem 0; }
+}
+
+/* logo strokes scatter, then snap back while the home link is hovered */
+.not-found-mark {
+    width: min(14rem, 50vw);
+    margin: 0 auto 4.5rem;
+    color: color-mix(in srgb, var(--color-display) 25%, var(--color-background));
+    transition: color 300ms ease;
+
+    & svg.site-mark {
+        margin-bottom: 0;
+        transform: none;
+        overflow: visible;
+    }
+
+    & svg.site-mark path {
+        stroke: none;
+        transform-box: fill-box;
+        transform-origin: center;
+        transition: transform 900ms cubic-bezier(0.34, 1.4, 0.64, 1);
+    }
+
+    & path:nth-child(1) { transform: translate(-30%, -60%) rotate(-38deg); }
+    & path:nth-child(2) { transform: translate(-260%, 300%) rotate(70deg); }
+    & path:nth-child(3) { transform: translate(900%, 40%) rotate(-95deg); }
+    & path:nth-child(4) { transform: translate(12%, -4%) rotate(9deg); }
+}
+
+.not-found:has(a:is(:hover, :focus-visible)) .not-found-mark {
+    color: color-mix(in srgb, var(--color-display) 40%, var(--color-background));
+
+    & path {
+        transform: none;
+        transition-duration: 700ms;
+    }
+}
+
+/* no hover on touch screens, so it reassembles on its own */
+@media (hover: none) {
+    .not-found-mark path {
+        animation: reassemble 700ms 1.5s cubic-bezier(0.34, 1.4, 0.64, 1) forwards;
+    }
+}
+
+@keyframes reassemble {
+    to { transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .not-found-mark path {
+        transition: none;
+        animation: none;
+    }
+}
+
 /* animations */
 
 @media (prefers-reduced-motion: no-preference) {
