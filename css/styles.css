@@ -230,6 +230,18 @@ a:focus-visible,
     }
 }
 
+@media (hover: hover) {
+    .footer-directory ul:has(a:hover) a:not(:hover),
+    .minimal-link-container:has(a:hover) a:not(:hover),
+    footer .top-nav-links:has(a:hover) a:not(:hover) { color: var(--color-display-50); }
+    .footer-directory a:hover,
+    .minimal-link-container a:hover,
+    footer .top-nav-links a:hover { color: var(--color-accent); }
+
+    .big-mark:hover { color: var(--mark-color-hover); }
+    .big-mark:hover svg.site-mark { transform: translateY(-4px); }
+}
+
 :is(h2, h3):hover .anchor {
     opacity: 0.7;
 }
@@ -316,21 +328,75 @@ p.compact {
     margin-block: 1rem;
 }
 
+.minimal-link-container a,
+footer .top-nav-links a {
+    transition: color 200ms ease;
+}
+
 footer {
-    margin-block: 4rem;
+    margin-block: 3rem 0;
 }
 
 .footer-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-block: 2rem 0;
 }
 
-.nav-container {
-    height: 2rem;
-    margin-inline: auto;
-    text-align: center;
+.footer-directory {
+    border-top: 0.05rem solid var(--color-display-20);
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+/* doubles the gap after the bio */
+.footer-about {
+    padding-inline-end: 2.5rem;
+}
+
+.footer-name {
+    margin: 0 0 0.75rem;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.footer-note {
+    margin: 0;
+}
+
+.footer-directory ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-directory li {
+    padding: 0;
+    margin: 0 0 0.375rem;
+}
+
+.footer-directory a {
+    color: var(--color-display-70);
+    transition: color 200ms ease;
+}
+
+/* footer logo: shows the top 60%, crops the rest */
+.big-mark {
+    --mark-color: color-mix(in srgb, var(--color-display) 15%, var(--color-background));
+    --mark-color-hover: color-mix(in srgb, var(--color-display) 24%, var(--color-background));
+    --mark-thin: 0.5;
+    overflow: hidden;
+    padding-top: 3%;
+    margin-top: 1.5rem;
+    color: var(--mark-color);
+    transition: color 300ms ease;
+}
+
+.footer-container + .big-mark {
+    margin-top: 4rem;
 }
 
 .separator {
@@ -361,15 +427,18 @@ footer {
 /* icons */
 
 svg.site-mark {
-    color: var(--color-display-70);
-    height: 2rem;
-    width: 2rem;
-    display: inline-block;
-    transition: color 200ms ease-in-out;
-}
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: -40%;
+    transform: translateY(6%);
 
-svg.site-mark:hover {
-    color: var(--color-accent);
+    /* thins the lines */
+    & path {
+        stroke: var(--color-background);
+        stroke-width: var(--mark-thin);
+        stroke-linejoin: round;
+    }
 }
 
 svg.theme-toggle-icon,
@@ -498,10 +567,10 @@ a.blog-entry:hover {
 
 .post-navigation {
     border-top: 0.05rem solid var(--color-display-20);
-    margin-block: 6rem 0;
+    margin-block: 4rem 0;
     margin-inline: auto;
     max-width: var(--content-max-width);
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .post-navigation .minimal-link {
@@ -557,7 +626,7 @@ figcaption {
     border-radius: 0.5rem;
 }
 
-/* printed photos (Now collage, About photo) */
+/* printed photos */
 
 .collage-photo,
 .profile-image {
@@ -635,6 +704,10 @@ header:has(.collage) {
 @media (prefers-reduced-motion: no-preference) {
     html {
         scroll-behavior: smooth;
+    }
+
+    svg.site-mark {
+        transition: transform 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
     }
 
     header, main {
@@ -735,4 +808,6 @@ header:has(.collage) {
     .blog-section .overline { margin-block-end: 1rem; }
     .blog-section .blog-entry { margin-block: 1.5rem; }
     .profile-image { display: none; }
+    .footer-directory { grid-template-columns: 1fr 1fr; }
+    .footer-about { grid-column: 1 / -1; padding-inline-end: 0; }
 }
