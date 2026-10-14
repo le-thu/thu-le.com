@@ -693,7 +693,7 @@ header:has(.collage) {
 
 .profile-image {
     position: absolute;
-    top: -15rem;
+    top: -12rem;
     right: 5rem;
     width: 100%;
     max-width: 14.375rem;
@@ -846,7 +846,7 @@ header:has(.collage) {
 
 @media screen and (max-width: 1080px) {
     .profile-image {
-        top: -19rem;
+        top: -15rem;
         max-width: 12.5rem;
     }
 }
@@ -859,8 +859,8 @@ header:has(.collage) {
     .collage-photo { width: 12.5rem; }
 
     .profile-image {
-        top: -15rem;
-        right: 2rem;
+        top: -12rem;
+        right: 1rem;
         max-width: 10rem;
     }
 
