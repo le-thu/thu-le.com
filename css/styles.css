@@ -284,13 +284,15 @@ p.compact {
 /* layout */
 
 .top-nav {
-    padding-block: 1.5rem;
+    padding-block: 1.5rem 0;
     padding-inline: 2rem;
 }
 
 .top-nav-inner {
     margin-inline: auto;
     max-width: var(--content-max-width);
+    border-bottom: 0.05rem solid var(--color-display-20);
+    padding-bottom: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -504,7 +506,8 @@ a:is(:hover, :focus-visible) :is(svg.reply-icon, svg.back-icon) {
     margin-inline: auto;
     margin-block: 4rem;
     display: grid;
-    grid-template-columns: auto 1fr;
+    /* fixed so narrow years like 2019 don't shift the titles left */
+    grid-template-columns: 3.125rem 1fr;
     column-gap: 4rem;
     row-gap: 1.5rem;
     align-items: baseline;
@@ -536,7 +539,7 @@ a:is(:hover, :focus-visible) :is(svg.reply-icon, svg.back-icon) {
 
     & .dashed-line {
         flex-grow: 1;
-        border-top: 0.05rem solid var(--color-display-20);
+        border-top: 0.05rem dashed var(--color-display-30);
         min-width: 2rem;
         margin-bottom: 0.5rem;
         transition: border-color 120ms ease-in-out;
@@ -849,6 +852,7 @@ header:has(.collage) {
 }
 
 @media screen and (max-width: 744px) {
+    :root { --font-size-base: 1.0625rem; }  /* 17px */
     body { margin-inline: 1.5rem; }
     .top-nav { padding-inline: 0; }
     .homepage-header, .subpage-header, .blogpage-header { margin-block: 5rem 4rem; }
