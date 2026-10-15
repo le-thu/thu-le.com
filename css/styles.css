@@ -128,7 +128,7 @@ p {
 }
 
 strong {
-    font-weight: 560;
+    font-weight: 550;
 }
 
 h1, h2, h3 {
@@ -501,12 +501,41 @@ a:is(:hover, :focus-visible) :is(svg.reply-icon, svg.back-icon) {
     margin-block: 2.5rem;
 }
 
+/* Links page entries; the homepage reuses .links-page-section at 2.5rem */
+.links-page-section:has(.links-meta) {
+    margin-block: 5rem;
+}
+
+.links-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-block: 0 0.75rem;
+
+    & a {
+        color: inherit;
+    }
+
+    & a:hover,
+    & a:focus-visible {
+        color: var(--color-accent);
+    }
+}
+
+.links-meta + .links-title {
+    margin-top: 0;
+
+    & a {
+        text-decoration: none;
+    }
+}
+
 .blog-section {
     max-width: var(--content-max-width);
     margin-inline: auto;
     margin-block: 4rem;
     display: grid;
-    /* fixed so narrow years like 2019 don't shift the titles left */
     grid-template-columns: 3.125rem 1fr;
     column-gap: 4rem;
     row-gap: 1.5rem;
@@ -749,7 +778,6 @@ header:has(.collage) {
     }
 }
 
-/* no hover on touch screens, so it reassembles on its own */
 @media (hover: none) {
     .not-found-mark path {
         animation: reassemble 700ms 1.5s cubic-bezier(0.34, 1.4, 0.64, 1) forwards;
