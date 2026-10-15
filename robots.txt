@@ -27,12 +27,17 @@ Disallow: /
 User-agent: ClaudeBot
 Disallow: /
 
-# Google - Gemini training only, NOT Google Search
-User-agent: Google-Extended
+# Google - general-purpose R&D crawler, NOT Google Search
+User-agent: GoogleOther
 Disallow: /
 
-# Meta
+# Meta - training and Meta AI indexing
 User-agent: Meta-ExternalAgent
+Disallow: /
+
+# Meta - language models for speech recognition
+# (not facebookexternalhit, which builds link previews)
+User-agent: FacebookBot
 Disallow: /
 
 # ByteDance / TikTok (known to ignore robots.txt)
@@ -85,6 +90,9 @@ Disallow: /
 #   Applebot-Extended  - Apple Intelligence
 #   AI2Bot / AI2Bot-Dolma - Allen Institute, non-profit,
 #                        open Dolma research dataset
+#   Google-Extended    - Gemini training, but the same token
+#                        controls grounding in Gemini app
+#                        answers, so blocking it costs reach
 # ---------------------------------------------------------
 
 # ---------------------------------------------------------
@@ -106,4 +114,18 @@ User-agent: Claude-SearchBot
 Allow: /
 
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+# Meta AI fetching a link someone asked about.
+# Separate from Meta-ExternalAgent, which stays blocked.
+User-agent: Meta-ExternalFetcher
 Allow: /
