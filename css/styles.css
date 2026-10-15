@@ -14,25 +14,25 @@ html {
 
 :root {
     color-scheme: light dark;
-    --color-background: light-dark(#FAFAFA, #1B1B1B);
-    --color-display: light-dark(#2E2E2E, #D8D8D8);
-    --color-body: light-dark(#444444, #C9C9C9);
-    --color-accent: light-dark(#111111, #FAFAFA);
-    --color-photo-frame: light-dark(#FFFFFF, #E6E6E6);
+    --color-background: light-dark(oklch(98.5% 0 0), oklch(22.2% 0 0));
+    --color-display: light-dark(oklch(30.1% 0 0), oklch(88.2% 0 0));
+    --color-body: light-dark(oklch(38.7% 0 0), oklch(83.6% 0 0));
+    --color-accent: light-dark(oklch(17.8% 0 0), oklch(98.5% 0 0));
+    --color-photo-frame: light-dark(oklch(100% 0 0), oklch(92.5% 0 0));
 
-    --color-display-20: hsl(from var(--color-display) h s l / 20%);
-    --color-display-30: hsl(from var(--color-display) h s l / 30%);
-    --color-display-50: hsl(from var(--color-display) h s l / 50%);
-    --color-display-70: hsl(from var(--color-display) h s l / 70%);
-    --color-accent-10: hsl(from var(--color-accent) h s l / 10%);
-    --color-accent-20: hsl(from var(--color-accent) h s l / 20%);
-    --color-accent-50: hsl(from var(--color-accent) h s l / 50%);
-    --color-accent-70: hsl(from var(--color-accent) h s l / 70%);
+    --color-display-20: oklch(from var(--color-display) l c h / 20%);
+    --color-display-30: oklch(from var(--color-display) l c h / 30%);
+    --color-display-50: oklch(from var(--color-display) l c h / 50%);
+    --color-display-70: oklch(from var(--color-display) l c h / 70%);
+    --color-accent-10: oklch(from var(--color-accent) l c h / 10%);
+    --color-accent-20: oklch(from var(--color-accent) l c h / 20%);
+    --color-accent-50: oklch(from var(--color-accent) l c h / 50%);
+    --color-accent-70: oklch(from var(--color-accent) l c h / 70%);
 
-    --font-size-base: 1rem;     /* 16px base */
-    --font-size-md: 1.1875rem;  /* 19px */
-    --font-size-lg: 1.3125rem;  /* 21px */
-    --font-size-xl: 1.4375rem;  /* 23px */
+    --font-size-base: 1rem;      /* 16px base */
+    --font-size-md: 1.1875rem;   /* 19px */
+    --font-size-lg: 1.3125rem;   /* 21px */
+    --font-size-xl: 1.4375rem;   /* 23px */
     --font-size-2xl: 1.5625rem;  /* 25px */
 
     --font-display: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
@@ -354,7 +354,6 @@ footer {
     align-items: start;
 }
 
-/* doubles the gap after the bio */
 .footer-about {
     padding-inline-end: 2.5rem;
 }
@@ -385,7 +384,6 @@ footer {
     transition: color 200ms ease;
 }
 
-/* footer logo: shows the top 60%, crops the rest */
 .big-mark {
     --mark-color: color-mix(in srgb, var(--color-display) 15%, var(--color-background));
     --mark-color-hover: color-mix(in srgb, var(--color-display) 24%, var(--color-background));
@@ -435,7 +433,6 @@ svg.site-mark {
     margin-bottom: -40%;
     transform: translateY(6%);
 
-    /* thins the lines */
     & path {
         stroke: var(--color-background);
         stroke-width: var(--mark-thin);
@@ -743,7 +740,6 @@ header:has(.collage) {
     & p { margin-block: 0.5rem 0; }
 }
 
-/* logo strokes scatter, then snap back while the home link is hovered */
 .not-found-mark {
     width: min(14rem, 50vw);
     margin: 0 auto 4.5rem;

@@ -8,14 +8,6 @@
         return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     };
 
-    const updateThemeColorMeta = (theme) => {
-        const lightMeta = document.querySelector('meta[name="theme-color"][media*="light"]');
-        const darkMeta = document.querySelector('meta[name="theme-color"][media*="dark"]');
-        if (!lightMeta || !darkMeta) return;
-        lightMeta.content = theme === 'dark' ? '#1B1B1B' : '#FAFAFA';
-        darkMeta.content = theme === 'light' ? '#FAFAFA' : '#1B1B1B';
-    };
-
     const updateToggleA11y = (button, theme) => {
         const isDark = theme === 'dark';
         button.setAttribute('aria-pressed', isDark ? 'true' : 'false');
@@ -30,7 +22,6 @@
             delete root.dataset.theme;
             root.style.colorScheme = '';
         }
-        updateThemeColorMeta(theme);
     };
 
     try {
@@ -42,8 +33,6 @@
     } catch (e) {}
 
     document.addEventListener('DOMContentLoaded', () => {
-        updateThemeColorMeta(root.dataset.theme);
-
         document.querySelectorAll('.theme-toggle').forEach((button) => {
             updateToggleA11y(button, effectiveTheme());
             button.addEventListener('click', () => {
