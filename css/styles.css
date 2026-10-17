@@ -299,6 +299,26 @@ p.compact {
     margin-block-start: 4rem;
 }
 
+/* fixed label width so stacked tables line up */
+.spec-list {
+    list-style: none;
+    padding: 0;
+
+    & li {
+        display: grid;
+        grid-template-columns: 18rem 1fr;
+        column-gap: 1.5rem;
+        padding: 0.5rem 0;
+        margin: 0;
+        color: var(--color-display);
+        border-top: 0.05rem solid var(--color-display-20);
+    }
+
+    & li:last-child {
+        border-bottom: 0.05rem solid var(--color-display-20);
+    }
+}
+
 /* utilities */
 
 .secondary { color: var(--color-display-70); }
@@ -905,6 +925,12 @@ header:has(.collage) {
     .top-nav { padding-inline: 0; }
     .homepage-header, .subpage-header, .blogpage-header { margin-block: 5rem 4rem; }
     .collage-photo { width: 12.5rem; }
+
+    .spec-list li {
+        grid-template-columns: 1fr;
+        row-gap: 0.125rem;
+        padding-block: 0.875rem;
+    }
 
     .profile-image {
         top: -12rem;
