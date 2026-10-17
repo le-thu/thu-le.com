@@ -276,7 +276,6 @@ p.compact {
     margin-block: 0.5rem;
 }
 
-/* fills the first column top to bottom, then the second */
 .blogroll {
     list-style: none;
     padding: 0;
@@ -542,7 +541,7 @@ a:is(:hover, :focus-visible) :is(svg.reply-icon, svg.back-icon) {
     margin-block: 2.5rem;
 }
 
-/* Links page entries; the homepage reuses .links-page-section at 2.5rem */
+/* links page only, homepage keeps 2.5rem */
 .links-page-section:has(.links-meta) {
     margin-block: 5rem;
 }
