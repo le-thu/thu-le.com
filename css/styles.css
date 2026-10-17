@@ -233,6 +233,7 @@ a:focus-visible,
 @media (hover: hover) {
     .footer-directory ul:has(a:hover) a:not(:hover),
     .minimal-link-container:has(a:hover) a:not(:hover),
+    .blogroll:has(a:hover) a:not(:hover),
     footer .top-nav-links:has(a:hover) a:not(:hover) { color: var(--color-display-50); }
     .footer-directory a:hover,
     .minimal-link-container a:hover,
@@ -273,6 +274,29 @@ ol li {
 .list-compact li,
 p.compact {
     margin-block: 0.5rem;
+}
+
+/* fills the first column top to bottom, then the second */
+.blogroll {
+    list-style: none;
+    padding: 0;
+    columns: 2;
+    column-gap: 2.5rem;
+
+    & li {
+        padding: 0 0 0.5rem;
+        margin: 0;
+        break-inside: avoid;
+    }
+
+    & a {
+        text-decoration: none;
+        transition: color 200ms ease;
+    }
+}
+
+.blogroll-more {
+    margin-block-start: 4rem;
 }
 
 /* utilities */
