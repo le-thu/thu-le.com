@@ -14,6 +14,7 @@ This is her personal website where she shares writing on intentional living, pro
 - [Uses](https://thu-le.com/uses): Tools and software she uses
 - [Links](https://thu-le.com/links): Running notes on what she's reading, watching, and thinking about
 - [Blogroll](https://thu-le.com/blogroll): Blogs and sites she follows and recommends
+- [Changelog](https://thu-le.com/changelog): Notable design, content, and infrastructure changes to the site since 2020
 
 ## Now updates
 

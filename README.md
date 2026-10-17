@@ -28,7 +28,7 @@ assets/           favicon, social preview image, about photo
 feed.xml          RSS feed, hand-maintained
 sitemap.xml       sitemap, hand-maintained
 llms.txt          summary of the site for AI crawlers
-changelog.md      notable site changes over the years
+changelog.html    notable site changes over the years
 ```
 
 ## Good to know
