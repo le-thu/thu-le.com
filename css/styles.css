@@ -815,7 +815,6 @@ header:has(.collage) {
     padding-block: 3rem 6rem;
 
     & h1 {
-        font-weight: 600;
         color: var(--color-display);
         margin-block: 0 2.5rem;
     }
@@ -859,7 +858,6 @@ header:has(.collage) {
     & h2 {
         position: relative;
         margin: 0 0 1.25rem;
-        font-weight: 600;
         color: var(--color-display);
     }
 
