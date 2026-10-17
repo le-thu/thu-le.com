@@ -229,9 +229,7 @@ a:focus-visible,
     .anchor {
         opacity: 0;
     }
-}
 
-@media (hover: hover) {
     .footer-directory ul:has(a:hover) a:not(:hover),
     .minimal-link-container:has(a:hover) a:not(:hover),
     .blogroll:has(a:hover) a:not(:hover),
@@ -325,6 +323,16 @@ p.compact {
 .subtle, .em-dash { color: var(--color-display-50); }
 .minimal-margin { margin-block: 0.375rem; }
 
+/* read by screen readers, invisible on screen */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
 /* layout */
 
 .top-nav {
@@ -410,6 +418,23 @@ footer {
 
 .footer-note {
     margin: 0;
+}
+
+.footer-clock {
+    margin: 1rem 0 0;
+    font-family: var(--font-mono);
+    font-variation-settings: normal;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    color: var(--color-display-70);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .footer-clock-colon { animation: blink 1s steps(1) infinite; }
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
 }
 
 .footer-directory ul {
