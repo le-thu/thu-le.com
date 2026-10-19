@@ -422,10 +422,7 @@ footer {
 
 .footer-clock {
     margin: 1rem 0 0;
-    font-family: var(--font-mono);
-    font-variation-settings: normal;
-    font-size: 0.875rem;
-    letter-spacing: 0;
+    font-variant-numeric: tabular-nums;
     color: var(--color-display-70);
 }
 
