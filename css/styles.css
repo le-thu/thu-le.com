@@ -188,8 +188,8 @@ a {
     color: inherit;
     text-decoration: underline;
     text-decoration-color: var(--color-display-30);
-    text-decoration-thickness: 0.075rem;
-    text-underline-offset: 0.1875em;
+    text-decoration-thickness: 0.08125rem;
+    text-underline-offset: 0.25em;
     transition: color 120ms ease-in-out, text-decoration-color 120ms ease-in-out;
 }
 
