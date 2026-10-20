@@ -633,7 +633,7 @@ a:is(:hover, :focus-visible) :is(svg.reply-icon, svg.back-icon) {
 
     & .dashed-line {
         flex-grow: 1;
-        border-top: 0.05rem dashed var(--color-display-30);
+        border-top: 0.05rem solid var(--color-display-20);
         min-width: 2rem;
         margin-bottom: 0.5rem;
         transition: border-color 120ms ease-in-out;
