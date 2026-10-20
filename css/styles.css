@@ -392,6 +392,8 @@ footer {
 }
 
 .footer-container {
+    border-top: 0.05rem solid var(--color-display-20);
+    padding-top: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
