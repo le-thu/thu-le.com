@@ -1,4 +1,4 @@
-Source for [thu-le.com](https://thu-le.com). Plain HTML and CSS with two small scripts. No framework, no build step, no dependencies. Hosted on Cloudflare Pages.
+Source for [thu-le.com](https://thu-le.com). Plain HTML and CSS with a few small scripts. No framework, no build step, no dependencies. Hosted on Cloudflare Pages.
 
 ## Run locally
 
@@ -15,7 +15,7 @@ Then open `http://localhost:8000`.
 ```
 index.html        homepage
 about.html        about page
-now/              Now updates, one page per month plus an index
+now/              Now updates, one page per month plus an index, images in now/images
 blog/             blog posts, one HTML file per post, images in blog/images
 links.html        links page
 blogroll.html     blogs I read
@@ -23,17 +23,20 @@ uses.html         tools I use
 css/styles.css    the only stylesheet
 js/theme.js       light/dark theme toggle
 js/collage.js     draggable photo collage on the Now page
+js/clock.js       Saigon time clock in the footer
 fonts/            self-hosted Inter and Bricolage Grotesque (variable woff2)
 assets/           favicon, social preview image, about photo
 feed.xml          RSS feed, hand-maintained
 sitemap.xml       sitemap, hand-maintained
 llms.txt          summary of the site for AI crawlers
 changelog.html    notable site changes over the years
+404.html          not found page
+robots.txt        crawler rules
 ```
 
 ## Good to know
 
-- All colors are CSS custom properties in `:root`, with `light-dark()` for themes. No `theme-color` meta tags. Browser UI follows `color-scheme` and the page background.
+- All colors are OKLCH custom properties in `:root`, with `light-dark()` for themes. No `theme-color` meta tags. Browser UI follows `color-scheme` and the page background.
 - Icons are inline SVG, no icon files. `viewBox="0 0 20 20"`, `fill="currentColor"`, sizing in CSS.
 - Images are kept at 1600px longest edge, WebP at quality 80, under 500KB.
 
