@@ -372,7 +372,7 @@ p.compact {
 
 .homepage-header { margin-block: 11.5rem 6rem; }
 .subpage-header { margin-block: 8rem; }
-.blogpage-header { margin-block: 8rem 4rem; }
+.blogpage-header { margin-block: 8rem 6rem; }
 
 .minimal-link-container {
     max-width: var(--content-max-width);
