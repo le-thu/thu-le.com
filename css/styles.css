@@ -16,6 +16,8 @@ html {
     --color-body: light-dark(oklch(38.7% 0 0), oklch(83.6% 0 0));
     --color-accent: light-dark(oklch(17.8% 0 0), oklch(98.5% 0 0));
     --color-photo-frame: light-dark(oklch(100% 0 0), oklch(92.5% 0 0));
+    --color-selection: light-dark(oklch(95% 0.08 100), oklch(80% 0.09 95));
+    --color-selection-text: oklch(17.8% 0 0);
 
     --color-display-20: oklch(from var(--color-display) l c h / 20%);
     --color-display-30: oklch(from var(--color-display) l c h / 30%);
@@ -72,8 +74,12 @@ html {
 /* base elements */
 
 ::selection {
-    background-color: var(--color-accent-20);
-    color: var(--color-accent);
+    background-color: var(--color-selection);
+    color: var(--color-selection-text);
+}
+
+img::selection {
+    background-color: transparent;
 }
 
 body {
@@ -185,16 +191,9 @@ a {
     color: var(--color-display);
 }
 
-a:hover,
-a:focus-visible {
+a:hover {
     color: var(--color-accent);
     text-decoration-color: var(--color-accent-70);
-}
-
-a:focus-visible,
-.theme-toggle:focus-visible {
-    outline: 0.0625rem dashed var(--color-accent-70);
-    outline-offset: 0.25rem;
 }
 
 .minimal-link {
@@ -508,8 +507,7 @@ svg.theme-toggle-icon {
         color: inherit;
     }
 
-    & a:hover,
-    & a:focus-visible {
+    & a:hover {
         color: var(--color-accent);
     }
 }
@@ -994,4 +992,21 @@ header:has(.collage) {
     .profile-image { display: none; }
     .footer-directory { grid-template-columns: 1fr 1fr; }
     .footer-about { grid-column: 1 / -1; padding-inline-end: 0; }
+}
+
+/* keyboard focus */
+
+/* last in the file and a[href] so it wins ties with link colors set above (nav current page, changelog bar, blog dates) */
+:is(a[href], .theme-toggle):focus-visible {
+    outline: 0.0625rem solid transparent;  /* shows in forced-colors mode, where backgrounds are dropped */
+    background-color: var(--color-selection);
+    box-shadow: 0 0 0 0.25rem var(--color-selection);
+    border-radius: 0.125rem;
+    color: var(--color-selection-text);
+    text-decoration-color: currentColor;
+
+    & * {
+        color: inherit;
+        opacity: 1;
+    }
 }
