@@ -34,6 +34,10 @@
 
   <!-- Blog posts (newest first) -->
   <url>
+    <loc>https://thu-le.com/blog/on-duality</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
     <loc>https://thu-le.com/blog/my-toolkit-for-2026</loc>
     <lastmod>2026-10-12</lastmod>
   </url>
