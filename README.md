@@ -23,7 +23,6 @@ uses.html         tools I use
 css/styles.css    the only stylesheet
 js/theme.js       light/dark theme toggle
 js/collage.js     draggable photo collage on the Now page
-js/clock.js       Saigon time clock in the footer
 fonts/            self-hosted Inter and Bricolage Grotesque (variable woff2)
 assets/           favicon, social preview image, about photo
 feed.xml          RSS feed, hand-maintained
