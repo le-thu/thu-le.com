@@ -9,19 +9,12 @@ This is her personal website where she shares writing on intentional living, pro
 ## Main sections
 
 - [About](https://thu-le.com/about): About Thu, a brief history, how to connect, and site colophon
-- [Blog](https://thu-le.com/blog): Personal essays and reflections
-- [Now](https://thu-le.com/now): What she's currently focused on
+- [Blog](https://thu-le.com/blog/): Personal essays and reflections
+- [Now](https://thu-le.com/now/): What she's currently focused on
 - [Uses](https://thu-le.com/uses): Tools and software she uses
 - [Links](https://thu-le.com/links): Running notes on what she's reading, watching, and thinking about
 - [Blogroll](https://thu-le.com/blogroll): Blogs and sites she follows and recommends
 - [Changelog](https://thu-le.com/changelog): Notable design, content, and infrastructure changes to the site since 2020
-
-## Now updates
-
-- [October 2026](https://thu-le.com/now/october-2026): Changing her mind about AI, a freelance experiment, and China again
-- [May 2026](https://thu-le.com/now/may-2026): New Year in China, new apartment, AI fatigue, and a last-minute trip
-- [November 2025](https://thu-le.com/now/november-2025): Managing for the first time, and why she keeps thinking about airports
-- [May 2025](https://thu-le.com/now/may-2025): Trying a new format for Now updates
 
 ## Notable posts
 
@@ -32,7 +25,7 @@ This is her personal website where she shares writing on intentional living, pro
 - [Good work](https://thu-le.com/blog/good-work): Her journey into design and the search for good work
 - [50 things I learned in 2025](https://thu-le.com/blog/50-things-i-learned-in-2025): Annual learnings roundup
 
-Full archive at https://thu-le.com/blog
+Full archive at https://thu-le.com/blog/
 
 ## Contact
 

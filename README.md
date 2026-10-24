@@ -36,7 +36,7 @@ robots.txt        crawler rules
 ## Good to know
 
 - All colors are OKLCH custom properties in `:root`, with `light-dark()` for themes. No `theme-color` meta tags. Browser UI follows `color-scheme` and the page background.
-- Icons are inline SVG, no icon files. `viewBox="0 0 20 20"`, `fill="currentColor"`, sizing in CSS.
+- Icons are inline SVG, no icon files.
 - Images are kept at 1600px longest edge, WebP at quality 80, under 500KB.
 
 ## License

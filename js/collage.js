@@ -4,10 +4,6 @@
     if (photos.length) {
         let topZ = 0;
         let dragTracked = false;
-        photos.forEach((p) => {
-            const z = parseInt(p.style.zIndex, 10) || 0;
-            if (z > topZ) topZ = z;
-        });
 
         photos.forEach((photo) => {
             let offsetX, offsetY;
