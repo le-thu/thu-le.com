@@ -41,7 +41,7 @@ html {
     --letter-spacing-default: -0.003125em;
     --letter-spacing-heading: -0.0125em;
 
-    --content-max-width: 37.5rem;
+    --content-max-width: 35.25rem;
     --hairline: 0.05rem solid var(--color-display-20);
 
     --enter-duration: 800ms;
