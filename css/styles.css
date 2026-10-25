@@ -19,15 +19,14 @@ html {
     --color-selection: light-dark(oklch(95% 0.08 100), oklch(80% 0.09 95));
     --color-selection-text: oklch(17.8% 0 0);
 
-    --color-display-20: oklch(from var(--color-display) l c h / 20%);
-    --color-display-30: oklch(from var(--color-display) l c h / 30%);
+    --color-display-25: oklch(from var(--color-display) l c h / 25%);
     --color-display-50: oklch(from var(--color-display) l c h / 50%);
     --color-display-70: oklch(from var(--color-display) l c h / 70%);
     --color-accent-10: oklch(from var(--color-accent) l c h / 10%);
     --color-accent-20: oklch(from var(--color-accent) l c h / 20%);
     --color-accent-50: oklch(from var(--color-accent) l c h / 50%);
-    --color-accent-70: oklch(from var(--color-accent) l c h / 70%);
 
+    --font-size-sm: 0.875rem;    /* 14px */
     --font-size-base: 1rem;      /* 16px base */
     --font-size-md: 1.1875rem;   /* 19px */
     --font-size-lg: 1.3125rem;   /* 21px */
@@ -42,7 +41,7 @@ html {
     --letter-spacing-heading: -0.0125em;
 
     --content-max-width: 35.25rem;
-    --hairline: 0.05rem solid var(--color-display-20);
+    --hairline: 0.05rem solid var(--color-display-25);
 
     --enter-duration: 800ms;
     --enter-ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -155,7 +154,7 @@ h3 {
 .links-title {
     font-size: var(--font-size-md);
     font-weight: 500;
-    line-height: 1.375;
+    line-height: 1.4;
 }
 
 .sub-heading {
@@ -181,9 +180,9 @@ blockquote p {
 a {
     color: inherit;
     text-decoration: underline;
-    text-decoration-color: var(--color-display-30);
+    text-decoration-color: var(--color-display-25);
     text-decoration-thickness: 0.08125rem;
-    text-underline-offset: 0.25em;
+    text-underline-offset: 0.1875em;
     transition: color 120ms ease-in-out, text-decoration-color 120ms ease-in-out, background-color 120ms ease-in-out, box-shadow 120ms ease-in-out;
 }
 
@@ -193,7 +192,7 @@ a {
 
 a:hover {
     color: var(--color-accent);
-    text-decoration-color: var(--color-accent-70);
+    text-decoration-color: var(--color-accent-50);
 }
 
 /* highlight only links that keep their underline. the shadow stretches it to the full 1.5 line height without touching layout */
@@ -282,9 +281,9 @@ p.compact {
 
     & li {
         display: grid;
-        grid-template-columns: 18rem 1fr;
+        grid-template-columns: 16rem 1fr;
         column-gap: 1.5rem;
-        padding: 0.5rem 0;
+        padding-block: 0.5rem;
         margin: 0;
         color: var(--color-display);
         border-top: var(--hairline);
@@ -373,6 +372,7 @@ main:has(.post-navigation) + footer {
 
 .footer-note {
     margin: 0;
+    color: var(--color-display-70);
 }
 
 .footer-directory ul {
@@ -484,16 +484,11 @@ svg.theme-toggle-icon {
 }
 
 .links-page-section {
-    margin-block: 2.5rem;
-}
-
-/* links page only, homepage keeps 2.5rem */
-.links-page-section:has(.links-meta) {
     margin-block: 5rem;
 }
 
 .links-page-section p:not(.links-meta) {
-    margin-block: 0.5rem;
+    margin-block: 0.625rem;
 }
 
 .links-meta {
@@ -501,7 +496,7 @@ svg.theme-toggle-icon {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 0.5rem;
-    margin-block: 0 0.75rem;
+    margin-block: 0 0.625rem;
     color: var(--color-display-70);
 
     & time {
@@ -517,6 +512,15 @@ svg.theme-toggle-icon {
     }
 }
 
+/* listing meta lines and dates: links page, homepage, blog index */
+.links-meta,
+.blog-date {
+    font-family: var(--font-mono);
+    font-variation-settings: normal;
+    font-size: var(--font-size-sm);
+    letter-spacing: 0;
+}
+
 .links-title a {
     text-decoration: none;
 }
@@ -527,8 +531,7 @@ svg.theme-toggle-icon {
     margin-block: 4rem;
     display: grid;
     grid-template-columns: 3.125rem 1fr;
-    column-gap: 4rem;
-    row-gap: 1.5rem;
+    column-gap: 3rem;
     align-items: baseline;
 }
 
@@ -538,30 +541,22 @@ svg.theme-toggle-icon {
     font-size: var(--font-size-lg);
 }
 
-.blog-section .blog-entry {
-    grid-column: 2;
-    margin: 0;
-}
-
 .blog-entry {
-    display: flex;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 2rem;
     align-items: baseline;
-    gap: 0.5rem;
+    padding-block: 0.5rem;
+    border-top: var(--hairline);
     text-decoration: none;
-    max-width: var(--content-max-width);
-    margin-inline: auto;
-    margin-block: 1.5rem;
 
-    & .dashed-line {
-        flex-grow: 1;
-        border-top: var(--hairline);
-        min-width: 2rem;
-        margin-bottom: 0.5rem;
-        transition: border-color 120ms ease-in-out;
+    &:last-child {
+        border-bottom: var(--hairline);
     }
 
     & .blog-date {
-        color: var(--color-display-70);
+        color: var(--color-display-50);
         white-space: nowrap;
         transition: color 120ms ease-in-out;
     }
@@ -570,10 +565,6 @@ svg.theme-toggle-icon {
 a.blog-entry:hover {
     & :is(.links-title, .blog-date, .inline-icon svg) {
         color: var(--color-accent);
-    }
-
-    & .dashed-line {
-        border-color: var(--color-accent-70);
     }
 }
 
@@ -990,10 +981,8 @@ header:has(.collage) {
 }
 
 @media screen and (max-width: 440px) {
-    .blog-entry .dashed-line { visibility: hidden; }
     .blog-section { display: block; }
     .blog-section .overline { margin-block-end: 1rem; }
-    .blog-section .blog-entry { margin-block: 1.5rem; }
     .profile-image { display: none; }
     .footer-directory { grid-template-columns: 1fr 1fr; }
     .footer-about { grid-column: 1 / -1; padding-inline-end: 0; }
