@@ -16,8 +16,8 @@ html {
     --color-body: light-dark(oklch(38.7% 0 0), oklch(83.6% 0 0));
     --color-accent: light-dark(oklch(17.8% 0 0), oklch(98.5% 0 0));
     --color-photo-frame: light-dark(oklch(100% 0 0), oklch(92.5% 0 0));
-    --color-selection: light-dark(oklch(95% 0.08 100), oklch(80% 0.09 95));
-    --color-selection-text: oklch(17.8% 0 0);
+    --color-selection: light-dark(oklch(95% 0.08 100), oklch(40% 0 0));
+    --color-selection-text: light-dark(oklch(17.8% 0 0), oklch(98.5% 0 0));
 
     --color-display-25: oklch(from var(--color-display) l c h / 25%);
     --color-display-50: oklch(from var(--color-display) l c h / 50%);
@@ -25,9 +25,9 @@ html {
     --color-accent-10: oklch(from var(--color-accent) l c h / 10%);
     --color-accent-20: oklch(from var(--color-accent) l c h / 20%);
     --color-accent-50: oklch(from var(--color-accent) l c h / 50%);
-
+    --color-selection-underline: light-dark(oklch(68% 0.1 100), oklch(98.5% 0 0 / 50%));
     --font-size-sm: 0.875rem;    /* 14px */
-    --font-size-base: 1rem;      /* 16px base */
+    --font-size-base: 1rem;      /* 16px */
     --font-size-md: 1.1875rem;   /* 19px */
     --font-size-lg: 1.3125rem;   /* 21px */
     --font-size-xl: 1.4375rem;   /* 23px */
@@ -75,6 +75,7 @@ html {
 ::selection {
     background-color: var(--color-selection);
     color: var(--color-selection-text);
+    text-decoration-color: var(--color-selection-text);
 }
 
 img::selection {
@@ -100,6 +101,7 @@ h1, h2, h3,
     font-family: var(--font-display);
     font-variation-settings: normal;
     letter-spacing: var(--letter-spacing-heading);
+    text-decoration: none;
 }
 
 img, picture, audio, video {
@@ -123,8 +125,8 @@ p, blockquote, figcaption, li {
 }
 
 p {
-    color: var(--color-body);
     margin-block: 1.25rem;
+    color: var(--color-body);
 }
 
 strong {
@@ -137,18 +139,18 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: var(--font-size-2xl);
     margin-block: 0.25rem;
+    font-size: var(--font-size-2xl);
 }
 
 h2 {
-    font-size: var(--font-size-xl);
     margin-block: 4rem 1rem;
+    font-size: var(--font-size-xl);
 }
 
 h3 {
-    font-size: var(--font-size-lg);
     margin-block: 3rem 1rem;
+    font-size: var(--font-size-lg);
 }
 
 .links-title {
@@ -158,11 +160,11 @@ h3 {
 }
 
 .sub-heading {
-    color: var(--color-display-70);
+    margin-block: 0.5rem;
     font-size: var(--font-size-md);
     line-height: 1.4;
     letter-spacing: var(--letter-spacing-default);
-    margin-block: 0.5rem;
+    color: var(--color-display-70);
 }
 
 blockquote {
@@ -182,7 +184,7 @@ a {
     text-decoration: underline;
     text-decoration-color: var(--color-display-25);
     text-decoration-thickness: 0.08125rem;
-    text-underline-offset: 0.1875em;
+    text-underline-offset: 0.15em;
     transition: color 120ms ease-in-out, text-decoration-color 120ms ease-in-out, background-color 120ms ease-in-out, box-shadow 120ms ease-in-out;
 }
 
@@ -195,14 +197,12 @@ a:hover {
     text-decoration-color: var(--color-accent-50);
 }
 
-/* highlight only links that keep their underline. the shadow stretches it to the full 1.5 line height without touching layout */
+/* only underlined links. the shadow fills the line height without shifting layout */
 a:hover:not(.minimal-link, .blog-entry, .blogroll a, .links-title a, .post-navigation a, .changelog-bar a) {
-    background-color: var(--color-accent-10);
-    box-shadow: 0 0 0 0.145em var(--color-accent-10);
-}
-
-.minimal-link {
-    text-decoration: none;
+    background-color: var(--color-selection);
+    box-shadow: 0 0 0 0.145em var(--color-selection);
+    color: var(--color-selection-text);
+    text-decoration-color: var(--color-selection-underline);
 }
 
 .footer-directory a,
@@ -234,8 +234,8 @@ ul {
 }
 
 li {
-    color: var(--color-body);
     margin-block: 1rem;
+    color: var(--color-body);
 }
 
 ul li {
@@ -302,13 +302,13 @@ p.compact {
 }
 
 .top-nav-inner {
-    margin-inline: auto;
-    max-width: var(--content-max-width);
-    border-bottom: var(--hairline);
-    padding-bottom: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: var(--content-max-width);
+    margin-inline: auto;
+    padding-bottom: 1.5rem;
+    border-bottom: var(--hairline);
 }
 
 .top-nav-links {
@@ -323,21 +323,21 @@ p.compact {
 }
 
 .theme-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
     display: flex;
     align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 .homepage-header { margin-block: 11.5rem 6rem; }
 .subpage-header, .blogpage-header { margin-block: 8rem; }
 
 .minimal-link-container {
-    max-width: var(--content-max-width);
-    margin-inline: auto;
     display: flex;
     gap: 1rem;
+    max-width: var(--content-max-width);
+    margin-inline: auto;
     margin-block: 1rem;
 }
 
@@ -351,19 +351,19 @@ main:has(.post-navigation) + footer {
 }
 
 .footer-container {
-    border-top: var(--hairline);
-    padding-top: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 4rem;
+    border-top: var(--hairline);
 }
 
 .footer-directory {
-    border-top: var(--hairline);
-    padding-top: 4rem;
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;
     gap: 2.5rem;
+    padding-top: 4rem;
+    border-top: var(--hairline);
 }
 
 .footer-about {
@@ -512,7 +512,7 @@ svg.theme-toggle-icon {
     }
 }
 
-/* listing meta lines and dates: links page, homepage, blog index */
+/* listing meta lines and dates */
 .links-meta,
 .blog-date {
     font-family: var(--font-mono);
@@ -526,13 +526,13 @@ svg.theme-toggle-icon {
 }
 
 .blog-section {
-    max-width: var(--content-max-width);
-    margin-inline: auto;
-    margin-block: 4rem;
     display: grid;
     grid-template-columns: 3.125rem 1fr;
     column-gap: 3rem;
     align-items: baseline;
+    max-width: var(--content-max-width);
+    margin-inline: auto;
+    margin-block: 4rem;
 }
 
 .blog-section .overline {
@@ -575,14 +575,14 @@ a.blog-entry:hover {
 }
 
 .post-navigation {
-    border-top: var(--hairline);
-    margin-block: 4rem 0;
-    margin-inline: auto;
-    max-width: var(--content-max-width);
-    padding-top: 2rem;
     display: grid;
     grid-template-columns: minmax(max-content, 1fr) 5fr;
     gap: 0.75rem 1.5rem;
+    max-width: var(--content-max-width);
+    margin-inline: auto;
+    margin-block: 4rem 0;
+    padding-top: 2rem;
+    border-top: var(--hairline);
 }
 
 /* rows share the parent's columns so labels line up */
@@ -815,9 +815,9 @@ header:has(.collage) {
 /* 404 page */
 
 .not-found {
-    min-height: 100svh;
     display: grid;
     place-content: center;
+    min-height: 100svh;
     padding-block: 2rem;
     text-align: center;
 
@@ -990,9 +990,9 @@ header:has(.collage) {
 
 /* keyboard focus */
 
-/* last in the file and a[href] so it wins ties with link colors set above (nav current page, changelog bar, blog dates) */
+/* last in the file and a[href] so it wins ties with link colors above */
 :is(a[href], .theme-toggle):focus-visible {
-    outline: 0.0625rem solid transparent;  /* shows in forced-colors mode, where backgrounds are dropped */
+    outline: 0.0625rem solid transparent;  /* for forced-colors mode */
     background-color: var(--color-selection);
     box-shadow: 0 0 0 0.25rem var(--color-selection);
     color: var(--color-selection-text);
