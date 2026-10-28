@@ -18,11 +18,14 @@ This is her personal website where she shares writing on intentional living, pro
 
 ## Notable posts
 
-- [Learning to see, again](https://thu-le.com/blog/learning-to-see-again): Selling her camera gear in 2019, buying a pocket camera in 2026, and what changed in the seconds before a shot
+A curated list, ordered by how directly each post answers who Thu is.
+
 - [Personal manifesto](https://thu-le.com/blog/personal-manifesto): Her operating principles for how she thinks, relates, and works
+- [Good work](https://thu-le.com/blog/good-work): Her journey into design and the search for good work
+- [On duality](https://thu-le.com/blog/on-duality): On holding competing wants and two identities without needing to reconcile them
 - [For now](https://thu-le.com/blog/for-now): On how often "I told myself I'd never" turns out to be a snapshot, not a fact
 - [I love traveling and I'm quite boring about it](https://thu-le.com/blog/i-love-traveling-and-im-quite-boring-about-it): How she stays herself on the road, and why the airport lounge is the best part
-- [Good work](https://thu-le.com/blog/good-work): Her journey into design and the search for good work
+- [Learning to see, again](https://thu-le.com/blog/learning-to-see-again): Selling her camera gear in 2019, buying a pocket camera in 2026, and what changed in the seconds before a shot
 - [50 things I learned in 2025](https://thu-le.com/blog/50-things-i-learned-in-2025): Annual learnings roundup
 
 Full archive at https://thu-le.com/blog/
