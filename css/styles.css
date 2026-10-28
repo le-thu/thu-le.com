@@ -12,9 +12,9 @@ html {
 :root {
     color-scheme: light dark;
     --color-background: light-dark(oklch(98.5% 0 0), oklch(22.2% 0 0));
-    --color-display: light-dark(oklch(30.1% 0 0), oklch(88.2% 0 0));
-    --color-body: light-dark(oklch(38.7% 0 0), oklch(83.6% 0 0));
-    --color-accent: light-dark(oklch(17.8% 0 0), oklch(98.5% 0 0));
+    --color-display: light-dark(oklch(30.1% 0 0), oklch(91.6% 0 0));
+    --color-body: light-dark(oklch(38.7% 0 0), oklch(87% 0 0));
+    --color-accent: light-dark(oklch(17.8% 0 0), oklch(100% 0 0));
     --color-photo-frame: light-dark(oklch(100% 0 0), oklch(92.5% 0 0));
     --color-selection: light-dark(oklch(95% 0.08 100), oklch(40% 0 0));
     --color-selection-text: light-dark(oklch(17.8% 0 0), oklch(98.5% 0 0));
@@ -192,32 +192,19 @@ a {
     color: var(--color-display);
 }
 
-a:hover {
-    color: var(--color-accent);
-    text-decoration-color: var(--color-accent-50);
-}
-
 /* only underlined links. the shadow fills the line height without shifting layout */
 a:hover:not(.minimal-link, .blog-entry, .blogroll a, .links-title a, .post-navigation a, .changelog-bar a) {
     background-color: var(--color-selection);
     box-shadow: 0 0 0 0.145em var(--color-selection);
-    color: var(--color-selection-text);
     text-decoration-color: var(--color-selection-underline);
 }
 
-.footer-directory a,
-.minimal-link-container a,
-.blogroll a,
-footer .top-nav-links a {
+.blogroll a {
     transition: color 200ms ease;
 }
 
 @media (hover: hover) {
-    .footer-directory ul:has(a:hover) a:not(:hover),
-    .minimal-link-container:has(a:hover) a:not(:hover),
-    .blogroll:has(a:hover) a:not(:hover),
-    footer .top-nav-links:has(a:hover) a:not(:hover) { color: var(--color-display-50); }
-    .footer-directory a:hover { color: var(--color-accent); }
+    .blogroll:has(a:hover) a:not(:hover) { color: var(--color-display-50); }
 
     .big-mark:hover { color: var(--mark-color-hover); }
     .big-mark:hover svg.site-mark { transform: translateY(-4px); }
@@ -259,17 +246,20 @@ p.compact {
     column-gap: 2.5rem;
 
     & li {
-        padding: 0 0 0.5rem;
         margin: 0;
         break-inside: avoid;
     }
 
+    /* spacing on the link so rows touch and the dimming doesn't flicker */
     & a {
+        display: block;
+        padding-block: 0.25rem;
         text-decoration: none;
     }
 }
 
-.blogroll-more {
+/* note above .page-date, same gap */
+.page-more {
     margin-block-start: 4rem;
 }
 
@@ -339,6 +329,7 @@ p.compact {
     max-width: var(--content-max-width);
     margin-inline: auto;
     margin-block: 1rem;
+    color: var(--color-display-70);
 }
 
 footer {
@@ -506,15 +497,13 @@ svg.theme-toggle-icon {
     & a {
         color: inherit;
     }
-
-    & a:hover {
-        color: var(--color-accent);
-    }
 }
 
-/* listing meta lines and dates */
+/* meta lines and dates */
 .links-meta,
-.blog-date {
+.blog-date,
+.blogpage-header time,
+.page-date {
     font-family: var(--font-mono);
     font-variation-settings: normal;
     font-size: var(--font-size-sm);
@@ -740,7 +729,7 @@ header:has(.collage) {
         transition: color 120ms ease-in-out;
     }
 
-    & :is(a, button):hover { color: var(--color-accent); }
+    & button:hover { color: var(--color-accent); }
 }
 
 .theme-to-light { display: none; }
@@ -986,6 +975,14 @@ header:has(.collage) {
     .profile-image { display: none; }
     .footer-directory { grid-template-columns: 1fr 1fr; }
     .footer-about { grid-column: 1 / -1; padding-inline-end: 0; }
+}
+
+/* link hover */
+
+/* after component link colors so it wins ties */
+a:hover {
+    color: var(--color-accent);
+    text-decoration-color: var(--color-accent-50);
 }
 
 /* keyboard focus */
