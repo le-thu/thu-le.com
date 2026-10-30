@@ -22,16 +22,17 @@ html {
     --color-display-25: oklch(from var(--color-display) l c h / 25%);
     --color-display-50: oklch(from var(--color-display) l c h / 50%);
     --color-display-70: oklch(from var(--color-display) l c h / 70%);
+    --color-display-85: oklch(from var(--color-display) l c h / 85%);
     --color-accent-10: oklch(from var(--color-accent) l c h / 10%);
     --color-accent-20: oklch(from var(--color-accent) l c h / 20%);
     --color-accent-50: oklch(from var(--color-accent) l c h / 50%);
     --color-selection-underline: light-dark(oklch(68% 0.1 100), oklch(98.5% 0 0 / 50%));
     --font-size-sm: 0.875rem;    /* 14px */
     --font-size-base: 1rem;      /* 16px */
-    --font-size-md: 1.1875rem;   /* 19px */
-    --font-size-lg: 1.3125rem;   /* 21px */
-    --font-size-xl: 1.4375rem;   /* 23px */
-    --font-size-2xl: 1.5625rem;  /* 25px */
+    --font-size-md: 1.25rem;     /* 20px */
+    --font-size-lg: 1.375rem;    /* 22px */
+    --font-size-xl: 1.5625rem;   /* 25px */
+    --font-size-2xl: 1.75rem;    /* 28px */
 
     --font-display: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
     --font-body: 'InterVariable', system-ui, -apple-system, sans-serif;
@@ -114,13 +115,13 @@ img, picture, audio, video {
 
 p, ul, ol,
 h1, h2, h3,
-blockquote, footer,
+footer,
 .media-img-small {
     max-width: var(--content-max-width);
     margin-inline: auto;
 }
 
-p, blockquote, figcaption, li {
+p, figcaption, li {
     hanging-punctuation: first allow-end last;
 }
 
@@ -134,7 +135,7 @@ strong {
 }
 
 h1, h2, h3 {
-    font-weight: 500;
+    font-weight: 450;
     line-height: 1.25;
 }
 
@@ -155,7 +156,7 @@ h3 {
 
 .links-title {
     font-size: var(--font-size-md);
-    font-weight: 500;
+    font-weight: 460;
     line-height: 1.4;
 }
 
@@ -168,13 +169,29 @@ h3 {
 }
 
 blockquote {
-    padding: 0 0 0 1.125rem;
     margin-block: 1rem;
-    border-left: 0.1875rem solid var(--color-accent-20);
+    margin-inline: max(1rem, (100% - var(--content-max-width)) / 2 + 1rem);
 }
 
 blockquote p {
-    color: var(--color-display);
+    display: inline;
+    padding-inline: 0.15em;
+    color: var(--color-display-85);
+    background-image: linear-gradient(transparent 12%, var(--color-selection) 12%, var(--color-selection) 92%, transparent 92%);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+blockquote p:first-child::before {
+    content: open-quote;
+    margin-right: 0.2em;
+    color: var(--color-selection-underline);
+}
+
+blockquote p:last-child::after {
+    content: close-quote;
+    margin-left: 0.2em;
+    color: var(--color-selection-underline);
 }
 
 /* links */
@@ -592,7 +609,7 @@ a.blog-entry:hover {
 }
 
 .post-nav-label {
-    font-weight: 550;
+    font-weight: 500;
     letter-spacing: -0.00625em;
 }
 
@@ -979,7 +996,6 @@ header:has(.collage) {
 
 /* link hover */
 
-/* after component link colors so it wins ties */
 a:hover {
     color: var(--color-accent);
     text-decoration-color: var(--color-accent-50);
@@ -987,7 +1003,6 @@ a:hover {
 
 /* keyboard focus */
 
-/* last in the file and a[href] so it wins ties with link colors above */
 :is(a[href], .theme-toggle):focus-visible {
     outline: 0.0625rem solid transparent;  /* for forced-colors mode */
     background-color: var(--color-selection);
