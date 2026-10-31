@@ -90,7 +90,7 @@ body {
     font-size: var(--font-size-base);
     line-height: 1.5;
     letter-spacing: var(--letter-spacing-default);
-    font-variation-settings: "opsz" 30;
+    font-variation-settings: "opsz" 28;
     text-wrap: pretty;
     -webkit-font-smoothing: antialiased;
 }
