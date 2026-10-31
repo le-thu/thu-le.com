@@ -108,7 +108,7 @@ h1, h2, h3,
 img, picture, audio, video {
     display: block;
     max-inline-size: 100%;
-    border-radius: 0.25rem;
+    border-radius: 0.125rem;
 }
 
 /* typography */
@@ -284,7 +284,6 @@ p.compact {
 .spec-list {
     list-style: none;
     padding: 0;
-    border-bottom: var(--hairline);
 
     & li {
         display: grid;
@@ -293,7 +292,7 @@ p.compact {
         padding-block: 0.5rem;
         margin: 0;
         color: var(--color-display);
-        border-top: var(--hairline);
+        border-bottom: var(--hairline);
     }
 }
 
@@ -553,7 +552,7 @@ svg.theme-toggle-icon {
     grid-template-columns: 1fr auto;
     column-gap: 2rem;
     align-items: baseline;
-    padding-block: 0.5rem;
+    padding-block: 0.75rem;
     border-top: var(--hairline);
     text-decoration: none;
 
@@ -646,7 +645,7 @@ figcaption {
 .collage-photo,
 .profile-image {
     border: 0.5rem solid var(--color-photo-frame);
-    border-radius: 2px;
+    border-radius: 0.125rem;
     background-color: var(--color-photo-frame);
     background-size: cover;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
